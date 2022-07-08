@@ -1,8 +1,29 @@
-/* 
-  https://coolors.co/cad2c5-84a98c-52796f-354f52-2f3e46 
-  https://miro.medium.com/max/1400/0*MJfiLHUiFLi5M2sm.png
-  https://bryanlrobinson.com/images/grid-comparison.jpg
-  https://xd.adobe.com/ideas/wp-content/uploads/2021/06/ezgif-3-0e6c290028cd.png
-  https://dribbble.com/shots/14723097-Sleep-Tracking-App
-  https://dribbble.com/shots/9649817/attachments/1678270?mode=media
+/*
+  #F7F7F7 text on #52796F and #354F52
+  #2F3E46 on #CAD2C5 and #B7CCBC
 */
+
+:root {
+  --background: #CAD2C5;
+  --main-text: #2F3E46;
+
+  --accent-text: #F7F7F7;
+  --accent-background: #52796F;
+
+  --cards: #B7CCBC;
+}
+
+[data-theme="dark"] {
+  --background: #354F52;
+  --main-text: #F7F7F7;
+
+  --accent-text:#2F3E46;
+  --accent-background: #B7CCBC;
+
+  --cards: #52796F;
+}
+
+.header, .footer {
+  background-color: var(--accent-background);
+  color: var(--accent-text);
+}
