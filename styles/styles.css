@@ -23,7 +23,7 @@
   --cards: #52796F;
 }
 
-.header, .footer {
+header, footer {
   background-color: var(--accent-background);
   color: var(--accent-text);
 }
