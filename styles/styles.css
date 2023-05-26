@@ -1,29 +1,123 @@
-/*
-  #F7F7F7 text on #52796F and #354F52
-  #2F3E46 on #CAD2C5 and #B7CCBC
-*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
 
 :root {
-  --background: #CAD2C5;
-  --main-text: #2F3E46;
+  --main-text: #171717;
+  --background: #C7F9CC;
 
-  --accent-text: #F7F7F7;
-  --accent-background: #52796F;
+  --secondary-text: #171717;
+  --secondary-background: #57CC99;
 
-  --cards: #B7CCBC;
+  --accent-text: #FFFFFF;
+  --accent-background: #1a759f;
+
+  --content-text: #171717;
+  --content-background: #3EB4B6;
 }
 
 [data-theme="dark"] {
-  --background: #354F52;
-  --main-text: #F7F7F7;
+  --background: #282e53;
+  --main-text: #CCCCCC;
 
-  --accent-text:#2F3E46;
-  --accent-background: #B7CCBC;
+  --secondary-text: #F2F2F2;
+  --secondary-background: #494581;
 
-  --cards: #52796F;
+  --accent-text: #09090C;
+  --accent-background: #d386ac;
+
+  --content-text: #121212;
+  --content-background: #a298c7;
+}
+
+html {
+  background-color: var(--background);
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: .25fr 1fr .25fr;
+  grid-template-rows: .05fr auto .05fr;
+  grid-template-areas:
+  "header header header"
+  ". main ."
+  "footer footer footer";
+}
+
+.header-component {
+  grid-area: header;
+}
+
+.footer-component {
+  grid-area: footer;
 }
 
 header, footer {
+  background-color: var(--secondary-background);
+  color: var(--secondary-text);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header {
+  padding: 10px;
+}
+
+footer {
+  height: 100%;
+}
+
+main {
+  grid-area: main;
+}
+
+.button {
+  color: var(--accent-text);
   background-color: var(--accent-background);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-list li {
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-list li img {
+  margin: 5px;
+}
+
+.test {
+  width: 200px;
+  height: 200px;
+  background-color: var(--content-background);
+  color: var(--content-text);
+}
+
+a:link, a:visited {
+  color: var(--secondary-text);
+}
+
+a:hover, a:active {
   color: var(--accent-text);
 }
