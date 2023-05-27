@@ -6,10 +6,10 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <header>
-        <h1>Welcome to the garden!</h1>
+        <a href="http://www.abbeyperini.com/"><h1>Welcome to the garden!</h1></a>
         <nav>
-          <ul class="list">
-            <li><a href="about.html">What is a digital garden?</a></li>
+          <ul class="header-list">
+            <li><a href="/about.html">What is a digital garden?</a></li>
             <li><a href="https://github.com/abbeyperini/digital-garden">Github repository</a></li>
             <li><a href="https://abbeyperini.dev">About Abbey</a></li>
           </ul>
