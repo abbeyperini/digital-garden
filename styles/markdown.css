@@ -2,10 +2,15 @@
 
 .markdown-body {
   font-family: "Space Mono", monospace;
+  color: var(--main-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
 }
 
 h1 {
-  margin: 3%;
+  margin: 3% 1% 1% 1%;
 }
 
 p {
@@ -25,4 +30,5 @@ li {
 
 img {
   margin: auto;
+  max-width: 600px;
 }
