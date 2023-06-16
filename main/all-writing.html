@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width' initial-scale='1.0' maximum-scale='1.0'/>
+    <title>Abbey's Digital Garden</title>
+    <link rel='stylesheet' href='../styles/styles.css'/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Space+Mono">
+    <script src="../js/theme.js" type="text/javascript" defer></script>
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
+    ></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main>
+      <zero-md src="../blogs/accessibility.md">
+        <template>
+          <link rel="stylesheet" href="../styles/markdown.css" />
+        </template>
+      </zero-md>
+      <zero-md src="../blogs/animated.md">
+        <template>
+          <link rel="stylesheet" href="../styles/markdown.css" />
+        </template>
+      </zero-md>
+      <zero-md src="../blogs/embrace.md">
+        <template>
+          <link rel="stylesheet" href="../styles/markdown.css" />
+        </template>
+      </zero-md>
+      <zero-md src="../blogs/reload.md">
+        <template>
+          <link rel="stylesheet" href="../styles/markdown.css" />
+        </template>
+      </zero-md>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

@@ -47,7 +47,7 @@ html {
 body {
   height: 100%;
   display: grid;
-  grid-template-columns: .25fr 1fr .25fr;
+  grid-template-columns: .25fr 3fr .25fr;
   grid-template-rows: .05fr auto .05fr;
   grid-template-areas:
   "header header header"

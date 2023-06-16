@@ -20,13 +20,13 @@ class Footer extends HTMLElement {
             <a href="https://abbeyperini.hashnode.dev/">Hashnode</a>
           </li>
           <li>
-            <a href="https://github.com/abbeyperini">Github</a><img src="images/github.png" alt="Abbey Perini Github" width="30">
+            <a href="https://github.com/abbeyperini">Github</a><img src="../images/github.png" alt="" width="30">
           </li>
           <li class="footer-linkedin">
-            <a href="https://www.linkedin.com/in/abbey-perini/">LinkedIn</a><img src="images/Linked-logo.png" alt="Abbey Perini LinkedIn" width="30">
+            <a href="https://www.linkedin.com/in/abbey-perini/">LinkedIn</a><img src="../images/Linked-logo.png" alt="" width="30">
           </li>
           <li class="twitter">
-            <a href="https://twitter.com/AbbeyPerini">Twitter</a><img src="images/Twitter.png" alt="Abbey Perini Twitter" width="30">
+            <a href="https://twitter.com/AbbeyPerini">Twitter</a><img src="../images/Twitter.png" alt="" width="30">
           </li>
         </ul>
       </footer>

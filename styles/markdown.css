@@ -1,0 +1,28 @@
+/* blog */
+
+.markdown-body {
+  font-family: "Space Mono", monospace;
+}
+
+h1 {
+  margin: 3%;
+}
+
+p {
+  margin: 1%;
+  color: var(--main-text);
+}
+
+p, li {
+  text-align: left;
+  font-size: 1.25em;
+}
+
+li {
+  margin-left: 3%;
+  text-decoration: none;
+}
+
+img {
+  margin: auto;
+}
