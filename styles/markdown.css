@@ -6,7 +6,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5%;
+}
+
+p, li, pre, h1, h2, h3 {
+  max-width: 80vw;
 }
 
 h1 {
@@ -14,7 +17,6 @@ h1 {
 }
 
 p {
-  margin: 1%;
   color: var(--main-text);
 }
 
@@ -31,4 +33,20 @@ li {
 img {
   margin: auto;
   max-width: 600px;
+}
+
+pre {
+  background-color: var(--secondary-background);
+  color: var(--secondary-text);
+  padding: 2%;
+  text-align: left;
+  overflow-y: scroll;
+}
+
+a:link, a:visited {
+  color: var(--link-text);
+}
+
+a:hover, a:active {
+  color: var(--active-link-text);
 }

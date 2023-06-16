@@ -1,6 +1,8 @@
 
 # CSS Animated Button with Offset Border
 
+Planted: 12/16/2020
+
 ![on a teal and blue background, a yellow button that says 'add' with an offset yellow border](https://images.abbeyperini.com/animated/cover.webp)
 
 I’m a believer in finding joy in the little things, and during my last project, that little thing was this button. I have been reading a lot about web design, and wanted my primary buttons to stand out in a big way. I had seen an image of a square button with an offset border while researching a design for an even earlier project, but never got the time to implement it. So for weeks, I’ve been trying to find the time to build this baby, and it was worth the wait.

@@ -1,5 +1,7 @@
 # Accessibility and React
 
+Planted: 01/07/2021
+
 ![a black keyboard with keys backlit with rainbow lights on a desk with a pastel space deskmat and black mouse](https://images.abbeyperini.com/accessibility/keyboard.png)
 
 If you’ve ever read anything about HTML on Mozilla Developer Network, you’ve probably come across the phrase “semantic HTML.”

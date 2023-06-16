@@ -47,7 +47,7 @@ html {
 body {
   height: 100%;
   display: grid;
-  grid-template-columns: .25fr 3fr .25fr;
+  grid-template-columns: .2fr 2fr .2fr;
   grid-template-rows: .05fr auto .05fr;
   grid-template-areas:
   "header header header"
@@ -58,6 +58,12 @@ body {
 
 main {
   grid-area: main;
+  display: grid;
+  margin: 2% 0;
+}
+
+zero-md {
+  display: grid;
 }
 
 .construction {
