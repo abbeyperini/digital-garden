@@ -2,22 +2,22 @@
 
 .markdown-body {
   font-family: "Space Mono", monospace;
-  color: var(--main-text);
+  background-color: var(--content-background);
+  color: var(--content-text);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  min-width: 80vw;
 }
 
 p, li, pre, h1, h2, h3 {
-  max-width: 80vw;
+  max-width: 75vw;
 }
 
 h1 {
   margin: 3% 1% 1% 1%;
-}
-
-p {
-  color: var(--main-text);
 }
 
 p, li {
@@ -31,7 +31,7 @@ li {
 
 img {
   margin: auto;
-  max-width: 600px;
+  max-width: 250px;
 }
 
 pre {
@@ -43,9 +43,27 @@ pre {
 }
 
 a:link, a:visited {
-  color: var(--link-text);
+  color: var(--content-link-text);
 }
 
 a:hover, a:active {
-  color: var(--active-link-text);
+  color: var(--content-active-link-text);
+}
+
+@media (min-width: 500px) {
+  img {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 800px) {
+  img {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  img {
+    max-width: 600px;
+  }
 }

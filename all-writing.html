@@ -10,6 +10,7 @@
     <script src="../js/theme.js" type="text/javascript" defer></script>
     <script src="../components/header.js" type="text/javascript" defer></script>
     <script src="../components/footer.js" type="text/javascript" defer></script>
+    <script src="../components/blog.js" type="text/javascript" defer></script>
     <script
       type="module"
       src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
@@ -18,116 +19,45 @@
   <body>
     <header-component></header-component>
     <main>
-      <zero-md src="../blogs/accessibility.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/animated.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/embrace.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/reload.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/OOP.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/100.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/trio.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/knitting.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/toggle.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/breaking.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/confidence.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/panini-bot.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/serverless.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/shibas.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/images.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/legacy.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/audit-1.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/audit-2.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/audit-3.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/audit-4.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/audit-5.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
-      <zero-md src="../blogs/audit-6.md">
-        <template>
-          <link rel="stylesheet" href="../styles/markdown.css" />
-        </template>
-      </zero-md>
+      <blog-component page="../blogs/accessibility.md"></blog-component>
+      <blog-component page="../blogs/animated.md"></blog-component>
+      <blog-component page="../blogs/embrace.md"></blog-component>
+      <blog-component page="../blogs/reload.md"></blog-component>
+      <blog-component page="../blogs/OOP.md"></blog-component>
+      <blog-component page="../blogs/100.md"></blog-component>
+      <blog-component page="../blogs/trio.md"></blog-component>
+      <blog-component page="../blogs/knitting.md"></blog-component>
+      <blog-component page="../blogs/toggle.md"></blog-component>
+      <blog-component page="../blogs/breaking.md"></blog-component>
+      <blog-component page="../blogs/confidence.md"></blog-component>
+      <blog-component page="../blogs/panini-bot.md"></blog-component>
+      <blog-component page="../blogs/serverless.md"></blog-component>
+      <blog-component page="../blogs/shibas.md"></blog-component>
+      <blog-component page="../blogs/images.md"></blog-component>
+      <blog-component page="../blogs/legacy.md"></blog-component>
+      <blog-component page="../blogs/audit-1.md"></blog-component>
+      <blog-component page="../blogs/audit-2.md"></blog-component>
+      <blog-component page="../blogs/audit-3.md"></blog-component>
+      <blog-component page="../blogs/audit-4.md"></blog-component>
+      <blog-component page="../blogs/audit-5.md"></blog-component>
+      <blog-component page="../blogs/audit-6.md"></blog-component>
+      <blog-component page="../blogs/coding.md"></blog-component>
+      <blog-component page="../blogs/HTTP-1.md"></blog-component>
+      <blog-component page="../blogs/writing.md"></blog-component>
+      <blog-component page="../blogs/HTTP-2.md"></blog-component>
+      <blog-component page="../blogs/HTTP-3.md"></blog-component>
+      <blog-component page="../blogs/HTTP-4.md"></blog-component>
+      <blog-component page="../blogs/beginning.md"></blog-component>
+      <blog-component page="../blogs/HTML.md"></blog-component>
+      <blog-component page="../blogs/1-year.md"></blog-component>
+      <blog-component page="../blogs/HTTP-5.md"></blog-component>
+      <blog-component page="../blogs/webp.md"></blog-component>
+      <blog-component page="../blogs/avif.md"></blog-component>
+      <blog-component page="../blogs/jpegxl.md"></blog-component>
+      <blog-component page="../blogs/===.md"></blog-component>
+      <blog-component page="../blogs/ico.md"></blog-component>
+      <blog-component page="../blogs/favicons.md"></blog-component>
+      <blog-component page="../blogs/commit.md"></blog-component>
     </main>
     <footer-component></footer-component>
   </body>

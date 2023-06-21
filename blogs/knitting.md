@@ -4,10 +4,9 @@
 
 Planted: 02/10/2021
 
-<figure>
 ![an ocean blue knit sweater with an octopus pattern in off-white](https://images.abbeyperini.com/knitting/octopus.jpeg)
-  <figcaption>Knit by Abbey Perini, pattern by Maia E. Sirnes, yarn is Malabrigo Yarn Rios<figcaption>
-</figure>
+
+Knit by Abbey Perini, pattern by Maia E. Sirnes, yarn is Malabrigo Yarn Rios
 
 As part of my bootcamp, I was asked to present for 10 minutes on any topic. I've been crocheting since 2013 and knitting since 2018, and I had noticed some similarities between the way I approached a project in either fiber arts or programming. What I did not expect to find was a rich history of fiber arts and programming influencing each other.
 
@@ -37,10 +36,9 @@ By removing barriers to entry, Ravelry is credited with creating an explosion of
 
 When you knit something, you use two knitting needles. All of your stitches will be live, meaning if you drop a stitch the fabric you're creating will unravel. Patterns are created by alternating types of stitches or yarn of different colors. For example, K2P2 would mean 2 knit stitches followed by 2 purl stitches. The difference between stitches is how you feed the new loop of yarn through the live stitch on your needle. Effectively, a knit stitch goes through the front of the loop. A purl stitch goes through the back of the loop. Repeating this for several rows is how you would get a ribbed brim on a hat.
 
-<figure>
 ![a diagram of stockinette stitches with K2P2 ribbing](https://images.abbeyperini.com/knitting/K2P2.png)
-  <figcaption>K2P2 Ribbing</figcaption>
-</figure>
+
+K2P2 Ribbing
 
 ## Patterns as Programming
 
@@ -55,9 +53,9 @@ When you knit something, you use two knitting needles. All of your stitches will
 
 This shawl was created using 8 stitches - all knit based (no purl). One row was written like this: **k3, SM, (k2tog, yo) 2 times, [k1, yo, ssk, yo, sk2p, yo, k2tog, yo] to 5 stitches before marker, k1, (yo, ssk) 2 times), SM, k3**
 
-<figure>![a lacy Dowland shawl knit in sparkly burgundy yarn](https://images.abbeyperini.com/knitting/dowland.jpeg)
-  <figcaption>Knit by Abbey Perini, pattern by Dowland by Dee O'Keefe, yarn is Meeker Street by The Jewelry Box</figcaption>
-<figure>
+![a lacy Dowland shawl knit in sparkly burgundy yarn](https://images.abbeyperini.com/knitting/dowland.jpeg)
+
+Knit by Abbey Perini, pattern by Dowland by Dee O'Keefe, yarn is Meeker Street by The Jewelry Box
 
 There have even been two (no longer supported) programming languages designed specifically for hand knitting - KnitML, a markup language, and KEL, inspired by Groovy, a Java language.
 
