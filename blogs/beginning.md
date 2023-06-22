@@ -87,7 +87,7 @@ Meanwhile, the U.S. military supported two men in building the the ENAIC to calc
 
 It seemed natural to them to hire women to write the computing instructions for the ENAIC. The team included Jean Jennings Bartik (who lead the development of computer storage and memory), Frances Elizabeth “Betty” Holberton (who created the first software application), Frances Bilas Spence, Marlyn Wescoff Meltzer, Kathleen “Kay” McNulty Mauchly Antonelli, and Ruth Lichterman Teitelbaum. They were all instrumental in teaching others to program after the war.
 
-![Betty Jean Jennings (left) and Frances Bilas operating ENIAC's main control panel.](images.abbeyperini.com/women-in-programming/betty.png)
+![Betty Jean Jennings (left) and Frances Bilas operating ENIAC's main control panel.](https://images.abbeyperini.com/women-in-programming/betty.png)
 
 Source: U.S. ARMY/BETTMANN/GETTY IMAGES
 

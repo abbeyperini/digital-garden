@@ -140,10 +140,18 @@ footer {
 }
 
 a:link, a:visited {
+  color: var(--content-link-text);
+ }
+ 
+a:hover, a:active {
+  color: var(--content-active-link-text);
+}
+
+header a:link, footer a:link, header a:visited, footer a:visited {
   color: var(--link-text);
 }
 
-a:hover, a:active {
+header a:hover, footer a:hover, header a:active, footer a:active {
   color: var(--active-link-text);
 }
 
