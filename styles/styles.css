@@ -156,17 +156,21 @@ header a:hover, footer a:hover, header a:active, footer a:active {
 }
 
 /* garden */
+.garden-container {
+  background-color: var(--content-background);
+  color: var(--content-text);
+  border-radius: 10px;
+  padding: 2%;
+}
 
 .garden-title {
   margin: 1%;
-  color: var(--main-text);
 }
 
 .garden-content {
   text-align: left;
   margin: 1%;
   font-size: 1.25em;
-  color: var(--main-text);
 }
 
 @media screen and (min-width: 350px) {
