@@ -3,7 +3,7 @@
 Planted: 03/15/2022
 Tags: HTML, accessibility
 
-![screenshot of codepen with a basic HTML page and { Your content here }](https://images.abbeyperini.com/your-content.png)
+![screenshot of codepen with a basic HTML page and { Your content here }](https://images.abbeyperini.com/HTML/your-content.png)
 
 TL;DR - Watch the [lightning talk version!](https://youtu.be/qYPq9Fd-SE4)
 
@@ -32,7 +32,7 @@ Google if HTML does it before building it.
 
 `<!DOCTYPE html>` and `<html lang=“en”>` tell the machines that this is an HTML document written in English. The `<head>` element contains your metadata. `<meta lang="en" charset="utf-8">` is important. It tells the browser how to decode and encode your characters for machines and humans. Finally, the `<body>` tag wraps the content of your page.
 
-[codepen](https://codepen.io/abbeyperini/pen/PoEqRPq)
+[See the Root Structure CodePen](https://codepen.io/abbeyperini/pen/PoEqRPq)
 
 ## SEO
 
@@ -98,7 +98,7 @@ Gone are the days of using tables to layout content - that's presentation. Use t
 
 A basic 2 column 2 row table:
 
-[codepen](https://codepen.io/abbeyperini/pen/rNpVdLv)
+[See the Tables CodePen](https://codepen.io/abbeyperini/pen/rNpVdLv)
 
 Enhance your tables with `<col>`, `<colgroup>`, `<tbody>`, `<thead>`, `<tfoot>`, and `<scope>`.
 
@@ -140,7 +140,7 @@ Use `<cite>` to cite your sources.
 
 If you wanted to use a quote, say who said the quote, and cite your source, it would look like:
 
-[codepen](https://codepen.io/abbeyperini/pen/zYpGWNJ)
+[See the Quote CodePen](https://codepen.io/abbeyperini/pen/zYpGWNJ)
 
 ### Give the Machines More Information
 
@@ -171,9 +171,9 @@ Using `<form>`'s `action` and `method` attributes activates built-in HTTP messag
 
 ### `<input type="">`
 
-Yeah, built-in HTTP messaging is cool, but if you've got users submitting data, you're probably using `<input>`. `<input type="image">` creates an image that acts like a button. Why build your own pickers or file uploader when you have `<input type="color">`, `<input type="datetime-local">`, and `<input type="file">`? Types like email and password have built-in validation options. This codepen demonstrates all the different types of `<input>`:
+Yeah, built-in HTTP messaging is cool, but if you've got users submitting data, you're probably using `<input>`. `<input type="image">` creates an image that acts like a button. Why build your own pickers or file uploader when you have `<input type="color">`, `<input type="datetime-local">`, and `<input type="file">`? Types like email and password have built-in validation options. This CodePen demonstrates all the different types of `<input>`:
 
-[codepen](https://codepen.io/abbeyperini/pen/mdpJxXV)
+[See the Input CodePen](https://codepen.io/abbeyperini/pen/mdpJxXV)
 
 ### `<label>`
 
@@ -199,7 +199,7 @@ A `<button>` can have content and is easier to style. A `<button>` inside a `<fo
 
 `<details>` and `<summary>` work together to create a toggle. `<audio>` and `<video>` have built-in players with controls.
 
-[codepen](https://codepen.io/abbeyperini/pen/bGadvZo)
+[See the Hard Working Components CodePen](https://codepen.io/abbeyperini/pen/bGadvZo)
 
 `<picture>` wraps multiple `<img>` or `<source>` elements and chooses the best one based on display/device scenarios. `<iframe>` can be used to trap remote code or user input in a separate context from your page for security reasons.
 

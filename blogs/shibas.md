@@ -17,7 +17,7 @@ and the error text looked like this:
 
 I spent a handful of hours making my loading graphic:
 
-![a chibi shiba inu smiling and sticking its tongue out with a yellow construction hat](https://images.abbeyperini.com/shibas/construction-shib-inu.png)
+![a chibi shiba inu smiling and sticking its tongue out with a yellow construction hat](https://images.abbeyperini.com/shibas/construction-shiba-inu.png)
 
 and my error graphic:
 

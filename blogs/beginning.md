@@ -110,6 +110,7 @@ That same year, Elizabeth "Jake" Feinler joined the ARPANET project, the first w
 In 1972, Pamela Hardt-English got her hands on [a decommissioned SDS 940 mainframe computer from Transamerica](https://www.notion.so/blog/pamela-hardt-english). Driven by a desire to create a shared resources center for her commune, she created an early prototype of the internet. Sherry Reson, Mary Janowitz, and Joan Lefkowitz built a shared directory on top of that. Another team turned that work into [Community Memory](https://en.wikipedia.org/wiki/Community_Memory), the first computerized bulletin board. This project was eventually maintained by Jude Milhon, one of the founding members of [Cypherpunks](https://nakamoto.com/the-cypherpunks/).
 
 ![Pam posing with the XDS 940 computer.](https://images.abbeyperini.com/women-in-programming/pam.jpeg)
+
 Source: Photo first appeared in Rolling Stone magazine.
 
 In 1984, [37.1%](https://nces.ed.gov/programs/digest/d12/tables/dt12_349.asp) of students graduating with computer science or information science degrees were women. That same year, Radia Perlman wrote the Spanning Tree Protocol, [fundamental to network bridges and routing protocols](https://www.internethalloffame.org/inductees/radia-perlman), and thus LAN and the internet.
