@@ -15,6 +15,11 @@
       type="module"
       src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
     ></script>
+    <script async src="https://rum.cronitor.io/script.js"></script>
+    <script>
+      window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+      cronitor('config', { clientKey: '71d4d4a9cbb3078f61bc7a29ebedfd2d' });
+    </script>
   </head>
   <body>
     <header-component></header-component>
