@@ -2,6 +2,7 @@
 
 Planted: 04/26/2022
 Tags: images
+Series: [Images](/series.html?series=images)
 
 ![a green bush with many delicate white flowers](https://images.abbeyperini.com/images-series/flowers.JPG)
 

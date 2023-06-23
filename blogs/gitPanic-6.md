@@ -2,6 +2,7 @@
 
 Planted: 11/17/2022
 Tags: git, #gitPanic
+Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![Man at a rave looking like his mind had just been blown captioned git stash has multiple stashes](https://images.abbeyperini.com/gitPanic/git-stash-has.jpg)
 

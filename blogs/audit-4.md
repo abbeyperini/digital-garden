@@ -2,6 +2,7 @@
 
 Planted: 11/11/2021
 Tags: audit, accessibility
+Series: [accessibility audit](/series.html?series=audit)
 
 ![screenshot of the blog component on Abbey's portfolio site](https://images.abbeyperini.com/audit-series/blog.png)
 

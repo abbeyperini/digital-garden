@@ -2,6 +2,7 @@
 
 Planted: 04/05/2021
 Tags: career
+Series: [Career](/series.html?series=career)
 
 ![the ocean and a dock with the sunset and mountains in the background](https://images.abbeyperini.com/career-series/dock.png)
 

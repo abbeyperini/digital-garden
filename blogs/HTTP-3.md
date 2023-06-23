@@ -2,6 +2,7 @@
 
 Planted: 02/22/2022
 Tags: HTTP
+Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
 
 ![a picture of Dwight from the office captioned HTTP request? XMLHTTPREQUEST](https://images.abbeyperini.com/HTTP-series/dwight.png)
 

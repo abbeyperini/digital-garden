@@ -2,6 +2,7 @@
 
 Planted: 06/03/2022
 Tags: ADHD, neurodiversity
+Series: [Coding and ADHD](/series.html?series=ADHD)
 
 ![A logo that looks like a brain with a threaded needle attached to it Coding and ADHD](https://images.abbeyperini.com/ADHD-series/coding&adhd.png)
 

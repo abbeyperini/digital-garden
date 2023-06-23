@@ -2,6 +2,7 @@
 
 Planted: 04/04/2022
 Tags: career
+Series: [Career](/series.html?series=career)
 
 ![cat laying on white towels and wearing a robe and hair towel with cucumbers over its eyes captioned one year already?](https://images.abbeyperini.com/1-year/already.jpeg)
 

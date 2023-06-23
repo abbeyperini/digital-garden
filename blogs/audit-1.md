@@ -2,6 +2,7 @@
 
 Planted: 11/02/2021
 Tags: audit, accessibility
+Series: [accessibility audit](/series.html?series=audit)
 
 ![screenshot of Abbey's portfolio site with FireFox DevTools open to the accessibility tab](https://images.abbeyperini.com/audit-series/DevTools.png)
 

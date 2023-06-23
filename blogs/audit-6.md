@@ -2,6 +2,7 @@
 
 Planted: 11/28/2021
 Tags: audit, accessibility
+Series: [accessibility audit](/series.html?series=audit)
 
 ![Frodo on Mount Doom with fire in the background captioned it's done it's over now](https://images.abbeyperini.com/audit-series/done.jpg)
 

@@ -2,6 +2,7 @@
 
 Planted: 11/18/2022
 Tags: git, #gitPanic
+Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![screenshot of Abbey's GitHub profile](https://images.abbeyperini.com/gitPanic/cover.png)
 

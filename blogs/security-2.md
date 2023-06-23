@@ -2,6 +2,7 @@
 
 Planted: 11/30/2022
 Tags: security, web development
+Series: [security](/series.html?series=security)
 
 ![stick woman on the phone. The person on the other end of the phone says "Hi, this is your son's school. we're having some computer trouble." She says "oh dear - did he break something?" They say "in a way - did you really name your son Robert'); DROP TABLE Students;--?" She responds "oh. yes. little bobby tables we call him." The school says "well, we lost this year's student records. I hope you're happy." She responds "and I hope you've learned to sanitize your database inputs."](https://images.abbeyperini.com/security-series/exploits_of_a_mom.png)
 

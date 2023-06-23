@@ -2,6 +2,7 @@
 
 Planted: 05/03/2022
 Tags: images
+Series: [Images](/series.html?series=images)
 
 ![a rocky river in a lush green forest](https://images.abbeyperini.com/images-series/river.jpeg)
 

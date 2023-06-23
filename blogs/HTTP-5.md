@@ -2,6 +2,7 @@
 
 Planted: 05/14/2022
 Tags: HTTP
+Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
 
 ![Gandalf holding a sword and staff captioned HTTP 403 Forbidden you shall not pass](https://images.abbeyperini.com/HTTP-series/403-Forbidden.png)
 

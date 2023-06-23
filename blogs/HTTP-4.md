@@ -2,6 +2,7 @@
 
 Planted: 04/22/2022
 Tags: HTTP
+Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
 
 ![bored-looking white cat with a small mouth captioned 200 OK](https://images.abbeyperini.com/HTTP-series/200.jpeg)
 

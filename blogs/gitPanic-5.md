@@ -2,6 +2,7 @@
 
 Planted: 11/16/2022
 Tags: git, #gitPanic
+Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![Tony Stark standing in front of an explosion, arms outstretched captioned git rebase](https://images.abbeyperini.com/gitPanic/rebase.jpg)
 

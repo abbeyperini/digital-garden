@@ -1,6 +1,8 @@
 # Dark Mode Toggle and prefers-color-scheme
 
 Planted: 04/21/2023
+Tags: toggle, accessibility
+Series: [toggle](/series.html?series=toggle)
 
 ![screenshot of abbey's portfolio site menu with dark mode toggle in it](https://images.abbeyperini.com/color-scheme/cover.png)
 

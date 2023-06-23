@@ -2,6 +2,7 @@
 
 Planted: 02/16/2022
 Tags: HTTP
+Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
 
 ![a young white boy in front of a retro computer with a thumbs up captioned 200 OK](https://images.abbeyperini.com/HTTP-series/200-ok.png)
 

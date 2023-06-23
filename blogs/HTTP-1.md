@@ -2,6 +2,7 @@
 
 Planted: 02/04/2022
 Tags: HTTP
+Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
 
 ![a shiba inu dog sits in a chair at a table behind a laptop captioned on the internet, nobody knows you're a shiba](https://images.abbeyperini.com/HTTP-series/shiba.png)
 

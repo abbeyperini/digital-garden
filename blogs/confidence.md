@@ -4,6 +4,7 @@
 
 Planted: 05/10/2021
 Tags: career
+Series: [Career](/series.html?series=career)
 
 ![Moira Rose from Schitt's creek saying "one must champion oneself and say I am ready for this." with emphatic nodding and hand gestures](https://images.abbeyperini.com/career-series/champion.png)
 

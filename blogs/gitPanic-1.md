@@ -2,6 +2,7 @@
 
 Planted: 11/04/2022
 tags: git, #gitPanic
+Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![programmers and dark souls players shaking hands labelled git gud](https://images.abbeyperini.com/gitPanic/gud.jpg)
 

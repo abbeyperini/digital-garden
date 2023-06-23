@@ -1,7 +1,8 @@
 # Toggle Dark Mode in React
 
 Planted: 03/05/2021
-Tags: dark-mode-toggle
+Tags: toggle
+Series: [toggle](/series.html?series=toggle)
 
 ![screenshot of Abbey's portfolio site in both light and dark mode](https://images.abbeyperini.com/toggle/cover.png)
 

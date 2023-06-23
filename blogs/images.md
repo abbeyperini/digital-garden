@@ -2,6 +2,7 @@
 
 Planted: 08/30/2021
 Tags: images
+Series: [Images](/series.html?series=images)
 
 ![mountain range in Mount Rainier National Park](https://images.abbeyperini.com/images-series/cover.webp)
 

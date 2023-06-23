@@ -2,6 +2,7 @@
 
 Planted: 11/07/2022
 tags: git, #gitPanic
+Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![One astronaut staring at git and saying "There's a conflict with my branch?" andother astronaut behind them with a gun says "Always has been"](https://images.abbeyperini.com/gitPanic/conflict.jpeg)
 

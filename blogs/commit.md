@@ -2,6 +2,7 @@
 
 Planted: 05/17/2022
 Tags: git, #gitPanic
+Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![tweet by amy nguyen me playing video games: save every five minutes me writing code: git commit -am "some changes" (+647, -1049)](https://images.abbeyperini.com/gitPanic/some-changes.webp)
 

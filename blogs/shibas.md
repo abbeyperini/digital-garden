@@ -2,6 +2,7 @@
 
 Planted: 08/30/2021
 Tags: images
+Series: [Images](/series.html?series=images)
 
 ![a chibi shiba inu smiling and sticking its tongue out with a yellow construction hat in a light blue box with "Blogs loading!" on a darker background](https://images.abbeyperini.com/shibas/cover.png)
 

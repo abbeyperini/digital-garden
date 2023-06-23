@@ -2,6 +2,7 @@
 
 Planted: 03/08/2023
 Tags: women in programming
+Series: [Women in Programming](/series.html?series=women)
 
 ![Dolly Parton sitting and typing at a typewriter - image from the movie Nine to Five](https://images.abbeyperini.com/women-in-programming/dollypartonninetofive.jpg)
 

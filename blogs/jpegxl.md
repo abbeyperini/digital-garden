@@ -2,6 +2,7 @@
 
 Planted: 04/27/2022
 Tags: images
+Series: [Images](/series.html?series=images)
 
 ![a lush green forest](https://images.abbeyperini.com/images-series/forest.JPG)
 

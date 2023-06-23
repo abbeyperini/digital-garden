@@ -2,6 +2,7 @@
 
 Planted: 10/14/2022
 Tags: accessibility
+Series: [tabbing](/series.html?series=tabbing)
 
 ![paste orange, pink, purple, and white keys backlit by rainbow rgb lights on a white mistel keyboard](https://images.abbeyperini.com/tabbing/keyboard-3.jpg)
 

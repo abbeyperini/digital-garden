@@ -2,6 +2,7 @@
 
 Planted: 11/06/2021
 Tags: audit, accessibility
+Series: [toggle](/series.html?series=toggle), [accessibility audit](/series.html?series=audit)
 
 ![screenshot of the top portion of Abbey's portfolio site with toggle focused](https://images.abbeyperini.com/audit-series/dark-focus.png)
 

@@ -2,6 +2,7 @@
 
 Planted: 08/22/2022
 Tags: accessibility
+Series: [tabbing](/series.html?series=tabbing)
 
 ![sage, light green, pink, and white keys with swords, snakes, leaves, and moons and a clay Luna the cat key on a white mistel keyboard](https://images.abbeyperini.com/tabbing/keyboard-2.jpg)
 

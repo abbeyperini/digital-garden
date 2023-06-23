@@ -2,6 +2,7 @@
 
 Planted: 04/26/2022
 Tags: images
+Series: [Images](/series.html?series=images)
 
 ![a yellow flower in front of a red background with white numbers](https://images.abbeyperini.com/images-series/flower.JPG)
 

@@ -2,6 +2,7 @@
 
 Planted: 11/29/2022
 Tags: security, web development
+Series: [security](/series.html?series=security)
 
 ![black man tapping his finger to the side of his forehead captioned you can't leak passwords if you don't store passwords](https://images.abbeyperini.com/security-series/password.png)
 

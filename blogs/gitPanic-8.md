@@ -2,6 +2,7 @@
 
 Planted: 11/22/2022
 Tags: git, #gitPanic
+Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![The hulk in a lab with his arms outstretched captioned git reset --hard time travel!](https://images.abbeyperini.com/gitPanic/reset.jpg)
 

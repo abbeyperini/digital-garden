@@ -2,6 +2,7 @@
 
 Planted: 08/08/2022
 Tags: accessibility
+Series: [tabbing](/series.html?series=tabbing)
 
 ![blue, pink, navy, and white keys with dessert icons and a clay Luna the cat key on a white mistel keyboard](https://images.abbeyperini.com/tabbing/keyboard.jpg)
 
