@@ -63,6 +63,6 @@ Did I miss a resource or tip you love? Interested in fidget toy reviews? Leave a
 
 Up next:
 
-- [Can't stop](https://dev.to/abbeyperini/coding-and-adhd-cant-stop-10mf)
-- [Can't Remember](https://dev.to/abbeyperini/coding-and-adhd-cant-remember-30b4)
-- [Where We Excel](https://dev.to/abbeyperini/coding-and-adhd-where-we-excel-454j)
+- [Can't stop](/blog.html?blog=ADHD-4)
+- [Can't Remember](/blog.html?blog=ADHD-5)
+- [Where We Excel](/blog.html?blog=ADHD-6)

@@ -7,7 +7,7 @@ Tags: git, #gitPanic
 
 I only learned about these commands because I was complaining about git not reliably tracking changes to files I made in the [GUI](https://www.gartner.com/en/information-technology/glossary/gui-graphical-user-interface#:~:text=A%20graphics%2Dbased%20operating%20system,Apple%20Macintosh%20in%20the%201980s.) (Finder, VS Code). Turns out git will always track file name changes, moving files, and deleting files ...if you tell it about them.
 
-This blog assumes you have a basic understanding of git and command line or have read [git 101](https://dev.to/abbeyperini/gitpanic-git-101-10db) and [HEAD](https://abbeyperini.hashnode.dev/gitpanic-head).
+This blog assumes you have a basic understanding of git and command line or have read [git 101](/blog.html?blog=gitPanic-1) and [HEAD](/blog.html?blog=gitPanic-4).
 
 1. [git commit](#git-commit)
 2. [git add](#git-add)

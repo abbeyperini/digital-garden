@@ -32,9 +32,9 @@ My whole life, creating has been a necessary outlet. My husband will tell you I 
 
 So I rested. I beat God of War and tried my hand at the Muspelheim and Niflheim trials. I picked up Doom (2016). I dove into growing plants for my garden from seed. I prioritized talking to friends and planned a beach trip.
 
-Then, in June, I did exactly the same thing I did to reset after graduating bootcamp. [I picked a Discord bot idea that wasn't remotely practical and ran with it.](https://dev.to/abbeyperini/panini-bot-1l6i) I was back!
+Then, in June, I did exactly the same thing I did to reset after graduating bootcamp. [I picked a Discord bot idea that wasn't remotely practical and ran with it.](h/blog.html?blog=panini-bot) I was back!
 
-In September, I was diagnosed with ADHD at age 29. I began navigating new medication and a new definition of productivity. I couldn't pick a coding blog topic, so I wrote [a listicle](https://dev.to/abbeyperini/8-things-i-ve-learned-working-in-a-legacy-codebase-4h6c) per the excellent suggestion of a friend.
+In September, I was diagnosed with ADHD at age 29. I began navigating new medication and a new definition of productivity. I couldn't pick a coding blog topic, so I wrote [a listicle](/blog.html?blog=legacy) per the excellent suggestion of a friend.
 
 ![a hamster, fur going in all directions "why yes I am a bit stressed. why do you ask?"](https://images.abbeyperini.com/coding/stressed.jpeg)
 

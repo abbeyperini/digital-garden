@@ -39,7 +39,7 @@ If you think about it, troubleshooting a bug is a series of rabbit holes that le
 
 Those with ADHD often experience more intense emotions, but they also experience them much more quickly. Even if we're stuck in rumination about something, an external distraction that grabs our attention can snap us out of it almost immediately. This means we're pretty easily bribed to move on from something that went poorly with new things, which is a common situation in a development role. Work broken up into sprints really suits us because we know some novel work is often just around the corner.
 
-We're also often sensitive to criticism and praise. Many of us struggle with perfectionism. This means you may have to be more delicate with feedback, but we're highly motivated to refactor our code. In general, frequent rewards and praise from a manager are usually highly effective for those with ADHD. In that vein, I strongly recommend any developer keep a [brag document](https://dev.to/abbeyperini/practicing-confidence-for-the-job-search-38nj#:~:text=trained%20in%20interviewing.-,Practicing%20Confidence,-Write%20it%20down), but it can be especially important for those with ADHD.
+We're also often sensitive to criticism and praise. Many of us struggle with perfectionism. This means you may have to be more delicate with feedback, but we're highly motivated to refactor our code. In general, frequent rewards and praise from a manager are usually highly effective for those with ADHD. In that vein, I strongly recommend any developer keep a [brag document](/blog.html?blog=confidence), but it can be especially important for those with ADHD.
 
 ## Conclusion
 

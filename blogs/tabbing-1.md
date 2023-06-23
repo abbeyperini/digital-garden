@@ -42,7 +42,7 @@ If you need to change the tab order, you really need to change the order the ele
 
 ## DOM Order
 
-Your HTML [acts as a document](https://dev.to/abbeyperini/semantic-html-what-why-and-how-3b34#:~:text=form%20controls%20later.-,Check%20your%20Outline,-Sectioning%20and%20heading). That document is interpreted by the browser and exposed to screen readers and keyboards as the [accessibility tree](https://web.dev/the-accessibility-tree/). Screen readers and keyboards are going to follow that tree, so your document outline needs to make sense, and tab order will follow.
+Your HTML [acts as a document](/blog.html?blog=HTML#:~:text=form%20controls%20later.-,Check%20your%20Outline,-Sectioning%20and%20heading). That document is interpreted by the browser and exposed to screen readers and keyboards as the [accessibility tree](https://web.dev/the-accessibility-tree/). Screen readers and keyboards are going to follow that tree, so your document outline needs to make sense, and tab order will follow.
 
 Tabbing is going to focus elements in the order they appear in the DOM/accessibility tree, not the order in which they're positioned.
 
@@ -84,13 +84,13 @@ This also means the reverse is true.
 }
 ```
 
-My close button would appear on the right side of the container after the list and "Click me!" button, but it would still be the first thing focused by <kbd>tab</kbd>. This way, you could position the close button at the top right of a container and it will look nice and still be focused first.
+My close button would appear on the right side of the container after the list and "Click me!" button, but it would still be the first thing focused by tab. This way, you could position the close button at the top right of a container and it will look nice and still be focused first.
 
 To inspect the accessibility tree, you can use the [Chrome DevTools full accessibility tree](https://developer.chrome.com/blog/full-accessibility-tree/) or the Firefox DevTools Accessibility Inspector, which has a fancy [tab order view](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/#show-web-page-tabbing-order).
 
 ## Keyboard Controls
 
-These articles are focused on tabbing, but some other keyboard controls quickly come into play when you start tabbing around. For instance, links should open when you press <kbd>enter</kbd> and buttons should activate when you press <kbd>enter</kbd> or <kbd>space</kbd>. Meanwhile, you can focus a group of radio buttons with <kbd>tab</kbd>, but use the arrow keys to move between them. Take a look at [WebAIM's list of keyboard controls](https://webaim.org/techniques/keyboard/#testing) when testing your site to make sure your interactive elements have the behavior a keyboard user would expect.
+These articles are focused on tabbing, but some other keyboard controls quickly come into play when you start tabbing around. For instance, links should open when you press enter and buttons should activate when you press enter or space. Meanwhile, you can focus a group of radio buttons with tab, but use the arrow keys to move between them. Take a look at [WebAIM's list of keyboard controls](https://webaim.org/techniques/keyboard/#testing) when testing your site to make sure your interactive elements have the behavior a keyboard user would expect.
 
 ## Event Listeners and KeyboardEvent
 
@@ -149,6 +149,6 @@ Always be associating labels with your inputs.
 <input id="name" type="text">
 ```
 
-Focusing the `<label>` is the same as focusing its associated `<input>`. This makes focusing, clicking, and interacting with them easier, and [can be used creatively](https://dev.to/abbeyperini/an-accessible-dark-mode-toggle-in-react-aop). It can also make troubleshooting focus a little trickier!
+Focusing the `<label>` is the same as focusing its associated `<input>`. This makes focusing, clicking, and interacting with them easier, and [can be used creatively](/blog.html?blog=audit-3). It can also make troubleshooting focus a little trickier!
 
 Speaking of, the next article will discuss troubleshooting when tabbing goes topsy-turvy.

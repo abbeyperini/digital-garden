@@ -135,7 +135,7 @@ Again, the best way to stop this kind of attack is to never use user input in an
 
 Since I touched on access control in listing and it kind of applies here, I wanted to briefly mention something I see a lot - client-side authorization.
 
-As I harped on in [Secrets](https://dev.to/abbeyperini/web-security-101-part-1-secrets-5e39), the user has access to everything in the browser. If you conditionally load components using state variables based on the user's role, it's pretty dang easy for a user to figure it out and change the value in DevTools. Same goes for using the router, e.g. just changing the URL. Once you start seeing patterns in URL parameters, it's trivial to start guessing at what other values might get you.
+As I harped on in [Secrets](/blog.html?blog=security-1), the user has access to everything in the browser. If you conditionally load components using state variables based on the user's role, it's pretty dang easy for a user to figure it out and change the value in DevTools. Same goes for using the router, e.g. just changing the URL. Once you start seeing patterns in URL parameters, it's trivial to start guessing at what other values might get you.
 
 If you don't validate that the user is who they say they are on the back-end every time they try to access information, anyone can impersonate another user or role. These checks are  important if there's user input and doubly so if that user input is put into the database.
 

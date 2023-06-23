@@ -5,7 +5,7 @@ Tags: audit, accessibility
 
 ![Frodo on Mount Doom with fire in the background captioned it's done it's over now](https://images.abbeyperini.com/audit-series/done.jpg)
 
-Read [Part 1 - The Audit](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-1-2k8k), [Part 2 - Quick Fixes](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-2-36p1), [Part 3 - Dark Mode Toggle](https://dev.to/abbeyperini/an-accessible-dark-mode-toggle-in-react-aop), [Part 4 - Blog Preview Component](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-4-omb) and [Part 5 - Blog Page Deep Dive](https://dev.to/abbeyperini/blog-page-accessibility-deep-dive-1hbl).
+Read [Part 1 - The Audit](/blog.html?blog=audit-1), [Part 2 - Quick Fixes](/blog.html?blog=audit-2), [Part 3 - Dark Mode Toggle](/blog.html?blog=audit-3), [Part 4 - Blog Preview Component](/blog.html?blog=audit-4) and [Part 5 - Blog Page Deep Dive](/blog.html?blog=audit-5).
 
 We've finally reached the end. If you've read multiple articles in this series, I want to thank you, especially. It was quite a dense journey.
 
@@ -15,7 +15,7 @@ I'm going to finish up with a [final round of testing](#final-testing), a [final
 
 ### Automated Tools
 
-In [Part 1](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-1-2k8k), I used 6 of the tools Todd used: [WAVE browser extension](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh), Firefox's accessibility dev tools tab, [axe DevTools extension](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US), [ARC dev toolkit for chrome dev tools](https://chrome.google.com/webstore/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce), [IBM Equal Access Accessibility checker](https://chrome.google.com/webstore/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?hl=en-US), and [Microsoft Accessibility Insights](https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni). So let's go through that list again and see what we find.
+In [Part 1](/blog.html?blog=audit-1), I used 6 of the tools Todd used: [WAVE browser extension](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh), Firefox's accessibility dev tools tab, [axe DevTools extension](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US), [ARC dev toolkit for chrome dev tools](https://chrome.google.com/webstore/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce), [IBM Equal Access Accessibility checker](https://chrome.google.com/webstore/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?hl=en-US), and [Microsoft Accessibility Insights](https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni). So let's go through that list again and see what we find.
 
 Most of the tools returned an error about not having an `<h1>`, because I want it to be visually hidden, I'll be fixing that when I get to [this Github issue](https://github.com/abbeyperini/Portfolio2.0/issues/3).
 
@@ -25,7 +25,7 @@ ARC is down to primarily false positives. There were a couple I had to look up t
 
 ![ARC dev toolkit after scanning the blog page on abbeyperini.dev](https:/images.abbeyperini.com/audit-series/arc-blog.png)
 
-The IBM Equal Access Accessibility checker just stopped working. It refused to scan even after I restarted Chrome,  uninstalled and reinstalled it in Chrome, and installed it in Firefox. I saw something about the ruleset being undefined, so hopefully they fix that soon. Luckily, I ran it multiple times in [Part 5](https://dev.to/abbeyperini/blog-page-accessibility-deep-dive-1hbl) so I'm comfortable with moving on.
+The IBM Equal Access Accessibility checker just stopped working. It refused to scan even after I restarted Chrome,  uninstalled and reinstalled it in Chrome, and installed it in Firefox. I saw something about the ruleset being undefined, so hopefully they fix that soon. Luckily, I ran it multiple times in [Part 5](/blog.html?blog=audit-5) so I'm comfortable with moving on.
 
 The Microsoft Accessibility Insights Fast Pass didn't find anything that wasn't already on my radar, but I will be using the Assessment option as a guide for my manual testing again.
 
@@ -89,7 +89,7 @@ In Safari, my blog preview component has square edges around the scrollbar I was
 
 ## Final Fix
 
-I wanted to sift through all my blogs to make sure I'm not using words like "above" and "below" where they wouldn't make sense without visual context. The warnings came from the IBM Equal Access Accessibility checker, so while that's broken, I'm relegated to using <kbd>ctrl</kbd> + <kbd>F</kbd> to find "above", "below", "left", and "right." Lo and behold, I've already used "above" a couple times since I fixed the instances of "below" on my main page! This is a hard habit to break.
+I wanted to sift through all my blogs to make sure I'm not using words like "above" and "below" where they wouldn't make sense without visual context. The warnings came from the IBM Equal Access Accessibility checker, so while that's broken, I'm relegated to using ctrl + F to find "above", "below", "left", and "right." Lo and behold, I've already used "above" a couple times since I fixed the instances of "below" on my main page! This is a hard habit to break.
 
 For the most part, I can just remove the word without issue. In some places, I replace "above" with "before" and "below" with "following." I quickly find I sure do love a good "comment below."
 
@@ -97,15 +97,15 @@ For the most part, I can just remove the word without issue. In some places, I r
 
 I opened [5 issues on Github](https://github.com/abbeyperini/Portfolio2.0/issues) over the course of this series. #3, #9, and #11 are easily large enough accessibility projects to deserve standalone blog posts.
 
-Updating my skills section is just something I need to keep on top of as I grow as a developer. Moving my CSS away from dozens of margins will make it much easier to add to my site in the future. Similarly, I need to come up with a solution for my local lambda server [environment variables](https://dev.to/abbeyperini/a-walkthrough-of-updating-my-portfolio-site-with-netlify-functions-and-the-dev-to-api-dd2#:~:text=While%20trying%20to%20get%20to%20sleep%2C) that doesn't involve hardcoded links and pasting in my DEV API key.
+Updating my skills section is just something I need to keep on top of as I grow as a developer. Moving my CSS away from dozens of margins will make it much easier to add to my site in the future. Similarly, I need to come up with a solution for my local lambda server [environment variables](/blog.html?blog=serverless#:~:text=While%20trying%20to%20get%20to%20sleep%2C) that doesn't involve hardcoded links and pasting in my DEV API key.
 
-I also need to transfer changes I've made to blogs on DEV to Hashnode and maybe Medium. If I changed words, I made sure to make changes everywhere. I didn't transfer the heading and formatting changes because they often vary across sites and the last blog was a slog. Plus, I'm in the middle of cross posting everything to [Tealfeed](https://tealfeed.com/abbeyperini) and reformatting [Part 5](https://dev.to/abbeyperini/blog-page-accessibility-deep-dive-1hbl) for Medium was a nightmare, so I may be ditching Medium. I need to make some decisions before I spend time on this.
+I also need to transfer changes I've made to blogs on DEV to Hashnode and maybe Medium. If I changed words, I made sure to make changes everywhere. I didn't transfer the heading and formatting changes because they often vary across sites and the last blog was a slog. Plus, I'm in the middle of cross posting everything to [Tealfeed](https://tealfeed.com/abbeyperini) and reformatting [Part 5](/blog.html?blog=audit-5) for Medium was a nightmare, so I may be ditching Medium. I need to make some decisions before I spend time on this.
 
 ![Frodo on Mount Doom "It's done. It's over now."](https://images.abbeyperini.com/audit-series/done.jpg)
 
 ## Main Takeaways
 
-Running ARC Toolkit on my blog page now vs when I started is like night and day. I got a huge amount of errors back in [Part 1](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-1-2k8k), but now it's all warnings and two things I'm going to fix in those Github issues. On the flip side, I don't think IBM Equal Access Accessibility checker's % of components without issues metric moved during this entire series. I'm pretty sure I saw 93% the whole time.
+Running ARC Toolkit on my blog page now vs when I started is like night and day. I got a huge amount of errors back in [Part 1](/blog.html?blog=audit-1), but now it's all warnings and two things I'm going to fix in those Github issues. On the flip side, I don't think IBM Equal Access Accessibility checker's % of components without issues metric moved during this entire series. I'm pretty sure I saw 93% the whole time.
 
 Quite a few of these things get harder to maintain the more blogs I write. I feel like I could use an editorial team for making sure I stick to one way of doing things in my blog text already (e.g. do I capitalize "Part" and link to the blog every time I refer to another part of this series?). Similarly, I'm not sure I'm applying the recommended approach the same way across the board for some of the errors and warnings I tried to fix, like using `<q>` and `<quoteblocks>`. I went through and made sure that what I have won't leave a screen reader user without required context, but in the case of `<q>`s, I use quotes stylistically a lot, so they're not really conveying meaning, but are still triggering automated tool warnings.
 
@@ -117,7 +117,7 @@ Just like learning a new language or technology, a lot of these things need prac
 
 I want to emphasize that if you want to improve your site's accessibility, an audit and fix process this intense right off the bat is not necessary.
 
-In code, like in life, it is nigh impossible to reach 100% perfection and you certainly cannot do it quickly. [Part 2](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-2-36p1) demonstrates that starting with small, simple fixes can still make a decent improvement. Had I not literally heard Todd say "No site is 100% accessible, especially as you update it, but we can aim to get close," I may have given in to the pressure to strive for perfection and never finished.
+In code, like in life, it is nigh impossible to reach 100% perfection and you certainly cannot do it quickly. [Part 2](/blog.html?blog=audit-2) demonstrates that starting with small, simple fixes can still make a decent improvement. Had I not literally heard Todd say "No site is 100% accessible, especially as you update it, but we can aim to get close," I may have given in to the pressure to strive for perfection and never finished.
 
 All of the tools I used gave me a ginormous list of things to check. That was after I knew I could ignore quite a few of the warnings. When I was watching [Todd's Lunch and Learn](https://www.youtube.com/watch?v=BhUtMZtv-DQ), I was struck by how many of the rules he knew off the top of his head. If you had to research whether each and every false positive, warning, and recommendation was pertinent, it would get very overwhelming very fast.
 

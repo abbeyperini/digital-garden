@@ -5,7 +5,7 @@ Tags: images
 
 ![Abbey Perini Full-Stack Web Developer with a logo that looks like a brain with a threaded needle coming off of it](https://images.abbeyperini.com/images-series/banner.png)
 
-I mentioned `<link rel="icon" type="image/x-icon" href="/images/favicon.ico">` as part of webpage SEO in [Semantic HTML: What, Why, and How](https://dev.to/abbeyperini/semantic-html-what-why-and-how-3b34). Someone asked a great question - why does the MIME type in the `<link>` tag `type=""` attribute have to be `image/x-icon`? The answer is it doesn't, but it's still a good idea to include an ICO file. Let's dig into how to leverage favicons to their fullest.
+I mentioned `<link rel="icon" type="image/x-icon" href="/images/favicon.ico">` as part of webpage SEO in [Semantic HTML: What, Why, and How](/blog.html?blog=HTML). Someone asked a great question - why does the MIME type in the `<link>` tag `type=""` attribute have to be `image/x-icon`? The answer is it doesn't, but it's still a good idea to include an ICO file. Let's dig into how to leverage favicons to their fullest.
 
 ## Table of Contents
 
@@ -30,9 +30,9 @@ There are also security concerns - attackers can change the favicon of a site to
 
 [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) are a way to communicate file or data format to a browser. For favicons, they're used in the `type=""` attribute in the `<link>` tag.
 
-In 2003, the [ICO format](https://dev.to/abbeyperini/what-is-ico-2g8m) was registered under the MIME type `image/vnd.microsoft.icon`, but it wasn't registered by Microsoft, and Internet Explorer doesn't recognize it. The ICO MIME type used today is `image/x-icon`.
+In 2003, the [ICO format](/blog.html?blog=ico) was registered under the MIME type `image/vnd.microsoft.icon`, but it wasn't registered by Microsoft, and Internet Explorer doesn't recognize it. The ICO MIME type used today is `image/x-icon`.
 
-These days, you aren't limited to using just the ICO format. You can use the Apple Icon Image format (ICNS), non-animated GIFs, [PNGs, and SVGs](https://caniuse.com/?search=favicon). However, Apple has moved away from ICNS files to using an [asset catalogue](https://developer.apple.com/documentation/xcode/configuring-your-app-icon) in apps and they're less supported than ICO. One of the reasons the ICO format exists is because raster images have trouble scaling up. As favicons, PNGs (MIME type `image/png`) almost have full browser support. SVGs (MIME type `image/svg+xml`) have almost reached 75% browser support. Finally, there's no real benefit to using non-animated GIFs over PNG. (I cover raster vs vector images, SVG, PNG, JPEG, and GIF in [Sourcing Images and Optimizing Them for the Web](https://dev.to/abbeyperini/sourcing-images-and-optimizing-them-for-the-web-1j5b).)
+These days, you aren't limited to using just the ICO format. You can use the Apple Icon Image format (ICNS), non-animated GIFs, [PNGs, and SVGs](https://caniuse.com/?search=favicon). However, Apple has moved away from ICNS files to using an [asset catalogue](https://developer.apple.com/documentation/xcode/configuring-your-app-icon) in apps and they're less supported than ICO. One of the reasons the ICO format exists is because raster images have trouble scaling up. As favicons, PNGs (MIME type `image/png`) almost have full browser support. SVGs (MIME type `image/svg+xml`) have almost reached 75% browser support. Finally, there's no real benefit to using non-animated GIFs over PNG. (I cover raster vs vector images, SVG, PNG, JPEG, and GIF in [Sourcing Images and Optimizing Them for the Web](/blog.html?blog=images).)
 
 ![aliens meme captioned MIME types](https://images.abbeyperini.com/images-series/mime.jpeg)
 
@@ -73,13 +73,13 @@ To create my image files, I open the original SVG I drew in Photoshop. I add an 
 
 Then, I locate the file in Finder, `right click > duplicate` twice, and use Preview's adjust size option (under Tools) to create two PNG files - logo192.png that is 192 x 192 pixels and apple-touch-icon.png that is 180 x 180 pixels. The only Apple size the second PNG won't cover is the 195 x 195 pixels Opera Speed Dial image. I double check with Preview that scaling apple-touch-icon.png up doesn't look too terribly pixelated before moving on.
 
-There are [many many ways to create ICO files](https://dev.to/abbeyperini/what-is-ico-2g8m#:~:text=There%20are%20so%20many%20ways%20to%20convert%20images%20to%20ICO%20format). I upload the logo512.png image to [Favicon Generator](https://favicon.io/favicon-converter/). Not only do I get a favicon.ico file in seconds, but the folder also includes the sizes I've already made and more.
+There are [many many ways to create ICO files](/blog.html?blog=ico#:~:text=There%20are%20so%20many%20ways%20to%20convert%20images%20to%20ICO%20format). I upload the logo512.png image to [Favicon Generator](https://favicon.io/favicon-converter/). Not only do I get a favicon.ico file in seconds, but the folder also includes the sizes I've already made and more.
 
 ## Code
 
 Like how the `type=""` attribute in the HTML `<link>` tag tells the browser what format my image file is in, the `sizes=""` attribute tells browsers the size of my file so it can choose the best option to display.
 
-To update my favicon, I need to update two <link> tags in my [index.html](https://github.com/abbeyperini/Portfolio2.0/blob/master/portfolio/public/index.html) file. Because of how React works, the two paths in my `href=""` attributes start with `%PUBLIC_URL%` before the `/`, but here's the code with a more universal path:
+To update my favicon, I need to update two `<link>` tags in my [index.html](https://github.com/abbeyperini/Portfolio2.0/blob/master/portfolio/public/index.html) file. Because of how React works, the two paths in my `href=""` attributes start with `%PUBLIC_URL%` before the `/`, but here's the code with a more universal path:
 
 ```HTML
 <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" type="image/x-icon">

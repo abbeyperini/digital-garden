@@ -5,13 +5,13 @@ Tags: HTTP
 
 ![a picture of Dwight from the office captioned HTTP request? XMLHTTPREQUEST](https://images.abbeyperini.com/HTTP-series/dwight.png)
 
-In this part of the series, I'll demonstrate generating HTTP requests from a simple React app using XHR, Fetch, and Axios. You can view all of the code in the [Github repository](https://github.com/abbeyperini/HTTP101). After this, in A [Beginner's Guide to HTTP - Part 4: APIs](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-4-apis-449f), we'll have some fun with APIs other people have built. Finally, we'll discuss authentication and authorization in [A Beginner's Guide to HTTP - Part 5: Authentication](https://dev.to/abbeyperini/beginners-guide-to-http-part-5-authentication-3p2p).
+In this part of the series, I'll demonstrate generating HTTP requests from a simple React app using XHR, Fetch, and Axios. You can view all of the code in the [Github repository](https://github.com/abbeyperini/HTTP101). After this, in A [Beginner's Guide to HTTP - Part 4: APIs](/blog.html?blog=HTTP-4), we'll have some fun with APIs other people have built. Finally, we'll discuss authentication and authorization in [A Beginner's Guide to HTTP - Part 5: Authentication](/blog.html?blog=HTTP-5).
 
-I covered terms and definitions necessary for understanding HTTP messages in [part 1](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-1-definitions-38m7). Then, I demonstrated how to generate response messages in [part 2](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-2-an-app-and-a-server-211p). So we know before sending the request message with instructions for the server, the client has to encode it and attach the information the server will need to decode it. Then, after the client receives a response back from the server, it will also need to be decoded. Let's dive in to the code required to do all that.
+I covered terms and definitions necessary for understanding HTTP messages in [part 1](/blog.html?blog=HTTP-1). Then, I demonstrated how to generate response messages in [part 2](/blog.html?blog=HTTP-2). So we know before sending the request message with instructions for the server, the client has to encode it and attach the information the server will need to decode it. Then, after the client receives a response back from the server, it will also need to be decoded. Let's dive in to the code required to do all that.
 
 ## Introduction and Table of Contents
 
-This article assumes familiarity with basic JavaScript, [command line](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line), and the terms defined in [part 1](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-1-definitions-38m7). It also assumes you followed [part 2](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-2-an-app-and-a-server-211p).
+This article assumes familiarity with basic JavaScript, [command line](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line), and the terms defined in [part 1](/blog.html?blog=HTTP-1). It also assumes you followed [part 2](/blog.html?blog=HTTP-2).
 
 1. [A Simple React App](#a-simple-react-app)
 2. [JSON.parse() and JSON.stringify()](#jsonparse-and-jsonstringify)
@@ -27,7 +27,7 @@ After it finishes installing, run `npx create-react-app <app-name>` and follow t
 
 After it's done, in addition to the new folders and files, you should see "Success! Created `<app-name>`" and other successful build logs in your terminal. Run `npm start`, and you should see build logs and "Compiled successfully!". Your browser should open a new tab navigated to the URL `http://localhost:3000/` with the boilerplate React app displayed.
 
-Like with the Node.js Express server, use <kbd>ctrl</kbd> + <kbd>c</kbd> to kill the app. Unlike with the server, the React development build will watch for changes and rebuild for you.
+Like with the Node.js Express server, use ctrl + c to kill the app. Unlike with the server, the React development build will watch for changes and rebuild for you.
 
 Open `client > src > index.js` in your text editor. This file is the JavaScript entry point. In other words, any components we create need to be imported here to be rendered when the app runs. I import my 3 components like this:
 
@@ -274,7 +274,7 @@ function getRequest(callback) {
 getRequest(parseData)
 ```
 
-Notice I didn't write any error handling to replace `.catch()`. `.catch()` is there to handle errors that happen within the Fetch request. It is triggered by a JavaScript error. To handle a response with a 500 status code, or server error, I would have to check the response after I've received it to verify it's an error. We'll go into this more in [part 4](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-4-apis-449f).
+Notice I didn't write any error handling to replace `.catch()`. `.catch()` is there to handle errors that happen within the Fetch request. It is triggered by a JavaScript error. To handle a response with a 500 status code, or server error, I would have to check the response after I've received it to verify it's an error. We'll go into this more in [part 4](/blog.html?blog=HTTP-4).
 
 ### POST
 
@@ -345,7 +345,7 @@ function getRequest() {
   }
 ```
 
-Right off the bat you can see how this format is closer to the Express server than XHR. Furthermore, you may have noticed I didn't have to parse the body of the response - Axios does that for us. As part of that formatting, the structure of the response object we can reference is changed - instead of `response.body`, I have to reference `response.data`. Because they have it [in the docs](https://github.com/axios/axios#request-config), I knew to expect that. We'll delve into evaluating response format when you don't know what to expect in [part 4](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-4-apis-449f).
+Right off the bat you can see how this format is closer to the Express server than XHR. Furthermore, you may have noticed I didn't have to parse the body of the response - Axios does that for us. As part of that formatting, the structure of the response object we can reference is changed - instead of `response.body`, I have to reference `response.data`. Because they have it [in the docs](https://github.com/axios/axios#request-config), I knew to expect that. We'll delve into evaluating response format when you don't know what to expect in [part 4](/blog.html?blog=HTTP-4).
 
 ### POST
 
@@ -391,4 +391,4 @@ Starting with XHR and ending with Axios, you can really see how HTTP request pac
 
 If you're left confused or have any questions about any of the topics I've touched on in this part of the series, please don't hesitate to leave a comment!
 
-Now we know how requests and responses are generated in JavaScript. Checkout [A Beginner's Guide to HTTP - Part 4: APIs](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-4-apis-449f) for evaluating APIs other people have built and displaying the data you get back in your own app.
+Now we know how requests and responses are generated in JavaScript. Checkout [A Beginner's Guide to HTTP - Part 4: APIs](/blog.html?blog=HTTP-4) for evaluating APIs other people have built and displaying the data you get back in your own app.

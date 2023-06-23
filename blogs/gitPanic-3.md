@@ -7,7 +7,7 @@ tags: git, #gitPanic
 
 When I started my current role, I had been using git in a professional setting, but not GitHub. I was surprised to find out how much I had to interact with other developers to get my code deployed. Let's talk about expectations when working with other developers in a repo.
 
-This article assumes you already have a general understanding of git or have read [git 101](https://dev.to/abbeyperini/gitpanic-git-101-10db) and [merging and rebasing](https://dev.to/abbeyperini/gitpanic-merging-and-rebasing-2mo3).
+This article assumes you already have a general understanding of git or have read [git 101](/blog.html?blog=gitPanic-1) and [merging and rebasing](/blog.html?blog=gitPanic-2).
 
 1. [Protections](#protections)
 2. [Environments](#environments)
@@ -74,7 +74,7 @@ When I introduced committing, I used
 git commit -m "message"
 ```
 
-The `-m` option allows you to pass a message string inline. If you don't add this option to the command, this is another time git will [open a window](https://dev.to/abbeyperini/gitpanic-merging-and-rebasing-2mo3#:~:text=will%20need%20to-,open%20a%20window,-to%20allow%20you) to allow you to edit something. I personally use [VS Code's integrated source control management](https://code.visualstudio.com/docs/sourcecontrol/overview) for my commit messages. I've added a blog I wrote about [commit message templates](https://dev.to/abbeyperini/git-commit-message-template-in-terminal-and-vs-code-326p) to this series. A commit message template will remind you of what information to include and how many characters you have to do it when you go to write the message.
+The `-m` option allows you to pass a message string inline. If you don't add this option to the command, this is another time git will [open a window](/blog.html?blog=gitPanic-2#:~:text=will%20need%20to-,open%20a%20window,-to%20allow%20you) to allow you to edit something. I personally use [VS Code's integrated source control management](https://code.visualstudio.com/docs/sourcecontrol/overview) for my commit messages. I've added a blog I wrote about [commit message templates](/blog.html?blog=commit) to this series. A commit message template will remind you of what information to include and how many characters you have to do it when you go to write the message.
 
 There is even an amend option that allows you to edit the last commit you made if you forgot something, including changes you forgot to stage:
 
@@ -124,4 +124,4 @@ Open source contributions are great for your career and growth as a developer. L
 
 You can end up spending a lot of your work day in GitHub, so hopefully this introduction gives you the terminology you need to hit the ground running.
 
-Up next I'll cover [refs and HEAD in git](https://dev.to/abbeyperini/gitpanic-head-37m8).
+Up next I'll cover [refs and HEAD in git](/blog.html?blog=gitPanic-4).

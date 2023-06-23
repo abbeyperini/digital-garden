@@ -199,7 +199,7 @@ function Toggle() {
 
 ## Update
 
-To see how I have refactored the logic of this component and made it accessible, read [An Accessible Dark Mode Toggle in React](https://dev.to/abbeyperini/an-accessible-dark-mode-toggle-in-react-aop).
+To see how I have refactored the logic of this component and made it accessible, read [An Accessible Dark Mode Toggle in React](/blog.html?blog=audit-3).
 
 Finally, my favorite part: the color switching SVGs! CSS variables work in SVG code too!
 

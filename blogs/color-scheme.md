@@ -4,7 +4,7 @@ Planted: 04/21/2023
 
 ![screenshot of abbey's portfolio site menu with dark mode toggle in it](https://images.abbeyperini.com/color-scheme/cover.png)
 
-When I wrote [An Accessible Dark Mode Toggle in React](https://dev.to/abbeyperini/an-accessible-dark-mode-toggle-in-react-aop) back in 2021, @grahamthedev suggested I implement a [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) check in my theme setter. I finally got around to it.
+When I wrote [An Accessible Dark Mode Toggle in React](/blog.html?blog=audit-3) back in 2021, @grahamthedev suggested I implement a [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) check in my theme setter. I finally got around to it.
 
 1. [What is `prefers-color-scheme`?](#what-is-prefers-color-scheme)
 2. [Emulating User Preference for Testing](#emulating-user-preference-for-testing)

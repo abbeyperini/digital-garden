@@ -20,7 +20,7 @@ Starting my web security series by sharing my secrets - just kidding! Let's talk
 
 Environment variables are like global server variables. They're often used for secrets and sensitive information. There are ways to expose them to front-end code in the browser, but then they're not secrets anymore. Anyone can find them.
 
-There are packages like [dotenv](https://www.npmjs.com/package/dotenv) that allow you to configure environment variables in files (just remember to put them in your [`.gitignore`](https://dev.to/abbeyperini/gitpanic-git-101-10db#:~:text=a%20file%20called-,.gitignore,-in%20the%20root)). You can configure them when you host a site using a platform like [Heroku](https://devcenter.heroku.com/articles/config-vars) or [Netlify](https://docs.netlify.com/configure-builds/environment-variables/).
+There are packages like [dotenv](https://www.npmjs.com/package/dotenv) that allow you to configure environment variables in files (just remember to put them in your [`.gitignore`](/blog.html?blog=gitPanic-1#:~:text=a%20file%20called-,.gitignore,-in%20the%20root)). You can configure them when you host a site using a platform like [Heroku](https://devcenter.heroku.com/articles/config-vars) or [Netlify](https://docs.netlify.com/configure-builds/environment-variables/).
 
 You can also set them in your terminal environment [manually](https://www.schrodinger.com/kb/1842) or in [files your terminal uses](https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-linux#:~:text=has%20been%20unset.-,Setting%20Environmental%20Variables%20at%20Login,-We%E2%80%99ve%20already%20mentioned).
 
@@ -40,9 +40,9 @@ Depending on how you deploy, it's also possible to have separate projects for ea
 
 ## Secret Servers
 
-You may be asked to use a secret server to store your secrets. Some are set up similar to a password manager - just  to share credentials. Others are servers that allow you retrieve secrets with an [authenticated](https://dev.to/abbeyperini/beginners-guide-to-http-part-5-authentication-3p2p) [HTTP request](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-3-requests-63).
+You may be asked to use a secret server to store your secrets. Some are set up similar to a password manager - just  to share credentials. Others are servers that allow you retrieve secrets with an [authenticated](/blog.html?blog=HTTP-5) [HTTP request](/blog.html?blog=HTTP-3).
 
-Products like [Google Cloud](https://cloud.google.com/secret-manager) have the authentication, [authorization](https://dev.to/abbeyperini/beginners-guide-to-http-part-5-authentication-3p2p#:~:text=Authentication%20is%20proving%20who%20you%20are.%20Authorization%20is%20being%20granted%20access%20based%20on%20who%20you%20are.), secret storage, and secret retrieval built into the system you use to deploy your code.
+Products like [Google Cloud](https://cloud.google.com/secret-manager) have the authentication, [authorization](/blog.html?blog=HTTP-5#:~:text=Authentication%20is%20proving%20who%20you%20are.%20Authorization%20is%20being%20granted%20access%20based%20on%20who%20you%20are.), secret storage, and secret retrieval built into the system you use to deploy your code.
 
 If secrets are stored this way, instead of hardcoded in an environment variable, it's much easier to rotate them frequently.
 

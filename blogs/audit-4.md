@@ -5,13 +5,13 @@ Tags: audit, accessibility
 
 ![screenshot of the blog component on Abbey's portfolio site](https://images.abbeyperini.com/audit-series/blog.png)
 
-Read [Part 1 - The Audit](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-1-2k8k), [Part 2 - Quick Fixes](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-2-36p1), and [Part 3 - Dark Mode Toggle](https://dev.to/abbeyperini/an-accessible-dark-mode-toggle-in-react-aop).
+Read [Part 1 - The Audit](/blog.html?blog=audit-1), [Part 2 - Quick Fixes](/blog.html?blog=audit-2), and [Part 3 - Dark Mode Toggle](/blog.html?blog=audit-3).
 
 This blog will focus on making the [blog preview component code](https://github.com/abbeyperini/Portfolio2.0/blob/master/portfolio/src/components/Blog.js) on the main page of my site more accessible.
 
 ## The Problems
 
-First, I want to update the blog preview component to always return a `<section>` and `<h1>`. Currently, the error or loading text is returned with just a [Shiba Inu SVG](https://dev.to/abbeyperini/adding-shiba-inu-loading-and-error-svgs-to-my-react-site-lnj). Also, I need revisit the CSS so this component is uniform with the rest of the site.
+First, I want to update the blog preview component to always return a `<section>` and `<h1>`. Currently, the error or loading text is returned with just a [Shiba Inu SVG](/blog.html?blog=shibas). Also, I need revisit the CSS so this component is uniform with the rest of the site.
 
 Next, the individual blog previews within the component aren't focusable when you're using a keyboard. Once I've made the previews focusable, keyboard and screen reader users need to be able to scroll horizontally... without getting trapped.
 
@@ -19,7 +19,7 @@ Finally, when I was manually testing, I noticed that it wasn't obvious to a scre
 
 ## Uniformity, but with Meaning
 
-This is the easiest to do, and requires my [lambdas](https://dev.to/abbeyperini/a-walkthrough-of-updating-my-portfolio-site-with-netlify-functions-and-the-dev-to-api-dd2) to be off, so I'm starting here. I import Error and Loading components into my blog preview component, so I'll need to add the `<section>` and `<h1>` within them. To maintain functionality, I also had to pass down my `chooseComponent` function in `props`.
+This is the easiest to do, and requires my [lambdas](/blog.html?blog=serverless) to be off, so I'm starting here. I import Error and Loading components into my blog preview component, so I'll need to add the `<section>` and `<h1>` within them. To maintain functionality, I also had to pass down my `chooseComponent` function in `props`.
 
 For example, my Error component now looks like this:
 
@@ -65,9 +65,9 @@ return (
 )
 ```
 
-Honestly, I have no idea why I didn't just use a `<button>` in the first place. I mean, the CSS class is called `preview_button`, for heaven's sake. I would like to say I was focused on heading hierarchy, but I wrapped the "Blog" `<button>` in an `<h1>` in [Part 2](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-2-36p1) of this blog series. However, my `preview_button` rule applies perfectly, including the focus/hover outline:
+Honestly, I have no idea why I didn't just use a `<button>` in the first place. I mean, the CSS class is called `preview_button`, for heaven's sake. I would like to say I was focused on heading hierarchy, but I wrapped the "Blog" `<button>` in an `<h1>` in [Part 2](/blog.html?blog=audit-2) of this blog series. However, my `preview_button` rule applies perfectly, including the focus/hover outline:
 
-![screenshot of abbeyperini.dev in light mode with one of the blog preview title buttons focused](https://images.abbeyperini.com/audit-series/light-blog-tag.png)
+![screenshot of abbeyperini.dev in light mode with one of the blog preview title buttons focused](https://images.abbeyperini.com/audit-series/light-blog-tab.png)
 
 ## Horizontal Scrolling
 
@@ -100,7 +100,7 @@ Turns out, I had no idea what a [keyboard trap](https://www.nomensa.com/blog/wha
 
 That's an audit, some quick fixes, and 2 problematic components down - one massive blog styling revamp to go! I am quite relieved this component was so easily fixed.
 
-[Read Part 5 - Blog Page Accessibility Deep Dive](https://dev.to/abbeyperini/blog-page-accessibility-deep-dive-1hbl)
+[Read Part 5 - Blog Page Accessibility Deep Dive](/blog.html?blog=5)
 In which I find a security vulnerability, write a surprising number of regexes, and this series becomes a thesis.
 
-[Read Part 6 - The Finale](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-6-254l)
+[Read Part 6 - The Finale](/blog.html?blog=6)

@@ -5,7 +5,7 @@ tags: git, #gitPanic
 
 ![One astronaut staring at git and saying "There's a conflict with my branch?" andother astronaut behind them with a gun says "Always has been"](https://images.abbeyperini.com/gitPanic/conflict.jpeg)
 
-[The last blog](https://dev.to/abbeyperini/gitpanic-git-101-10db) covered adding your changes to a remote branch, but what if other developers are working in the repo at the same time as you? How do you add changes from one branch to another?
+[The last blog](/blog.html?blog=gitPanic-1) covered adding your changes to a remote branch, but what if other developers are working in the repo at the same time as you? How do you add changes from one branch to another?
 
 1. [Merging](#merging)
 2. [Rebasing](#rebasing)
@@ -77,7 +77,7 @@ git push --force-with-lease
 
 so that that it will not overwrite any work on the remote branch that you don't have in your local branch.
 
-This understanding of merge vs rebase is already a powerful tool in your tool belt. If you want full control over your commit history, you can use [interactive rebase](https://dev.to/abbeyperini/gitpanic-interactive-rebase-48fe). It's a powerful tool and complicated enough that I've chosen to cover it separately.
+This understanding of merge vs rebase is already a powerful tool in your tool belt. If you want full control over your commit history, you can use [interactive rebase](/blog.html?blog=gitPanic-5). It's a powerful tool and complicated enough that I've chosen to cover it separately.
 
 ## Cherry-picking
 

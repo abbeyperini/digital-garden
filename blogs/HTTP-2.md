@@ -5,13 +5,13 @@ Tags: HTTP
 
 ![a young white boy in front of a retro computer with a thumbs up captioned 200 OK](https://images.abbeyperini.com/HTTP-series/200-ok.png)
 
-In this part of the series, I'll demonstrate generating HTTP responses from a simple Node.js Express server. You can view all of the code in the [Github repository](https://github.com/abbeyperini/HTTP101). After this, in [A Beginner's Guide to HTTP - Part 3: Requests](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-3-requests-63), we'll generate request messages to get the responses we build here.
+In this part of the series, I'll demonstrate generating HTTP responses from a simple Node.js Express server. You can view all of the code in the [Github repository](https://github.com/abbeyperini/HTTP101). After this, in [A Beginner's Guide to HTTP - Part 3: Requests](/blog.html?blog=HTTP-3), we'll generate request messages to get the responses we build here.
 
 Building an HTTP message conversation is like communicating via telegraph or secret code. When the server receives a request message, it has to decode it to get the instructions for the response message. Based on those instructions, the serves encodes and returns a response message.
 
 ## Introduction and Table of Contents
 
-This article assumes familiarity with basic JavaScript, [command line](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line), and the terms defined in [part 1](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-1-definitions-38m7).
+This article assumes familiarity with basic JavaScript, [command line](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line), and the terms defined in [part 1](/blog.html?blog=HTTP-1).
 
 I'm starting with the server/HTTP responses because you'll usually find yourself building HTTP request code around the HTTP response format you're receiving. (You'll see this pattern repeatedly in part 4, when we use APIs other people have built.)
 
@@ -51,13 +51,13 @@ app.listen(port, () => {
 
 This code instantiates or makes an instance of an Express server I've called `app`. Now any HTTP messages sent to `http:localhost:8080` will be handled by `app`.
 
-Next run `node app.js` in your terminal to run the server. If it works, you should see "Server is running on port 8080..." logged in your terminal. Use <kbd>crtl</kbd> + <kbd>C</kbd> to kill the server. Every time you change the server code, you'll either have to kill the server and run it again or use a tool like [nodemon](https://www.npmjs.com/package/nodemon) that watches for newly saved changes in your files and restarts the server for you.
+Next run `node app.js` in your terminal to run the server. If it works, you should see "Server is running on port 8080..." logged in your terminal. Use crtl + C to kill the server. Every time you change the server code, you'll either have to kill the server and run it again or use a tool like [nodemon](https://www.npmjs.com/package/nodemon) that watches for newly saved changes in your files and restarts the server for you.
 
 Now that our server is running, let's talk about setting up our routes.
 
 ## URLs, Routes, and Endpoints
 
-URL stands for Uniform Resource Locator, a specific type of Uniform Resource Identifier (URI). Basically, a street address but for a client or server hosted on the web. In [part 1](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-1-definitions-38m7), we talked about how a URL has a protocol (http:// or https://). I mentioned that ports were optional. If you're accessing a URL that uses HTTP or HTTPS, the port is not specified as long as the standard port is used (80 for HTTP and 443 for HTTPS). My server is running on port 8080 on my local machine, so its URL is `http://localhost:8080`. After the protocol, domain/host name (`localhost` for my server), and maybe a port number, you can pack a lot of information into a URL.
+URL stands for Uniform Resource Locator, a specific type of Uniform Resource Identifier (URI). Basically, a street address but for a client or server hosted on the web. In [part 1](/blog.html?blog=HTTP-1), we talked about how a URL has a protocol (http:// or https://). I mentioned that ports were optional. If you're accessing a URL that uses HTTP or HTTPS, the port is not specified as long as the standard port is used (80 for HTTP and 443 for HTTPS). My server is running on port 8080 on my local machine, so its URL is `http://localhost:8080`. After the protocol, domain/host name (`localhost` for my server), and maybe a port number, you can pack a lot of information into a URL.
 
 You may be familiar with the terms route, routing, and router. Much like your wifi router helps your devices access different routes on the internet, a server has a router that specifies what happens when someone types that URL into the browser. If you've already been building webpages, you've made routes. In `http://localhost:3000/index.html`, index.html could be called a route. As you build bigger and more complex front-ends, you may end up building and installing routers in your client too.
 
@@ -324,6 +324,6 @@ Access-Control-Allow-Origin: *
 
 ## Conclusion
 
-If you're left confused or have any questions about any of the topics I've touched on in this part of the series, please don't hesitate to leave a comment! I made an effort to link to resources for topics when they came up, but if there are topics you'd like to see in a "more resources" section like in [part 1](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-1-definitions-38m7), let me know.
+If you're left confused or have any questions about any of the topics I've touched on in this part of the series, please don't hesitate to leave a comment! I made an effort to link to resources for topics when they came up, but if there are topics you'd like to see in a "more resources" section like in [part 1](/blog.html?blog=HTTP-1), let me know.
 
-I wanted to start with the server not only because you'll usually build request messages and write client code based on the format of the response messages you want to use, but also it's much easier to wrap your head around what's happening when you know what to expect in a response from the server. Now we're ready to build a client to request these responses in [A Beginner's Guide to HTTP - Part 3: Requests](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-3-requests-63)!
+I wanted to start with the server not only because you'll usually build request messages and write client code based on the format of the response messages you want to use, but also it's much easier to wrap your head around what's happening when you know what to expect in a response from the server. Now we're ready to build a client to request these responses in [A Beginner's Guide to HTTP - Part 3: Requests](/blog.html?blog=HTTP-3)!

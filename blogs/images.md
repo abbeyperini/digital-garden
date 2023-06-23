@@ -5,7 +5,7 @@ Tags: images
 
 ![mountain range in Mount Rainier National Park](https://images.abbeyperini.com/images-series/cover.webp)
 
-When I sat down to write about my [Shiba Inu SVGs](https://dev.to/abbeyperini/adding-shiba-inu-loading-and-error-svgs-to-my-react-site-lnj), it became clear that I was writing two blogs. One, a tutorial for SVGs in React, and this one, demystifying sourcing images for your website. Here are the topics this article will cover:
+When I sat down to write about my [Shiba Inu SVGs](/blog.html?blog=shibas), it became clear that I was writing two blogs. One, a tutorial for SVGs in React, and this one, demystifying sourcing images for your website. Here are the topics this article will cover:
 
 1. [Image Types](#image-types)
 2. [Image Optimization for the Web](#image-optimization-for-the-web)
@@ -34,7 +34,7 @@ GIFs are the precursor to PNGs and they are not ideal for the web due to their l
 
 SVGs are lightweight, use lossless compression, and can use unlimited colors. They're easy to resize and support transparency and animation.
 
-SVGs have limited support in degraded browsers and email clients. To add descriptive metadata, you'd have to use a [`<metadata>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata). Furthermore, making them can get complicated - the more complex your lines, the more likely it is the lines will form jagged edges when scaled up or down. Plus, they're often treated differently than raster images in code. My [Adding Shiba Inu Loading and Error SVGs to My React Site](https://dev.to/abbeyperini/adding-shiba-inu-loading-and-error-svgs-to-my-react-site-lnj) example details the 4 different ways you could import an SVG into a React app.
+SVGs have limited support in degraded browsers and email clients. To add descriptive metadata, you'd have to use a [`<metadata>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata). Furthermore, making them can get complicated - the more complex your lines, the more likely it is the lines will form jagged edges when scaled up or down. Plus, they're often treated differently than raster images in code. My [Adding Shiba Inu Loading and Error SVGs to My React Site](/blog.html?blog=shibas) example details the 4 different ways you could import an SVG into a React app.
 
 ## Image Optimization for the Web
 
@@ -68,13 +68,13 @@ Essentially, I start by getting a working outline of my idea. In Illustrator, I 
 
 For an actual Adobe Illustrator tutorial, check out a [getting started video](https://www.youtube.com/watch?v=AinkCNooh2A) or [Adobe's free course for beginners](https://www.youtube.com/watch?v=Ib8UBwu3yGA).
 
-The Shiba Inu SVGs in [this example](https://dev.to/abbeyperini/adding-shiba-inu-loading-and-error-svgs-to-my-react-site-lnj) were not that simple. After getting the lines done, there were only a few I could fill. I ended up making a new layer and setting it to sit behind my lines. Then I copied and pasted the original lines on my new layer, and turned them into orange and cream blobs to color in my Shiba. They do not scale as well as simpler, one-layer SVGs.
+The Shiba Inu SVGs in [this example](/blog.html?blog=shibas) were not that simple. After getting the lines done, there were only a few I could fill. I ended up making a new layer and setting it to sit behind my lines. Then I copied and pasted the original lines on my new layer, and turned them into orange and cream blobs to color in my Shiba. They do not scale as well as simpler, one-layer SVGs.
 
 When I feel they're close to done, I take an extended break. I revisit the SVGs later and catch more things I want to fix with fresh eyes.
 
 Finally, I flatten my layers, save, export, and optimize the images I want to use on my site. The result looks something like this:
 
-![a chibi shiba inu smiling and sticking its tongue out with a yellow construction hat](https://images.abbeyperini.com/shibas/construction-shib-inu.png)
+![a chibi shiba inu smiling and sticking its tongue out with a yellow construction hat](https://images.abbeyperini.com/shibas/construction-shiba-inu.png)
 
 Finally, before importing SVGs into your site, check out CSS-Tricks' guide to [making SVGs accessible](https://css-tricks.com/accessible-svgs/).
 
@@ -114,7 +114,7 @@ I highly recommend [Mozilla Developer Network's Getting Started with the Web ser
 
 You can also use images for fun, repeating backgrounds for your HTML elements [using the CSS `background-image` property](https://www.freecodecamp.org/news/css-background-image-with-html-example-code/).
 
-Finally, you can do a lot with your SVGs. My [Shiba Inu SVG](https://dev.to/abbeyperini/adding-shiba-inu-loading-and-error-svgs-to-my-react-site-lnj) and [Toggle Dark Mode In React](https://dev.to/abbeyperini/toggle-dark-mode-in-react-28c9) blogs have fun color animations. CSS-Tricks has a great [animated text example](https://css-tricks.com/animating-svg-css/). Furthermore, [GreenSock](https://greensock.com/) is doing the good work of reviving the animations like moving along a path that the dying [SMIL](https://css-tricks.com/guide-svg-animations-smil/) used to provide.
+Finally, you can do a lot with your SVGs. My [Shiba Inu SVG](/blog.html?blog=shibas) and [Toggle Dark Mode In React](/blog.html?blog=toggle) blogs have fun color animations. CSS-Tricks has a great [animated text example](https://css-tricks.com/animating-svg-css/). Furthermore, [GreenSock](https://greensock.com/) is doing the good work of reviving the animations like moving along a path that the dying [SMIL](https://css-tricks.com/guide-svg-animations-smil/) used to provide.
 
 ## Conclusion
 

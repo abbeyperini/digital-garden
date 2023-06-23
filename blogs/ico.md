@@ -11,7 +11,7 @@ I didn't even know about this image file format until I went to make my first fa
 
 Introduced in Microsoft Windows 1.0, the ICO file format was intended for app icons. (MacOS uses the ICNS file format for icons. Windows also allows you to use CUR files, which are meant for non-animated cursors.) Originally 32 x 32 pixels and monochrome, color support wasn't added until Microsoft Windows 3.0. As time went on more color, size, and feature options, like shadows, were added. These days, ICO files can be 256 x 256 pixels and contain 24 bits of colors and 8 bits of transparency.
 
-Windows does recommend images that are 256 x 256 pixels be compressed PNGs to save space, which highlights the unique attribute of a file type like ICO - it's actually several images in either BMP or PNG format. An ICO file contains a directory called ICONDIR that lists the images within it and information like their file size, height, width, and colors. I've [covered PNG in depth](https://dev.to/abbeyperini/sourcing-images-and-optimizing-them-for-the-web-1j5b#image-types) before, but BMP is the bitmap image format. Before Microsoft Windows 3.0, devices needed a device-independent format for transferring images, and [BMP](https://docs.microsoft.com/en-us/previous-versions/ms969901(v=msdn.10)?redirectedfrom=MSDN) was the solution.
+Windows does recommend images that are 256 x 256 pixels be compressed PNGs to save space, which highlights the unique attribute of a file type like ICO - it's actually several images in either BMP or PNG format. An ICO file contains a directory called ICONDIR that lists the images within it and information like their file size, height, width, and colors. I've [covered PNG in depth](/blog.html?blog=images#image-types) before, but BMP is the bitmap image format. Before Microsoft Windows 3.0, devices needed a device-independent format for transferring images, and [BMP](https://docs.microsoft.com/en-us/previous-versions/ms969901(v=msdn.10)?redirectedfrom=MSDN) was the solution.
 
 As a result, ICO is a file format that is used for situations in which machines will need to pick the optimal image from a group of images based on requirements like size. Raster images like BMP and PNG can only scale so far, so when you need multiple options in one file, reach for ICO or similar formats.
 
@@ -19,4 +19,4 @@ ICO files have native support on both Mac and Windows, and it looks like you sho
 
 ## Conclusion
 
-Sure ICO's cool, makes sense for app icons, and has a lot of support, but how does it relate to web development? Check out the sister blog to this article, [What are Favicons?](https://dev.to/abbeyperini/what-are-favicons-2e9d)
+Sure ICO's cool, makes sense for app icons, and has a lot of support, but how does it relate to web development? Check out the sister blog to this article, [What are Favicons?](/blog.html?blog=favicons)

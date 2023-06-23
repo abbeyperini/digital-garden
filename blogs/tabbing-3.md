@@ -44,7 +44,7 @@ This pseudo-class represents an element that has received focus by a click, tap,
 
 ### :focus-within
 
-Use this pseudo-class if you want to show a focus outline on an element when it or any of its children are focused. This little guy has already come in handy for me a couple of times, most notably when I was trying to create [a dynamic skip link for a page displaying all of my blogs](https://dev.to/abbeyperini/blog-page-accessibility-deep-dive-1hbl#skipping-around:~:text=the-,%3Afocus%2Dwithin,-pseudo%20selector%20to).
+Use this pseudo-class if you want to show a focus outline on an element when it or any of its children are focused. This little guy has already come in handy for me a couple of times, most notably when I was trying to create [a dynamic skip link for a page displaying all of my blogs](/blog.html?blog=audit-5#skipping-around:~:text=the-,%3Afocus%2Dwithin,-pseudo%20selector%20to).
 
 ## Focusing Fun
 

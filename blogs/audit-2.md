@@ -5,7 +5,7 @@ Tags: audit, accessibility
 
 ![a screenshot of the contact section with updated links on abbeyperini.dev](https://images.abbeyperini.com/audit-series/contact.png)
 
-[Read part 1 - The Audit](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-1-2k8k)
+[Read part 1 - The Audit](/blog.html?blog=audit-1)
 
 This article is comprised of several accessibility vignettes. It's a collection of short stories about quick fixes - some amuse-bouches, if you will. Researching, coding fixes, and writing the bulk of this blog took me less than three hours.
 
@@ -45,7 +45,7 @@ I received multiple warnings to check that my SVGs had attributes like `focusabl
 
 ### Solution 4&semi;
 
-For the decorative arrow and skill badges, I added the unique ids in the SVG code itself. For all the SVGs, I added the appropriate `focusable` attributes (set to true or false) where they were imported in the components. I had followed a tutorial in [this blog](https://dev.to/abbeyperini/adding-shiba-inu-loading-and-error-svgs-to-my-react-site-lnj#:~:text=A%20note%20on%20SVG%20accessibility) and given all my SVGs `aria-labelledby` attributes that included both the `<title>` and `<desc>`. I updated them to only include the `<desc>` to decrease redundancy when they are read by a screen reader.
+For the decorative arrow and skill badges, I added the unique ids in the SVG code itself. For all the SVGs, I added the appropriate `focusable` attributes (set to true or false) where they were imported in the components. I had followed a tutorial in [this blog](/blog.html?blog=shibas#:~:text=A%20note%20on%20SVG%20accessibility) and given all my SVGs `aria-labelledby` attributes that included both the `<title>` and `<desc>`. I updated them to only include the `<desc>` to decrease redundancy when they are read by a screen reader.
 
 Before:
 
@@ -111,7 +111,7 @@ PDFs have lots of accessibility issues and I have two links to download my resum
 
 For those file downloads, I needed to develop [accessible PDFs](https://sfgov.org/developing-accessible-pdfs) either by adding an HTML resume or formatting and tagging the existing file appropriately. Luckily, I found an excellent tool for formatting and tagging PDFs - [PAVE](https://pave-pdf.org/?lang=en). With this tool, I was able to edit my PDF with appropriate tags and headings based on their recommendations in the browser for free. I've also grabbed a download icon SVG from [Heroicons](https://heroicons.com/) and added it to these two links.
 
-![a screenshot of the contact section with updated links on abbeyperini.dev](https://images.abbeyperini.com/audit-series/contact)
+![a screenshot of the contact section with updated links on abbeyperini.dev](https://images.abbeyperini.com/audit-series/contact.png)
 
 ## Conclusion
 
@@ -119,13 +119,13 @@ Part of what's overwhelming about accessibility auditing a site is the number of
 
 It is far easier to navigate my site with a screen reader with all these `aria-label` updates.  Writing good descriptive alt-text takes practice. I highly recommend using a screen reader for context and adding alt-text to images in your social media posts for practice. I'll never look at links, file downloads, or PDFs the same way again.
 
-[Read Part 3 - An Accessible Dark Mode Toggle in React](https://dev.to/abbeyperini/an-accessible-dark-mode-toggle-in-react-aop)
+[Read Part 3 - An Accessible Dark Mode Toggle in React](/blog.html?blog=audit-3)
 I make my dark mode toggle accessible, refactor it, and re-test my site.
 
-[Read Part 4 - Blog Preview Component](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-4-omb)
+[Read Part 4 - Blog Preview Component](/blog.html?blog=audit-4)
 In which I find out what a keyboard trap really is.
 
-[Read Part 5 - Blog Page Accessibility Deep Dive](https://dev.to/abbeyperini/blog-page-accessibility-deep-dive-1hbl)
+[Read Part 5 - Blog Page Accessibility Deep Dive](/blog.html?blog=audit-5)
 In which I find a security vulnerability, write a surprising number of regexes, and this series becomes a thesis.
 
-[Read Part 6 - The Finale](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-6-254l)
+[Read Part 6 - The Finale](/blog.html?blog=audit-6)

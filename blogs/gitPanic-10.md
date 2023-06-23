@@ -18,7 +18,7 @@ A list of tools you can use with git to make your life easier.
 
 [Tab autocompletion](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash) is a git feature you have to enable. Say you're typing `git checkout feat--`, but you forget what you named your branch. When you hit tab, autocompletion will either fill out the rest for you or suggest options that match what you've typed.
 
-If you're on a Mac, you're probably using the Zsh terminal. Running `echo $0` in your terminal will tell you if you're using Zsh or Bash. You'll find your terminal profile file in `~/` aka the home directory aka the one with your computer profile name. If you're trying to find it in Finder, you'll have to use <kbd>cmd</kbd> + <kbd>shift</kbd> + <kbd>.</kbd> to see system files (ones that start with `.`).
+If you're on a Mac, you're probably using the Zsh terminal. Running `echo $0` in your terminal will tell you if you're using Zsh or Bash. You'll find your terminal profile file in `~/` aka the home directory aka the one with your computer profile name. If you're trying to find it in Finder, you'll have to use cmd + shift + . to see system files (ones that start with `.`).
 
 If you're running Zsh, your terminal profile file is called .zshrc. Add this code to it:
 
@@ -126,7 +126,7 @@ This is all available without configuring any of the many settings, and we haven
 
 Add even more features with extensions from the marketplace!
 
-- I've written about enabling a [git commit message template](https://dev.to/abbeyperini/git-commit-message-template-in-terminal-and-vs-code-326p) in the source control panel.
+- I've written about enabling a [git commit message template](/blog.html?blog=commit) in the source control panel.
 - Don't want to go all the way to GitHub to see who wrote the code you're looking at? Install [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)!
 - The [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension allows you to to do code reviews without opening GitHub.
 - [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) offers too many features to list here.

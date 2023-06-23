@@ -7,9 +7,9 @@ Tags: audit, accessibility
 
 Accessibility Auditing My Portfolio Site - Part 3
 
-Read [Part 1 - The Audit](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-1-2k8k) and [Part 2 - Quick Fixes](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-2-36p1).
+Read [Part 1 - The Audit](/blog.html?blog=audit-1) and [Part 2 - Quick Fixes](/blog.html?blog=audit-2).
 
-[When I made my dark mode toggle](https://dev.to/abbeyperini/toggle-dark-mode-in-react-28c9) using @dailydevtips1's [tutorial](https://h.daily-dev-tips.com/creating-day-night-css-only-toggle-switch), I focused on making color themes with sufficient contrast across my site. I chose colors unlikely to cause issues for users with colorblindness. I did not consider making sure both keyboard and [screen reader](https://www.boia.org/blog/5-myths-about-screen-readers-that-can-hurt-accessibility) users could use it.
+[When I made my dark mode toggle](/blog.html?blog=toggle) using @dailydevtips1's [tutorial](https://h.daily-dev-tips.com/creating-day-night-css-only-toggle-switch), I focused on making color themes with sufficient contrast across my site. I chose colors unlikely to cause issues for users with colorblindness. I did not consider making sure both keyboard and [screen reader](https://www.boia.org/blog/5-myths-about-screen-readers-that-can-hurt-accessibility) users could use it.
 
 As a result, I got several errors about it during my accessibility audit. I need to make it focusable and add descriptive text. Furthermore, because the visible part of the toggle is a `<label>` tied to a `<input type="checkbox">` hidden with a `display: none;` CSS rule, I need to find a way to put content in the `<label>` that adds accessibility and doesn't take away function. Plus, I got an error about the `for` attribute in my `<label>` not having a valid matching `id` attribute in an `<input>`.
 
@@ -33,7 +33,7 @@ My [portfolio Github repository](https://github.com/abbeyperini/Portfolio2.0) ha
 
 After a bit of [reading](https://fuzzbomb.github.io/accessibility-demos/visually-hidden-focus-test.html), I change the CSS hiding the checkbox from `display: none;` to `opacity: 0;` so that it is focusable.
 
-After a lot of trial and error, I discovered that while you can technically focus a `<label>`, it passes its focus to its `<input>`. Then, I was under the impression the checkbox was not being focused. There was no focus outline. and I was hitting <kbd>Enter</kbd> and nothing was happening. Eventually, I realized I hadn't programmed something to happen on <kbd>Enter</kbd>! I added a `handleKeypress` function like this:
+After a lot of trial and error, I discovered that while you can technically focus a `<label>`, it passes its focus to its `<input>`. Then, I was under the impression the checkbox was not being focused. There was no focus outline. and I was hitting Enter and nothing was happening. Eventually, I realized I hadn't programmed something to happen on Enter! I added a `handleKeypress` function like this:
 
 ```JavaScript
 const handleKeypress = e => {
@@ -49,9 +49,9 @@ const handleKeypress = e => {
 }
 ```
 
-I originally used `e.keyCode === 13`, but nothing was happening. Once I logged the event object in the console, I discovered the `keyCode` property was returning as 0 when I hit <kbd>Enter</kbd>. No idea why.
+I originally used `e.keyCode === 13`, but nothing was happening. Once I logged the event object in the console, I discovered the `keyCode` property was returning as 0 when I hit Enter. No idea why.
 
-Now that my toggle will do something on <kbd>Enter</kbd>, I have two options:
+Now that my toggle will do something on Enter, I have two options:
 
 1. add `onKeyPress={handleKeypress}` and `tabIndex="0"` to the `<div>` container, which has a inherited default focus outline
 2. add `onKeyPress={handleKeypress}` to the `<input type="checkbox">` and try and get a focus outline working around the `<label>`
@@ -171,9 +171,9 @@ export default Toggle;
 
 I've been manually testing with keyboard and screen reader, but it's time I fired back up [IBM Equal Access Accessibility Checker](https://chrome.google.com/webstore/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?hl=en-US).
 
-I really should have retested when I finished the last blog. Immediately, I found out I have two more instances of using "above" and "below" in text that wouldn't make sense without visuals. I already removed one in [Accessibility Auditing My Portfolio Site - Part 2](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-2-36p1) and now I've removed those.
+I really should have retested when I finished the last blog. Immediately, I found out I have two more instances of using "above" and "below" in text that wouldn't make sense without visuals. I already removed one in [Accessibility Auditing My Portfolio Site - Part 2](/blog.html?blog=audit-2) and now I've removed those.
 
-The [ARC Toolkit](https://chrome.google.com/webstore/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce) tells me my [shiba SVGs](https://dev.to/abbeyperini/adding-shiba-inu-loading-and-error-svgs-to-my-react-site-lnj) need `focusable="false"`, so I've added that to both of their code. They wouldn't have been visible long enough to get the errors when I was testing on my live site, so good thing I was testing in local with my lambda functions off. Technically, these and my arrow SVG in my landing page button don't need alt-text because they're decorative, but I'm proud of them. Hopefully screen reader users won't mind hearing about some extra flavor I've added to my portfolio site.
+The [ARC Toolkit](https://chrome.google.com/webstore/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce) tells me my [shiba SVGs](/blog.html?blog=shibas) need `focusable="false"`, so I've added that to both of their code. They wouldn't have been visible long enough to get the errors when I was testing on my live site, so good thing I was testing in local with my lambda functions off. Technically, these and my arrow SVG in my landing page button don't need alt-text because they're decorative, but I'm proud of them. Hopefully screen reader users won't mind hearing about some extra flavor I've added to my portfolio site.
 
 I'm also seeing several errors about the way I've used `aria-label` and `aria-labelledby`. After even more reading about landmark roles and aria attributes, I've changed all of my content section `<div>`s to `<sections>` which solves the aria errors and the "multiple `<h1>`" warnings in one fell swoop. I now have a couple new things to fix about the blog preview component heading in the next blog in this series.
 
@@ -183,7 +183,7 @@ I only get two warnings about the toggle. One is a contrast warning for hiding t
 
 ## Update Based on Feedback
 
-I looked into @inhuofficial's report that the toggle was flashing when you hit <kbd>Space</kbd>. Turns out I had accidentally taken out the conditional in `handleKeypress()` when I refactored. When there was no conditional, <kbd>Enter</kbd> would still trigger the toggle - I speculate because of the HTML. Hitting <kbd>Space</kbd> would cause it to flash to the other side and revert back to the original state. I have updated the function to look like this:
+I looked into @inhuofficial's report that the toggle was flashing when you hit Space. Turns out I had accidentally taken out the conditional in `handleKeypress()` when I refactored. When there was no conditional, Enter would still trigger the toggle - I speculate because of the HTML. Hitting Space would cause it to flash to the other side and revert back to the original state. I have updated the function to look like this:
 
 ```JavaScript
 const handleKeypress = e => {
@@ -193,7 +193,7 @@ const handleKeypress = e => {
 }
 ```
 
-When I initially changed it, I logged the event object to the console again to verify the code for <kbd>Space</kbd>. At that point, I noticed <kbd>Enter</kbd> and <kbd>Space</kbd> both triggered the toggle perfectly fine. I updated the conditional to `if (e.code === "Enter" || "Space")` and <kbd>Enter</kbd> worked but <kbd>Space</kbd> flashed again! This code is now live on my site and both <kbd>Enter</kbd> and <kbd>Space</kbd> are working.
+When I initially changed it, I logged the event object to the console again to verify the code for Space. At that point, I noticed Enter and Space both triggered the toggle perfectly fine. I updated the conditional to `if (e.code === "Enter" || "Space")` and Enter worked but Space flashed again! This code is now live on my site and both Enter and Space are working.
 
 ## Conclusion
 
@@ -201,12 +201,12 @@ Shout out to @overtureweb, who commented on my original dark mode toggle blog wi
 
 I had a lot of fun with this one. The focus and star fixes were very satisfying, and I'm pleased to have the whole toggle in a much less hacky state.
 
-Read [Accessibility Auditing My Portfolio Site - Part 4](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-4-omb), where I fix a few things about my blog preview component on the main page.
+Read [Accessibility Auditing My Portfolio Site - Part 4](/blog.html?blog=audit-4), where I fix a few things about my blog preview component on the main page.
 
-[Read Part 5 - Blog Page Accessibility Deep Dive](https://dev.to/abbeyperini/blog-page-accessibility-deep-dive-1hbl)
+[Read Part 5 - Blog Page Accessibility Deep Dive](/blog.html?blog=audit-5)
 In which I find a security vulnerability, write a surprising number of regexes, and this series becomes a thesis.
 
-[Read Part 6 - The Finale](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-6-254l)
+[Read Part 6 - The Finale](/blog.html?blog=audit-6)
 
 I fix color contrast issues with the dark mode toggle and speed up its focus outline animation in this one as well.
 

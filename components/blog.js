@@ -4,7 +4,12 @@ class Blog extends HTMLElement {
   }
 
   connectedCallback() {
-    let page = this.attributes.page.value
+    let page = this.attributes?.page?.value
+    if (!page) {
+      const params = new URLSearchParams(document.location.search);
+      const blogName = params.get("blog");
+      page = `../blogs/${blogName}.md`;
+    }
     this.innerHTML = `
       <zero-md src=${page}>
         <template>

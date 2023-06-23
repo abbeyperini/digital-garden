@@ -31,7 +31,7 @@ A keyboard loop is when the keyboard user is stuck tabbing through a lot of elem
 
 If a person is trying to buy something on your site, but can never reach the cart because they're stuck in or looping through a list of items, the item they want quickly starts to seem less appealing.
 
-Often, the order of the elements in the DOM is what's creating a keyboard trap or loop, so fixing it is as simple as [re-ordering the DOM](https://dev.to/abbeyperini/tabbing-tactfully-2dpc#dom-order).
+Often, the order of the elements in the DOM is what's creating a keyboard trap or loop, so fixing it is as simple as [re-ordering the DOM](/blog.html?blog=tabbing-1#dom-order).
 
 You may also run into this with scrollable elements.
 
@@ -57,7 +57,7 @@ Here are some examples of accessible design patterns you can reference:
 
 Also called roving focus, this can be a solution for managing tabbing in scrollable elements and could help fix a keyboard trap.
 
-With roving tabindex, the currently focused element has `tabindex="0"` and the surrounding elements have `tabindex="-1"` so they can't be focused. Using event listeners, when a user presses an arrow key, the next element to focus is set to `tabindex="0"` and focused using `focus()`. The element the user was just focusing is set to `tabindex="-1"`. Once the user reaches the end of the grouped elements, you focus and set `tabindex="0"` on the first. This way, the user can scroll through elements using the arrow keys and exit the component using <kbd>tab</kbd>.
+With roving tabindex, the currently focused element has `tabindex="0"` and the surrounding elements have `tabindex="-1"` so they can't be focused. Using event listeners, when a user presses an arrow key, the next element to focus is set to `tabindex="0"` and focused using `focus()`. The element the user was just focusing is set to `tabindex="-1"`. Once the user reaches the end of the grouped elements, you focus and set `tabindex="0"` on the first. This way, the user can scroll through elements using the arrow keys and exit the component using tab.
 
 You can check out [W3C's example code](https://www.w3.org/WAI/ARIA/apg/example-index/radio/radio).
 
@@ -131,9 +131,9 @@ The only caveat for these two solutions is that the sudden appearance and disapp
 
 ## Can't Focus an Element
 
-To start, I have an important caveat: tab focus and moving through a page with a screen reader are different things. Tabbing is for focusing interactive elements, so being unable to focus a `<p>` is intended behavior. Screen reader users use the commands associated with the screen reader, usually with a combination like <kbd>Ctrl</kbd> + <kbd>Opt</kbd> + <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>.
+To start, I have an important caveat: tab focus and moving through a page with a screen reader are different things. Tabbing is for focusing interactive elements, so being unable to focus a `<p>` is intended behavior. Screen reader users use the commands associated with the screen reader, usually with a combination like Ctrl + Opt + arrow keys.
 
-If an interactive element can't be focused using <kbd>tab</kbd>, here are few things to check.
+If an interactive element can't be focused using tab, here are few things to check.
 
 ### Check where the element is positioned
 

@@ -7,7 +7,7 @@ Tags: audit, accessibility
 
 When I made my portfolio site, I put a lot of effort into following the accessibility standards I knew from [MDN's Getting Started with the Web guides](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) and other reading I had done. I felt a 100 Lighthouse score was a good indicator of how I was doing. I wanted to test with a screen reader and do some cross browser testing, but that all fell by the wayside when I got a job.
 
-After more reading, following more accessibility experts on Twitter, and feedback from other developers (like the reduced motion CSS in [this article](https://dev.to/abbeyperini/a-walkthrough-of-updating-my-portfolio-site-with-netlify-functions-and-the-dev-to-api-dd2#:~:text=After%20the%20presentation)), I began to suspect I needed to reassess, but didn't know where to start.
+After more reading, following more accessibility experts on Twitter, and feedback from other developers (like the reduced motion CSS in [this article](/blog.html?blog=serverless#:~:text=After%20the%20presentation)), I began to suspect I needed to reassess, but didn't know where to start.
 
 Luckily, I was able to attend [Todd Libby's Lunch and Learn](https://www.youtube.com/watch?v=BhUtMZtv-DQ). For a full list of the tools Todd uses for his formal audits, you can watch the Lunch and Learn or the [livestream where he audits the Virtual Coffee site](https://www.youtube.com/watch?v=8R2Zv8Ic0Cc), or listen to his [Virtual Coffee podcast episode](https://virtualcoffee.io/podcast/0402-todd-libby/).
 
@@ -44,7 +44,7 @@ If you're just dipping your toe into accessibility, I would say the WAVE extensi
 #### Blog Page
 
 * 85 empty link warnings - the HTML pulled using the DEV API generates empty links in the headings.
-* 7 skipped heading level warnings - this was an issue [I knew about](https://dev.to/abbeyperini/a-walkthrough-of-updating-my-portfolio-site-with-netlify-functions-and-the-dev-to-api-dd2#:~:text=from%20Virtual%20Coffee.-,P.S.,-I%20had%20mentioned) and I honestly thought this would be significantly worse.
+* 7 skipped heading level warnings - this was an issue [I knew about](/blog.html?blog=serverless#:~:text=from%20Virtual%20Coffee.-,P.S.,-I%20had%20mentioned) and I honestly thought this would be significantly worse.
 * long alt-text warnings
 * `<br>`, `<em>` and `<strong>` warnings
 
@@ -111,22 +111,22 @@ While auditing, I also noticed the button that opens my full blog page needs to 
 
 ## Conclusion
 
-I am actually quite pleased with the results of this audit. I have only two problematic components, and I was very much focused on visual presentation when I built them. Accessible SVGs are very hard, and I got these warnings after I made them more accessible while writing [this blog](https://dev.to/abbeyperini/adding-shiba-inu-loading-and-error-svgs-to-my-react-site-lnj#:~:text=A%20note%20on%20SVG%20accessibility). Most of the other problems were news to me, and honestly the alt-text issues show how much I've improved with the practice I've been doing. The blog HTML and CSS issues are not a surprise to me - I've tossed that page together on a short deadline twice now.
+I am actually quite pleased with the results of this audit. I have only two problematic components, and I was very much focused on visual presentation when I built them. Accessible SVGs are very hard, and I got these warnings after I made them more accessible while writing [this blog](/blog.html?blog=shibas#:~:text=A%20note%20on%20SVG%20accessibility). Most of the other problems were news to me, and honestly the alt-text issues show how much I've improved with the practice I've been doing. The blog HTML and CSS issues are not a surprise to me - I've tossed that page together on a short deadline twice now.
 
 I am very proud I did not have any color contrast, color as meaning, or high contrast mode errors as color is something I focus on with everything I build. I also did a great job of ensuring tab focus is visible and creating parsable, semantic HTML. Finally, thanks to my focus on responsive design, zoom up to 400% doesn't cause reflow issues except on my full blog page.
 
 Using a screen reader for a few minutes was quite eye opening. At some point, I'll also take Todd's recommendation to try and go a whole day without using a mouse, but that's another blog post.
 
-[Read Part 2 - Quick Fixes](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-2-36p1)
+[Read Part 2 - Quick Fixes](/blog.html?blog=audit-2)
 It's a collection of short stories about quick fixes - some amuse-bouches, if you will.
 
-[Read Part 3 - An Accessible Dark Mode Toggle in React](https://dev.to/abbeyperini/an-accessible-dark-mode-toggle-in-react-aop)
+[Read Part 3 - An Accessible Dark Mode Toggle in React](/blog.html?blog=audit-3)
 I make my dark mode toggle accessible, refactor it, and re-test my site.
 
-[Read Part 4 - Blog Preview Component](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-4-omb)
+[Read Part 4 - Blog Preview Component](/blog.html?blog=audit-4)
 In which I find out what a keyboard trap really is.
 
-[Read Part 5 - Blog Page Accessibility Deep Dive](https://dev.to/abbeyperini/blog-page-accessibility-deep-dive-1hbl)
+[Read Part 5 - Blog Page Accessibility Deep Dive](/blog.html?blog=audit-5)
 In which I find a security vulnerability, write a surprising number of regexes, and this series becomes a thesis.
 
-[Read Part 6 - The Finale](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-6-254l)
+[Read Part 6 - The Finale](/blog.html?blog=audit-6)

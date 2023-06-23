@@ -5,7 +5,7 @@ Tags: on writing
 
 ![the tips of colored pencils on a white background](https://images.abbeyperini.com/pencils.jpeg)
 
-I wrote about [how I structure my writing in general](https://dev.to/abbeyperini/how-i-structure-my-writing-55ha) last November, as part of the 14,584 words I wrote for [Virtual Coffee](https://virtualcoffee.io/)'s blogging monthly challenge. This will be my 14th blog this November, and I found myself reflecting on how I get my ideas and turn them into published technical blogs.
+I wrote about [how I structure my writing in general](/blog.html?blog=writing) last November, as part of the 14,584 words I wrote for [Virtual Coffee](https://virtualcoffee.io/)'s blogging monthly challenge. This will be my 14th blog this November, and I found myself reflecting on how I get my ideas and turn them into published technical blogs.
 
 ## Ideas
 

@@ -53,7 +53,7 @@ Design your app in black and white in a program you already know how to use. We'
 
 ![Keynote slide with a black and white text and plant images including a header with Welcome to the Garden! and boxes of context](https://images.abbeyperini.com/design/black-and-white.png)
 
-The best place to start is with your [sectioning HTML](https://dev.to/abbeyperini/semantic-html-what-why-and-how-3b34/#sectioning-content). For example, you'll probably need a header, a footer, and an area in the middle for your main content.
+The best place to start is with your [sectioning HTML](/blog.html?blog=design#sectioning-content). For example, you'll probably need a header, a footer, and an area in the middle for your main content.
 
 Try to break down your content into uniform blocks. Within your main area, think in a grid. That'll be straightforward to translate to [CSS grid](https://css-tricks.com/snippets/css/complete-guide-grid/). Then, use text size, text weight, and spacing to break up your content.
 
@@ -109,7 +109,7 @@ Secondary buttons are for less important actions. They're still easily found, bu
 
 Tertiary buttons are miscellaneous actions that aren't valuable to most users. They're the least obvious and often styled more like links. A good example is a login button on a signup form.
 
-Check out [A Trio of Buttons for a Bubbly, Colorful Site](https://dev.to/abbeyperini/a-trio-of-buttons-for-a-bubbly-colorful-site-h43) for a set of examples.
+Check out [A Trio of Buttons for a Bubbly, Colorful Site](/blog.html?blog=trio) for a set of examples.
 
 ![A login form with a primary, secondary, and set of tertiary buttons](https://images.abbeyperini.com/buttons-trio/all-buttons.png)
 

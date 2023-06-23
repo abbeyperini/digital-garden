@@ -32,7 +32,7 @@ Like a database, multiple people accessing and changing the same thing means the
 
 [GitHub](github.com) is a website that uses git and has features that facilitate its use and software development. [Making a GitHub account](https://github.com/join) is free.
 
-With an account, you can create codebases, see your code, interact with other users, document your code, track your work, see stats about the code you've written, and much more. In today's job market, a [GitHub profile](https://github.com/abhisheknaiidu/awesome-github-profile-readme) [can easily be your software development portfolio](https://dev.to/abbeyperini/gitpanic-documentation-and-profiles-1end).
+With an account, you can create codebases, see your code, interact with other users, document your code, track your work, see stats about the code you've written, and much more. In today's job market, a [GitHub profile](https://github.com/abhisheknaiidu/awesome-github-profile-readme) [can easily be your software development portfolio](/blog.html?blog=gitPanic-7).
 
 GitHub is not the only place you can store a codebase and use git with it. There are [plenty of alternatives](https://www.guru99.com/github-alternative.html), but for simplicity's sake, I'll be referring to GitHub.
 
@@ -78,7 +78,7 @@ Once changes are staged, they need to be committed to the local instance of your
 git commit -m "my commit message here"
 ```
 
-The `-m` flag stands for message. It's supposed to describe the changes included in your commit. I'll go into what developers expect from a commit message in the another part of this series, [Working in a Repo](https://dev.to/abbeyperini/gitpanic-working-in-a-repo-1chg).
+The `-m` flag stands for message. It's supposed to describe the changes included in your commit. I'll go into what developers expect from a commit message in the another part of this series, [Working in a Repo](/blog.html?blog=gitPanic-3).
 
 In addition to the message, a commit contains information about your changes, who committed it, who authored the changes, and the date. It also has a unique identifier. It's called a hash or a SHA because it's a [unique string made with SHA-1](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html). With all this information, git can tell how the changes relate to the code in other branches and commits in the current branch.
 

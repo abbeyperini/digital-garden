@@ -17,7 +17,7 @@ Understanding HEAD and refs helps with reading git logs and using git commands.
 
 HEAD is a ref. In git, a [ref](https://git-scm.com/book/en/v2/Git-Internals-Git-References) is a human readable reference to a thing.
 
-You can have refs to git information stored in blobs, trees, and commits. A [blob](https://docs.github.com/en/rest/git/blobs) is an object representing a file. A [tree](https://docs.github.com/en/rest/git/trees) is file hierarchy, or how files relate to each other. A [commit](https://dev.to/abbeyperini/gitpanic-git-101-10db#commits) is how you add code changes to a repository. You can also have refs to [branches and remotes](https://dev.to/abbeyperini/gitpanic-git-101-10db#repositories-and-branches) (e.g. where your code and commit history are stored). Each of these has a SHA or a unique identifier created with the [SHA-1 hash algorithm](https://en.wikipedia.org/wiki/SHA-1).
+You can have refs to git information stored in blobs, trees, and commits. A [blob](https://docs.github.com/en/rest/git/blobs) is an object representing a file. A [tree](https://docs.github.com/en/rest/git/trees) is file hierarchy, or how files relate to each other. A [commit](/blog.html?blog=gitPanic-1#commits) is how you add code changes to a repository. You can also have refs to [branches and remotes](/blog.html?blog=gitPanic-1#repositories-and-branches) (e.g. where your code and commit history are stored). Each of these has a SHA or a unique identifier created with the [SHA-1 hash algorithm](https://en.wikipedia.org/wiki/SHA-1).
 
 When you use "main" instead of typing out a SHA in commands like `git checkout main`, you are using a ref.
 

@@ -21,15 +21,15 @@ Because I'm not aiming to get published in a psychological journal anymore, I ha
 
 I use direct quotes more rarely in my technical blogging.
 
-"Luckily, I was able to attend [Todd Libby's Lunch and Learn](https://www.youtube.com/watch?v=BhUtMZtv-DQ&ab_channel=VirtualCoffee).  ...Todd said 'No site is 100% accessible, especially as you update it, but we can aim to get close,' so let's aim for close." - [Accessibility Auditing My Portfolio Site - Part 1](https://dev.to/abbeyperini/accessibility-auditing-my-portfolio-site-part-1-2k8k#:~:text=Luckily%2C%20I%20was,aim%20for%20close.)
+"Luckily, I was able to attend [Todd Libby's Lunch and Learn](https://www.youtube.com/watch?v=BhUtMZtv-DQ&ab_channel=VirtualCoffee).  ...Todd said 'No site is 100% accessible, especially as you update it, but we can aim to get close,' so let's aim for close." - [Accessibility Auditing My Portfolio Site - Part 1](/blog.html?blog=audit-1#:~:text=Luckily%2C%20I%20was,aim%20for%20close.)
 
 Paraphrasing flows more naturally.
 
-"Both types of compression support transparency and provide [smaller images](https://developers.google.com/speed/webp/docs/webp_study) than PNG or JPEG compression." - [What is WebP?](https://dev.to/abbeyperini/what-is-webp-2pob#:~:text=Both%20types%20of%20compression%20support%20transparency%20and%20provide%20smaller%20images%20than%20PNG%20or%20JPEG%20compression.)
+"Both types of compression support transparency and provide [smaller images](https://developers.google.com/speed/webp/docs/webp_study) than PNG or JPEG compression." - [What is WebP?](/blog.html?blog=webp#:~:text=Both%20types%20of%20compression%20support%20transparency%20and%20provide%20smaller%20images%20than%20PNG%20or%20JPEG%20compression.)
 
 I also link to things I think a reader might want to know more about, like larger technical concepts and packages I'm using.
 
-"In this way, the browser is functioning as a [runtime environment](https://www.codecademy.com/article/introduction-to-javascript-runtime-environments) for client or client-side code." - [A Beginner's Guide to HTTP - Part 1: Definitions](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-1-definitions-38m7#:~:text=In%20this%20way%2C%20the%20browser%20is%20functioning%20as%20a%20runtime%20environment%20for%20client%20or%20client%2Dside%20code.)
+"In this way, the browser is functioning as a [runtime environment](https://www.codecademy.com/article/introduction-to-javascript-runtime-environments) for client or client-side code." - [A Beginner's Guide to HTTP - Part 1: Definitions](/blog.html?blog=HTTP-1#:~:text=In%20this%20way%2C%20the%20browser%20is%20functioning%20as%20a%20runtime%20environment%20for%20client%20or%20client%2Dside%20code.)
 
 ## The Note Card Method
 
@@ -63,6 +63,6 @@ Reference documentation or the specification for a programming language is usual
 
 ## Conclusion
 
-I hope this answers [@teejay128 's question](https://dev.to/teejay128/comment/23ahn) on [Writing a Technical Blog](https://dev.to/abbeyperini/writing-a-technical-blog-79o).
+I hope this answers [@teejay128 's question](https://dev.to/teejay128/comment/23ahn) on [Writing a Technical Blog](/blog.html?blog=writing-2).
 
 Furthermore, I hope this encourages those who feel they have to be an expert to write more blogs. Hundreds of research papers taught me you just need to cite and think critically about what you're citing.

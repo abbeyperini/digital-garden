@@ -7,7 +7,7 @@ Tags: git, #gitPanic
 
 Just realized you've been working in the wrong branch? Forgot to pull before you started working? Think of git stash as stuffing your working directory in your pocket for later.
 
-This blog assumes you have a basic understanding of git or have read [Git 101](https://dev.to/abbeyperini/gitpanic-git-101-10db) and [Merging and Rebasing](https://dev.to/abbeyperini/gitpanic-merging-and-rebasing-2mo3).
+This blog assumes you have a basic understanding of git or have read [Git 101](/blog.html?blog=gitPanic-1) and [Merging and Rebasing](/blog.html?blog=gitPanic-2).
 
 1. [Working Directory](#working-directory)
 2. [The Stash](#the-stash)
@@ -22,7 +22,7 @@ You've got your repo open in your text editor. You make a change. You save the f
 
 As soon as you use `git add .` they are staged changes in your index.
 
-Once you commit the changes, they're effectively saved. Git will add them to the [tree](https://dev.to/abbeyperini/gitpanic-head-37m8#:~:text=A%20tree%20is%20file%20hierarchy) it keeps for you repo and remove them from your working directory. This is why comparing the unstaged changes to the old version of the file is called the working tree.
+Once you commit the changes, they're effectively saved. Git will add them to the [tree](/blog.html?blog=gitPanic-4#:~:text=A%20tree%20is%20file%20hierarchy) it keeps for you repo and remove them from your working directory. This is why comparing the unstaged changes to the old version of the file is called the working tree.
 
 At this point you may be thinking "committing my staged changes is the only way to save stuff in my working directory," and you'd be wrong.
 
@@ -38,7 +38,7 @@ Technically, running
 git stash
 ```
 
-records your current working directory in some commits outside your branch and checks out [HEAD](https://dev.to/abbeyperini/gitpanic-head-37m8) again for you. Like most things readable in git, a stash is a [ref](https://dev.to/abbeyperini/gitpanic-head-37m8) to those commits, and all of the stashes in your repo are stored in `.git/refs/stash`. This means you have access to everything you've ever stashed no matter what branch you have checked out.
+records your current working directory in some commits outside your branch and checks out [HEAD](/blog.html?blog=gitPanic-4) again for you. Like most things readable in git, a stash is a [ref](/blog.html?blog=gitPanic-4#refs) to those commits, and all of the stashes in your repo are stored in `.git/refs/stash`. This means you have access to everything you've ever stashed no matter what branch you have checked out.
 
 You can stash staged and unstaged files. If you create a new file, you have to run `git add <file path>` to include it in a stash. If you want to stash only staged files, you can pass `-S`. If you pass a file path starting with `--`, only changes in that file or directory will be stashed.  If you wanted to save the state of untracked files, you can pass the `-u` option. If you want to stash ignored files, you can pass `-a`.
 
@@ -115,7 +115,7 @@ Like a multiple choice quiz, every hunk is presented with the question "Stash th
 
 Commonly used options that you won't see printed using `?` are `/` and `s`. You can search all the hunks with [regex](https://regexone.com/) with `/`. If you want to split a hunk into more hunks, use `s`. The [interactive mode patch git reference documentation](https://git-scm.com/docs/git-add#Documentation/git-add.txt-patch) lists all your options.
 
-You can stop the process with <kbd>ctrl</kbd> + <kbd>c</kbd> or hit `q` to quit at anytime. If you use `q`, any hunks you've already chosen to stash will be stashed.
+You can stop the process with ctrl + c or hit `q` to quit at anytime. If you use `q`, any hunks you've already chosen to stash will be stashed.
 
 ## Conclusion
 

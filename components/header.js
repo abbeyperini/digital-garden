@@ -13,9 +13,7 @@ class Header extends HTMLElement {
             <li><a href="https://github.com/abbeyperini/digital-garden">Github repository</a></li>
             <li><a href="https://abbeyperini.dev">About Abbey</a></li>
           </ul>
-          <label class="theme-switch" for="theme-toggle">
-          <input type="checkbox" id="theme-toggle" class="theme-switch" />
-          </label>
+          <input type="checkbox" id="theme-toggle" aria-label="Toggle Color Theme" class="theme-switch" />
         </nav>
       </header>
     `;

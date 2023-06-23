@@ -5,7 +5,7 @@ Tags: HTTP
 
 ![bored-looking white cat with a small mouth captioned 200 OK](https://images.abbeyperini.com/HTTP-series/200.jpeg)
 
-Now that we've covered [how HTTP messages work](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-1-definitions-38m7) and how to generate [requests](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-3-requests-63) and [responses](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-2-an-app-and-a-server-211p) in JavaScript, let's talk about the real world applications of using HTTP in your web app. This part of the series will cover evaluating APIs other people have built and getting their data on your page. I'll be covering authentication in [part 5](https://dev.to/abbeyperini/beginners-guide-to-http-part-5-authentication-3p2p).
+Now that we've covered [how HTTP messages work](/blog.html?blog=HTTP-1) and how to generate [requests](/blog.html?blog=HTTP-3) and [responses](/blog.html?blog=HTTP-2) in JavaScript, let's talk about the real world applications of using HTTP in your web app. This part of the series will cover evaluating APIs other people have built and getting their data on your page. I'll be covering authentication in [part 5](/blog.html?blog=HTTP-5).
 
 ## Introduction and Table of Contents
 
@@ -85,7 +85,7 @@ Let's look at a few things you'll want to see when you pull up an API's document
 
 ### Do they require signing up or authentication?
 
-- Typically, if an API requires a login or the documentation references a key, you'll have to go through a signup process, get a key, and pass that key in your headers. I'll cover this process and the common types of authentication in [part 5](https://dev.to/abbeyperini/beginners-guide-to-http-part-5-authentication-3p2p).
+- Typically, if an API requires a login or the documentation references a key, you'll have to go through a signup process, get a key, and pass that key in your headers. I'll cover this process and the common types of authentication in [part 5](/blog.html?blog=HTTP-5).
 
 ### Do you have time to get this tool set up and working?
 
@@ -101,7 +101,7 @@ Up until now, we've know what to expect, so how to write our request code has be
 
 ### Gotta Catch 'em All
 
-In [part 3](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-3-requests-63#:~:text=to%20replace%20.catch().-,.catch()%20is%20there,-to%20handle%20errors), I mentioned that in a code block like this:
+In [part 3](/blog.html?blog=HTTP-3#:~:text=to%20replace%20.catch().-,.catch()%20is%20there,-to%20handle%20errors), I mentioned that in a code block like this:
 
 ```JavaScript
 function getRequest() {
@@ -133,11 +133,11 @@ To check if CORS is allowed, I build a GET request to an API using [axios](https
 
 This means this resource doesn't allow CORS. Specifically, when the browser ran a pre-flight request, the API response didn't have an `Access-Control-Allow-Origin` header, so it's not accepting requests from other origins.
 
-The resource will, however, accept requests run from outside the browser, like from a server. I used axios because I know I can copy and paste that request code into my [Node.js](https://nodejs.org/en/) server. So, when you see a CORS error, don't panic. You can always build the most basic of servers, like we did in [part 2](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-2-an-app-and-a-server-211p). All you need is one GET route that when called requests data from the API and then sends the data it gets back in a response.
+The resource will, however, accept requests run from outside the browser, like from a server. I used axios because I know I can copy and paste that request code into my [Node.js](https://nodejs.org/en/) server. So, when you see a CORS error, don't panic. You can always build the most basic of servers, like we did in [part 2](/blog.html?blog=HTTP-2). All you need is one GET route that when called requests data from the API and then sends the data it gets back in a response.
 
 ### Do they send back an appropriate error format?
 
-Remember how I mentioned earlier that you'll be interacting with another developer's interpretation of a REST API? In [part 1](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-1-definitions-38m7#:~:text=here%20in%20blue.-,Status%20Codes%20and%20Messages,-You%27ve%20encountered%20status), I also pointed out that humans are determining what error code/message you get back in a response message. We saw what this means in practice in [part 2](https://dev.to/abbeyperini/a-beginners-guide-to-http-part-2-an-app-and-a-server-211p). Other developers have even [responded to blogs in this series](https://twitter.com/RoalzApps/status/1496130469267709961?t=iesPtU1BJDZvhKSJremJlg&s=19) making jokes about unstandardized error codes. When you start building requests to endpoints in someone else's API, you might start finding some interesting quirks in the errors you receive.
+Remember how I mentioned earlier that you'll be interacting with another developer's interpretation of a REST API? In [part 1](/blog.html?blog=HTTP-1#:~:text=here%20in%20blue.-,Status%20Codes%20and%20Messages,-You%27ve%20encountered%20status), I also pointed out that humans are determining what error code/message you get back in a response message. We saw what this means in practice in [part 2](/blog.html?blog=HTTP-2). Other developers have even [responded to blogs in this series](https://twitter.com/RoalzApps/status/1496130469267709961?t=iesPtU1BJDZvhKSJremJlg&s=19) making jokes about unstandardized error codes. When you start building requests to endpoints in someone else's API, you might start finding some interesting quirks in the errors you receive.
 
 If there is no mention of errors in the documentation, you can make a few assumptions.
 
@@ -149,7 +149,7 @@ In general, 500 responses can mean literally anything. It could mean the server 
 
 404 is easier - it probably means your request URL is wrong. To complicate things a bit, it could also mean the route you requested information from is currently not accepting requests for several reasons. The former is more likely. The latter is for the owner of the server to troubleshoot.
 
-401 and 403 are authentication and authorization, which we'll get into in [part 5](https://dev.to/abbeyperini/beginners-guide-to-http-part-5-authentication-3p2p).
+401 and 403 are authentication and authorization, which we'll get into in [part 5](/blog.html?blog=HTTP-5).
 
 Until proven otherwise, always assume you can't trust a 200 status code. Too often, developers seem to think that if the HTTP request and response code work, that's not an error. They'll include the error message about why you didn't get the data you expected in the body. That message might tell you how to fix it.
 
@@ -336,4 +336,4 @@ The difference here is we use `Object.keys()` to create an array of keys from `f
 
 That was a lot! As always, let me know if you're left with questions. I wanted to cover the main pitfalls I've encountered and tricks I've learned consuming public APIs. As these topics get more advanced, it's harder for me not to turn this into a React tutorial. If you'd like more information on a topic I covered here, just let me know!
 
-Up next, in [part 5](https://dev.to/abbeyperini/beginners-guide-to-http-part-5-authentication-3p2p), I cover authentication, including more URL parameters!
+Up next, in [part 5](/blog.html?blog=HTTP-5), I cover authentication, including more URL parameters!

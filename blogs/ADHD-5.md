@@ -58,4 +58,4 @@ Did I miss a resource or tip you love? Do you really love an organizational tool
 
 Up next:
 
-- [Where We Excel](https://dev.to/abbeyperini/coding-and-adhd-where-we-excel-454j)
+- [Where We Excel](/blog.html?blog=ADHD-6)

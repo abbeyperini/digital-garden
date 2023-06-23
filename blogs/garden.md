@@ -3,7 +3,7 @@
 Planted: 11/29/2022
 Tags: digital garden
 
-![an illustration of a green plant in a yellow planter](https://images.abbeyperini.com/plantrLogoBackground.png)
+![an illustration of a green plant in a yellow planter](https://images.abbeyperini.com/digital-garden/plant-cover.png)
 
 The more I read about digital gardens, the more I wanted to build one, so I started drawing plants.
 

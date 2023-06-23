@@ -123,6 +123,6 @@ This is all very U.S.-centric, as well. In [India](https://www.theguardian.com/l
 
 ## Conclusion
 
-Originally, [Knitting as Programming](https://dev.to/abbeyperini/knitting-as-programming-3e5) was twice as long and half about the history of women in programming. I was already feeling the weight of the stereotypes and anger about the erasure of women programmers a year ago.
+Originally, [Knitting as Programming](/blog.html?blog=knitting) was twice as long and half about the history of women in programming. I was already feeling the weight of the stereotypes and anger about the erasure of women programmers a year ago.
 
 Unfortunately, I have no real conclusion, just questions - Am I negotiating my salary and compensation hard enough? How can I in good conscience recommend this career path to women when [50% of women leave their tech job by 35](https://financesonline.com/women-in-technology-statistics/#:~:text=50%25%20of%20women%20leave%20their,color%20(Accenture%2C%202020).)? Should I mention they'll need to cultivate more self-confidence and try harder than their male counterparts? Why do we keep using the term imposter syndrome to excuse the culture of othering women and minorities in tech? Why do people think women can fix any of this by changing their language or attitude? What kind of backlash will I receive for writing this?

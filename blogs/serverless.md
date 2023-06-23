@@ -850,10 +850,10 @@ I added `console.log(error)` to my blogPosts function on deploy attempt 9, and r
 
 At this point, I still have a list of things I'd like to revisit:
 
-- finding a markdown parsing solution to avoid the 429 error I occasionally get from that many API calls - [done!](https://dev.to/abbeyperini/blog-page-accessibility-deep-dive-1hbl)
-- code block styling - [done!](https://dev.to/abbeyperini/blog-page-accessibility-deep-dive-1hbl)
-- cute error and loading graphics - [done!](https://dev.to/abbeyperini/adding-shiba-inu-loading-and-error-svgs-to-my-react-site-lnj)
-- possibly refactoring my 3 blog components into 1 or 2 to cut down on duplicated code - [done!](https://dev.to/abbeyperini/blog-page-accessibility-deep-dive-1hbl)
+- finding a markdown parsing solution to avoid the 429 error I occasionally get from that many API calls - [done!](/blog.html?blog=audit-5)
+- code block styling - [done!](/blog.html?blog=audit-5)
+- cute error and loading graphics - [done!](/blog.html?blog=shibas)
+- possibly refactoring my 3 blog components into 1 or 2 to cut down on duplicated code - [done!](/blog.html?blog=audit-5)
 
 ## Demo Day
 

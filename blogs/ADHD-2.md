@@ -41,7 +41,7 @@ Did I miss a resource or tip you love? Leave a comment!
 
 Up next:
 
-- [Can't Keep Going](https://dev.to/abbeyperini/coding-and-adhd-cant-keep-going-5aj2)
-- [Can't Stop](https://dev.to/abbeyperini/coding-and-adhd-cant-stop-10mf)
-- [Can't Remember](https://dev.to/abbeyperini/coding-and-adhd-cant-remember-30b4)
-- [Where We Excel](https://dev.to/abbeyperini/coding-and-adhd-where-we-excel-454j)
+- [Can't Keep Going](/blog.html?blog=ADHD-3)
+- [Can't Stop](/blog.html?blog=ADHD-4)
+- [Can't Remember](/blog.html?blog=ADHD-5)
+- [Where We Excel](/blog.html?blog=ADHD-6)

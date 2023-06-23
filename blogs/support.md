@@ -5,7 +5,7 @@ Tags: women in programming
 
 ![Dolly Parton sitting and typing at a typewriter - image from the movie Nine to Five](https://images.abbeyperini.com/women-in-programming/dollypartonninetofive.jpg)
 
-Last year, in [We've Been Here Since the Beginning](https://dev.to/abbeyperini/weve-been-here-since-the-beginning-2nnp), I wrote about how it felt to be constantly othered, assumed to be less competent, and assumed to be a diversity hire. This International Women's Day, I have regained a teensy bit of optimism, so it's all about how to support the women developers in your life. Basically, if you see something, say something.
+Last year, in [We've Been Here Since the Beginning](/blog.html?blog=beginning), I wrote about how it felt to be constantly othered, assumed to be less competent, and assumed to be a diversity hire. This International Women's Day, I have regained a teensy bit of optimism, so it's all about how to support the women developers in your life. Basically, if you see something, say something.
 
 ## 1. Believe Them
 

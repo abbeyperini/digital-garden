@@ -7,7 +7,7 @@ Tags: git, #gitPanic
 
 There is no squash rebasing because you can use an interactive rebase to rewrite your commit history. Once you understand this powerful tool, people will think you're a git wizard.
 
-This blog assumes you have a basic understanding of git or have read [Git 101](https://dev.to/abbeyperini/gitpanic-git-101-10db) and [Merging and Rebasing](https://dev.to/abbeyperini/gitpanic-merging-and-rebasing-2mo3).
+This blog assumes you have a basic understanding of git or have read [Git 101](/blog.html?blog=gitPanic-1) and [Merging and Rebasing](/blog.html?blog=gitPanic-2).
 
 1. [Warnings](#warnings)
 2. [SHA](#sha)
@@ -26,7 +26,7 @@ If you're working in a public repo, and you're rebasing commits that have alread
 
 ![Gandalf captioned You shall not rebase pushed commits](https://images.abbeyperini.com/gitPanic/shall.jpeg)
 
-The exception to this rule is commits in your branch intended for development. If you're opening a PR to [merge your work into develop](https://dev.to/abbeyperini/gitpanic-working-in-a-repo-1chg#environments), I'd say they're still fair game.
+The exception to this rule is commits in your branch intended for development. If you're opening a PR to [merge your work into develop](/blog.html?blog=gitPanic-3#environments), I'd say they're still fair game.
 
 Deleting commits with interactive rebase also means you can lose work. If you rebase a lot of commits and have a lot of merge conflicts, it is also quite easy to accidentally remove work that way.
 
@@ -52,11 +52,11 @@ The log will print out the entire commit history, with the latest commits at the
 
 Like you're manually merging, you want to find the last commit before the commits you want to edit. It was called the last common commit when merging, and it's often referred to as the parent commit when rebasing. This is the SHA we will pass to the rebase command.
 
-Instead of a SHA, you can use [HEAD](https://dev.to/abbeyperini/gitpanic-head-37m8) shorthand like `HEAD^3` instead.
+Instead of a SHA, you can use [HEAD](/blog.html?blog=gitPanic-4) shorthand like `HEAD^3` instead.
 
 ## Starting the Rebase
 
-This will open an editing window. If you want to do it in the terminal, have the [vim command cheatsheet](https://vim.rtorr.com/) ready. Otherwise, [check out your other options](https://dev.to/abbeyperini/gitpanic-merging-and-rebasing-2mo3#:~:text=cheat%20sheet%20bookmarked.-,You%20can%20also,-associate%20a%20text).
+This will open an editing window. If you want to do it in the terminal, have the [vim command cheatsheet](https://vim.rtorr.com/) ready. Otherwise, [check out your other options](/blog.html?blog=gitPanic-2#:~:text=cheat%20sheet%20bookmarked.-,You%20can%20also,-associate%20a%20text).
 
 We start by running
 
@@ -68,7 +68,7 @@ This will print out a list of commits you can edit with the oldest at the top. A
 
 ![screenshot of a list of commits output by running git rebase -i](https://images.abbeyperini.com/gitPanic/pick.png)
 
-Replacing characters in the vi window takes some getting used to. First, you'll move your cursor left with the `h` key, right with `l`, down with `j`, and up with `k`. To insert characters, you use `i` to enter insert mode. To get out of insert mode and be able to move your cursor again, you use <kbd>esc</kbd>.
+Replacing characters in the vi window takes some getting used to. First, you'll move your cursor left with the `h` key, right with `l`, down with `j`, and up with `k`. To insert characters, you use `i` to enter insert mode. To get out of insert mode and be able to move your cursor again, you use esc.
 
 When you're done editing on this screen, every commit should have the short or long version of one of these keywords next to it:
 
@@ -86,7 +86,7 @@ Finally, when you're done, you can exit with `:wq`, which tells the vi window to
 
 ## Finishing the Rebase
 
-If the only keywords you use are pick and drop, you'll be done except for [resolving any conflicts](https://dev.to/abbeyperini/gitpanic-merging-and-rebasing-2mo3#conflicts).
+If the only keywords you use are pick and drop, you'll be done except for [resolving any conflicts](/blog.html?blog=gitPanic-2#conflicts).
 
 Just like merge, you can continue by running `git rebase --continue` or escape by running `git rebase --abort`.
 
@@ -98,13 +98,13 @@ Once all of that is done, you'll have a shiny new commit history. Run `git log` 
 
 ## Practical Examples
 
-Disclaimer: these are terrible commit messages meant only to provide an example commit history. [Read more about writing good commit messages.](https://dev.to/abbeyperini/gitpanic-working-in-a-repo-1chg#commit-messages)
+Disclaimer: these are terrible commit messages meant only to provide an example commit history. [Read more about writing good commit messages.](/blog.html?blog=gitPanic-3#commit-messages)
 
 ### Change an Old Commit Message
 
 Running `git commit --amend` will allow you to change the last commit message, but what if you realized you committed a typo a while ago?
 
-First I run `git rebase -i b95b221368b028816c7af3cc1eee4ea5eb5eec50`, because that's the last common commit for `main` and `fix--button`. I enter interactive mode with `i`, replace "pick" with "reword" for the commit with a typo in the commit message (e24d7d6). Next, I exit interactive mode with <kbd>esc</kbd>, and run `:wq`.
+First I run `git rebase -i b95b221368b028816c7af3cc1eee4ea5eb5eec50`, because that's the last common commit for `main` and `fix--button`. I enter interactive mode with `i`, replace "pick" with "reword" for the commit with a typo in the commit message (e24d7d6). Next, I exit interactive mode with esc, and run `:wq`.
 
 ![screenshot of list of commits from interactive rebase](https://images.abbeyperini.com/gitPanic/reword.png)
 
@@ -124,7 +124,7 @@ First I run `git rebase -i b95b221368b028816c7af3cc1eee4ea5eb5eec50`.
 
 ![screenshot of output of git rebase command](https://images.abbeyperini.com/gitPanic/pick-2.png)
 
-I know there are 3 commits I want to squash into one. While in interactive mode, I replace "pick" with "squash" for the most recent two (601d5b0 and 943f2e2 in this case). After exiting interactive mode with <kbd>esc</kbd>, I enter `:wq` and a new edit window opens.
+I know there are 3 commits I want to squash into one. While in interactive mode, I replace "pick" with "squash" for the most recent two (601d5b0 and 943f2e2 in this case). After exiting interactive mode with esc, I enter `:wq` and a new edit window opens.
 
 ![screenshot of 3 separate messages in an edit window](https://images.abbeyperini.com/gitPanic/message.png)
 
@@ -166,9 +166,9 @@ which is the same as
 git rebase develop HEAD
 ```
 
-Your PR is comparing the fix--button branch to the develop branch. The current [head](https://dev.to/abbeyperini/gitpanic-head-37m8) of the develop branch is the new base. The fix--button branch based off an older commit in `develop` is the old base. HEAD represents the head of `fix--button`.
+Your PR is comparing the fix--button branch to the develop branch. The current [head](/blog.html?blog=gitPanic-4) of the develop branch is the new base. The fix--button branch based off an older commit in `develop` is the old base. HEAD represents the head of `fix--button`.
 
-This takes all of the commits in `fix--button` and puts them after all the commits in develop. In other words, this changes the last common commit for `develop` and `fix--button` to the most recent commit in `develop`. You may still have to resolve conflicts, but as far as git is concerned, your `fix--button` is now based off the current version of `develop`. When you go to merge `fix--button` into `develop`, you may even be able to do a [fast-forward merge](https://dev.to/abbeyperini/gitpanic-merging-and-rebasing-2mo3#:~:text=fast%2Dforward%20merge.-,Fast%2DForward%20Merge,-To%20start%2C%20a).
+This takes all of the commits in `fix--button` and puts them after all the commits in develop. In other words, this changes the last common commit for `develop` and `fix--button` to the most recent commit in `develop`. You may still have to resolve conflicts, but as far as git is concerned, your `fix--button` is now based off the current version of `develop`. When you go to merge `fix--button` into `develop`, you may even be able to do a [fast-forward merge](/blog.html?blog=#gitPanic-2:~:text=fast%2Dforward%20merge.-,Fast%2DForward%20Merge,-To%20start%2C%20a).
 
 ![Astronaut behind another astronaut with a gun meme. First astronaut, staring at earth is git. Git says This branch is on top of master? The second astronaut with the gun is labelled rebase. Rebase says always has been.](https://images.abbeyperini.com/gitPanic/branch.jpeg)
 
@@ -212,7 +212,7 @@ There are a couple git commands that aren't necessary for understanding how to i
 
 [The `git diff` command](https://www.atlassian.com/git/tutorials/saving-changes/git-diff) will give you even more information about the changes in the branch.
 
-I talked about [unified vs split diffs](https://dev.to/abbeyperini/gitpanic-merging-and-rebasing-2mo3#:~:text=showing%20the%20diff%3A-,unified%20and%20split,-.%20Whenever%20possible%2C%20I) in the context of merge conflicts. This allows you to look at the diff without running `git merge` or opening a PR. In addition to comparing branches, you can compare commits and files.
+I talked about [unified vs split diffs](/blog.html?blog=gitPanic-2#:~:text=showing%20the%20diff%3A-,unified%20and%20split,-.%20Whenever%20possible%2C%20I) in the context of merge conflicts. This allows you to look at the diff without running `git merge` or opening a PR. In addition to comparing branches, you can compare commits and files.
 
 ### git show
 

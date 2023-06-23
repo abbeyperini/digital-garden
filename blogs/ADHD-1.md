@@ -42,11 +42,11 @@ Personally, I would never describe ADHD as a super power. Yes, it's why I could 
 
 To that point, the rest of this series will be about strategies for dealing with the four main challenges I experience while coding with ADHD:
 
-- [Can't Start](https://dev.to/abbeyperini/coding-and-adhd-cant-start-23l3)
-- [Can't Keep Going](https://dev.to/abbeyperini/coding-and-adhd-cant-keep-going-5aj2)
-- [Can't Stop](https://dev.to/abbeyperini/coding-and-adhd-cant-stop-10mf)
-- [Can't Remember](https://dev.to/abbeyperini/coding-and-adhd-cant-remember-30b4)
+- [Can't Start](/blog.html?blog=ADHD-2)
+- [Can't Keep Going](/blog.html?blog=ADHD-3)
+- [Can't Stop](/blog.html?blog=ADHD-4)
+- [Can't Remember](/blog.html?blog=ADHD-5)
 
 Followed by how I feel my ADHD symptoms can be beneficial in a development role:
 
-- [Where We Excel](https://dev.to/abbeyperini/coding-and-adhd-where-we-excel-454j)
+- [Where We Excel](/blog.html?blog=ADHD-6)

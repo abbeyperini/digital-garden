@@ -5,7 +5,7 @@ Tags: images
 
 ![a chibi shiba inu smiling and sticking its tongue out with a yellow construction hat in a light blue box with "Blogs loading!" on a darker background](https://images.abbeyperini.com/shibas/cover.png)
 
-When I [updated the blog section of my portfolio site](https://dev.to/abbeyperini/a-walkthrough-of-updating-my-portfolio-site-with-netlify-functions-and-the-dev-to-api-dd2), I realized I had a great opportunity to draw some cute SVGs and take my loading and error messages to the next level.
+When I [updated the blog section of my portfolio site](/blog.html?blog=serverless), I realized I had a great opportunity to draw some cute SVGs and take my loading and error messages to the next level.
 
 When I started, the loading text looked like this:
 
@@ -25,7 +25,7 @@ and my error graphic:
 
 and I'm ready to add them to my site!
 
-For more information on how I made these Shiba Inu graphics, and how to find or make images of your own, check out my post, [Sourcing Images and Optimizing Them for the Web](https://dev.to/abbeyperini/sourcing-images-and-optimizing-them-for-the-web-1j5b).
+For more information on how I made these Shiba Inu graphics, and how to find or make images of your own, check out my post, [Sourcing Images and Optimizing Them for the Web](/blog.html?blog=images).
 
 ## Putting the SVGs in my React App
 
@@ -178,7 +178,7 @@ Next, I add container styling to match the rest of my site, and the result looks
 
 ![a chibi shiba inu smiling and sticking its tongue out with a yellow construction hat in a light blue box with "Blogs loading!" on a darker background](https://images.abbeyperini.com/shibas/blogs-loading-full.png)
 
-But that's not all! I noticed that my error Shiba's question mark doesn't meet minimum contrast standards on my container background. Because this image doesn't add information to the page, it's not super important that it does, but I could animate it to cycle through many colors, at least one of which should meet standards. Plus, using CSS variables to change the color of my SVGs was one of my favorite parts of my [Toggle Dark Mode In React](https://dev.to/abbeyperini/toggle-dark-mode-in-react-28c9) post.
+But that's not all! I noticed that my error Shiba's question mark doesn't meet minimum contrast standards on my container background. Because this image doesn't add information to the page, it's not super important that it does, but I could animate it to cycle through many colors, at least one of which should meet standards. Plus, using CSS variables to change the color of my SVGs was one of my favorite parts of my [Toggle Dark Mode In React](/blog.html?blog=toggle) post.
 
 To do this, I'm going to have to edit my SVG code directly. First, using `right click > inspect` in my Chrome browser, I find the `<path>`s and the `<circle>` I want to animate. Then, I add "questionMark", "questionMarkFill", and "questionMarkDot" `id` properties to them, so I can always find them. Next, I remove the `<style>` Illustrator created in my SVG with my colors and rewrite them into CSS rules. Both this SVG and my other Shiba Inu have the same Illustrator-named classes like "cls-1", so I also rename the classes. After a fair amount of Googling variations of "SVG CSS color rotate" and settling upon using `@keyframes` and `hsla()`, I found [Dan Wilson's expert color math](https://danielcwilson.com/blog/2019/09/huedini/). Using that, I write two CSS animations to cycle through colors gradually:
 
@@ -275,7 +275,7 @@ The result looks like this:
 
 In doing research on SVGs, I found [the recommended tags to include](https://css-tricks.com/accessible-svgs/) to make SVGs accessible. I've updated all the svgs on my site to have a `<title>`, `<desc>`, and the `role="img"` and `aria-labelledby="titleID descID"` properties in the `<svg>` tag.
 
-While looking into animating SVGs, I saw color animation could trigger some accessibility issues, so I applied a rule I learned about in my [demo of the updated blog portion of my site](https://dev.to/abbeyperini/a-walkthrough-of-updating-my-portfolio-site-with-netlify-functions-and-the-dev-to-api-dd2):
+While looking into animating SVGs, I saw color animation could trigger some accessibility issues, so I applied a rule I learned about in my [demo of the updated blog portion of my site](/blog.html?blog=serverless):
 
 ```CSS
 @media (prefers-reduced-motion) {
@@ -287,4 +287,4 @@ While looking into animating SVGs, I saw color animation could trigger some acce
 
 ## Conclusion
 
-I really enjoyed making and styling these Shiba Inu SVGs. For an in depth breakdown of image types for the web and how to make or find your own for free, check out this article's sister blog, [Sourcing Images and Optimizing Them for the Web](https://dev.to/abbeyperini/sourcing-images-and-optimizing-them-for-the-web-1j5b). You can check these Shibes out live at `https://abbeyperini.dev` and see all the code for my site in [the repo](https://github.com/abbeyperini/Portfolio2.0).
+I really enjoyed making and styling these Shiba Inu SVGs. For an in depth breakdown of image types for the web and how to make or find your own for free, check out this article's sister blog, [Sourcing Images and Optimizing Them for the Web](/blog.html?blog=images). You can check these Shibes out live at `https://abbeyperini.dev` and see all the code for my site in [the repo](https://github.com/abbeyperini/Portfolio2.0).

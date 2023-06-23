@@ -7,7 +7,7 @@ Tags: git, #gitPanic
 
 When you think you've lost work, don't #gitPanic. As far as your commit history goes, git may as well be Ironborn, repeating "what is dead may never die."
 
-This blog assumes you have an intermediate understanding of git or have read [Git 101](https://dev.to/abbeyperini/gitpanic-git-101-10db), [Merging and Rebasing](https://dev.to/abbeyperini/gitpanic-merging-and-rebasing-2mo3), [HEAD](https://dev.to/abbeyperini/gitpanic-head-37m8), and [Interactive Rebase](https://dev.to/abbeyperini/gitpanic-interactive-rebase-48fe).
+This blog assumes you have an intermediate understanding of git or have read [Git 101](/blog.html?blog=gitPanic-1), [Merging and Rebasing](/blog.html?blog=gitPanic-2), [HEAD](/blog.html?blog=gitPanic-4), and [Interactive Rebase](/blog.html?blog=gitPanic-5).
 
 1. [Discard Changes](#discard-changes)
 2. [Reflog](#reflog)
@@ -25,11 +25,11 @@ If at any time you want to see what local changes are staged or unstaged, you ca
 git status
 ```
 
-Note: effectively, git doesn't save your changes until they're in a commit. If you discard your local changes in your working directory and undo (<kbd>cmd</kbd>/<kbd>ctrl</kbd> + <kbd>z</kbd>) doesn't work, you'll have to follow instructions for recovering deleted files based on your OS ([Mac](https://setapp.com/how-to/how-to-recover-deleted-files-after-emptying-trash), [Windows](https://support.microsoft.com/en-us/windows/recover-lost-or-deleted-files-7bf065bf-f1ea-0a78-c1cf-7dcf51cc8bfc), [Linux](https://adamtheautomator.com/linux-to-recover-deleted-files/)).
+Note: effectively, git doesn't save your changes until they're in a commit. If you discard your local changes in your working directory and undo (cmd/ctrl + z) doesn't work, you'll have to follow instructions for recovering deleted files based on your OS ([Mac](https://setapp.com/how-to/how-to-recover-deleted-files-after-emptying-trash), [Windows](https://support.microsoft.com/en-us/windows/recover-lost-or-deleted-files-7bf065bf-f1ea-0a78-c1cf-7dcf51cc8bfc), [Linux](https://adamtheautomator.com/linux-to-recover-deleted-files/)).
 
-If you really want to start over, there's always [deleting the branch and fetching the remote](https://dev.to/abbeyperini/gitpanic-merging-and-rebasing-2mo3#fetching).
+If you really want to start over, there's always [deleting the branch and fetching the remote](/blog.html?blog=gitPanic-2#fetching).
 
-Don't forget [stashing](https://dev.to/abbeyperini/gitpanic-stash-4gll).
+Don't forget [stashing](/blog.html?blog=gitPanic-6).
 
 Stashing has an option for untracked changes, but what if you want to delete them, not keep them? Run
 
@@ -71,7 +71,7 @@ I've talked about HEAD and passed a SHA here, but that's just the tip of the ref
 
 ## Reflog
 
-I touched on git log, git show, and git diff in [Interactive Rebase](https://dev.to/abbeyperini/gitpanic-interactive-rebase-48fe), but reflog is even more powerful.
+I touched on git log, git show, and git diff in [Interactive Rebase](/blog.html?blog=gitPanic-5), but reflog is even more powerful.
 
 When you run `git reflog`, you're asking git to show you the log of refs it keeps in `.git/logs/refs`. Like refs, this directory has information about head logs in `.git/logs/refs/heads`, the HEAD log in `.git/logs/HEAD`, stash in `.git/logs/refs/stash` and so on.
 
@@ -85,11 +85,11 @@ If you pass a ref to reflog, you can see other branches or commits that aren't H
 
 ## Refs Again
 
-I covered reflog shortnames as they apply to the stash in [#gitPanic - stash](https://dev.to/abbeyperini/gitpanic-stash-4gll#:~:text=Each%20of%20them%20will%20have%20stash%40%7Bx%7D). They work the same when you apply them to HEAD or a branch name, because any reflog, including the stash, is basically an array of logs of refs. The reflog shortname `main@{0}` refers to the head of main and `main@{1}` refers to the second latest commit on main. Meanwhile, `HEAD@{0}` and `HEAD` would show you the commit you have checked out.
+I covered reflog shortnames as they apply to the stash in [#gitPanic - stash](/blog.html?blog=gitPanic-6#:~:text=Each%20of%20them%20will%20have%20stash%40%7Bx%7D). They work the same when you apply them to HEAD or a branch name, because any reflog, including the stash, is basically an array of logs of refs. The reflog shortname `main@{0}` refers to the head of main and `main@{1}` refers to the second latest commit on main. Meanwhile, `HEAD@{0}` and `HEAD` would show you the commit you have checked out.
 
 This is also known as git ref pointer syntax and the index of the commit in the reflog file is not the only thing you can pass. Using [time qualifiers](https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog#:~:text=ref.-,Timed%20reflogs,-Every%20reflog%20entry), you can get all the commits on the main branch from the last week like `main@{1.week.ago}`. You can also pass a timestamp if you want to get really specific.
 
-I covered short SHAs, long SHAs, tags, branch names, head, and HEAD in [#gitPanic - HEAD](https://dev.to/abbeyperini/gitpanic-head-37m8). HEAD is one of the [special refs](https://www.atlassian.com/git/tutorials/refs-and-the-reflog#special-refs).
+I covered short SHAs, long SHAs, tags, branch names, head, and HEAD in [#gitPanic - HEAD](/blog.html?blog=gitPanic-4). HEAD is one of the [special refs](https://www.atlassian.com/git/tutorials/refs-and-the-reflog#special-refs).
 
 ![Cat appears to be dancing captioned "Git down girl go head git down"](https://images.abbeyperini.com/gitPanic/git-down.png)
 

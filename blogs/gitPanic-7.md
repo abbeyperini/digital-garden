@@ -14,7 +14,7 @@ Documentation in GitHub goes far beyond a repo README.
 
 ## Market Your Repos
 
-In [Git 101](https://dev.to/abbeyperini/gitpanic-git-101-10db) I mentioned that your GitHub profile could easily be a software development portfolio. Here's what I mean: every repo README is a chance to market your code to a potential employer. I've been asked plenty of times to explain code in my GitHub profile during an interview. Going through the process of creating a really good repo README can only help you prepare for those kinds of questions. I've even used READMEs to [describe the work I did during bootcamp](https://github.com/abbeyperini/DC_React).
+In [Git 101](/blog.html?blog=gitPanic-1) I mentioned that your GitHub profile could easily be a software development portfolio. Here's what I mean: every repo README is a chance to market your code to a potential employer. I've been asked plenty of times to explain code in my GitHub profile during an interview. Going through the process of creating a really good repo README can only help you prepare for those kinds of questions. I've even used READMEs to [describe the work I did during bootcamp](https://github.com/abbeyperini/DC_React).
 
 A README file contains information about the other files in software. On GitHub, the README is like the homepage of a repo. It uses [GitHub-flavored markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), so you can do a lot of formatting and add images, gifs, and videos. At a minimum, every project should have instructions on how to run the app.
 
