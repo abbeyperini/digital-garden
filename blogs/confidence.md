@@ -1,6 +1,6 @@
-# Practicing Confidence for the Job Search
+## Practicing Confidence for the Job Search
 
-## Or How I Stopped Self-Rejecting and Embraced Self-Promotion
+### Or How I Stopped Self-Rejecting and Embraced Self-Promotion
 
 Planted: 05/10/2021
 Tags: career
@@ -16,7 +16,7 @@ Luckily, confidence is something you can practice. I'm not talking about "fake i
 
 As always, please remember, a rejection usually has more to do with the hiring manager than you. It is probable that every interviewer you will ever speak to has not been trained in interviewing.
 
-## Practicing Confidence
+### Practicing Confidence
 
 Write it down - digitally or handwritten. Keep a wins folder with every message, email, photo, etc. that reminds you that you are good at doing things. You can also keep a daily gratitude log. In my case, I write down one thing I can celebrate about my day. Don't know where to start? Check out Julia Evans' [brag documents](https://jvns.ca/blog/brag-documents/).
 
@@ -36,13 +36,13 @@ I also recommend finding networking groups of people with similar backgrounds go
 
 Did I miss a way that you practice confidence or a networking group you love? Let me know with a comment.
 
-## Applying your new confidence
+### Applying your new confidence
 
 ![Moira Rose from Schitt's creek saying "one must champion oneself and say I am ready for this." with emphatic nodding and hand gestures](https://images.abbeyperini.com/career-series/champion.gif)
 
 First, you need a couple go-to hits to get over that icky shameful feeling about self-promotion. It could be the summary statement at the top of your technical resume - what are 3 things you know you're good at? They can be soft skills or a tool, framework, or methodology that you're really comfortable using. Literally practice telling anyone that you're good at those things. Could be your spouse or friend, but you've gotta let them know that you are an excellent problem solver with mega Angular skills. Once it feels even slightly natural, you're ready to start applying it to the job search.
 
-## Breaking down a job description
+### Breaking down a job description
 
 In my old role, I was responsible for reading a job description, pulling out the necessary information, and rewriting it so that when it was published on the internet, the recruiters would see the candidates with the best fit applying. Part of that was frequent calls with hiring managers to retool the original job description because the candidates submitted weren't what they were looking for. Here's how I flipped that for applying to jobs myself.
 
@@ -54,13 +54,13 @@ Next I'll comb through preferred requirements, and if I can speak to one, I pull
 
 All of these keywords become jumping off points for explaining via a cover letter, resume, or interview question that you are the right person to hire.
 
-## Cover letter
+### Cover letter
 
 A caveat: I have seen people talk about tailoring their resume for each job they apply to. I cannot speak to the efficacy of cover letters or tailoring your resume, but here's how I wrote the cover letters I did bother to write. This could easily be applied to tailoring a resume.
 
 Make yourself a template to save yourself stress and the time it takes to consider your opening and closing lines. For some reason, every cover letter I wrote started with "I would relish the opportunity to discuss the [Software Developer] role in depth." Spend the rest of the cover letter telling your potential employer how your experience lines up with the keywords you pulled from the job description. For example, if my keywords were "Adobe Creative Suite" and "front-end development," I'd write "my portfolio has examples of my use of Adobe Create Suite in conjunction with my front-end development skills."
 
-## Resume
+### Resume
 
 There's lots of advice out there for writing an Applicant Tracking System (ATS) compatible resume, so I'm only going to speak about career changes and gaps.
 
@@ -70,7 +70,7 @@ If you're a stay at home parent returning to the workforce, come up with your st
 
 If you have a gap in employment for any other reason, you will have to practice an answer too. My gap was to get my yoga certification. When asked, I explained why I chose to pursue it when I did and why I chose to walk away from a yoga teacher career. I often describe how yoga helps me be a better person and employee. Just like with stay at home parents, if you don't want to explain in depth, "finding myself" is a perfectly acceptable answer. Some people know exactly what they want to do right off the bat and follow a linear career path. I don't think they are the majority.
 
-## Interview questions
+### Interview questions
 
 Practice your answers to questions you know you will be asked like "tell us a little about yourself." Practice working the keywords you pull from the job description and company site into your answers. The goal is to become comfortable describing yourself in a positive light when in an interview setting. Remember, you can always ask for a second to think or for your interviewer to repeat or clarify the question. Once you don't have to scramble for your answers to every single question, the pressure you feel walking into an interview is significantly lessened.
 
@@ -78,7 +78,7 @@ Also, don't forget to practice confidence right before an interview! It's easy t
 
 For developers looking for their first tech role, practice how to describe your learning process and saying "I don't know but here's how I would find out." You are also interviewing the company, and if they're only looking for someone that already knows all the answers, they're probably not going to find a candidate anytime soon and you don't want to work for them anyway.
 
-## Networking/Online Presence
+### Networking/Online Presence
 
 Cold emailing/messaging is always awkward. Be nice and enthusiastic and don't be afraid to tell the person why you're contacting them, especially if it's because you think they're knowledgeable. You'll be surprised how many people love to hear you think they're an expert - they're probably not perfectly confident either!
 
@@ -86,11 +86,11 @@ Share! Share! Share! You've got to practice your way out of that reticence to sh
 
 I did not feel 100% confident about the site and blog post I shared when I shared them, but they ended up being the catalyst that got me a job. Imperfect self-promotion will always win out over self-rejection.
 
-## References
+### References
 
 References can be people you work with on coding projects. They don't have to be a former co-worker, so you can ask anyone you've worked with on an open source or volunteer project. Unless the company specifies that they want professional reference, they don't have to be someone you have worked with at all. I would avoid family members, but I've used friends as references plenty of times.
 
-## Conclusion
+### Conclusion
 
 Now I hope you'll see a job description or interview as an opportunity to show your strengths rather than opportunities to fail. A job description should be a tool for you to use to show another human who happens to be your interviewer that you can most certainly hit the ground running if they hire you. A cover letter, thank you note, resume, or online presence should be full of shameless self-promotion.
 

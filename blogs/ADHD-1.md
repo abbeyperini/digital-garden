@@ -1,4 +1,4 @@
-# Coding and ADHD - ADHD Brains
+## Coding and ADHD - ADHD Brains
 
 Planted: 05/31/2022
 Tags: ADHD, neurodiversity
@@ -23,7 +23,7 @@ I have ADHD combined type, which means I have hyperactive and impulsive symptoms
 
 ![A comic by Dani Donovan Non-ADHD: a person walking their dogs in a nice row and whistling. The dogs are labelled responsibilities. ADHD: a person tangled in dog leashes, the dogs each up to their own antics](https://images.abbeyperini.com/ADHD-series/dogs.jpeg)
 
-## ADHD Brains
+### ADHD Brains
 
 Many people have said it better, but I feel like I have too much attention. I would love to be able to pay attention to one thing. It would be great for my brain to focus on something just because I or other people think it should be important. In fact, it is physically painful for me to sit still with nothing interesting happening. Rather than "Attention-Deficit," it should be called something like "Attention-Regulation" or "Executive Function" / Hyperactivity Disorder.
 
@@ -37,7 +37,7 @@ For us, part of the appeal of those rewards is novelty. People with ADHD don't s
 
 Luckily for us, not only is coding a creative endeavor that involves constantly learning new things, but also once one problem is solved, there's always a brand new one to try.
 
-## Conclusion
+### Conclusion
 
 Personally, I would never describe ADHD as a super power. Yes, it's why I could learn coding concepts I'm interested in seemingly overnight. People seem to admire the way my brain wants to be constantly picking up hobbies and diving straight into the deep end of projects. It's also why I cannot attempt an algorithm coding challenge without crying, often try to change too many things at once without testing, and have been typing this blog for 40 minutes instead of eating lunch.
 

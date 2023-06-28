@@ -1,4 +1,4 @@
-# 8 Ways to Support Women Developers
+## 8 Ways to Support Women Developers
 
 Planted: 03/08/2023
 Tags: women in programming
@@ -8,7 +8,7 @@ Series: [Women in Programming](/series.html?series=women)
 
 Last year, in [We've Been Here Since the Beginning](/blog.html?blog=beginning), I wrote about how it felt to be constantly othered, assumed to be less competent, and assumed to be a diversity hire. This International Women's Day, I have regained a teensy bit of optimism, so it's all about how to support the women developers in your life. Basically, if you see something, say something.
 
-## 1. Believe Them
+### 1. Believe Them
 
 What not believing them looks like:
 
@@ -23,7 +23,7 @@ What support looks like:
 - Knowing if women are receiving blatant mistreatment, that usually indicates it's condoned at the highest level.
 - Taking a harsh look at your own biases and assumptions. No one is immune from them. If you can, stage an experiment like [changing your email signature](https://www.independent.co.uk/news/business/news/gender-inequality-man-woman-switch-names-week-martin-schneider-nicky-knacks-pay-gap-a7622201.html).
 
-## 2. Call Out Othering
+### 2. Call Out Othering
 
 What othering them looks like:
 
@@ -39,7 +39,7 @@ What support looks like:
 - Speaking up when someone implies it's weird a woman is involved. It's usually weird more women aren't involved.
 - Making sure women are invited to meetings and social events. Choose activities that are welcoming to everyone.
 
-## 3. Combat Stereotypes
+### 3. Combat Stereotypes
 
 What stereotypes about women in tech look like:
 
@@ -53,7 +53,7 @@ What support looks like:
 - Calling out the assumptions being made based on stereotypes. Sometimes they are stated out right, but often it's more subtle.
 - Asking why they assumed that her role should be non-technical and point out all the evidence to the contrary that they missed.
 
-## 4. Give Them the Credit They Deserve
+### 4. Give Them the Credit They Deserve
 
 What women not getting credit looks like:
 
@@ -66,7 +66,7 @@ What support looks like:
 - Amplifying women's ideas when they're talked over or ignored. Repeat the idea and give credit to whoever came up with the idea. "Like Sally said, it would be a good idea to..."
 - If someone is interrupting others constantly, calling it out.
 
-## 5. Don't Assign Them Glue Work
+### 5. Don't Assign Them Glue Work
 
 What [glue work](https://noidea.dog/glue) being forced on women looks like:
 
@@ -79,7 +79,7 @@ What support looks like:
 - Not doing that.
 - Calling out people who do those things.
 
-## 6. Apply the Rules Equitably
+### 6. Apply the Rules Equitably
 
 What not applying the rules equitably looks like:
 
@@ -91,7 +91,7 @@ What support looks like:
 - Documenting how something has been unevenly applied in the past and how the rule or process should be applied in the future. If anyone gets noticeably upset about you asking for it to be documented, they probably know they benefit from being able to apply it unevenly.
 - Making sure someone owns the process and can ensure the rules are applied consistently.
 
-## 7. Don't Tolerate Objectification/Sexualization
+### 7. Don't Tolerate Objectification/Sexualization
 
 What objectification/sexualization looks like:
 
@@ -104,7 +104,7 @@ What support looks like:
 - Calling out others who do.
 - Understanding the difference between "cool shirt" or "nice haircut" and "If you smiled more, you'd be prettier."
 
-## 8. Hire and Promote More Women
+### 8. Hire and Promote More Women
 
 What it looks like when hiring and promoting women isn't a priority:
 
@@ -126,7 +126,7 @@ What support looks like:
   - [lady bird talent](https://ladybirdtalent.com/blog/)our-favorite-women-friendly-tech-job-boards/
   - [women in technology](https://www.womenintechnology.org/career-center)
 
-## Conclusion
+### Conclusion
 
 Obviously, some of these things are easier to do the higher you rank in your organization. You may be thinking to yourself "I'm not the CEO. Sure, I can say something, but that doesn't mean it'll change anything." I can guarantee it will change women in your organization feeling like no one cares they have to put up with this.
 

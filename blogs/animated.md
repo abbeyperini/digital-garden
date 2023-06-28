@@ -1,5 +1,5 @@
 
-# CSS Animated Button with Offset Border
+## CSS Animated Button with Offset Border
 
 Planted: 12/16/2020
 
@@ -7,11 +7,11 @@ Planted: 12/16/2020
 
 I’m a believer in finding joy in the little things, and during my last project, that little thing was this button. I have been reading a lot about web design, and wanted my primary buttons to stand out in a big way. I had seen an image of a square button with an offset border while researching a design for an even earlier project, but never got the time to implement it. So for weeks, I’ve been trying to find the time to build this baby, and it was worth the wait.
 
-## To div or not to div
+### To div or not to div
 
 I researched a few ways to make the offset border without wrapping it in a container, but ultimately, I wanted an animation that looked like the button was moving into the offset border. If you are looking for an offset border and are ok with it moving with the button itself, you can use `position: absolute;` and `z-index: -1;` on the button with the `::before` pseudo-selector to create an offset border. (Keep in mind transitions and animations using `::before` are not supported in IE or Safari.) Similarly, you can also use an offset box shadow to create a double box effect that will move with the button.
 
-## The div solution
+### The div solution
 
 First create a div container — using `position: relative;` and `left:`, we’ll position the whole button where we want it on the page. Changing the `left:` property will change its position horizontally, and you can use `top:` or `bottom:` to move it vertically. Adjusting the margin will also help.
 
@@ -64,7 +64,7 @@ button:focus {
 
 However, you should add something else (like a new `background-color:`) in its place.
 
-## Conclusion
+### Conclusion
 
 ![on a teal and blue background, a yellow button that says 'add' moves into a yellow border when clicked](https://images.abbeyperini.com/animated/click.gif)
 

@@ -1,4 +1,4 @@
-# Toggle Dark Mode in React
+## Toggle Dark Mode in React
 
 Planted: 03/05/2021
 Tags: toggle
@@ -198,7 +198,7 @@ function Toggle() {
 }
 ```
 
-## Update
+### Update
 
 To see how I have refactored the logic of this component and made it accessible, read [An Accessible Dark Mode Toggle in React](/blog.html?blog=audit-3).
 
@@ -222,6 +222,6 @@ The result looks like this:
 
 ![mobile - toggle looks like a moon with stars click changes the site from dark mode to light mode and the toggle now looks like a sun with clouds](https://images.abbeyperini.com/toggle/mobile.gif)
 
-## Conclusion
+### Conclusion
 
 I tried to include all of the relevant code, but you can also see the full code for my site in its [Github repository](https://github.com/abbeyperini/Portfolio2.0). If you enjoyed this article or are left with questions, please leave a comment! I would also love to see anything built following this tutorial.

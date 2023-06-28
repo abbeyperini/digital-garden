@@ -1,4 +1,4 @@
-# A Beginner's Guide to HTTP - Part 2: Responses
+## A Beginner's Guide to HTTP - Part 2: Responses
 
 Planted: 02/16/2022
 Tags: HTTP
@@ -10,7 +10,7 @@ In this part of the series, I'll demonstrate generating HTTP responses from a si
 
 Building an HTTP message conversation is like communicating via telegraph or secret code. When the server receives a request message, it has to decode it to get the instructions for the response message. Based on those instructions, the serves encodes and returns a response message.
 
-## Introduction and Table of Contents
+### Introduction and Table of Contents
 
 This article assumes familiarity with basic JavaScript, [command line](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line), and the terms defined in [part 1](/blog.html?blog=HTTP-1).
 
@@ -26,7 +26,7 @@ I'm starting with the server/HTTP responses because you'll usually find yourself
 8. [POST and JSON](#post-and-json)
 9. [CORS](#cors)
 
-## A Simple Node.js Express Server
+### A Simple Node.js Express Server
 
 I'll be making a very simple yarn stash app, so I can keep track of all of my yarn. As you follow along, try building your own app idea, whatever it may be. You'll be surprised how much tweaking the code slightly helps you learn the concepts, and you may even go on to finish a cool app from the CRUD bones you create here. I've still got one or two apps from bootcamp that started like this that I enjoy working on.
 
@@ -56,7 +56,7 @@ Next run `node app.js` in your terminal to run the server. If it works, you shou
 
 Now that our server is running, let's talk about setting up our routes.
 
-## URLs, Routes, and Endpoints
+### URLs, Routes, and Endpoints
 
 URL stands for Uniform Resource Locator, a specific type of Uniform Resource Identifier (URI). Basically, a street address but for a client or server hosted on the web. In [part 1](/blog.html?blog=HTTP-1), we talked about how a URL has a protocol (http:// or https://). I mentioned that ports were optional. If you're accessing a URL that uses HTTP or HTTPS, the port is not specified as long as the standard port is used (80 for HTTP and 443 for HTTPS). My server is running on port 8080 on my local machine, so its URL is `http://localhost:8080`. After the protocol, domain/host name (`localhost` for my server), and maybe a port number, you can pack a lot of information into a URL.
 
@@ -90,7 +90,7 @@ If I were building a complex app, say one that was concerned with yarn and knitt
 
 From the perspective of a client wanting to request a resource from a server, `/yarn` in `http://localhost:8080/yarn` would be called an endpoint. For example, in the [DEV API documentation](https://developers.forem.com/api#tag/articles), you can see how `/articles` is called the "articles endpoint" and the entire URL is `https://dev.to/api/articles`. If you make a GET HTTP request to `https://dev.to/api/articles`, DEV's server will return all the posts users create on DEV. So developers will say in conversation, "making a GET request to the articles endpoint will return all the posts users create on DEV." Meanwhile, the developer building the DEV API would probably say something like "the articles route will send back all the posts users create on DEV."
 
-## URL Parameters
+### URL Parameters
 
 If I want to make it easy to request data about one yarn instead of all the data about all the yarn, I can require the HTTP request pass an id in a URL parameter. The server route code would look like this:
 
@@ -104,7 +104,7 @@ Just like we used the `res` object passed to our route function to send a respon
 
 With your server running, navigate to `http://localhost:8080/yarn/23` in your browser, and you should see "This is the yarn data for 23."
 
-## Status Codes and Error Handling
+### Status Codes and Error Handling
 
 If you don't specify a status code when you send your response, Express uses [Node.js code to send 200](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/#http-status-code). If you wanted to explicitly send a status code (and the associated message), you can chain it and the `.send()` function like this:
 
@@ -128,7 +128,7 @@ app.get('/yarn/:id', (req, res) => {
 
 This way, if I navigate to `http:localhost:8080/yarn/purple` in my browser with my server running, I'll see "No id no yarn!" If I navigate to `http:localhost:8080/yarn/43`, I'll see "This is the yarn data for 43." The browser does not display the status code or status message for us, but I'll soon introduce a tool that will.
 
-## My Fake Yarn Database
+### My Fake Yarn Database
 
 I'm going to mock a database really quickly by using an array of objects in my server to hold data. This means any data that is not hardcoded will disappear every time I kill my server, but setting up a database is beyond the goal of this guide.
 
@@ -195,7 +195,7 @@ app.get('/yarn/:id', (req, res) => {
 
 Navigating to `http://localhost:8080/yarn/3` in my browser with my server running returns "Yarn 3 is named Rowan Alpaca Colour. It is DK weight and you have 18 meters." Navigating to `http://localhost:8080/yarn/5` returns "No yarn with that id." Navigating to `http://localhost:8080/yarn` will turn an array of yarn information strings for every yarn in the "database."
 
-## DELETE and Postman
+### DELETE and Postman
 
 You may have noticed - I've only made routes with the GET method so far! We have no way to add or delete yarn! That's because we can only generate GET requests using a URL in the browser. To use a POST or DELETE route, you'll need a client or a tool like [Postman](https://www.postman.com/). We'll build our client next, but first, let's cover how to use Postman to test my DELETE route:
 
@@ -225,7 +225,7 @@ Once you have Postman installed and open, you'll need to open a new request tab 
 
 The response section in Postman also shows us some information about the HTTP response message that we couldn't see in the browser. The status code and message are shown right by the response body. Both the request and response sections have tabs like headers where you can see all the headers for the message and other information and tools. Check out [Postman's docs](https://learning.postman.com/docs/getting-started/introduction/) to see all the tools it can provide.
 
-## Body Parsing and Middleware
+### Body Parsing and Middleware
 
 I also need to add a body parser to decode my request body data into something I can work with in JavaScript in my server. This is why both requests and responses use Content-Type headers. Translating an HTTP message body into something useful is significantly easier if we know what the body's media/MIME type is.
 
@@ -243,7 +243,7 @@ If you want to know more about middleware, including error handlers, and more ab
 
 "But wait," you might be thinking, "we've been sending data without specifying the Content Type header or formatting the body this whole time!" Express's `res.send()` method automatically sets headers and [formats the body based on the type of the parameter passed to it](https://expressjs.com/en/api.html#:~:text=this%20response%20object.-,res.send(%5Bbody%5D),-Sends%20the%20HTTP). Using `res.json()` instead of `res.send()` would set the Content Type header to "application/json" and format whatever is passed as JSON. You can also use [`res.type()`](https://expressjs.com/en/api.html#res.type) to set the header yourself. This is the main reason I chose Express for this guide - the formatting and parsing of HTTP messages will only get more manual as we go on.
 
-## POST and JSON
+### POST and JSON
 
 Next up, my POST route:
 
@@ -301,7 +301,7 @@ To use the POST route with Postman, we'll have to create a body. After selecting
 
 ![screenshot of Postman with all of the information described before](https://images.abbeyperini.com/HTTP-series/response-postman.png)
 
-## CORS
+### CORS
 
 Postman ignores CORS. Even though we've got our basic server set up to send HTTP responses once it's received HTTP requests, we still need to enable CORS before we move on to generating HTTP requests in a client. To do this, I install the [cors](https://expressjs.com/en/resources/middleware/cors.html#configuring-cors-w-dynamic-origin) package by running `npm install cors` in my terminal. At the top of my app.js file, I import the package:
 
@@ -323,7 +323,7 @@ Access-Control-Allow-Origin: *
 
 `*` is a wildcard. This tells browsers to allow **any request from any origin**. This is the least amount of security possible. Since my goal is to practice HTTP requests on my local machine, I'm going with the easiest option. If this was a server I was going to deploy, I would use the [configuration options](https://expressjs.com/en/resources/middleware/cors.html#:~:text=for%20all%20routes.-,Configuring%20CORS%20Asynchronously,-var%20express%20%3D%20require) to limit origins and methods that can access my server.
 
-## Conclusion
+### Conclusion
 
 If you're left confused or have any questions about any of the topics I've touched on in this part of the series, please don't hesitate to leave a comment! I made an effort to link to resources for topics when they came up, but if there are topics you'd like to see in a "more resources" section like in [part 1](/blog.html?blog=HTTP-1), let me know.
 

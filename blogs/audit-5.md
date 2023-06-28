@@ -1,4 +1,4 @@
-# Blog Page Accessibility Deep Dive
+## Blog Page Accessibility Deep Dive
 
 Planted: 11/20/2021
 Tags: audit, accessibility
@@ -14,7 +14,7 @@ Read [Part 1 - The Audit](/blog.html?blog=audit-1), [Part 2 - Quick Fixes](/blog
 
 This blog will focus on the full blog page on my portfolio site. There is a component displaying previews of all of my blog posts on my main page. Clicking on the "Blog" heading/button there will render a component displaying all of my blogs in their entirety. Similarly, when you click on the heading of one of the blog previews, only that blog will load. When I started writing this part of my accessibility audit series, there was a separate SingleBlog component for rendering one blog with almost the exact same structure and styling as the FullBlog component that rendered all of the blogs.
 
-## The Problems
+### The Problems
 
 I'm fixing issues I discovered in part 1 of this series, while auditing, as well as issues I discovered while fixing my site for parts 2, 3, and 4. For good measure, I'm also investigating a few things I wanted to revisit [the last time I rewrote this page](/blog.html?blog=serverless#:~:text=At%20this%20point%2C%20I%20still%20have%20a%20list%20of%20things%20I%27d%20like%20to%20revisit%3A). As I wrote this, the list of problems grew, some fixes solved problems for headings I hadn't gotten to yet, and I probably reordered the sections 5 times as I went. Because of the sprawling nature of this blog, I've mapped the problems to the headings with their fixes:
 
@@ -45,9 +45,9 @@ A couple automatic tools gave me errors about long alt-text. I also want to look
 9. [Skipping Around](#skipping-around)
 As I've been testing things with a screen reader and keyboard for this blog series, I realized wanted to provide [skip links](http://web-accessibility.carnegiemuseums.org/code/skip-link/) as a means of bypassing blocks of content for my blog preview component and blog page.
 
-## The Solutions
+### The Solutions
 
-### Refactor
+#### Refactor
 
 The last time I rewrote this page, I noticed that my SingleBlog and FullBlog components were very similar. The only real difference was I passed a blog id to my SingleBlog component to display one blog and my FullBlog component displayed all the blogs by default.
 
@@ -130,7 +130,7 @@ if (!state.isLoading && state.blogs !== null) {
 
 Now, all of the updates I'll be doing for this component for the rest of this blog only have to be done in one file.
 
-### Markdown or HTML?
+#### Markdown or HTML?
 
 I wanted to revisit this decision for a couple reasons. First, because of the short deadline I was on, I didn't really have time to look at the markdown parsing solutions available to me. I balked when I saw the reviews saying they could be buggy and usually used `dangerouslySetInnerHTML`. Second, when I was building it, I was getting fairly regular 429, too many requests, responses from the DEV API because I'm grabbing each blog by id to get the HTML. However, I'm not seeing those anymore.
 
@@ -190,7 +190,7 @@ let markdown = state.blogs.body_markdown
 
 The bad news is I'll have to revisit all of my blog styling for a third time. Considering the majority of the rest of the blog is mostly about styling fixes, it definitely could have happened at a worse time.
 
-### Sections, Articles, and Headings, Oh My
+#### Sections, Articles, and Headings, Oh My
 
 Turns out [the myth that having `<section>`s negates the need to avoid multiple `<h1>`s on a page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#multiple_h1_elements_on_one_page) persists because the HTML specs say that's true and the browsers never implemented it. First, I updated my main page with `<h2>`s around my section headings. Then I double check I'm not skipping around in heading hierarchy in any of the content of the sections. I ended up updating about 16 headings.
 
@@ -209,10 +209,10 @@ Next, the regex solution - I think I only have as low as `<h4>`, but I add a rep
 ```JavaScript
 function replaceHeadings(markdown) {
   let newHeadings 
-  newHeadings = markdown.replace(/\s#{5}\s/g, "\n###### ")
-  newHeadings = newHeadings.replace(/\s#{4}\s/g, "\n##### ")
-  newHeadings = newHeadings.replace(/\s#{3}\s/g, "\n#### ")
-  newHeadings = newHeadings.replace(/\s#{2}\s/g, "\n### ")
+  newHeadings = markdown.replace(/\s#{5}\s/g, "\n####### ")
+  newHeadings = newHeadings.replace(/\s#{4}\s/g, "\n###### ")
+  newHeadings = newHeadings.replace(/\s#{3}\s/g, "\n##### ")
+  newHeadings = newHeadings.replace(/\s#{2}\s/g, "\n#### ")
 
   return newHeadings
 }
@@ -233,7 +233,7 @@ blogList = state.blogs.map((blog) => {
 })
 ```
 
-### Links on Links on Links
+#### Links on Links on Links
 
 While refactoring, I saw that the DEV url is included in each blog object returned by the API. Now I just need to figure out how I want to display it. I settle on a share button. For now, I'll open the DEV link in a new tab, but I've added copying the link to the user's clipboard and a hover label saying "copied!" to [this Github issue](https://github.com/abbeyperini/Portfolio2.0/issues/3). For now, I've got a "Share" button under each blog heading.
 
@@ -257,7 +257,7 @@ let SVGID = "ShareExternalLink" + Math.random().toString(16).slice(2)
 
 I left the single blog SVG id as "ShareExternalLink" since it will be the only one on the page.
 
-### The CSS Mess
+#### The CSS Mess
 
 Time to revisit my [blog CSS](https://github.com/abbeyperini/Portfolio2.0/blob/master/portfolio/src/styles/App.css) a third time.
 
@@ -275,7 +275,7 @@ Styling my `<img>`s wrapped in `<p>`s without a class stumped me for a while. Wh
 
 After all my styling is reapplied, I scroll through and end up adding a few things - a `<h4>` rule, some margins, and a new line to a blog post where the `<img>` needed to be further away from the text. I'm not super happy with my share button, but I'll use that as motivation to get to that [Github issue](https://github.com/abbeyperini/Portfolio2.0/issues/3).
 
-### No to Reflow
+#### No to Reflow
 
 My `<pre>` blocks are set to 100% `width` in my last media query. My headings have no `width` rules. It looks strange when they're all different lengths, and one or both are probably the source of my reflow issues.
 
@@ -306,7 +306,7 @@ I zoom in to 400% and voila! No more reflow issues. I scroll through one last ti
 
 In a shocking twist, this page no longer scrolls horizontally in landscape on mobile. I have no idea what made it do that in the first place, but apparently, I've fixed it without pushing any code I've produced while writing this blog.
 
-### Text Formatting
+#### Text Formatting
 
 For this section, I retest with [ARC Toolkit](https://chrome.google.com/webstore/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce) and [IBM Equal Access Accessibility Checker](https://chrome.google.com/webstore/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?hl=en-US). While I was checking for skipped headings in my blogs on DEV, I removed line breaks and the italicized lines about when the blog was originally published on Medium. This cut down significantly on the number of warnings about `<em>` elements. The `<q>` and `<quoteblock>` warnings are about places in my blogs where I quote myself, present a hypothetical or mantra, or put quotations around text you would see on the screen or that I'm adding to my site. The places where I quote other people are properly surrounded by `<quoteblock>`. The "use more list elements" warnings are about places where a lot of links or code blocks appear under an `<h3>` wrapped in a `<p>`. They wouldn't make sense as lists, so those are fine.
 
@@ -328,10 +328,10 @@ I am sad `react-markdown` isn't parsing `<kbd>` elements, because they're so cut
 ```JavaScript
 function replaceHeadings(markdown) {
     let newHeadings 
-    newHeadings = markdown.replace(/\s#{5}\s/g, "\n###### ")
-    newHeadings = newHeadings.replace(/\s#{4}\s/g, "\n##### ")
-    newHeadings = newHeadings.replace(/\s#{3}\s/g, "\n#### ")
-    newHeadings = newHeadings.replace(/\s#{2}\s/g, "\n### ")
+    newHeadings = markdown.replace(/\s#{5}\s/g, "\n####### ")
+    newHeadings = newHeadings.replace(/\s#{4}\s/g, "\n###### ")
+    newHeadings = newHeadings.replace(/\s#{3}\s/g, "\n##### ")
+    newHeadings = newHeadings.replace(/\s#{2}\s/g, "\n#### ")
     newHeadings = newHeadings.replace(/<kbd>/g, "")
     newHeadings = newHeadings.replace(/<\/kbd>/g, "")
 
@@ -345,7 +345,7 @@ I'm getting warnings about missing `<h1>`s, but that will be fixed when I get to
 
 I get warnings about using "non-alphanumeric characters" like | in codeblocks, which still need to be read by the screen reader for the code to make sense, so those will be staying as is. I also get warnings about making sure words like "above" and "below" make sense without visual context. With 20 blogs, checking each instance is a bit of a time consuming project, so I'm making a note to revisit this in the next blog in this series. That will also be a better time to cross post the heading and other changes to Hashnode, and Medium if necessary.
 
-### The Long Alt-Text
+#### The Long Alt-Text
 
 I get 11 "alt-text longer than 150 characters" warnings from IBM Equal Access Accessibility Checker. What can I say, I want to make sure screen reader users get all the information. I could come up with a regex solution of some sort to make a [D-link](https://www.w3.org/WAI/GL/techniques.htm) or replace `alt` with an `aria-describedby` attribute, but I'd rather shorten 11 alt-texts at this point in my accessibility audit journey. Using [Word Counter](https://wordcounter.io/) to get a character count and cmd + F in the elements console in dev tools on my site to find the offenders, I am able workshop them all down. You can tell when I'm proud of an image or code project I've made, because I get verbose.  
 
@@ -357,7 +357,7 @@ Not shockingly, a few of the longest alt-texts had "screenshot" in them. Typical
 
 During my retest for the previous section, I only got errors for one instance where I used "gif" in alt-text in a blog and a couple places where I used it in my portfolio section on the main page. I have removed all three. I have no excuse for calling the Moira gif a gif in my blog alt-text, but I remember being very proud of the gif walkthroughs I made for projects, and we know how that goes in my alt-text.
 
-### Skipping Around
+#### Skipping Around
 
 I want to add a skip link for my blog preview component and for my FullBlog component when I return all of my blogs. I start by adding CSS classes provided by [Carnegie Museums](http://web-accessibility.carnegiemuseums.org/code/skip-link/):
 
@@ -478,7 +478,7 @@ The result is beautiful:
 
 ![when focused, "Skip directly to a blog:" appears and focusing on the skip links cycles through links to all the blogs on the page](https://images.abbeyperini.com/audit-series/fullBlogSkipLink.gif)
 
-## Conclusion
+### Conclusion
 
 This blog in particular and the series as a whole has been a massive endeavor. I took a break for a few days after part 4 because I sorely needed it. Still, at this point I've written over 11,000 words about accessibility auditing and coded a long list of fixes in 20 days across 5 blogs. I typically only manage a few hundred to 2,000 words a month. While I am looking forward to wrapping this series up, it has been nice to get back to frontend code for the first time in a while.
 

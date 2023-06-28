@@ -1,4 +1,4 @@
-# #gitPanic - Tools
+## #gitPanic - Tools
 
 Planted: 11/29/2022
 Tags: git, #gitPanic
@@ -15,7 +15,7 @@ A list of tools you can use with git to make your life easier.
 5. [VS Code](#vs-code)
 6. [Other Text Editors](#other-text-editors)
 
-## Tab Autocomplete
+### Tab Autocomplete
 
 [Tab autocompletion](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash) is a git feature you have to enable. Say you're typing `git checkout feat--`, but you forget what you named your branch. When you hit tab, autocompletion will either fill out the rest for you or suggest options that match what you've typed.
 
@@ -55,12 +55,12 @@ source <file name>
 
 If you're on Windows, the [git BASH emulator](https://gitforwindows.org/) comes with tab autocomplete preconfigured.
 
-## What's My Branch?
+### What's My Branch?
 
 Before I added a script to print out my current git branch after the directory in my terminal, my most commonly used git command was `git branch`. Terminal programs like [Hyper](https://hyper.is/) will have features like this preconfigured. If you're just using Zsh or Bash, here's a script you can add to your terminal profile file:
 
 ```bash
-# Find and set branch name var if in git repository.
+## Find and set branch name var if in git repository.
 function git_branch_name()
 {
   branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
@@ -72,14 +72,14 @@ function git_branch_name()
   fi
 }
 
-# Enable substitution in the prompt.
+## Enable substitution in the prompt.
 setopt prompt_subst
 
-# Config for prompt. PS1 synonym.
+## Config for prompt. PS1 synonym.
 prompt+='branch:$(git_branch_name) -- '
 ```
 
-## git GUI Clients
+### git GUI Clients
 
 A GUI is a graphic user interface. In other words, instead of trying to understand your repo history and use git just from the command line, you can use a program that gives you pictures and buttons.
 
@@ -91,7 +91,7 @@ There are two GUIs that are considered part of git - [gitk](https://www.atlassia
 
 Personally, I find it really helps me to see the repo history visualized as a tree, so I currently use [Sublime Merge](https://www.sublimemerge.com/). I've used [GitKraken](https://www.gitkraken.com/git-client) and [Sourcetree](https://www.sourcetreeapp.com/) in the past. The git reference documentation maintains [a list of git GUI clients](https://git-scm.com/downloads/guis), including mobile apps!
 
-## Associating Git with Your Text Editor
+### Associating Git with Your Text Editor
 
 There are parts of using git that require a text editor. Git will often open a [vi window](https://en.wikipedia.org/wiki/Vi) in the terminal. You can configure it to open other editors in the terminal... or you can configure it to open your preferred text editor.
 
@@ -105,7 +105,7 @@ Then, every time you went to write a commit message or interactive rebase, a VS 
 
 This is separate from VS Code's Source Control, which is closer to a GUI client.
 
-## VS Code
+### VS Code
 
 VS Code's Source Control is a [Source Code Management API](https://code.visualstudio.com/api/extension-guides/scm-provider) that sends models to your version control system.
 
@@ -123,7 +123,7 @@ Once you've opened a repo, you get an overview of your working directory. It'll 
 
 This is all available without configuring any of the many settings, and we haven't even gotten to extensions.
 
-### Extensions
+#### Extensions
 
 Add even more features with extensions from the marketplace!
 
@@ -135,7 +135,7 @@ Add even more features with extensions from the marketplace!
 - [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) is like running `git log`, but interactive.
 - There's even [an extension](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) for integrating [Codespaces](https://docs.github.com/en/codespaces).
 
-## Other Text Editors
+### Other Text Editors
 
 When it comes to git features, Atom comes in a close second to VS Code. It has [some git and GitHub features](https://flight-manual.atom.io/using-atom/sections/version-control-in-atom/) right out of the box. The [GitHub package](https://flight-manual.atom.io/using-atom/sections/github-package/) allows you to do everything from visualizing repo history to committing to Pull Requests right in your text editor window.
 
@@ -143,6 +143,6 @@ Sublime has some [git integration](https://www.sublimetext.com/docs/git_integrat
 
 [TextMate](https://macromates.com/textmate/manual/version-control) has a few version control integration features.
 
-## Conclusion
+### Conclusion
 
 Hopefully this gives you an idea of the wealth of git tools out there!

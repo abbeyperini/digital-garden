@@ -1,4 +1,4 @@
-# #gitPanic - Removing and Restoring Work
+## #gitPanic - Removing and Restoring Work
 
 Planted: 11/22/2022
 Tags: git, #gitPanic
@@ -16,7 +16,7 @@ This blog assumes you have an intermediate understanding of git or have read [Gi
 4. [Reset](#reset)
 5. [Revert](#revert)
 
-## Discard Changes
+### Discard Changes
 
 If you haven't committed yet, there are a few ways to wipe all your local changes and start again with a blank working directory.
 
@@ -70,7 +70,7 @@ git restore --source 12a3b4f index.html
 
 I've talked about HEAD and passed a SHA here, but that's just the tip of the ref iceberg. Before I talk about discarding changes with [reset](#reset), let's dig into the reflog and refs.
 
-## Reflog
+### Reflog
 
 I touched on git log, git show, and git diff in [Interactive Rebase](/blog.html?blog=gitPanic-5), but reflog is even more powerful.
 
@@ -84,7 +84,7 @@ Because the reflog will only be lost after months or by running `git reflog expi
 
 If you pass a ref to reflog, you can see other branches or commits that aren't HEAD. The next section will cover reflog shortnames and all the possible refs I could find. If you're just interested in how to use what reflog prints out to get back lost work, skip ahead to [Reset](#reset).
 
-## Refs Again
+### Refs Again
 
 I covered reflog shortnames as they apply to the stash in [#gitPanic - stash](/blog.html?blog=gitPanic-6#:~:text=Each%20of%20them%20will%20have%20stash%40%7Bx%7D). They work the same when you apply them to HEAD or a branch name, because any reflog, including the stash, is basically an array of logs of refs. The reflog shortname `main@{0}` refers to the head of main and `main@{1}` refers to the second latest commit on main. Meanwhile, `HEAD@{0}` and `HEAD` would show you the commit you have checked out.
 
@@ -104,7 +104,7 @@ But wait! There's more! You can pass refs to [commit ranges](https://git-scm.com
 
 Now that we know how to refer to just about anything in git, how do we use that to remove and restore work?
 
-## Reset
+### Reset
 
 Like interactive rebase, reset rewrites the commit history. For this reason, only use it locally, or in your own branch.
 
@@ -188,7 +188,7 @@ You could even start a new branch instead, like when you've detached the HEAD. J
 git branch <branch name> <orphaned commit ref>
 ```
 
-## Revert
+### Revert
 
 Revert is designed to safely remove changes in the remote. It doesn't rewrite the commit history.
 
@@ -210,6 +210,6 @@ You can create your own new commit manually by passing `--no-commit`. Your index
 
 This way, your work and the record of it in the commit history is definitely never lost. You could endlessly revert and re-revert and you'd have a full record of doing so.
 
-## Conclusion
+### Conclusion
 
 May this knowledge allow you to make all the git mistakes you want, content that the reflog has got your back.

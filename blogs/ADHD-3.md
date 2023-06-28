@@ -1,4 +1,4 @@
-# Coding and ADHD - Can't Keep Going
+## Coding and ADHD - Can't Keep Going
 
 Planted: 06/02/2022
 Tags: ADHD, productivity
@@ -10,7 +10,7 @@ The idea that anyone should be able to sit down and focus for four hours on comm
 
 ![A brain saying "Look at us we're all done!" A dino saying "But we only did one thing" Brain: "Now we can relax and enjoy the afternoon" Dino: "We were supposed to do a lot more." Brain: "Wow I love being productive" Dino, way off in the background: "It's only been 22 minutes!!!" by ADHDinos](https://images.abbeyperini.com/ADHD-series/dino.jpeg)
 
-## Limit/Provide Distractions
+### Limit/Provide Distractions
 
 I'm hyperactive, so counterintuitively, my ability to focus often relies on fairly loud background noise I've chosen. For coding, it's usually music (and often lofi beats). For me, this blocks out smaller sounds I might want to investigate and provides a back-up focus for when I get bored. I pick noises that can't sustain my focus for long, so I'll naturally gravitate back towards doing the task. It really helps when I'm waiting for the development server to load, for example.
 
@@ -22,7 +22,7 @@ During classes, presentations, and meetings where blasting music would be rude a
 
 Creating a thought dump can be very helpful. We all know the feeling - I have to act on this thing I remembered NOW or I won't remember it 30 seconds from now. If you have a place to write those thoughts down while you're working, you'll know you can come back to it later.
 
-## Working with Your Brain
+### Working with Your Brain
 
 You can use every trick and tip in the book, but ADHD brains love to change the rules for what will work constantly. If you find patterns in your productivity, use them. For example, my best time for getting work done is like 2:00pm to 5:00pm. Sometimes I can get in the groove when I sit down at 9:00am, but if I can't, I focus on tasks that will set me up for success later. I'll do organizational tasks I've been putting off, check and respond to emails and messages, and sometimes time block the rest of the day. This is another area in which developer jobs can suit ADHD brains. They're often pretty lenient about schedule as long as the work is getting done.
 
@@ -36,7 +36,7 @@ Another counterintuitive tip - rewarding yourself at the beginning works way bet
 
 Finally, celebrate that you did the thing! I don't care if the thing isn't done or it isn't done perfectly, congratulate yourself for trying and putting in effort. Anything you can do to give your brain positive feedback will help combat the shame and negative messaging you've received in the past.
 
-## Embrace the Lack of Schedule
+### Embrace the Lack of Schedule
 
 ADHD people do not form habits like [neurotypicals](https://www.verywellhealth.com/what-does-it-mean-to-be-neurotypical-260047). There's some variation in how long it takes people to form habits, but it's normally somewhere in the months range. I've been trying to cultivate a morning routine for 30 years and at this point I can reliably wash my face and brush my teeth but putting on moisturizer is still hit or miss.
 
@@ -48,7 +48,7 @@ I even have to plan breaks or I will find a way to entertain myself (productivel
 
 The biggest gift I gave myself was accepting that tasks often take me longer than they "should." As long as they're getting done, that's something to celebrate!
 
-## Rest
+### Rest
 
 It's tempting to expect yourself to be able to accomplish the same amount every day. ADHD brains naturally have an ebb and flow. One day I'll be in a shame spiral about my inability to start a ticket, and the next day I'll get 3 days worth of tickets done. However, that really productive day will take its toll. If I manage to chain really productive days together, I'll often crash and have an equal or larger number of unproductive days.
 
@@ -58,7 +58,7 @@ If I start to feel exhausted, frustrated, or overwhelmed, I have to remind mysel
 
 Ultimately, this is another area in which people with ADHD struggle to separate themselves from the constant negative messaging they get about their productivity from society. I'm still trying to internalize that I do not need to be productive to earn rest.
 
-## Conclusion
+### Conclusion
 
 Did I miss a resource or tip you love? Interested in fidget toy reviews? Leave a comment!
 

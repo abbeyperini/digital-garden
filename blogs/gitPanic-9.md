@@ -1,4 +1,4 @@
-# #gitPanic - Files
+## #gitPanic - Files
 
 Planted: 11/22/2022
 Tags: git, #gitPanic
@@ -18,17 +18,17 @@ This blog assumes you have a basic understanding of git and command line or have
 6. [git ls-files](#git-ls-files)
 7. [git ls-tree](#git-ls-tree)
 
-## git commit
+### git commit
 
 If you don't want to use git's commands to delete or modify files, just tell it to stage those changes when you commit using `git commit -a` or `git commit --all`. You'll still have to add new files that git hasn't tracked before.
 
 ![Black man tapping the side of his head to indicate a smart idea captioned "Don't need a version control system if you have ctrl + v"](https://images.abbeyperini.com/gitPanic/paste.jpeg)
 
-## git add
+### git add
 
 Using `git add .` will add new files and deleted files, but won't stage file name changes. You can stage all changes to all tracked files before committing using `git add -u` or `git add --update`. You can stage all changes required to match your current working directory, including new files, with `git add -A`. Once again, A stands for all. You can also pass a file path after this option to only include all changes for that file.
 
-## git rm
+### git rm
 
 Running
 
@@ -38,7 +38,7 @@ git rm -rf
 
 works like [`sudo rm -rf`](https://itsfoss.com/sudo-rm-rf/), but git tracks the changes.
 
-## git mv
+### git mv
 
 Using `git mv` tells git to track the changes while you update the file path. You can use it to
 
@@ -54,7 +54,7 @@ and move a file
 git mv <fileName> <newDirectory>
 ```
 
-## Configure Case Sensitivity
+### Configure Case Sensitivity
 
 By default, git is [case-insensitive](https://en.wikipedia.org/wiki/Case_sensitivity) when it comes to file and directory names. With the default settings, these commands won't work:
 
@@ -79,7 +79,7 @@ git config core.ignorecase false
 
 and then you can use `git mv` to change file and directory name case all you like.
 
-## git ls-files
+### git ls-files
 
 Like `ls`, `git ls-files` will list all the files in your directory. The difference is `git ls-files` takes into account the remote repository, local repository, index, and working directory. For example, running
 
@@ -89,7 +89,7 @@ git ls-files --modified
 
 will show you all the staged files that are different from the last commit. This is just the beginning. There are [many more options](https://git-scm.com/docs/git-ls-files) that will show you all kinds of information about your repo.
 
-## git ls-tree
+### git ls-tree
 
 Similar to `git ls-files`, `git ls-tree` will list all of the data types in your repository. There are, again, [many options](https://git-scm.com/docs/git-ls-tree) for formatting.
 
@@ -105,6 +105,6 @@ In this case, the ref has to be to a tree-ish object (aka directory) like HEAD o
 git ls-tree main:README
 ```
 
-## Conclusion
+### Conclusion
 
 These commands really show just how much information git is storing about your repo and the changes you make!

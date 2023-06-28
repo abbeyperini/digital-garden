@@ -1,4 +1,4 @@
-# Live Regions in React
+## Live Regions in React
 
 Planted: 06/26/2023
 Tags: accessibility, react
@@ -9,7 +9,7 @@ Tags: accessibility, react
 2. [Live Regions, Browsers, and Screen Readers](#live-regions-browsers-and-screen-readers)
 3. [The Code](#the-code)
 
-## What is a Live Region?
+### What is a Live Region?
 
 [Accessible Rich Internet Applications (ARIA)](https://www.w3.org/TR/wai-aria-1.2) is a set of roles and attributes you can add to HTML elements to give more information to the accessibility tree. Assistive technologies like a screen reader use the accessibility tree to give necessary information about your web page to users. To learn more about ARIA in general, check out [WAI-ARIA Overview](https://www.w3.org/WAI/standards-guidelines/aria/), [Making Sense of WAI-ARIA](https://www.smashingmagazine.com/2022/09/wai-aria-guide/), and [WAI-ARIA Basics](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics).
 
@@ -23,7 +23,7 @@ Adding `aria-live` to an element creates a live region. Other ARIA roles and att
 
 If you add `aria-atomic=true`, the entire content of the live region will be announced, even if only a portion of it was updated. This is necessary when the update needs context. For example, "8" doesn't help a screen reader user out, but "8 Notifications" does.
 
-## Live Regions, Browsers, and Screen Readers
+### Live Regions, Browsers, and Screen Readers
 
 Often, the difficult thing about web development is that different browsers implement the same thing in different ways. Multiple screen readers compound this problem. For example, [VoiceOver (VO)](https://support.apple.com/guide/voiceover/welcome/mac) will announce a disabled button is "dimmed" and [NVDA](https://www.nvaccess.org/download/) will announce "unavailable".
 
@@ -31,7 +31,7 @@ a11ysupport.io has a breakdown of [how live regions act differently](https://a11
 
 In my own testing, I found the content in a live region would be announced when it was added to the DOM in React in VO/Chrome and VO/Safari, but not NVDA/Chrome.
 
-## The Code
+### The Code
 
 Normally, you see live region examples in HTML and JavaScript.
 
@@ -126,6 +126,6 @@ If you need to unmount the visible text, you can hide your live region with an o
 
 I also find this useful when I need to reformat the text based on the way the screen reader announces it. For example, given "1-100" VO only announces "one one hundred," so I pass "1 through 100" to my hidden live region and "one through one hundred" is announced.
 
-## Conclusion
+### Conclusion
 
 Once again, really understanding HTML helps solve issues when building in a JavaScript framework. I hope this clears up live regions if you've run into issues. If you find this doesn't work in a browser/screen reader combination I haven't tried, leave a comment!

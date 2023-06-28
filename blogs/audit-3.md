@@ -1,4 +1,4 @@
-# An Accessible Dark Mode Toggle in React
+## An Accessible Dark Mode Toggle in React
 
 Planted: 11/06/2021
 Tags: audit, accessibility
@@ -14,7 +14,7 @@ Read [Part 1 - The Audit](/blog.html?blog=audit-1) and [Part 2 - Quick Fixes](/b
 
 As a result, I got several errors about it during my accessibility audit. I need to make it focusable and add descriptive text. Furthermore, because the visible part of the toggle is a `<label>` tied to a `<input type="checkbox">` hidden with a `display: none;` CSS rule, I need to find a way to put content in the `<label>` that adds accessibility and doesn't take away function. Plus, I got an error about the `for` attribute in my `<label>` not having a valid matching `id` attribute in an `<input>`.
 
-## Let's Focus
+### Let's Focus
 
 My [portfolio Github repository](https://github.com/abbeyperini/Portfolio2.0) has all the [toggle component code](https://github.com/abbeyperini/Portfolio2.0/blob/master/portfolio/src/components/Toggle.js) and the [toggle CSS](https://github.com/abbeyperini/Portfolio2.0/blob/master/portfolio/src/styles/toggle.css). The structure of the toggle looks like this:
 
@@ -69,7 +69,7 @@ It took a fair bit of trail and error, but I managed to get #2 working. I tried 
 
 ![the dark mode toggle being focused and activated in dark mode and light mode](https://images.abbeyperini.com/audit-series/toggleA.gif)
 
-## Labels Within Labels
+### Labels Within Labels
 
 The first thing I notice is despite the errors, I do have a `htmlFor` and `id` attributes. I'll have to retest now that the label is not set to `display: none;`.
 
@@ -100,7 +100,7 @@ Finally, I got to work on how a screen reader interacts with the toggle. Ultimat
 </div>
 ```
 
-## You Can't Control Me&#33;
+### You Can't Control Me&#33;
 
 When writing this component, I returned an `<input type="checkbox" checked>` or `<input type="checkbox">` using a  conditional operator based on the theme the user has in their browser's localStorage so that the sun will always show with light mode and the moon will always show with dark mode. I could not get the `defaultChecked` attribute to do what I wanted and React will not compile a single [controlled component](https://reactjs.org/docs/forms.html#controlled-components) with conditional logic returning the `checked` attribute or nothing within the component. Since building this, when the toggle is clicked, I've started getting a warning about how I must "decide between using a controlled or uncontrolled input element for the lifetime of the component."
 
@@ -168,7 +168,7 @@ function Toggle() {
 export default Toggle;
 ```
 
-## Testing
+### Testing
 
 I've been manually testing with keyboard and screen reader, but it's time I fired back up [IBM Equal Access Accessibility Checker](https://chrome.google.com/webstore/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?hl=en-US).
 
@@ -182,7 +182,7 @@ My `required` attributes in my contact form are also causing errors. I ended up 
 
 I only get two warnings about the toggle. One is a contrast warning for hiding the text by making it the same color as the background - that makes sense. The sun and moon visuals convey the text meaning, so I'm not concerned. The other says that because I have labelled the component in multiple ways, I need to check how a screen reader interacts with it, which I have done.
 
-## Update Based on Feedback
+### Update Based on Feedback
 
 I looked into @inhuofficial's report that the toggle was flashing when you hit Space. Turns out I had accidentally taken out the conditional in `handleKeypress()` when I refactored. When there was no conditional, Enter would still trigger the toggle - I speculate because of the HTML. Hitting Space would cause it to flash to the other side and revert back to the original state. I have updated the function to look like this:
 
@@ -196,7 +196,7 @@ const handleKeypress = e => {
 
 When I initially changed it, I logged the event object to the console again to verify the code for Space. At that point, I noticed Enter and Space both triggered the toggle perfectly fine. I updated the conditional to `if (e.code === "Enter" || "Space")` and Enter worked but Space flashed again! This code is now live on my site and both Enter and Space are working.
 
-## Conclusion
+### Conclusion
 
 Shout out to @overtureweb, who commented on my original dark mode toggle blog with the `checked={active}` fix - my apologies for not understanding at the time I responded.
 

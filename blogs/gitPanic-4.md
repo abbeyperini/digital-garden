@@ -1,4 +1,4 @@
-# #gitPanic - HEAD
+## #gitPanic - HEAD
 
 Planted: 11/16/2022
 tags: git, #gitPanic
@@ -14,7 +14,7 @@ Understanding HEAD and refs helps with reading git logs and using git commands.
 4. [Detached HEAD](#detached-head)
 5. [HEAD^](#head)
 
-## Refs
+### Refs
 
 HEAD is a ref. In git, a [ref](https://git-scm.com/book/en/v2/Git-Internals-Git-References) is a human readable reference to a thing.
 
@@ -32,19 +32,19 @@ where the file path is in `.git/refs`.
 
 There are a lot of ref files created automatically. For instance, the main branch would have a `.git/refs/main` file with the SHA in it. So while you are running commands like `git checkout main`, git is referencing the `.git/refs/main` file to figure out what SHA you mean.
 
-## Tags
+### Tags
 
 Using git, you can create a [tag](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag) that is a ref to a commit or commits. They're typically used with [semantic versioning](https://semver.org/), so developers can easily tell which commits belong to each version.
 
 There's a lightweight version that works just like other refs. The annotated tags are like a reference and a commit combined. They include information like a date, author, and message. They're all stored in `.git/refs/tags`.
 
-## HEAD and head
+### HEAD and head
 
 HEAD is a special ref that points to what you currently have checked out. Meanwhile, the head ref points to the tip of a branch (e.g. the last commit).
 
 When you run `git checkout main`, you're effectively running `git checkout main head`. As a result, the `.git/refs/HEAD` file is updated to contain `ref: refs/heads/main`. The `.git/refs/heads/main` file will contain the SHA of the last commit in the main branch.
 
-## Detached HEAD
+### Detached HEAD
 
 ![Grey 3D modeled human head and neck on a galaxy background](https://images.abbeyperini.com/gitPanic/Meme_Man.jpeg)
 
@@ -56,13 +56,13 @@ Where it gets really interesting is committing new changes or making new branche
 
 You're warned when your HEAD is detached because if you make any new changes, you're making them back in the commit history. If you commit those changes in the same branch and then try to push, git is going to reject them because a fast-forward merge isn't possible.
 
-## HEAD^
+### HEAD^
 
 HEAD^ is shorthand for HEAD^1. HEAD^1 is shorthand for "the parent commit of HEAD". HEAD^2 is the shorthand for "the parent commit of the parent commit of HEAD".
 
 If we ran `git checkout main`, the HEAD is currently pointing at the head or last commit on main. If we ran `git checkout HEAD^` or `git checkout HEAD^1`, we'd be checking out the 2nd to last commit in the main branch. Running `git checkout HEAD^2` would checkout the 3rd to last commit.
 
-## Conclusion
+### Conclusion
 
 Every time we refer to a branch by its name instead of its SHA, we're using a ref git created automatically. We can also create refs.
 

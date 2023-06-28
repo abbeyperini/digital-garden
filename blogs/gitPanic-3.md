@@ -1,4 +1,4 @@
-# #gitPanic - Working in a Repo
+## #gitPanic - Working in a Repo
 
 Planted: 11/08/2022
 tags: git, #gitPanic
@@ -19,7 +19,7 @@ This article assumes you already have a general understanding of git or have rea
 7. [Code reviews](#code-reviews)
 8. [Forking](#forking)
 
-## Protections
+### Protections
 
 GitHub has [tons of settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings) for securing your repository. The first is whether you choose to make it public or private. Even if you keep it public, you can restrict who can contribute by [managing access](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository).
 
@@ -29,7 +29,7 @@ It is possible in GitHub to enforce [protections by branch](https://docs.github.
 
 For example, the branch with code that is deployed to production will have limited access. It is typical for force pushing (`git push --force`) to be disallowed in important branches. Same goes for requiring another developer to review and approve any code you want to merge. There will be a branch with more access for untested code. In professional development, teams typically have their branches set up based on the environments they have set up. Every time you merge new code in to one of these protected branches, an established CI/CD process would run tests and deploy to the appropriate environment for you.
 
-## Environments
+### Environments
 
 The main reason to have different environments is testing. The environment you're most familiar with is local, when you're running a server on your local machine and using a localhost URL.
 
@@ -45,7 +45,7 @@ Keeping all these environments separate helps keep development unblocked and tes
 
 Each of the environments will differ. They'll be deployed to unique URLs. The URL and other values that change based on environment will be passed to the environment and app as [environment variables](https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use-them-f602f66d15fa)
 
-## Issues
+### Issues
 
 ![a small brown bird with very large yellow eyes on a black background captioned I create github issues just for the satisfaction of closing them](https://images.abbeyperini.com/gitPanic/github-meme.png)
 
@@ -53,7 +53,7 @@ I mentioned in the first blog that one of GitHub's many features is tracking wor
 
 Creating tickets and issues is another blog post entirely, but you'll use the issue number, labels, and title in branch names, commit messages, and pull requests.
 
-## Branch Names
+### Branch Names
 
 Often people won't care about branch names, just that you delete your branches when you're done with them. We covered a couple ways to delete local branches in the last blog. You can delete a remote branch in the Github UI in the branches tab or run
 
@@ -63,7 +63,7 @@ git push origin --delete branch-name
 
 Name branches in a way that helps you remember them, because you will be switching between them a lot. Don't use camel case. Do separate words with a hyphen. Typically the naming structure is `type--issue-name` or `type/issue-name` where type is a [conventional commit type](https://www.conventionalcommits.org/en/v1.0.0/). You can typically find the type for your branch in a label on the issue, but you assess the type for each commit individually.
 
-## Commit Messages
+### Commit Messages
 
 I recommend reading [How to Write a Git Commit Message](https://cbea.ms/git-commit/). The most commonly used commit message specification I've come across is [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/). Some repositories are set up so that commit messages automatically populate their [changelog](https://keepachangelog.com/en/1.0.0/). For example, including "breaking change" in the footer will trigger a [major semantic version](https://semver.org/) change.
 
@@ -87,7 +87,7 @@ You will encounter repos where no one cares about the quality of your commit mes
 
 ![A standing stick figure says to one sitting in front of a computer: "Bob, all your commit messages say 'small changes'! Next time, Please write a meaningful message." Now alone, the programmer thinks "meaningful message..." and then types git commit -m "What is life if full of care. If we have no time to stand and stare..."](https://images.abbeyperini.com/gitPanic/messages.jpeg)
 
-## Pull Requests
+### Pull Requests
 
 After pushing all our commits up to the remote branch, we want to merge them into another branch. It's time to [open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
@@ -101,7 +101,7 @@ The GitHub UI requests a review from owners of the repo when you open it. If you
 
 After you open your PR, any automation runs successfully, and branch protection requirements are met, you have the option to [merge, squash merge, or rebase to close the PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request). Sometimes the repo owner will have a preference. Squash merging allows you to compress a whole PR down to one commit message, which is a lot cleaner over time.
 
-## Code Reviews
+### Code Reviews
 
 ![Snooty British soldier tells the pirate Jack Sparrow that his code is without a doubt the worst I've ever run and Jack Sparrow counters with "but it does run"](https://images.abbeyperini.com/gitPanic/run.jpg)
 
@@ -115,13 +115,13 @@ I've said it before and I'll say it again - negative feedback without ways to im
 
 Most importantly, you can add gifs to comments using HTML/markdown or with the [giphy Chrome extension](https://chrome.google.com/webstore/detail/gifs-for-github/dkgjnpbipbdaoaadbdhpiokaemhlphep?hl=en).
 
-## Forking
+### Forking
 
 [Forking](https://docs.github.com/en/get-started/quickstart/fork-a-repo) is something you come across more in an open source project than with a private company. You may not have permission to push to any branch in a repository. Like a branch is a copy of the branch it's based off of, a forked repository has all the information of the original repository, but you own it. You can still [create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) in the original repo, but this allows the owner of the repo to merge your code in without giving you access.
 
 Open source contributions are great for your career and growth as a developer. Luckily Virtual Coffee loves open source and maintains some [written resources](https://virtualcoffee.io/resources/open-source) as well as [hosting talks](https://www.youtube.com/playlist?list=PLh9uT23TA65hA-LmhtOcnhrk5J_xVjoFG).
 
-## Conclusion
+### Conclusion
 
 You can end up spending a lot of your work day in GitHub, so hopefully this introduction gives you the terminology you need to hit the ground running.
 

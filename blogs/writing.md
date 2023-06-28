@@ -1,4 +1,4 @@
-# How I Structure My Writing
+## How I Structure My Writing
 
 Planted: 11/21/2021
 Tags: on writing
@@ -10,7 +10,7 @@ Series: [on writing](/series.html?series=onWriting)
 
 The long answer, the one which applies to writing technical blogs, boils down to how I structure my writing. I no longer strictly follow the method I'll describe here, because you learn the rules to know how to break them. However, whenever I get stuck, this is what I return to. What follows is how to write a 3-3-11 paragraph, an essay based off that structure, and how to apply it to technical blogs.
 
-## A Paragraph
+### A Paragraph
 
 The method I was taught in school was 3-3-11 paragraphs. In a single paragraph, that means you have a thesis statement with three points, 3 sentences about each point, and then a summary/clincher/ending sentence.
 
@@ -22,7 +22,7 @@ Then I'd write 3 sentences about how it makes it easier to practice other niyama
 
 Finally, I'd end my paragraph with a summary sentence: By striving to practice svadhyaya more often, a yogi can further their goals on and off the mat much more quickly than they would without this cultivated self-awareness.
 
-## An Essay
+### An Essay
 
 In longer essays, the structure of paragraphs is less rigid. An essay is comprised of a thesis paragraph, one or more paragraphs about each of the points in the thesis paragraph, and a conclusion paragraph. My example paragraph before could easily be 1 of 5 paragraphs in an essay about the niyamas. In that case, I'd start with a thesis paragraph where I describe the 5 niyamas.
 
@@ -32,7 +32,7 @@ One of the 8 limbs of yoga, niyamas, is described as rules, guidelines, or obser
 
 Then, I'd have a paragraph or paragraphs about each of the three points I made. Each of these paragraphs could follow the 3-3-11 format on their own. The paragraph about "Put into practice, svadhyaya helps a yogi practice the other niyamas - saucha, santosha, tapas, and ishvara pranidhana." would start with a thesis sentence like "Practicing each of the other niyamas gets easier when you are practicing svadhyaya."
 
-## Technical Blogs
+### Technical Blogs
 
 This method is easily applied to a technical blog covering why a concept is important or why you would recommend a technology, but what about tutorials and walkthroughs?
 
@@ -44,6 +44,6 @@ Walkthroughs I treat similarly, but also like a journal. I write down everything
 
 Because of the nature of technical blogging, when a blog gets longer than a few hundred words, it may be better to turn the intro section/thesis paragraph into a table of contents with a link to the heading of each section. I think of headings as a thesis sentence boiled down into one to five words.
 
-## Conclusion
+### Conclusion
 
 Ultimately, this was a long explanation of the way I get an idea of something to write about, break it down into its main points, and elaborate on each of the points. If you are left with questions about this method or other parts of my writing, please don't hesitate to ask!

@@ -1,4 +1,4 @@
-# Coding and ADHD - Can't Remember
+## Coding and ADHD - Can't Remember
 
 Planted: 06/04/2022
 Tags: ADHD, neurodiversity
@@ -8,7 +8,7 @@ Series: [Coding and ADHD](/series.html?series=ADHD)
 
 Gabor Maté has described ADHD as "forgetting to remember the future." If it's not written down, I'm not getting it done.
 
-## Make an External Brain
+### Make an External Brain
 
 I've seen a couple organizational/productivity systems out there that rely on the idea of an "external brain." Even neurotypical brains struggle to maintain a list of all the things that we're expected to do on a daily basis, let alone consistently work towards multiple goals at a time. An external brain is a system or systems that holds all of your to dos and helps you track your progress towards your goals.
 
@@ -28,7 +28,7 @@ If I find I struggle with something I have to do regularly, I'll turn it into a 
 
 If you're a web developer, you may enjoy creating a [digital garden](https://maggieappleton.com/garden-history) to record and visualize your learning.
 
-## Organizational Systems
+### Organizational Systems
 
 Writing it down is one thing - how do I make sure I can find it when I need it? People with ADHD are often surrounded by lists and journals. We love starting organizational systems. The problem is maintaining one for any meaningful period of time. So I don't maintain one - I maintain many. I've found a few rules that keep me coming back:
 
@@ -49,7 +49,7 @@ Finally, each morning (or afternoon) I look at my work to do list and personal c
 
 I have an app on my phone that has my daily to do list and allows me to share a to do list with my husband. A shared to do list turns "do the thing" and "talk to him about doing the thing" into one item. We are sharing our digital calendars with each other for the same reason. I used to keep my personal to do list on a post it note on my water bottle. These work because I have trained myself to keep my phone and water bottle on me. Back in high school and college, I used to have to write it directly on my hand.
 
-## Conclusion
+### Conclusion
 
 Do not think this means I have a pristine set of lists that are perfectly maintained and monitored. I have plenty of abandoned Google Drive folders, a shelf of journals too pretty to use, a gardening journal I find and lose once a year, and a hodgepodge of yoga journals and papers shoved under my meditation altar. I have piles of uncompleted projects and many abandoned goals, as well.
 

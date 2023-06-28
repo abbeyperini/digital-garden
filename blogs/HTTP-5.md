@@ -1,4 +1,4 @@
-# A Beginner's Guide to HTTP - Part 5: Authentication
+## A Beginner's Guide to HTTP - Part 5: Authentication
 
 Planted: 05/14/2022
 Tags: HTTP
@@ -8,7 +8,7 @@ Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
 
 It's good for APIs to put limits on who can make requests to their server. Unfortunately for the developer building a side project, this necessary security often provides extra hurdles. Let's talk about the common ways to get your app authenticated for public APIs.
 
-## Introduction and Table of Contents
+### Introduction and Table of Contents
 
 This blog assumes you've read the first four parts of the series or are familiar with basic command line, async Javascript, HTTP messages, and consuming public APIs. You can view all the code from this series in the [Github repo](https://github.com/abbeyperini/HTTP101).
 
@@ -20,7 +20,7 @@ This blog assumes you've read the first four parts of the series or are familiar
 6. [OAuth2.0](#oauth20)
 7. [OIDC](#oidc)
 
-## Authentication and Authorization
+### Authentication and Authorization
 
 Authentication is proving who you are. Authorization is being granted access based on who you are.
 
@@ -32,7 +32,7 @@ Authentication and authorization keys, tokens, and codes are all strings. They'r
 
 The IANA and other organizations maintain [lists of authorization protocols](https://www.iana.org/assignments/http-authschemes/http-authschemes.xhtml) for the web. This article will cover passing a key in a URL parameter, the 5 most common authorization protocols, and the most common authentication protocol used in public APIs.
 
-## Can You Authenticate?
+### Can You Authenticate?
 
 For authentication, you'll usually need to create an account to get a key or register your app. Some APIs make getting a key difficult by limiting the number of keys or developer accounts, requiring paid accounts, or other hurdles.
 
@@ -42,7 +42,7 @@ There was another time where I had to email the owner of the API. They took a fe
 
 ![A fence captioned token based authentication, Eric Andre captioned me, Eric Andre running towards the fence captioned let me in, Eric Andre shaking the fence and yelling let me iiiiiiiiiin!](https://images.abbeyperini.com/HTTP-series/auth.jpeg)
 
-## URL Parameters, Filters, and More
+### URL Parameters, Filters, and More
 
 So far, we've used simple server URL parameters defined in server routes that came right after a `/`. There are quite a few ways to interact with an API using the URL, and another URL parameter syntax.
 
@@ -52,7 +52,7 @@ Socrata's filters use the syntax referred to as URL parameters, query parameters
 
 You should never pass sensitive information in a URL parameter - it is insecure.
 
-## URL Parameter Key
+### URL Parameter Key
 
 Often, public APIs will ask you to authenticate by passing a key in a URL parameter. But wait! I just said never pass sensitive information in a URL parameter! ...you will still see this all the time.
 
@@ -96,7 +96,7 @@ All you have to do is replace `YOUR_API_KEY` with the API key generated for your
 
 ![A list of batman movie reviews titles that are links to the reviews with a short summary underneath them](https://images.abbeyperini.com/HTTP-series/display-text.png)
 
-## Authorization Header
+### Authorization Header
 
 It's better to pass authentication keys in the headers, where they will be encrypted by HTTPS. Still, HTTPS requests are not infallible, and much of the cryptography used in these standards is easily reversed.
 
@@ -104,7 +104,7 @@ The authorization header almost always uses a redirect workflow. The HTTP reques
 
 If the header has an invalid value, the server will send another `401` or `407 Proxy Authentication Required` response. If the value is valid, but not authorized to access the requested resource, the server will send a `403 Forbidden` response back.
 
-### Basic
+#### Basic
 
 Basic is authenticating using a username and password.
 
@@ -133,7 +133,7 @@ app.get('/projects/:user', (req, res) => {
 
 Instead of passing the header when I call `axios.get()`, I'm attaching the header to this instance of `axios`. Every time I use axios, it will pass the `Authorization` header, and the value of that header will be 'Basic ' and my username and password encoded in a [base64](https://en.wikipedia.org/wiki/Base64) string.
 
-### Bearer
+#### Bearer
 
 Bearer is authenticating using a token or key.
 
@@ -148,7 +148,7 @@ function setAuthenticationHeader() {
 
 A token is already encoded, so it's not required to be base64 encoded.
 
-### Digest
+#### Digest
 
 Digest is a Basic authentication header with cryptography on top.
 
@@ -158,11 +158,11 @@ To authenticate the client, the server generates its own encrypted string and co
 
 Usually, you'd use [a package](https://www.npmjs.com/package/http-auth) that creates a digest HTTP server instead of express. You can also try it out [with Postman](https://learning.postman.com/docs/sending-requests/authorization/#digest-auth) or check out [Mahesh's node.js sample code](https://www.dotnetcurry.com/nodejs/1237/digest-authentication-nodejs-application).
 
-### Custom
+#### Custom
 
 Custom is whatever the server you want to get data from wants to define. For example, the server could require you send a custom key header like `X-API-Key: abcdefgh123456789` or require you send the key in the body.
 
-## OAuth2.0
+### OAuth2.0
 
 It's even better to implement authentication and authorization using an established protocol with many security considerations. Unfortunately, that becomes very complicated very quickly.
 
@@ -180,12 +180,12 @@ Your client must send a CLIENT_ID, CLIENT_SECRET, and scope to Ravelry's server 
 
 You can view their [Javascript & Node.js example code](https://glitch.com/~ravelry-test-oauth).
 
-## OIDC
+### OIDC
 
 [OpenID Connect (OIDC)](https://openid.net/connect/) is a package that creates an authentication layer on top of the OAuth2.0 authorization protocol. It also uses tokens to pass information about the user and client identity via HTTP request. In the previous example, Ravelry used a CLIENT_ID and CLIENT_SECRET to authenticate and had authorization scopes as part of its authorization server. OIDC provides authentication scopes for accessing information about the user (like their email address). Where Ravelry stored authentication tokens in their own app, OIDC has methods for authenticating users without storing any tokens or passwords.
 
 Because it still uses OAuth2.0's redirect flows with the added layer on top, you'll want to get comfortable with OAuth2.0 terminology first. To learn more about OIDC, check out [IBM's guide](https://www.ibm.com/docs/en/acvfc?topic=designer-securing-your-apis-openid-connect) or [OIDC's sample code](https://developers.onelogin.com/openid-connect/samples).
 
-## Conclusion
+### Conclusion
 
 Authentication and authorization are complicated topics that often include a lot of cryptography. Hopefully this guide will help you parse API documentation you will come across in the future.

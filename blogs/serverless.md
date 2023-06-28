@@ -1,4 +1,4 @@
-# A Walkthrough of Updating My Portfolio Site with Netlify Functions and the DEV API
+## A Walkthrough of Updating My Portfolio Site with Netlify Functions and the DEV API
 
 Planted: 07/31/2021
 
@@ -8,7 +8,7 @@ I realized, in talking to newer devs, that most of my blog posts are in a format
 
 Ultimately, I wrote this portfolio site update over five days in my spare time for the purpose of presenting it at [Virtual Coffee](https://virtualcoffee.io)'s Demo Day.
 
-## Table of Contents
+### Table of Contents
 
 1. [How to pick what to build?](#how-to-pick-what-to-build)
 2. [How do I build it?](#how-do-i-build-it)
@@ -20,7 +20,7 @@ Ultimately, I wrote this portfolio site update over five days in my spare time f
 8. [Demo Day](#demo-day)
 9. [Conclusion](#conclusion)
 
-## How to pick what to build?
+### How to pick what to build?
 
 First, you've got to find a problem to solve. It doesn't have to be an original problem or a problem no one's ever solved before. Just a problem you want to solve.
 
@@ -34,9 +34,9 @@ It occurred to me to take my own advice and lean into the tools already used in 
 
 If Netlify didn't provide an excellent solution, I would have started asking for technology suggestions from friends or picked a technology I've been wanting to use and start building around that.
 
-## How do I build it?
+### How do I build it?
 
-### When in doubt, just start writing
+#### When in doubt, just start writing
 
 - Write it out in pseudocode.
 - Write the simplest/smallest part.
@@ -54,7 +54,7 @@ function getBlogs(requiredData) {
 
 Then I'd pick the smallest part and try and write it in code. I still use pseudocode when I get really stuck or need it to communicate an idea. Most of the time, I can start with writing code, but either way, I still pick the smallest part and just focus on getting it to work. I definitely had to use this approach to get my lambda server set up and do it almost daily at work. Often the most intimidating thing is getting those first few characters in the file.
 
-### Breaking it down into its smallest parts
+#### Breaking it down into its smallest parts
 
 I already have styling and the rest of the components built, so for this project I know I'll need to:
 
@@ -65,7 +65,7 @@ I already have styling and the rest of the components built, so for this project
 
 I could definitely break these down further, so I'll start with the smallest piece of the smallest part - writing a [Netlify function](https://www.netlify.com/products/functions/).
 
-## Setting up my lambda server
+### Setting up my lambda server
 
 First, I dug through the documentation and tutorials provided by Netlify and discovered a couple great resources to get me started: [Matt Burrell's Wish You Were Here repo](https://github.com/mattburrell/wishyouwerehere) for passing data from an API call to a component and [Kent C. Dodd's tutorial](https://kentcdodds.com/blog/super-simple-start-to-netlify-functions) for the netlify-lambda package tips.
 
@@ -192,7 +192,7 @@ async function get() {
 
 Note: because I am just slapping the response in a `<p>` tag, I am also getting an "Objects are not valid as a React child (found: [object Promise])." in my browser console, but that at least tells me I am getting something back.
 
-### Solving the CORS error
+#### Solving the CORS error
 
 At this point I have three options, as I see it, from most time commitment/complexity to least:
 
@@ -239,7 +239,7 @@ exports.handler = async function (event, context) {
 
 I went with a specific method and origin instead of just `*`, for browser security.
 
-## Storing the data in state
+### Storing the data in state
 
 So now I'll go back to getting my `useReducer()` working. Once I have my data stored in state, it'll be easy to manipulate it and display it.
 
@@ -320,7 +320,7 @@ Nothing's displaying yet, but thanks to the [React Developer Tools Chrome extens
 
 This view also helped me catch that I had changed the variable name in my state to data instead of blogs at some point today. Swapping it back fixed a wonky state structure.
 
-## Transforming the data
+### Transforming the data
 
 If there's one thing I learned in bootcamp, it's that the first step to displaying a list of things returned from an API on a page is mapping the data to `<li>` tags with a key (usually the id returned from the API) and one field to display (usually the title field). To get started, I replaced my original `return` block with this:
 
@@ -612,7 +612,7 @@ With these relevant media queries:
 }
 ```
 
-## Doing It Again for Blog and SingleBlog Components
+### Doing It Again for Blog and SingleBlog Components
 
 The Blog component sits on the main page of my portfolio, displaying previews of all of my blogs with a title and cover image. I want my Blog component to pull the same information as FullBlog, but only display a smaller portion of it. When you click on the title of a blog post in the Blog component, it should load the SingleBlog component with just that blog post.
 
@@ -792,7 +792,7 @@ useEffect(() => {
 
 My blog preview CSS styles applied fairly effortlessly, as well. The only thing I tweaked was the width and height rules for `.preview` and `.preview_image` because the landscape format of the cover images returned by DEV is different than what I was using. It is, however, much more standardized, which is nice.
 
-### Error handling in components
+#### Error handling in components
 
 The final thing before deployment - I have an error action type, but currently am not sending any errors to the reducer!
 
@@ -825,7 +825,7 @@ else if (!state.isLoading && state.error) {
   } 
 ```
 
-## Deployment
+### Deployment
 
 While trying to get to sleep, I realized I had committed my key to a public repo. Luckily, I could revoke it from my phone. In the morning I generated a new key. Then it was time to clean up my keys and routes.
 
@@ -855,7 +855,7 @@ At this point, I still have a list of things I'd like to revisit:
 - cute error and loading graphics - [done!](/blog.html?blog=shibas)
 - possibly refactoring my 3 blog components into 1 or 2 to cut down on duplicated code - [done!](/blog.html?blog=audit-5)
 
-## Demo Day
+### Demo Day
 
 Historically, Demo Days have not been my strong-suit. Initially I struggled with describing why I built what I built and didn't go into any detail about my code. At this point, I still get very nervous and start talking really fast.
 
@@ -873,12 +873,12 @@ After the presentation, [Justin Noel](https://twitter.com/JustinNoelDev) reached
 
 You can read more about this query and the user settings that would trigger this rule in the [MDN reference docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion). I'm thankful I didn't use any of the very intense animations I tried before landing on this one, and this is exactly the type of feedback I want anytime I share my code.
 
-## Conclusion
+### Conclusion
 
 My goal for this blog was to make it clear that building things is rarely a linear process. I also hope it gave some insight into how I break down, approach, and solve problems big and small. You can check out all the code in my [portfolio repo](https://github.com/abbeyperini/Portfolio2.0) and watch [my Demo Day recording](https://drive.google.com/file/d/1DXMEfr5-AQn6vk9ntCK5VPKv4C6Ogidc/view?usp=sharing).
 
 Maybe you also noticed I did not do this alone. I used documentation, tutorials, and code snippets written by devs I've never met. (Shout out to the DEV API having response structure examples in their documentation - so helpful!) I briefly paired with senior devs when I hit a CORS issue. The impetus for this specific project was from other senior devs telling me things I didn't know in a video call. Not to mention, I wouldn't have gotten the accessibility tip or found the motivation to finish it without Demo Day from [Virtual Coffee](https://virtualcoffee.io).
 
-### P.S&colon;
+#### P.S&colon;
 
 I had mentioned wanting to revisit standardizing the way I write headings in my DEV blog posts. While cross posting to Medium, I noticed I'm the one that made my titles `<h2>`s. I've updated my JSX and CSS to be `<h1>`s so now all the headings on my page are in more of a descending order. I'll still want to go back and downgrade all of my titles on DEV to get `<h2>`s and `<h3>`s for accessibility's sake.

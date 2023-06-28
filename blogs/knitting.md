@@ -1,6 +1,6 @@
-# Knitting as Programming
+## Knitting as Programming
 
-## or how I learned programmers owe it all to fiber
+### or how I learned programmers owe it all to fiber
 
 Planted: 02/10/2021
 
@@ -10,7 +10,7 @@ Knit by Abbey Perini, pattern by Maia E. Sirnes, yarn is Malabrigo Yarn Rios
 
 As part of my bootcamp, I was asked to present for 10 minutes on any topic. I've been crocheting since 2013 and knitting since 2018, and I had noticed some similarities between the way I approached a project in either fiber arts or programming. What I did not expect to find was a rich history of fiber arts and programming influencing each other.
 
-## The Beginning
+### The Beginning
 
 Fiber arts, like knitting, are crafts using yarn, string, thread, etc. This encompasses thousands of years of history, starting in 6500 BCE with Viking [Nålbinding](https://theknittinggenie.com/2018/03/06/nalbinding-crash-course/). Other crafts included under this umbrella are crochet, embroidery, weaving, and textile making.
 
@@ -22,7 +22,7 @@ The relationship between fiber arts and programming gets even more overt with [C
 
 The direction the current was forced through the wires induced field forces to circulate in a clockwise or counterclockwise direction. One direction is a stored 1, while the other is a stored 0. The result was non-volatile storage, which could retain a large amount of information without power - roughly 2.5 megabytes per cubic meter. This was an 18-fold improvement over magnetic-core memory, the standard solution used at the time.
 
-## Now
+### Now
 
 Like computers, the textile industry has come a long way since the Jacquard Loom, integrating more and more automated manufacturing. Perhaps you'd like to [3D print a lot of knit toys](https://textiles-lab.github.io/publications/2019-visualknit/)? Makers will find a way, so when home knitting machines were no longer produced, [people built the system themselves](https://xxxclairewilliamsxxx.wordpress.com/hack-ta-machine-a-tricoter/).
 
@@ -32,7 +32,7 @@ Owned and operated by 6 women, they employ a tech stack of about 10 Gentoo Linux
 
 By removing barriers to entry, Ravelry is credited with creating an explosion of interest in knitting and crochet, driving innovation in easier to follow patterns. I've personally talked with local yarn store owners about their experience before and after Ravelry, and they describe it like night and day. Knitters are now primarily 25–35 years old. Local, regional, and international knitting groups, fiber festivals, and yarn crawls have cropped up everywhere. Indie dyed yarn is now a huge business. There's renewed interest in fiber shows, which educate people on where their yarn comes from. The audience for blogs and podcasts related to fiber arts in general has grown exponentially.
 
-## A Knitting Primer
+### A Knitting Primer
 
 When you knit something, you use two knitting needles. All of your stitches will be live, meaning if you drop a stitch the fabric you're creating will unravel. Patterns are created by alternating types of stitches or yarn of different colors. For example, K2P2 would mean 2 knit stitches followed by 2 purl stitches. The difference between stitches is how you feed the new loop of yarn through the live stitch on your needle. Effectively, a knit stitch goes through the front of the loop. A purl stitch goes through the back of the loop. Repeating this for several rows is how you would get a ribbed brim on a hat.
 
@@ -40,7 +40,7 @@ When you knit something, you use two knitting needles. All of your stitches will
 
 K2P2 Ribbing
 
-## Patterns as Programming
+### Patterns as Programming
 
 * Knitting pattern designers follow DRY.
 * Pattern repeats are for loops, typically surrounded by brackets, asterisks, or parentheses.
@@ -59,11 +59,11 @@ Knit by Abbey Perini, pattern by Dowland by Dee O'Keefe, yarn is Meeker Street b
 
 There have even been two (no longer supported) programming languages designed specifically for hand knitting - KnitML, a markup language, and KEL, inspired by Groovy, a Java language.
 
-## Patterns as Regular Expressions
+### Patterns as Regular Expressions
 
 Say we want to make a square of ribbing. `kp` is the [regular expression](https://regexone.com/) for one knit stitch followed immediately by one purl stitch. Curly brackets are used for repeats, so `kp` repeated 10 times looks like this: `(kp){10}`. For a new row we use a new line, written, `\n`. The full regular expression for the row is then `(kp){10}\n`. Since we turn the square to knit the next row, the following line must be `pk`s, or `(pk){10}\n`. We want our square to be 40 rows, so they are in turn wrapped up in yet more brackets, producing: `((kp){10}\n(pk){10}\n){20}`. A more general pattern would look like `((kp){x}\n(pk){x}\n){y}`.
 
-## Patterns as Tools for Teaching Programming
+### Patterns as Tools for Teaching Programming
 
 > "Knitting patterns have evolved from vague, chatty discourse written for experts to precise, line-by-line procedures that are akin to programs."
 
@@ -71,7 +71,7 @@ Say we want to make a square of ribbing. `kp` is the [regular expression](https:
 
 Craig, Peterson and Peterson go on to say that programmers can learn from the way the online knitting community has developed standard conventions for communicating concepts like iteration, conditions, and documenting design decisions. Specifically, the way they've come about while trying to make the patterns understandable to beginners. For example, using termination cases with "until" makes the while loop easier to understand. They also say that creating a knitted final object is analogous to tracing, as it demonstrates an understanding of the pattern.
 
-## Conclusion
+### Conclusion
 
 Having taught myself programming and knitting and crochet, I can safely say the mindset required is very similar. From figuring out how to make a project work as you go to regular expressions in patterns, there are a lot of parallels. Programming as it is today would not exist without fiber, and programmers could learn a thing or two about teaching beginners from the online knitting community.
 
@@ -79,7 +79,7 @@ I hope you enjoyed this brief overview of the history of fiber arts and programm
 
 If you're already a programming fiber artist with Ravelry projects, check out my project, [Knitworthy](http://knitworthy.net/)!
 
-## Additional Fun
+### Additional Fun
 
 [Knitting is Coding and Yarn Is Programmable in This Physics Lab](https://www.nytimes.com/2019/05/17/science/math-physics-knitting-matsumoto.html)
 
@@ -87,7 +87,7 @@ If you're already a programming fiber artist with Ravelry projects, check out my
 
 A programmer worked with his daughter to [convert text instruction to charts using Perl](http://www.mcmanis.com/chuck/graphics/knit-chart.svg)
 
-## Additional Sources
+### Additional Sources
 
 [Knitters and Coders: separated at birth?](http://www.cs4fn.org/regularexpressions/knitters.php)
 

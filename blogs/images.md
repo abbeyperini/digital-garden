@@ -1,4 +1,4 @@
-# Sourcing Images and Optimizing Them for the Web
+## Sourcing Images and Optimizing Them for the Web
 
 Planted: 08/30/2021
 Tags: images
@@ -15,7 +15,7 @@ When I sat down to write about my [Shiba Inu SVGs](/blog.html?blog=shibas), it b
 5. [HTML and CSS to Take Your Images to the Next Level](#html-and-css-to-take-your-images-to-the-next-level)
 6. [Conclusion](#conclusion)
 
-## Image Types
+### Image Types
 
 I enjoy making logos and other graphics for my apps, and I use Adobe Illustrator, a vector-editing tool, to do it. Vector images are made using mathematical formulas and code. When I create one in Illustrator, I save it as an `.svg` file.
 
@@ -37,7 +37,7 @@ SVGs are lightweight, use lossless compression, and can use unlimited colors. Th
 
 SVGs have limited support in degraded browsers and email clients. To add descriptive metadata, you'd have to use a [`<metadata>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata). Furthermore, making them can get complicated - the more complex your lines, the more likely it is the lines will form jagged edges when scaled up or down. Plus, they're often treated differently than raster images in code. My [Adding Shiba Inu Loading and Error SVGs to My React Site](/blog.html?blog=shibas) example details the 4 different ways you could import an SVG into a React app.
 
-## Image Optimization for the Web
+### Image Optimization for the Web
 
 After you've picked a file type for your use case, you'll still need to optimize your image for the web. If you're creating your images, that starts with working in RGB color mode and checking that your colors are accessible. When you save your file, give it a name with keywords in it for SEO.
 
@@ -45,13 +45,13 @@ Before adding your image file to your site repo, you'll want to compress it. If 
 
 Finally, after compressing, you'll want to look at your code/site design. What's the maximum size you'll want that image to appear on the screen? Resize the photo to match that. No need to send a giant photo to your user's browser if you're only going to show it at a quarter that size. Mac and Windows' default photo editor tools both have a resize option that will scale your image for you. Sometimes, you'll want to crop instead of resizing (e.g. banners and cover images).
 
-## SVGs for Your Site
+### SVGs for Your Site
 
-### Free to Use SVGs
+#### Free to Use SVGs
 
 My portfolio site includes SVGs from my two favorite sources - [DevIcon](https://devicon.dev/) for your skills, languages, and technologies section and [HOLA SVG](https://holasvg.com/icons/) for SVGs in basic shapes and their demos and tutorials. Another excellent resource is [heroicons](https://heroicons.com/). You can also use icon libraries like [Font Awesome](https://fontawesome.com/v6.0) and [Bootstrap Icons](https://icons.getbootstrap.com/). Check out [undraw](https://undraw.co/) for illustrations.
 
-### Coding SVGs
+#### Coding SVGs
 
 You don't have to start from scratch - the turning arrow on my landing page was a caret from HOLA SVG to which I added a `<line>`.
 
@@ -59,7 +59,7 @@ You don't have to start from scratch - the turning arrow on my landing page was 
 
 However, if you even remotely like math, geometry, or playing around with x and y coordinates, I recommend [working through a tutorial](https://www.aleksandrhovhannisyan.com/blog/svg-tutorial-how-to-code-svg-icons-by-hand/). Essentially, coding an SVG starts with an `<svg>` with some basic properties like `width` and `height`. The `viewbox` property takes 4 coordinate parameters to form a box that is the actual size of your SVG. The `width` and `height` properties will only affect the size of your `<svg>`'s children elements. The children elements are things like `<line>`, `<circle>`, and `<polygon>` that take different parameters to create different shapes.
 
-### Using a Vector-Editor
+#### Using a Vector-Editor
 
 I've been making SVGs in Illustrator for about 11 years now, so I prefer using a vector-editor over coding an `<svg>`. I don't think Illustrator is the end all be all of vector-editing tools, but it's the tool with which I'm most familiar. (Still, I have to relearn a lot every time I use it.) There are [a number of alternatives](https://www.creativebloq.com/features/illustrator-alternatives), some of which are free.
 
@@ -79,7 +79,7 @@ Finally, I flatten my layers, save, export, and optimize the images I want to us
 
 Finally, before importing SVGs into your site, check out CSS-Tricks' guide to [making SVGs accessible](https://css-tricks.com/accessible-svgs/).
 
-## PNGs and JPEGs for Your Site
+### PNGs and JPEGs for Your Site
 
 The easiest way to get free PNGs and JPEGs for your site is to make them. Since PNGs are typically used for images with a transparent background, they're often made by saving SVGs as a `.png` file. However, you can also convert a JPEG to a PNG to take advantage of the transparent background using a tool like Photoshop, [Gimp](https://www.gimp.org/), or [Kapwing](https://www.kapwing.com/tools/png-maker).
 
@@ -109,7 +109,7 @@ Take diversity into account when choosing your images:
 
 Finally, when you import your PNGs and JPEGs into your site, don't forget your [descriptive alt-text](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#text_alternatives).
 
-## HTML and CSS to Take Your Images to the Next Level
+### HTML and CSS to Take Your Images to the Next Level
 
 I highly recommend [Mozilla Developer Network's Getting Started with the Web series](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web), and the guides for [responsive image HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) and [responsive image CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements) are must-reads.
 
@@ -117,6 +117,6 @@ You can also use images for fun, repeating backgrounds for your HTML elements [u
 
 Finally, you can do a lot with your SVGs. My [Shiba Inu SVG](/blog.html?blog=shibas) and [Toggle Dark Mode In React](/blog.html?blog=toggle) blogs have fun color animations. CSS-Tricks has a great [animated text example](https://css-tricks.com/animating-svg-css/). Furthermore, [GreenSock](https://greensock.com/) is doing the good work of reviving the animations like moving along a path that the dying [SMIL](https://css-tricks.com/guide-svg-animations-smil/) used to provide.
 
-## Conclusion
+### Conclusion
 
 I've dabbled in creating images since 2009, including a semester of college where I thought I might become a graphic designer. I've never become more than a dilettante, but now an app doesn't feel "real" to me until I've made the logo. I hope this article has helped you become confident in choosing and even making images for your website. If you're left with questions, please leave a comment!

@@ -1,4 +1,4 @@
-# A Beginner's Guide to HTTP - Part 1: Definitions
+## A Beginner's Guide to HTTP - Part 1: Definitions
 
 Planted: 02/04/2022
 Tags: HTTP
@@ -10,7 +10,7 @@ As a web developer, I sometimes describe my job as "making things talk to each o
 
 In this article, I'll cover HTTP terms, tools, and the structure of HTTP messages. I use analogies and metaphors, and explain things in multiple ways to try and provide helpful mental models. In [A Beginner's Guide to HTTP - Part 2: Responses](/blog.html?blog=HTTP-2), I'll dig into how to write the code to generate HTTP response messages in a server. After that, in [A Beginner's Guide to HTTP - Part 3: Requests](/blog.html?blog=HTTP-3), I'll cover how to generate HTTP requests in a client. We'll have a little fun with our app and some free to use APIs that other people have built for us in [A Beginner's Guide to HTTP - Part 4: APIs](/blog.html?blog=HTTP-4). Finally, I'll cover API keys and more in [A Beginner's Guide to HTTP - Part 5: Authentication](/blog.html?blog=HTTP-5).
 
-## Introduction and Table of Contents
+### Introduction and Table of Contents
 
 This article assumes familiarity with basic JavaScript. I briefly explain asynchronous JavaScript and basic web development concepts and provide more learning resources at the end of the article.
 
@@ -27,7 +27,7 @@ I will not be explaining [TCP](https://www.techtarget.com/searchnetworking/defin
 9. [CORS](#cors)
 10. [More Resources](#more-resources)
 
-## Web Development Terms
+### Web Development Terms
 
 First, let's define a few terms I will be using a lot. An application or application program is software that runs on a computer. The basic set up of most web applications is a client application that runs in a browser like Chrome, Firefox, or Safari and a server application that provides services and resources for the client. In this way, the browser is functioning as a [runtime environment](https://www.codecademy.com/article/introduction-to-javascript-runtime-environments) for client or client-side code. In JavaScript, the most common runtime environment used for server or server-side code is [Node.js](https://nodejs.org/en/about/). Put another way, the client is the part of the code that the user interacts with - clicking buttons or reading information on a page in their browser. To get the information the user wants to read or to get or update information after a user clicks something, my client will talk to my server using HTTP.
 
@@ -41,7 +41,7 @@ API stands for Application Programming Interface. It allows two applications, li
 
 A library is a package/collection/module of files and functions that a developer can use in the program they're writing. Because API is a broad term and APIs aren't only used for the client-server model, the methods provided by a library for the developer to use can also be referred to as an API.
 
-## HTTP Terms, Asynchronous JavaScript, and HTTP Tools
+### HTTP Terms, Asynchronous JavaScript, and HTTP Tools
 
 There are [different versions of HTTP](https://cheapsslsecurity.com/p/http2-vs-http1/). HTTP/2 is more optimized and secure than HTTP/1.1, and about half of websites use it. There's even an HTTP/3, developed by Google. You may already be familiar with seeing http:// and https:// in your URLs and browser warnings about security. HTTP messages are encrypted when sent using HTTPS, and are not encrypted when sent using HTTP.
 
@@ -63,7 +63,7 @@ Finally, there are packages like [Axios](https://github.com/axios/axios). Not on
 
 Before we get into how to write the code that sends the HTTP messages across the internet in [part 2](/blog.html?blog=HTTP-2) and [part 3](/blog.html?blog=HTTP-3), let's dive into how the messages themselves are structured.
 
-## Structure of a Request
+### Structure of a Request
 
 If we say a client and a server are having a conversation, the two halves of the conversation are a request and a response. Using an HTTP request, a client is requesting something from a server.
 
@@ -86,7 +86,7 @@ So an HTTP request message would look something like this:
 
 The first line, shown here in red, has the method, URL, and protocol. The second, yellow portion has all the headers. There's a blank line and then if there's a body, it goes at the end, shown here in blue.
 
-## Methods
+### Methods
 
 The easiest way to explain methods is to map them to the persistent storage acronym, CRUD. CRUD stands for Create, Read, Update, and Delete. You can think about it in terms of database that uses SQL:
 
@@ -117,13 +117,13 @@ PUT sends data to the server to create a new resource or replace an existing res
 PATCH sends data to the server to update part of an existing resource. It requires a body.
 DELETE requests a resource be deleted. It may have a body if the information required to identify the resource to be deleted is not contained in the URL.
 
-## Request Headers
+### Request Headers
 
 ![Charlie from It's Always Sunny ranting about Pepe Silvia with a wall covered in red string and mail behind him, captioned "Me explaining HTTP headers"](https://images.abbeyperini.com/HTTP-series/headers.jpg)
 
 [There are a lot of HTTP request headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). If the server is a concert, and the HTTP request is an attendee, the headers are like the attendee's ticket and ID. An Origin header would tell the server where the request came from. An Accept header would tell the server what kind of format the server should use for its response. A Content-Type header tells the server what kind of format the request body is using. Some of them are automatically made by the HTTP library. Some, like Authentication headers, are dictated by the server. I'll cover Authentication in [part 4](/blog.html?blog=HTTP-4), when I request data from an API that requires a key. Many headers you'll find on both the request and the response. If the HTTP specification refers to a header as a request header, it only gives information about the context of a request. Developers will refer to headers included in a request as request headers in conversation, even if they could also be used as a response header and vice versa.
 
-## Request Body
+### Request Body
 
 HTTP message bodies can be packaged in several standardized data transfer formats. The formats are referred to as [media types or MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types), and there are many of them. XML and JSON are the two you are going to see most often. They both create single-resource bodies, which means they are one file in the HTTP message body.
 
@@ -135,7 +135,7 @@ The MIME type and character encoding used in a request body are declared in the 
 
 The best example of a multiple-resource body is data sent from an HTML form on a webpage. It would have `multipart/form-data` in the Content-Type header. Instead of one body, there are multiple bodies, one for each part of the form, each with its own Content-Type header. Thus, data the user entered can be sent to the server along with the properties of the HTML element they used to enter it. As a result, if you have an `<input>` with a property like `name="first_name"`, the request body will include "name='first_name'" with the name the user typed into the `<input>`.
 
-## Structure of a Response
+### Structure of a Response
 
 After a client sends an HTTP request, the server sends back an HTTP response. Every response sends back some information:
 
@@ -154,7 +154,7 @@ So an HTTP response message would look something like this:
 
 The first line, shown here in red, has the protocol, status code and status message. Next, the yellow section has the headers. The headers are followed by a single blank line. Finally, if there is data to send back, there is a body, shown here in blue.
 
-## Status Codes and Messages
+### Status Codes and Messages
 
 You've encountered [status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) before while using the internet. Everyone's seen "404 Not Found" and you may have seen "403 Forbidden." The one you'll be hoping for when writing HTTP requests is a successful "200 OK." The ones you don't want to see when writing client-side code are in the 400s like "400 Bad Request" and "405 Method Not Allowed." Problems with the server will be in the 500s like "500 Internal Service Error" or "503 Service Unavailable."
 
@@ -164,7 +164,7 @@ Technically, these are standardized. The problem is, people are writing what res
 
 If you'd prefer to learn your status codes and messages accompanied by animal pictures, check out [HTTP Cats](https://http.cat/) and [HTTP Status Dogs](https://httpstatusdogs.com/417-expectation-failed).
 
-### CORS
+#### CORS
 
 Since the majority, but not all, of the [CORS headers](https://developer.mozilla.org/en-US/docs/Glossary/CORS) are request headers, let's dive into CORS here.
 
@@ -182,7 +182,7 @@ If a server relaxes CORS restrictions, they will typically replace it with requi
 
 However, even if the server allows CORS requests, your browser will block a CORS request in your client-side code. You can get around this by requesting data from the server using your own server and then passing what you needed from the response to your client.
 
-## More Resources
+### More Resources
 
 If you're just dipping your toe into asynchronous Javascript, I highly recommend dropping everything and watching two videos right now: [Philip Roberts' "What the heck is the event loop anyway?"](https://youtu.be/8aGhZQkoFbQ) and [Jake Archibald's "In The Loop"](https://youtu.be/cCOL7MC4Pl0).
 
@@ -195,7 +195,7 @@ Callbacks and Promises are difficult concepts and I explained them very quickly.
 - [Promises](https://ebooks.humanwhocodes.com/promises)
 - [Async Await](https://javascript.info/async-await)
 
-## Conclusion
+### Conclusion
 
 That was a lot of definitions before we get to any code! HTTP messages are complex, but they're also the bread and butter of web applications. If you are left confused or wanting more resources about a topic I touched on, don't hesitate to leave a comment below.
 

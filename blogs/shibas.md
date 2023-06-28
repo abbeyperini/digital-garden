@@ -1,4 +1,4 @@
-# Adding Shiba Inu Loading and Error SVGs to My React Site
+## Adding Shiba Inu Loading and Error SVGs to My React Site
 
 Planted: 08/30/2021
 Tags: images
@@ -28,7 +28,7 @@ and I'm ready to add them to my site!
 
 For more information on how I made these Shiba Inu graphics, and how to find or make images of your own, check out my post, [Sourcing Images and Optimizing Them for the Web](/blog.html?blog=images).
 
-## Putting the SVGs in my React App
+### Putting the SVGs in my React App
 
 My complicated Shiba SVGs are a little big (30 - 35 KB), but I'm choosing an `.svg` format over a `.png` format for a few reasons:
 
@@ -272,7 +272,7 @@ The result looks like this:
 
 ![A confused-looking chibi shiba inu with a ? over its head - the question mark gradually cycles through colors. "There was an error! Try again later."](https://images.abbeyperini.com/shibas/error-shibe-animation.gif)
 
-## A note on SVG accessibility
+### A note on SVG accessibility
 
 In doing research on SVGs, I found [the recommended tags to include](https://css-tricks.com/accessible-svgs/) to make SVGs accessible. I've updated all the svgs on my site to have a `<title>`, `<desc>`, and the `role="img"` and `aria-labelledby="titleID descID"` properties in the `<svg>` tag.
 
@@ -286,6 +286,6 @@ While looking into animating SVGs, I saw color animation could trigger some acce
 }
 ```
 
-## Conclusion
+### Conclusion
 
 I really enjoyed making and styling these Shiba Inu SVGs. For an in depth breakdown of image types for the web and how to make or find your own for free, check out this article's sister blog, [Sourcing Images and Optimizing Them for the Web](/blog.html?blog=images). You can check these Shibes out live at `https://abbeyperini.dev` and see all the code for my site in [the repo](https://github.com/abbeyperini/Portfolio2.0).

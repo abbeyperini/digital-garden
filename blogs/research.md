@@ -1,4 +1,4 @@
-# From Research to Writing Reference Material
+## From Research to Writing Reference Material
 
 Planted: 02/07/2023
 Tags: on writing
@@ -8,7 +8,7 @@ Series: [on writing](/series.html?series=onWriting)
 
 I don't know about you, but I send a lot of links to my coworkers about why I've chosen to build something a certain way. Here's how to take that kind of research and turn it into reference material.
 
-## Style Guides
+### Style Guides
 
 For 10+ years in school, I wrote a lot of research papers and had to follow a couple style guides.
 
@@ -32,7 +32,7 @@ I also link to things I think a reader might want to know more about, like large
 
 "In this way, the browser is functioning as a [runtime environment](https://www.codecademy.com/article/introduction-to-javascript-runtime-environments) for client or client-side code." - [A Beginner's Guide to HTTP - Part 1: Definitions](/blog.html?blog=HTTP-1#:~:text=In%20this%20way%2C%20the%20browser%20is%20functioning%20as%20a%20runtime%20environment%20for%20client%20or%20client%2Dside%20code.)
 
-## The Note Card Method
+### The Note Card Method
 
 I am forever grateful to my middle school science teacher who took us to the library and walked us through how to take notes on note cards for writing research papers. Each note card was for one or more quotes you would use in your paper. Additionally, it would include the information you would use to cite it - the author, the page number, and the title of the book (or a code or abbreviation if the title was really long). That way, you could use your library time to research and write the paper itself later.
 
@@ -50,7 +50,7 @@ Some paraphrasing and defining an acronym with a link looks like this:
 
 `Specifically, WAI-ARIA [defines ways to provide functionality for users dependent on screen readers or pointer systems other than a mouse](https://www.w3.org/WAI/standards-guidelines/aria/) when building [UI](https://en.wikipedia.org/wiki/User_interface) controls developed with HTML, JavaScript, and related technologies.`
 
-## Evaluating Sources
+### Evaluating Sources
 
 I would be remiss if I didn't mention your primary job while researching is evaluating your sources. Everyone has bias and a point of view.
 
@@ -62,7 +62,7 @@ I love [Mozilla Developer Network](https://developer.mozilla.org/en-US/). I reco
 
 Reference documentation or the specification for a programming language is usually a safe bet. You just have to check the version and last edit date. We all know from experience how easy it is to let documentation fall out of date.
 
-## Conclusion
+### Conclusion
 
 I hope this answers [@teejay128 's question](https://dev.to/teejay128/comment/23ahn) on [Writing a Technical Blog](/blog.html?blog=writing-2).
 

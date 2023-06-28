@@ -1,4 +1,4 @@
-# Web Security 101 - Part 2: User Input
+## Web Security 101 - Part 2: User Input
 
 Planted: 11/30/2022
 Tags: security, web development
@@ -17,7 +17,7 @@ Never trust anything a user puts into your app.
 7. [Command Injection](#command-injection)
 8. [Client-Side Authorization](#client-side-authorization)
 
-## Listing
+### Listing
 
 Cybersecurity has multiple types of listing.
 
@@ -28,7 +28,7 @@ Cybersecurity has multiple types of listing.
 
 All of these are tools in your toolbelt, to be used with other tactics. Whitelisting is typically more useful than blacklisting. If attackers come up with a new thing, it'll be allowed by your blacklist, but it still won't be allowed by your whitelist.
 
-## Input Validation
+### Input Validation
 
 Input validation isn't just for thwarting attacks. Making sure your data is properly formatted will also prevent errors.
 
@@ -38,7 +38,7 @@ Semantic validation checks the values of the user input. For example, that they 
 
 ![Brad Pitt in Fight club captioned first rule of web security is you don't trust user input](https://images.abbeyperini.com/security-series/club.jpg)
 
-### Client-side
+#### Client-side
 
 You encounter client-side validation often. For example, when a field is required in a form.
 
@@ -70,13 +70,13 @@ function isValidEmail() {
 }
 ```
 
-### Server-side
+#### Server-side
 
 Even with client-side defenses, you still want to validate input on the back-end. If you're sending form responses over HTTP, you might have used something like Postman to check your endpoint will take the form data without filling out the form itself. So can anyone else.
 
 Input validation looks very similar on the back-end except instead of validating individual fields, you're usually validating the entire form in the body of an HTTP request. If you want to syntactically and semantically validate the whole form in one fell swoop, you can use [schema validation](https://apisyouwonthate.com/blog/server-side-validation-with-api-descriptions). Like making a type in a [statically-typed language](https://developer.mozilla.org/en-US/docs/Glossary/Static_typing#:~:text=A%20statically%2Dtyped%20language%20is,not%20indicate%20their%20variable%20types.), you can create a file with a schema, the format you expect, and check against it with a package like [ajv](https://ajv.js.org/).
 
-## Encoding
+### Encoding
 
 Encoding converts data into another format. For security and utility, your encoding should be context-sensitive. For example, React will not take children elements in an object. You would have to encode them in an array.
 
@@ -88,7 +88,7 @@ Another type of encoding is serialization or turning data into a string so it ca
 
 To prevent that, we sanitize data.
 
-## Sanitization
+### Sanitization
 
 Where serialization and parsing ensure your code is valid, sanitization ensures your code is safe and desired. It is also context-sensitive. HTML in a string on the back-end is fine. HTML in a web page would execute and needs to be run through a sanitizer that anticipates it being in a web page. Tags and attributes that can execute code, such as `<script>` and `onClick`, will be removed. Illegal characters will be removed.
 
@@ -96,29 +96,29 @@ Characters will also be escaped. Escaping takes one character a parser might rec
 
 ![A black child very enthusiastically drawing captioned sanitize all the things](https://images.abbeyperini.com/security-series/sanitize.jpg)
 
-### HTML and SVG
+#### HTML and SVG
 
 A webpage will execute code in HTML and SVG. Use [DomPurify](https://github.com/cure53/DOMPurify) on them.
 
-### Markdown
+#### Markdown
 
 Like HTML, code in markdown can be executed. You can use a [markdown sanitizer](https://www.npmjs.com/package/sanitize-markdown) or encode the markdown as HTML and use DOMPurify.
 
-### JSON
+#### JSON
 
 Stringified JSON placed in an HTML document will execute code. The Open Web Application Security Project (OWASP) has a [JSON sanitizer](https://github.com/owasp/json-sanitizer).
 
-### URL
+#### URL
 
 Yes, you can send malicious code in a URL too. In JavaScript,  [`encodeURI()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI) and [`encodeURIComponent()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) will escape characters. You'll have to manually check and filter the rest of it, but the [URL API](https://developer.mozilla.org/en-US/docs/Web/API/URL_API) can help.
 
 For a more complete list of things to sanitize, check out [OWASP's XSS Filter Evasion Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html).
 
-## XSS
+### XSS
 
 If you take input from a user and then display it on a page, that is an attack vector for [Cross-Site Scripting](https://owasp.org/www-community/attacks/xss/) (XSS). An attacker will include code that will execute in a web page in their input. Your web page will execute that code when it tries to display it. I'll discuss more defenses against XSS in future blogs in this series, but for now know that validating, encoding, and sanitizing user input is one of those defenses.
 
-## SQL Injection
+### SQL Injection
 
 Like XSS, but for the database, [SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection) is when an attacker includes [SQL](https://en.wikipedia.org/wiki/SQL) commands in data sent to the database and the SQL command is executed. This way, an attacker can access all your data and drop all your tables.
 
@@ -126,13 +126,13 @@ Like XSS, but for the database, [SQL Injection](https://owasp.org/www-community/
 
 The best way to stop this kind of attack is to never use user input in a SQL command. If you absolutely have to, you can use parameterization and stored procedures. Check out [OWASP's guide](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html) for tutorials.
 
-## Command Injection
+### Command Injection
 
 Like, SQL Injection, but for your computer, [Command Injection](https://owasp.org/www-community/attacks/Command_Injection) is when a malicious Operating System (OS) command is included in user input. Instead of being executed in your application, this code is executed by system commands on your computer.
 
 Again, the best way to stop this kind of attack is to never use user input in an OS command in your server. If you absolutely have to for some reason, validate, encode, and sanitize.
 
-## Client-Side Authorization
+### Client-Side Authorization
 
 Since I touched on access control in listing and it kind of applies here, I wanted to briefly mention something I see a lot - client-side authorization.
 
@@ -140,6 +140,6 @@ As I harped on in [Secrets](/blog.html?blog=security-1), the user has access to 
 
 If you don't validate that the user is who they say they are on the back-end every time they try to access information, anyone can impersonate another user or role. These checks are  important if there's user input and doubly so if that user input is put into the database.
 
-## Conclusion
+### Conclusion
 
 Web Developers build a lot of forms, so learning how to protect yourself from malicious user input is key. Never ever ever trust any user input.

@@ -1,4 +1,4 @@
-# About My Digital Garden
+## About My Digital Garden
 
 Planted: 11/29/2022
 Tags: digital garden
@@ -7,7 +7,7 @@ Tags: digital garden
 
 The more I read about digital gardens, the more I wanted to build one, so I started drawing plants.
 
-## What is a Digital Garden?
+### What is a Digital Garden?
 
 If you want a comprehensive summary of digital gardening, you can't go wrong with Maggie Appleton's [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history) or her [repo of resources](https://github.com/MaggieAppleton/digital-gardeners).
 
@@ -21,7 +21,7 @@ Underpinning the whole philosophy is a sense of optimism about the future of the
 
 Plus, a digital garden provides endless opportunities for plant analogies and puns.
 
-## My Garden
+### My Garden
 
 As it stands, my blog timeline would give you topic whiplash. In contrast, a digital garden works with how my brain works - grouping related articles together even if I wrote them 5 years apart. Bidirectional links will encourage jumping down rabbit holes. The emphasis is on growing a store of interconnected information naturally rather than perfect isolated pieces, and I'm no stranger to learning and building in public.
 
@@ -31,7 +31,7 @@ Many have suggested I should host my own blog, and initially, I didn't see a nee
 
 I've written before about my nostalgia for a time when everyone slapped up a personal website to share information, and now's my chance to put my money where my mouth is. The more I learn about the web and digital accessibility, the less I can justify paywalls and walled gardens.
 
-## Conclusion
+### Conclusion
 
 I realized my digital garden needed an about digital gardening page and here we are!
 

@@ -1,4 +1,4 @@
-# Accessibility Auditing My Portfolio Site - Part 6
+## Accessibility Auditing My Portfolio Site - Part 6
 
 Planted: 11/28/2021
 Tags: audit, accessibility
@@ -12,9 +12,9 @@ We've finally reached the end. If you've read multiple articles in this series, 
 
 I'm going to finish up with a [final round of testing](#final-testing), a [final fix](#final-fix), a brief mention of [things I'd like to revisit](#things-to-revisit), some [main takeaways](#main-takeaways), and my [final thoughts on this series](#final-thoughts).
 
-## Final Testing
+### Final Testing
 
-### Automated Tools
+#### Automated Tools
 
 In [Part 1](/blog.html?blog=audit-1), I used 6 of the tools Todd used: [WAVE browser extension](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh), Firefox's accessibility dev tools tab, [axe DevTools extension](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US), [ARC dev toolkit for chrome dev tools](https://chrome.google.com/webstore/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce), [IBM Equal Access Accessibility checker](https://chrome.google.com/webstore/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?hl=en-US), and [Microsoft Accessibility Insights](https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni). So let's go through that list again and see what we find.
 
@@ -30,7 +30,7 @@ The IBM Equal Access Accessibility checker just stopped working. It refused to s
 
 The Microsoft Accessibility Insights Fast Pass didn't find anything that wasn't already on my radar, but I will be using the Assessment option as a guide for my manual testing again.
 
-### Manual Testing
+#### Manual Testing
 
 The Microsoft Accessibility Insights Assessment is such a great testing resource. Many of the tabs break down exactly what information is returned by the relevant elements on the page and others tell you what to look for when you're manually testing with a keyboard or screen reader. Some of them have a visual helper toggle that will highlight relevant elements or apply the relevant settings so you can test. It's a very long list of tests, but luckily there are many tabs I know I can skip because they either don't apply or I haven't changed any code related to them since the last time I checked. Ultimately, these tests don't return anything I didn't already know about.
 
@@ -66,7 +66,7 @@ Another thing about the toggle I said I'd look into again was whether the animat
 
 This cancels out the `transition: all 350ms ease-in;` rule in my regular `.toggle--label` ruleset, and the outline is easier to see right when the toggle is focused.
 
-### Multiple Screen readers
+#### Multiple Screen readers
 
 There were a couple warnings from tools about multiple labels being used on components. I applied `aria-label`s liberally based on what I was hearing from the screen reader. Now that the bulk of the work is done, I want to go back through with multiple screen readers and find the optimal balance. Specifically, I want to make sure a screen reader says "dark mode toggle, on" or "dark mode toggle, off" when the toggle is selected and that things like buttons in headings don't have redundant labels read.
 
@@ -78,7 +78,7 @@ Finally, I try to get tdsr working and my homebrew python installation is broken
 
 I'm leaving my `aria-label`s the way they are because I added them in response to VoiceOver not providing enough information. The NVDA experience is very similar and the tools are returning warnings to try and prevent lots of redundant text from being read to the user.
 
-### Cross-browser Testing
+#### Cross-browser Testing
 
 In the spirit of completing testing I should have done a long time ago, I want to click through my site in multiple browsers and verify nothing's broken. I try and make sure to check MDN's browser support table for pretty much everything, but it never hurts to verify in the browser itself.
 
@@ -88,13 +88,13 @@ The Firefox dev tools accessibility tab didn't return any errors, but I took the
 
 In Safari, my blog preview component has square edges around the scrollbar I was able to prevent in Chrome and Firefox. I mess around with it for a little bit, but my solution is the recommended solution and none of the CSS I tried in dev tools affected it. Everything else looks fine.
 
-## Final Fix
+### Final Fix
 
 I wanted to sift through all my blogs to make sure I'm not using words like "above" and "below" where they wouldn't make sense without visual context. The warnings came from the IBM Equal Access Accessibility checker, so while that's broken, I'm relegated to using ctrl + F to find "above", "below", "left", and "right." Lo and behold, I've already used "above" a couple times since I fixed the instances of "below" on my main page! This is a hard habit to break.
 
 For the most part, I can just remove the word without issue. In some places, I replace "above" with "before" and "below" with "following." I quickly find I sure do love a good "comment below."
 
-## Things to Revisit
+### Things to Revisit
 
 I opened [5 issues on Github](https://github.com/abbeyperini/Portfolio2.0/issues) over the course of this series. #3, #9, and #11 are easily large enough accessibility projects to deserve standalone blog posts.
 
@@ -104,7 +104,7 @@ I also need to transfer changes I've made to blogs on DEV to Hashnode and maybe 
 
 ![Frodo on Mount Doom "It's done. It's over now."](https://images.abbeyperini.com/audit-series/done.jpg)
 
-## Main Takeaways
+### Main Takeaways
 
 Running ARC Toolkit on my blog page now vs when I started is like night and day. I got a huge amount of errors back in [Part 1](/blog.html?blog=audit-1), but now it's all warnings and two things I'm going to fix in those Github issues. On the flip side, I don't think IBM Equal Access Accessibility checker's % of components without issues metric moved during this entire series. I'm pretty sure I saw 93% the whole time.
 
@@ -114,7 +114,7 @@ Honestly, if I only had the bandwidth to do one thing, I would manually test wit
 
 Just like learning a new language or technology, a lot of these things need practice. Alt-text and color contrast are great examples of this. I encourage you to look at websites you visit and think about what the experience would be like for a disabled user while you browse. You should definitely be writing alt-text or captions for every image you use in your social media posts both for other users and for your own practice. My alt-text writing has improved significantly in the last 8 months just from tweeting.
 
-## Final Thoughts
+### Final Thoughts
 
 I want to emphasize that if you want to improve your site's accessibility, an audit and fix process this intense right off the bat is not necessary.
 

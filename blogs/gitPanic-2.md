@@ -1,4 +1,4 @@
-# #gitPanic - Merging and Rebasing
+## #gitPanic - Merging and Rebasing
 
 Planted: 11/07/2022
 tags: git, #gitPanic
@@ -16,7 +16,7 @@ Series: [#gitPanic](/series.html?series=gitPanic)
 6. [Pulling](#pulling)
 7. [More Resources](#more-resources)
 
-## Merging
+### Merging
 
 The default for adding changes in one branch to another is merging. The other option is rebasing.
 
@@ -32,7 +32,7 @@ git merge new-branch
 
 git will try to merge the branch named new-branch into the branch you currently have checked out. It starts with the the easiest option, a fast-forward merge.
 
-### Fast-Forward Merge
+#### Fast-Forward Merge
 
 To start, a merge finds the last common commit in both branches. Let's say you were in the main branch and created a new branch based off of it by running `git checkout -b new-branch`. The last commit in `main` before you ran that command is the last common commit.
 
@@ -40,7 +40,7 @@ By the time you're ready to merge, no new commits have been added to the main br
 
 This is a fast-forward merge. It uses rebasing under the hood, so it doesn't create a merge commit. Pushing will only fast-forward merge.
 
-### 3-way Merge
+#### 3-way Merge
 
 If a fast-forward merge is not possible, git will try a 3-way merge. (Unless you're pushing, then you'll just get an error.)
 
@@ -48,7 +48,7 @@ Let's say you've been working on a feature in `new-branch` for a couple weeks. I
 
 The name comes from the three commits git is comparing - the last common commit, the last commit on `main`, and the last commit on `new-branch`. It looks at how the changes in `main` and `new-branch` diverge from the last common commit. Based on those snapshots, git creates a new merge commit with all the changes on the end of the commit history.
 
-### Squash Merge
+#### Squash Merge
 
 You can squash both a fast-forward merge and a 3-way merge by running
 
@@ -60,7 +60,7 @@ This option takes all of the individual commits, puts all the changes in one com
 
 ![A man in a throne-like chair with a big read button in front of him labelled "squash a merge". His hand is held in the air like he's about to slam down that button enthusiastically.](https://images.abbeyperini.com/gitPanic/squash.jpg)
 
-## Rebasing
+### Rebasing
 
 To run a standard rebase, use
 
@@ -80,7 +80,7 @@ so that that it will not overwrite any work on the remote branch that you don't 
 
 This understanding of merge vs rebase is already a powerful tool in your tool belt. If you want full control over your commit history, you can use [interactive rebase](/blog.html?blog=gitPanic-5). It's a powerful tool and complicated enough that I've chosen to cover it separately.
 
-## Cherry-picking
+### Cherry-picking
 
 The other option you have is to checkout the branch you want to add the changes to and manually move each commit. To do this, you would run
 
@@ -90,7 +90,7 @@ git cherry-pick <SHA>
 
 where SHA is the unique identifier for the commit. You can find the SHA in the commit in the GitHub UI or by using [`git log`](https://www.atlassian.com/git/tutorials/git-log). However, this creates a new SHA for the commit on the new branch. If you go to merge two branches with the same changes, but one commit was cherry-picked, git will not consider them the same commit.
 
-## Conflicts
+### Conflicts
 
 When you combine branches, git often runs into situations where it doesn't know how to apply the changes. Each time it doesn't know what to do with your new code is called a conflict. It will show you the diff, or difference, between the old file and the file with the new changes. There are two common styles of showing the diff: unified and split. Whenever possible, I use split, which will show the old file and the new file side by side. I find unified, where it shows one file with the old line of code directly above the new line of code, difficult to follow.
 
@@ -122,7 +122,7 @@ git merge --abort
 
 If it gets really bad, you can always cherry-pick your commits onto a new branch.
 
-## Fetching
+### Fetching
 
 What if you're just looking to get the latest commits from the remote repo? Running `git fetch` will fetch all the remote changes you don't have in your local repository.
 
@@ -147,7 +147,7 @@ git config --global fetch.prune true
 
 It will remove things like old branches you've deleted in the remote too.
 
-## Pulling
+### Pulling
 
 You could say pulling is the opposite of pushing. Like pushing, `git pull` is the same as `git pull [remote] [all branches]`. However, pushing, like fetching, only looks to update your commit information.
 
@@ -163,7 +163,7 @@ This will pull commits down, won't trigger a merge commit, and usually involves 
 
 A word of warning: I often checkout a branch, see a log saying the branch is up to date, pull, and then see changes were fetched.
 
-## More Resources
+### More Resources
 
 [Learn Git Branching](https://learngitbranching.js.org/) is an interactive tutorial with visualizations that is very helpful for all levels.
 
@@ -175,6 +175,6 @@ I personally like the [Atlassian tutorials](https://www.atlassian.com/git) becau
 
 If you've truly hit #gitPanic, [Oh Shit, Git!?!](https://ohshitgit.com/) has your back (and [Dangit, Git!?!](https://dangitgit.com/en) has it without swears). The amazing Julia Evans also has [a zine by the same name.](https://wizardzines.com/zines/oh-shit-git/)
 
-## Conclusion
+### Conclusion
 
 Now that we've covered the basics of how git works, I'll talk about the basics of working with other developers in a repo next.

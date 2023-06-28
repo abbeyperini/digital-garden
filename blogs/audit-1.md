@@ -1,4 +1,4 @@
-# Accessibility Auditing My Portfolio Site - Part 1
+## Accessibility Auditing My Portfolio Site - Part 1
 
 Planted: 11/02/2021
 Tags: audit, accessibility
@@ -18,18 +18,18 @@ If you're just dipping your toe into accessibility, I would say the WAVE extensi
 
 ![a screenshot of the full blog page on abbeyperini.dev with the WAVE accessibility extension active](https://images.abbeyperini.com/audit-series/wave.png)
 
-## Auditing with Automatic Tools
+### Auditing with Automatic Tools
 
-### The Findings
+#### The Findings
 
-#### Landing Page
+##### Landing Page
 
 * the blank form I have to put in my index page to use Netlify's serverless contact form and spam bot is missing form labels
 * no navigation landmark (`<nav>` or otherwise)
 * missing `focusable='false'` for the SVG in my button
 * warning to test Windows high contrast mode works
 
-#### Main Page
+##### Main Page
 
 * dark mode toggle - empty form label, form element with a visible label and hidden input, the 'for' attribute is not the 'id' of a valid `<input>` element, and the `<label>` element does not have descriptive text that identifies the expected input
 * many PDF accessibility issues!
@@ -42,7 +42,7 @@ If you're just dipping your toe into accessibility, I would say the WAVE extensi
 * My `<aside>` elements do not have labels with accessible names!
 * 8 warnings to inform the user when an input action will open a new window or change the context
 
-#### Blog Page
+##### Blog Page
 
 * 85 empty link warnings - the HTML pulled using the DEV API generates empty links in the headings.
 * 7 skipped heading level warnings - this was an issue [I knew about](/blog.html?blog=serverless#:~:text=from%20Virtual%20Coffee.-,P.S.,-I%20had%20mentioned) and I honestly thought this would be significantly worse.
@@ -55,7 +55,7 @@ I got quite a few false positives for color contrast - often "I can't calculate 
 
 ARC Toolkit was unhappy that the alt-text for my preview images for my portfolio projects and blog cover images include "gif," "screenshot," and "image." This is something I almost never do because it is redundant, and in these instances, I wanted to highlight that they are images, so I'll be keeping it.
 
-## Manual Testing is Key
+### Manual Testing is Key
 
 Todd stressed the importance of manually testing a site using keyboard and a screen reader tool (e.g. Safari voiceover for Mac, NVDA for Windows, or Orca for Linux).
 
@@ -90,7 +90,7 @@ Finally, it's time to try using Safari voiceover.
 * It's not obvious to a screen reader that the blog heading links are clickable.
 * I don't think I need to add skip links for my main page, as the nav has buttons to load single components the content isn't that dense.
 
-## What's Next?
+### What's Next?
 
 My dark mode toggle needs serious help - I need to make it focusable, and add descriptive text. Furthermore, I'll need to test whether adding `for` and `id` attributes and `<label>` content adds accessibility and/or takes away functionality.
 
@@ -110,7 +110,7 @@ I would like to stop my full blog page from scrolling horizontally if you turn y
 
 While auditing, I also noticed the button that opens my full blog page needs to be wrapped in an `<h1>`, and my `<ul>` styling on my full blog page needs help.
 
-## Conclusion
+### Conclusion
 
 I am actually quite pleased with the results of this audit. I have only two problematic components, and I was very much focused on visual presentation when I built them. Accessible SVGs are very hard, and I got these warnings after I made them more accessible while writing [this blog](/blog.html?blog=shibas#:~:text=A%20note%20on%20SVG%20accessibility). Most of the other problems were news to me, and honestly the alt-text issues show how much I've improved with the practice I've been doing. The blog HTML and CSS issues are not a surprise to me - I've tossed that page together on a short deadline twice now.
 

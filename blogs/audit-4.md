@@ -1,4 +1,4 @@
-# Accessibility Auditing My Portfolio Site - Part 4
+## Accessibility Auditing My Portfolio Site - Part 4
 
 Planted: 11/11/2021
 Tags: audit, accessibility
@@ -10,7 +10,7 @@ Read [Part 1 - The Audit](/blog.html?blog=audit-1), [Part 2 - Quick Fixes](/blog
 
 This blog will focus on making the [blog preview component code](https://github.com/abbeyperini/Portfolio2.0/blob/master/portfolio/src/components/Blog.js) on the main page of my site more accessible.
 
-## The Problems
+### The Problems
 
 First, I want to update the blog preview component to always return a `<section>` and `<h1>`. Currently, the error or loading text is returned with just a [Shiba Inu SVG](/blog.html?blog=shibas). Also, I need revisit the CSS so this component is uniform with the rest of the site.
 
@@ -18,7 +18,7 @@ Next, the individual blog previews within the component aren't focusable when yo
 
 Finally, when I was manually testing, I noticed that it wasn't obvious to a screen reader that you can interact with each blog preview heading. Luckily, the answer to this may also be the answer to making the previews focusable.
 
-## Uniformity, but with Meaning
+### Uniformity, but with Meaning
 
 This is the easiest to do, and requires my [lambdas](/blog.html?blog=serverless) to be off, so I'm starting here. I import Error and Loading components into my blog preview component, so I'll need to add the `<section>` and `<h1>` within them. To maintain functionality, I also had to pass down my `chooseComponent` function in `props`.
 
@@ -51,7 +51,7 @@ Next, I want the spacing between the headings and content containers to be more 
 
 Finally, I set up my local lambda server so I can verify that the spacing of the blog preview component still looks correct. The width is a little off, so I go through all my media queries again and find a couple spots where the heading spacing needed to be tweaked too.
 
-## Totally Tabbular
+### Totally Tabbular
 
 The first thing I want to try is putting my preview headings in a `<button>` instead of just in an `<h2>` with an `onClick` handler. I suspect this will also make it more obvious to a screen reader that they are interactive.
 
@@ -70,7 +70,7 @@ Honestly, I have no idea why I didn't just use a `<button>` in the first place. 
 
 ![screenshot of abbeyperini.dev in light mode with one of the blog preview title buttons focused](https://images.abbeyperini.com/audit-series/light-blog-tab.png)
 
-## Horizontal Scrolling
+### Horizontal Scrolling
 
 Now that the items are focusable, and you can tell when using a screen reader that you can interact with them, I need to manually test the horizontal scrolling.
 
@@ -93,11 +93,11 @@ return (
 
 Now instead of just "list," the screen reader I am using says "list preview of Abbey's blog posts." At this point, keyboard navigation is working fine, if a bit lengthy, and navigating this component with a screen reader makes much more sense.
 
-## It's Not a Trap&#33;
+### It's Not a Trap&#33;
 
 Turns out, I had no idea what a [keyboard trap](https://www.nomensa.com/blog/what-are-keyboard-traps) was! As long as the user can escape the component using just the keyboard or screen reader and not a mouse, it's ok! Very glad this component passes the test. I'll be doing some more research on [skip links](https://webaim.org/techniques/skipnav/) for the next blog post. I may add one in here as this 19 item list is only growing with every blog post I write. Up until this point, I haven't been adding any because a user would only have to tab through the navigation bar to hit the main content. Plus, the navigation bar buttons load single sections, allowing a user to skip directly to what they want to read.
 
-## Conclusion
+### Conclusion
 
 That's an audit, some quick fixes, and 2 problematic components down - one massive blog styling revamp to go! I am quite relieved this component was so easily fixed.
 

@@ -1,4 +1,4 @@
-# Dark Mode Toggle and prefers-color-scheme
+## Dark Mode Toggle and prefers-color-scheme
 
 Planted: 04/21/2023
 Tags: toggle, accessibility
@@ -14,7 +14,7 @@ When I wrote [An Accessible Dark Mode Toggle in React](/blog.html?blog=audit-3) 
 4. [Solution for My Toggle](#solution-for-my-toggle)
 5. [Refactoring](#refactoring)
 
-## What is `prefers-color-scheme`?
+### What is `prefers-color-scheme`?
 
 `prefers-color-scheme` is a [media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_features). Media features give information about a user's device or user agent. A [user agent](https://developer.mozilla.org/en-US/docs/Glossary/User_agent) is a program representing a user, in this case, a web browser or operating system (OS).
 
@@ -39,7 +39,7 @@ You're probably most familiar with media features used in media queries, like in
 }
 ```
 
-## Emulating User Preference for Testing
+### Emulating User Preference for Testing
 
 In Chrome DevTools, you can emulate `prefers-color-scheme` and other media features in the [rendering tab](https://developer.chrome.com/docs/devtools/rendering/).
 
@@ -47,7 +47,7 @@ In Chrome DevTools, you can emulate `prefers-color-scheme` and other media featu
 
 If you prefer Firefox DevTools, [it has `prefers-color-scheme` buttons](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/examine_and_edit_css/index.html#view-media-rules-for-prefers-color-scheme) right in the CSS inspector.
 
-## Detecting `prefers-color-scheme` with JavaScript
+### Detecting `prefers-color-scheme` with JavaScript
 
 Unfortunately, I am not changing my theme in CSS. I'm using a combination of [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) and swapping out class names on a component. Luckily, as always, the Web APIs are here for us.
 
@@ -57,7 +57,7 @@ Unfortunately, I am not changing my theme in CSS. I'm using a combination of [lo
 window.matchMedia('(prefers-color-scheme: dark)');
 ```
 
-## Solution for My Toggle
+### Solution for My Toggle
 
 You can check out all the code for this app in my [portfolio repo](https://github.com/abbeyperini/Portfolio2.0).
 
@@ -101,7 +101,7 @@ const [className, setClassName] = useState("theme-dark");
 
 The toggle uses `setTheme()` to update the theme.
 
-## Refactoring
+### Refactoring
 
 Previously, `setTheme()` wasn't using `setClassName`.
 
@@ -166,6 +166,6 @@ const theme = localStorage.getItem('theme');
 
 At this point, I realized that if I'm already defaulting to dark mode, I don't need to check for `(prefers-color-scheme: dark)`. Then I learned `localStorage` items are [tied to the window's origin](https://html.spec.whatwg.org/multipage/webstorage.html#dom-localstorage-dev:~:text=Returns%20the%20Storage%20object%20associated%20with%20window%27s%20origin%27s%20local%20storage%20area.). Since I don't need to check the value, I can just check `theme` exists and then pass it to `setTheme()`.
 
-## Conclusion
+### Conclusion
 
 It was a little nostalgic to come back to this toggle. It helped me get my first developer job almost exactly two years ago. Sometimes, it can be hard to look back on code you wrote when you knew less. In this case, I was already doing the kind of updates you have to do after two years, and it was nice to see how much I've learned. It makes me want to refactor the rest of the app and excited to see what I learn in the next two years.

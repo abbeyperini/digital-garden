@@ -8,16 +8,15 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <footer>
-        <p>&copy; ${year}</p>
         <ul class="list footer-list">
           <li>
             <a href="https://abbeyperini.dev">Portfolio</a>
           </li>
           <li>
-            <a href="https://dev.to/abbeyperini">DEV</a>
+            <a href="https://dev.to/abbeyperini">DEV</a><img src="https://images.abbeyperini.com/logos/devto.svg" alt="" width="30">
           </li>
           <li>
-            <a href="https://abbeyperini.hashnode.dev/">Hashnode</a>
+            <a href="https://abbeyperini.hashnode.dev/">Hashnode</a><img src="https://images.abbeyperini.com/logos/hashnode-icon.png" alt="" width="30">
           </li>
           <li>
             <a href="https://github.com/abbeyperini">Github</a><img src="https://images.abbeyperini.com/logos/github.png" alt="" width="30">
@@ -29,6 +28,7 @@ class Footer extends HTMLElement {
             <a href="https://twitter.com/AbbeyPerini">Twitter</a><img src="https://images.abbeyperini.com/logos/Twitter.png" alt="" width="30">
           </li>
         </ul>
+        <p class="copyright">&copy; ${year}</p>
       </footer>
     `;
     this.setAttribute("class", "footer-component");

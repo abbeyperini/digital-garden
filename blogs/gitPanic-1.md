@@ -1,4 +1,4 @@
-# #gitPanic - Git 101
+## #gitPanic - Git 101
 
 Planted: 11/04/2022
 tags: git, #gitPanic
@@ -17,7 +17,7 @@ There will be a part of the series where I discuss tools for using git outside o
 3. [Repositories and Branches](#repositories-and-branches)
 4. [Commits](#commits)
 
-## What is git?
+### What is git?
 
 Basically, git is a save history. Technically, it is distributed version control software you [install on your machine](https://www.atlassian.com/git/tutorials/install-git). Version control is also called revision control, source control, and source code management. You're probably most familiar with [semantic versioning](https://semver.org/). App version 1.0 is the first version released to customers. App version 1.2 has had a couple minor updates, like a patch or bug fix. If you're waiting for a video game update with new content and mechanics updates, that'd be a major version, like App 2.0.
 
@@ -29,7 +29,7 @@ Distributed version control means instead of storing all your code on one machin
 
 Like a database, multiple people accessing and changing the same thing means the software maintaining the codebase has to have systems and protections in place to allow changes to be added from multiple machines without losing code. That's git's main purpose. When you access a codebase using git, you get all of the information about all of the changes made to the code with the code itself.
 
-## What is GitHub?
+### What is GitHub?
 
 [GitHub](github.com) is a website that uses git and has features that facilitate its use and software development. [Making a GitHub account](https://github.com/join) is free.
 
@@ -37,7 +37,7 @@ With an account, you can create codebases, see your code, interact with other us
 
 GitHub is not the only place you can store a codebase and use git with it. There are [plenty of alternatives](https://www.guru99.com/github-alternative.html), but for simplicity's sake, I'll be referring to GitHub.
 
-## Repositories and Branches
+### Repositories and Branches
 
 The container for your codebase is a repository, often shortened to repo. You can either create a repository [in command line with git](https://www.atlassian.com/git/tutorials/setting-up-a-repository) or using the [GitHub UI](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository). If you use GitHub, you'll have to [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) (functionally download) it. If you create it on your local machine, you'll have to upload it.
 
@@ -59,7 +59,7 @@ The `-b` flag tells git to create a new branch. Once it's created, you'd get to 
 git checkout new-branch
 ```
 
-## Commits
+### Commits
 
 Commits are like individual saves. A branch can hold as many commits as you want. After you make changes and save the file, git considers them unstaged changes.
 
@@ -97,6 +97,6 @@ If you only want to update new-branch, you'd run
 git push origin new-branch
 ```
 
-## Conclusion
+### Conclusion
 
 That's a lot! We learned about version control, repositories, local vs remote, branches, staging, committing, and pushing. In the next part of the series, I'll talk about what to do with your changes after you've gotten them in the remote branch including things like pulling, merging, and conflicts.

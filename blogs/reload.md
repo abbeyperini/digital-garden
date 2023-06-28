@@ -1,4 +1,4 @@
-# How To Reload a Page Whenever a User Makes a Change with React/Redux
+## How To Reload a Page Whenever a User Makes a Change with React/Redux
 
 Planted: 01/07/2021
 
@@ -255,7 +255,7 @@ if (!props.shibes || !props.shibes[0]) {
 
 Using JSX conditional logic and our Redux state, we can display different error messages based on the state of our async requests.
 
-## Conclusion
+### Conclusion
 
 After struggling to figure it out myself, I strove to create a straightforward example of how to use the `useEffect()` hook to reload components based on changes other components are making.
 

@@ -1,4 +1,4 @@
-# We've Been Here Since the Beginning
+## We've Been Here Since the Beginning
 
 Planted: 03/04/2022
 Tags: women in programming
@@ -14,7 +14,7 @@ This is not a blog I anticipated writing. My plan was to let Women's History Mon
 [History of Women in Programming](#history-of-women-in-programming)
 [Conclusion](#conclusion)
 
-## I am tired
+### I am tired
 
 From March 2020 to August 2020, I started learning to code basically in isolation. I talked about it a lot to my husband and some with a few friends, but I hadn't joined any communities. I wasn't blogging or on Twitter. I didn't find out CSS was supposed to be hard and annoying until I was already in love with it.
 
@@ -78,7 +78,7 @@ Continually, the advice is to ignore it. Just keep shrugging it off. Don't let t
 
 They simply don't have the right to other us. We've been here since the beginning. There was a time when men were ignoring low-paying programming jobs for high-paying hardware jobs and women were encouraged to study math and computer science.
 
-## History of Women in Programming
+### History of Women in Programming
 
 Ada Lovelace [was the first programmer](https://www.mentalfloss.com/article/53131/ada-lovelace-first-computer-programmer#:~:text=Ada%20Lovelace%20has%20been%20called,this%20was%20in%20the%201840s.). In fact, she wrote the first machine algorithm and died long before a computer that could run it was built.
 
@@ -122,7 +122,7 @@ By the mid-90's five or less women would be in a class of 20 computer science st
 
 This is all very U.S.-centric, as well. In [India](https://www.theguardian.com/lifeandstyle/2017/aug/08/why-are-there-so-few-women-in-tech-the-truth-behind-the-google-memo), [China](https://www.cambridge.org/core/books/cracking-the-digital-ceiling/5B74B6983B2DD0E9FC341459FA855C6B), [Saudi Arabia](https://www.researchgate.net/publication/313694059_Women_in_computing_in_Saudi_Arabia), [Bulgaria, and Romania](https://www.zdnet.com/article/women-in-tech-why-bulgaria-and-romania-are-leading-in-software-engineering/) more women than men are enrolling in Computer Science.
 
-## Conclusion
+### Conclusion
 
 Originally, [Knitting as Programming](/blog.html?blog=knitting) was twice as long and half about the history of women in programming. I was already feeling the weight of the stereotypes and anger about the erasure of women programmers a year ago.
 

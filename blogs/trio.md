@@ -1,4 +1,4 @@
-# A Trio of Buttons for a Bubbly, Colorful Site
+## A Trio of Buttons for a Bubbly, Colorful Site
 
 Planted: 01/28/2021
 
@@ -16,7 +16,7 @@ For the tertiary button, users should be able to find it and tell it's clickable
 
 All you need is an HTML `<button>` tag.
 
-## Primary
+### Primary
 
 I know I want my attention grabbing button to be round and a little fat with a `box-shadow:`, so we'll start with those declarations. Also, we'll give it a margin, align the text in the center, and remove its border. In this case, the text color is the color I used for primary-level text across the site.
 
@@ -85,7 +85,7 @@ Which should look like this:
 
 Both include the `outline: none;` declaration, which will prevent the default blue focus outline provided by the `<button>` tag for accessibility purposes.
 
-## Secondary
+### Secondary
 
 I wanted my secondary button to be a sibling not a twin to my primary button. So it'll have slightly less padding, but the same `border-radius` and `box-shadow`. The gradient colors I've picked are closer to (or the same as) the background colors I'm working with. In this case, the text color is the color I used for secondary-level text across the site. The rule-set should look like this:
 
@@ -123,7 +123,7 @@ Which should give you:
 
 The text color has a high enough contrast with the background, so the cursor is probably enough… but because the button colors include the background colors, I've left the focus outline on.
 
-## Tertiary
+### Tertiary
 
 Finally, the forgettable button. The styling will look just like text. The cursor changing shows it's clickable (and it will still be focusable by a keyboard user and semantic for a screenreader thanks to the `<button>` tag). In this case, the text color is the one I was using for tertiary-level text across the site.
 
@@ -142,7 +142,7 @@ Put it all together and they look like this:
 
 A clear hierarchy! Pretty obvious the login button is a call to action. The next button that your eye moves to navigates you to the register page instead of the login page. The "forgot password" and "login as guest" options are easily found, but don't pull focus.
 
-## Conclusion
+### Conclusion
 
 Hopefully you got a little insight into my thought process for designing buttons with a clear hierarchy. I really love the shifting background gradient effect. More importantly, understanding simple translation animations and how to style buttons like text are very useful skills.
 

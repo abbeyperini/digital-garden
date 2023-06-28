@@ -1,4 +1,4 @@
-# Panini Bot — Making a Discord Bot with Replit, UptimeRobot, Node.js, Express, and Eris
+## Panini Bot — Making a Discord Bot with Replit, UptimeRobot, Node.js, Express, and Eris
 
 Planted: 06/02/2021
 
@@ -10,7 +10,7 @@ Cover image alt text: "Replacing the word "pandemic" with incorrect variations i
 
 I'd already used [replit](https://replit.com/) and [UptimeRobot](https://uptimerobot.com/) to make a Python Discord bot that sends my friends pictures of dogs, so I fired up a [Node.js](https://nodejs.org/en/) repl and named it Panini. You can view the [live code here](https://replit.com/@abbeyperini/Panini).
 
-## Making a Discord bot with Replit, UptimeRobot, Node.js, Express, and Eris
+### Making a Discord bot with Replit, UptimeRobot, Node.js, Express, and Eris
 
 For UptimeRobot to keep my bot alive, the first thing I need in my Node.js repl is an [Express](https://expressjs.com/) server. After running `npm install express` in the console, I added the following code to index.js:
 
@@ -89,7 +89,7 @@ const paniniSummon = bot.registerCommand("Panini", (msg, args) => {
 
 I [created an invite link](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links) and invited Panini Bot to my bot test server. I suggest making a server or channel for bot testing, especially in the beginning. After adding my bot, I sent a message with '!Panini' and it responded back with a message saying 'Reporting for duty!'
 
-## Making Panini Bot
+### Making Panini Bot
 
 I want Panini Bot to see a message with the !Panini command, delete that message, and then send a new message. The new message should mention the user, followed by their original message, but a brand new word starting with 'p' will replace every instance of 'pandemic' or 'Pandemic.' When I originally wrote my `createMessage` function, it replaced all instances of 'pandemic' with the same random p-word. For the purposes of this blog, we'll skip ahead to Panini Bot 2.1.
 
@@ -245,7 +245,7 @@ function formatMessageExAid(msg, args) {
 }
 ```
 
-## Conclusion
+### Conclusion
 
 I enjoy working in a repl not only because I can check the bot from my phone, but also because I can invite other developers to collaborate. There are a few features I vacillate on adding to Panini Bot. I chose not to worry about capitalization, but I could add the option to turn off the permissions error message and/or `deleteOldMessage`. If you have thoughts about this or any other part of Panini Bot, share in the comments!
 

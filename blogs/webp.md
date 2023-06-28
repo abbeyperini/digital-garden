@@ -1,4 +1,4 @@
-# What is WebP?
+## What is WebP?
 
 Planted: 04/26/2022
 Tags: images
@@ -8,7 +8,7 @@ Series: [Images](/series.html?series=images)
 
 I `right click > save` images off the web constantly, and I've started coming across `.webp` file types more and more. What is this Google-made [open source](https://www.webmproject.org/code/#:~:text=webmproject/bitstream%2Dguide/-,WebP%20Repositories,-libwebp%3A%20WebP%20Image) image file format?
 
-## WebP
+### WebP
 
 The stated goal for this file format is improving website speed, so WebP may become another tool in your [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) toolbox. WP Rocket even has a glowing review of the format in their [page speed and caching tutorials](https://wp-rocket.me/blog/webp-use-image-format-wordpress/).
 
@@ -22,6 +22,6 @@ WebP is also limited to 8-bit color precision and the lossy compression algorith
 
 The other downside is many places where you can upload images do not support you uploading WebP, even if they're using it themselves when hosting the uploaded images. Hopefully this begins to change, garnering WebP more support and popularity.
 
-## Conclusion
+### Conclusion
 
 Unless you're making a site like a photographer's portfolio, requiring high quality, vivid color, and fine detail in your images, WebP seems like a pretty useful image format to reach for when building a site. It provides all the benefits of a PNG and GIF with smaller file sizes. It makes sense that websites that host a lot of images are incorporating this file format more and more.

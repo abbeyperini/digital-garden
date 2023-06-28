@@ -1,4 +1,4 @@
-# Embrace the Struggle While Learning to Code
+## Embrace the Struggle While Learning to Code
 
 Planted: 09/25/2020
 

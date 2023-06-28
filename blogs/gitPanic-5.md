@@ -1,4 +1,4 @@
-# #gitPanic - Interactive Rebase
+## #gitPanic - Interactive Rebase
 
 Planted: 11/16/2022
 Tags: git, #gitPanic
@@ -19,7 +19,7 @@ This blog assumes you have a basic understanding of git or have read [Git 101](/
 7. [Rebase One Branch Onto Another](#rebase-one-branch-onto-another)
 8. [Other Helpful Commands](#other-helpful-commands)
 
-## Warnings
+### Warnings
 
 I really mean it when I say interactive rebasing is rewriting your commit history.
 
@@ -33,7 +33,7 @@ Deleting commits with interactive rebase also means you can lose work. If you re
 
 I'll be covering how to recover lost work in a future blog. It's almost always recoverable.
 
-## SHA
+### SHA
 
 I've touched on a commit's SHA in a couple of the other blogs in this series. It's a unique identifier for the commit made using the [SHA-1 hash algorithm](https://en.wikipedia.org/wiki/SHA-1). It's essentially the name of the commit, and we'll be passing it to the rebase command.
 
@@ -41,7 +41,7 @@ It's also referred to as reference and hash. I'll be using SHA.
 
 You may see people passing a short SHA - anywhere from 5 - 12 characters. This will definitely work in a small project, and git is [pretty smart about matching SHAs](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection#Short-SHA-1). Be forewarned - as the number of commits increase, so does the likelihood that you may have 2 commits with the same first few digits. When the Linux kernel hit 875,000 commits, they found they needed 12 characters. The git reference docs recommend using 8 - 10.
 
-## git log
+### git log
 
 Before you start interactive rebasing, you want to understand your commit history. You can do this by running `git log`. This command has [many options and things you can configure](https://www.atlassian.com/git/tutorials/git-log) to get the most out of it.
 
@@ -55,7 +55,7 @@ Like you're manually merging, you want to find the last commit before the commit
 
 Instead of a SHA, you can use [HEAD](/blog.html?blog=gitPanic-4) shorthand like `HEAD^3` instead.
 
-## Starting the Rebase
+### Starting the Rebase
 
 This will open an editing window. If you want to do it in the terminal, have the [vim command cheatsheet](https://vim.rtorr.com/) ready. Otherwise, [check out your other options](/blog.html?blog=gitPanic-2#:~:text=cheat%20sheet%20bookmarked.-,You%20can%20also,-associate%20a%20text).
 
@@ -85,7 +85,7 @@ If you needed to re-order commits, just put the commit where you want it in this
 
 Finally, when you're done, you can exit with `:wq`, which tells the vi window to write (add) all your edits and then quit.
 
-## Finishing the Rebase
+### Finishing the Rebase
 
 If the only keywords you use are pick and drop, you'll be done except for [resolving any conflicts](/blog.html?blog=gitPanic-2#conflicts).
 
@@ -97,11 +97,11 @@ Once all of that is done, you'll have a shiny new commit history. Run `git log` 
 
 ![World's most interesting man meme captioned I don't always push --force, but when I do, I use --force-with-lease](https://images.abbeyperini.com/gitPanic/force-with-lease.jpg)
 
-## Practical Examples
+### Practical Examples
 
 Disclaimer: these are terrible commit messages meant only to provide an example commit history. [Read more about writing good commit messages.](/blog.html?blog=gitPanic-3#commit-messages)
 
-### Change an Old Commit Message
+#### Change an Old Commit Message
 
 Running `git commit --amend` will allow you to change the last commit message, but what if you realized you committed a typo a while ago?
 
@@ -117,7 +117,7 @@ I run `git log` and see there's no more typo in my commit history!
 
 ![screenshot of git log output after rebase](https://images.abbeyperini.com/gitPanic/log-important.png)
 
-### Squash Some Commits
+#### Squash Some Commits
 
 Ideally, the commit messages in your PR should tell a story. Here's how to convert three commits with useless commit messages into one meaningful message.
 
@@ -137,7 +137,7 @@ Finally, I run `git log` and see my beautiful new commit history!
 
 ![screenshot of git log output after squash](https://images.abbeyperini.com/gitPanic/log-2.png)
 
-### Remove a Commit You Don't Need
+#### Remove a Commit You Don't Need
 
 Whoops! I went down the wrong path and committed changes I eventually rewrote completely. Instead of including that commit in my PR, let's remove it.
 
@@ -149,7 +149,7 @@ Running `git log` shows I've gotten rid of that commit I didn't need!
 
 ![git log output after drop](https://images.abbeyperini.com/gitPanic/log-typo.png)
 
-## Rebase One Branch Onto Another
+### Rebase One Branch Onto Another
 
 Help! My coworkers have pushed commits into the develop branch! I based my fix--button branch off of the develop branch weeks ago!
 
@@ -205,21 +205,21 @@ To create a name a new branch with what you've created, you'd run
 git switch --create <branch name>
 ```
 
-## Other Helpful Commands
+### Other Helpful Commands
 
 There are a couple git commands that aren't necessary for understanding how to interactive rebase, but can be really helpful if you need more information.
 
-### git diff
+#### git diff
 
 [The `git diff` command](https://www.atlassian.com/git/tutorials/saving-changes/git-diff) will give you even more information about the changes in the branch.
 
 I talked about [unified vs split diffs](/blog.html?blog=gitPanic-2#:~:text=showing%20the%20diff%3A-,unified%20and%20split,-.%20Whenever%20possible%2C%20I) in the context of merge conflicts. This allows you to look at the diff without running `git merge` or opening a PR. In addition to comparing branches, you can compare commits and files.
 
-### git show
+#### git show
 
 [The `git show` command](https://www.atlassian.com/git/tutorials/git-show) allows you to view the information git has stored about your repo. You can view changes by file, commit, and branch. You can view commits or ranges of commits. You can view file versions from a specific commit. You can format all of this information by passing options to the command. It's basically an interactive wiki for your repo.
 
-## Conclusion
+### Conclusion
 
 Like most things git, there's a whole lot more you can do with interactive rebase. This should give you a decent understanding so you can practice and eventually learn those fancy tricks.
 

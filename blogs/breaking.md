@@ -1,4 +1,4 @@
-# Breaking into Tech - Tips from a Former Recruiting Admin
+## Breaking into Tech - Tips from a Former Recruiting Admin
 
 Planted: 04/05/2021
 Tags: career
@@ -14,7 +14,7 @@ What follows is an amalgam of the best practices I gleaned from the sidelines of
 
 Ultimately, using the network you have and growing it are the best ways to see the kind of roles you're looking for and get your resume in front of the right people. The other way you can do it is what I like to call "tossing your resume into the void." I got a lot of leads from applying to jobs for which I was under-qualified. I would get an email a month later from the same company or recruiter for a role that was more of a fit. However, it's a numbers game. I filled out 195 applications and only heard back from 80–90, whether it was from a human or an automated rejection letter. (Usually the latter.) That's not even counting a depressing amount of LinkedIn messages. I know quite a few people who have done this successfully, but it requires dedication in the face of rejection, as they usually end up applying to 400+ jobs.
 
-## Responding to Recruiters
+### Responding to Recruiters
 
 I'm going to use "recruiter" to refer to someone who is scheduling your interviews but is not a hiring manager or interviewer. This could be an admin or someone in HR as well.
 
@@ -26,7 +26,7 @@ Be nice to everyone you talk to about a job. This seems like common sense, but b
 
 If a recruiter repeats something, it's important that you get that right. A good recruiter will send you the job description and benefits summary and prep you with what you should expect before every interview. Read all of the interview instructions you receive and listen when they give you advice.
 
-## Interview Prep
+### Interview Prep
 
 Interviews are exhausting and require prep and rest. Don't over-schedule yourself.
 
@@ -42,7 +42,7 @@ If you are interviewing at multiple companies, tell your recruiter or whoever yo
 
 If you do get the chance to use multiple offers to negotiate base salary and other compensation, my advice is to not turn down any offers until you have one signed.
 
-## Tech Specific
+### Tech Specific
 
 If you don't have a computer science degree, either dedicate yourself to very seriously studying data structures and algorithms right now or rule out all interview processes with timed algorithm challenge interview steps. There are plenty of companies using building coding challenges, whiteboard interviews, and technical questions in talk interviews instead of timed browser IDE tests. Do study data structures, algorithms, and system design, but don't send yourself into an imposter syndrome spiral by repeatedly taking and failing algorithm tests if you're not good at them.
 
@@ -54,7 +54,7 @@ I also cannot stress enough that you need to remain calm and open in the face of
 
 Especially in tech, that first yes is a matter of luck and timing. Always be as flexible as possible for scheduling an interview. Always be open to new leads that could be a fit. Don't be afraid to turn down roles that are not a fit.
 
-## Online Presence
+### Online Presence
 
 I'm grateful that one of the things my teacher and bootcamp pushed was an online presence. To graduate, we were required to have a Github, LinkedIn, portfolio, and applicant tracking system (ATS) compatible resume. We also watched a panel by [Martha Sharpe](https://twitter.com/SharpeMartha) and her husband where they discussed how they transitioned into tech. I chose to adopt Martha's "learning in public" process, which prompted me to start a Twitter account. There I shared my blog posts, my #100DaysOfCode journey, how and why I ended up studying data structures and algorithms for 30 days, and the process of building my new professional site.
 
@@ -62,13 +62,13 @@ I've started quite a few blogs in my time that never got any views, and when we 
 
 Ultimately, the new site I built (and a very popular blog article about it) is what got me the leads that got me a job. My established network saw my LinkedIn post about the site going live on the anniversary of when I committed to learning web development. Thousands of strangers saw my blog post about building it. I showed it to a few people directly in my networking groups. Before, any LinkedIn message I received was guaranteed to be about a scam, non-tech role, or an extremely senior tech role. After my post, I began receiving actual leads from people who had seen my site, including hiring managers!
 
-## Networking During Quarantine: Special Mention
+### Networking During Quarantine: Special Mention
 
 I loathe networking the same way I loathe small talk, and networking remotely added another layer of discomfort. I would have normally buttered my friends and contacts up spontaneously with coffee, alcohol, or food to distance myself from the feeling that I was using them. Instead, I was left only with a text, phone call, or video call as an option. It felt just as empty as emailing or LinkedIn messaging someone I didn't know. I kept telling myself I'd just schedule an outdoor, socially distanced coffee meeting at some point, but January weather often thwarted me.
 
 However, women helping women get into tech is still a beautiful thing, and I stumbled into a lovely global community called [Virtual Coffee](https://virtualcoffee.io/). If you're struggling through interviewing right now, find a community of people who are going through the same thing. Also, special thanks to my friends who listened compassionately through the my entire job hunt.
 
-## Conclusion
+### Conclusion
 
 The best piece of advice I got from a mentor was "every interview is practice for the one that eventually works." She was completely right. I was at the top of my game when companies started saying "yes." I had slowed down and given myself time to rest. I had stopped taking timed algorithm challenge assessments and thus regained my confidence in the face of a dark February fraught with imposter syndrome. I knew what I wanted from a company and what I was willing to compromise on. Thanks to the hiring manager in my very first technical interview, I knew I wanted to hold out for a developer role over leveraging my customer service experience for a role like DevOps. Most of all, I wasn't nervous about my last few interviews. I knew I could conversationally respond to pretty much any question and I had gained a depth of knowledge in my handful of technologies that would stand up to rigorous technical questions.
 

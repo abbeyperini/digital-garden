@@ -1,4 +1,4 @@
-# From Idea to Design for Non-Designers
+## From Idea to Design for Non-Designers
 
 Planted: 05/16/2023
 
@@ -15,25 +15,25 @@ You learned to code and want to start applying for jobs, but don't want anyone t
 7. [Links](#links)
 8. [Putting It All Together](#putting-it-all-together)
 
-## Goals
+### Goals
 
-### 1. Looks Like You Thought About It
+#### 1. Looks Like You Thought About It
 
 We're not aiming for professional designer quality. We're not aiming for perfect. All we want is for a user to think "They thought about how their page looks."
 
-### 2. Reduce Decision Fatigue
+#### 2. Reduce Decision Fatigue
 
 There are a ton of decisions that go into making a simple webpage. We don't need to be trying to decide on a design while we're coding the page.
 
-### 3. Uniformity
+#### 3. Uniformity
 
 You want to repeat yourself in the design, but not in the code. Even if your button design isn't the best ever, using the same styling every time will look a lot cleaner. When you're programming, you don't want to write new styles every time you add a button. This applies to every element and section of content you use multiple times on your page.
 
-### 4. Minimize Accessibility Issues
+#### 4. Minimize Accessibility Issues
 
 Even beyond colors, a simple design can help reduce accessibility issues and a thoughtful design doesn't introduce new ones.
 
-## Inspiration
+### Inspiration
 
 If you have no idea what you want your website to look like, looking at other sites is a good place to start. Don't expect your site to look like professional designs, and stop looking at sites if you start to feel overwhelmed.
 
@@ -47,7 +47,7 @@ You can also usually find curated listicles for the type of project you're makin
 
 Most importantly, make it your own! "I'm not a designer." is an excellent excuse for making whatever page your heart desires. I know I had fun with the "design a 90's page" assignment in Bootcamp. At the end of the day, if you're happy with your website, and people can use it, that's a great site.
 
-## Layout
+### Layout
 
 Design your app in black and white in a program you already know how to use. We're not designers. We don't need to create wireframes. Pop open a Google Doc or a Keynote slide and start putting boxes on the page.
 
@@ -57,7 +57,7 @@ The best place to start is with your [sectioning HTML](/blog.html?blog=design#se
 
 Try to break down your content into uniform blocks. Within your main area, think in a grid. That'll be straightforward to translate to [CSS grid](https://css-tricks.com/snippets/css/complete-guide-grid/). Then, use text size, text weight, and spacing to break up your content.
 
-## Colors
+### Colors
 
 Now take your boxes and put them in greyscale. You'll want three shades of grey - a background color, main content color, and accent color. In my current Keynote design, the darkest grey is my accent color. I'm using it for my buttons, so they're easily found. The second darkest is my background. The lightest is my primary content color, which I'm using for the header and boxes containing my content.
 
@@ -80,7 +80,7 @@ If colors and color math are not your cup of tea, you can keep your greyscale! J
 
 If your contrast is too low, users won't be able to read your text. If your contrast is too high, like with black (`#000000`) and white (`#FFFFFF`), it'll strain your users' eyes. If you do nothing else with the design of your app, use dark grey (like `#333333`) for your text and off-white (like `#F3F3F3`) for your background.
 
-## Typography
+### Typography
 
 The simpler, the better here. People probably won't notice if you use default fonts, but they will notice if you use five. Using different font weights, sizes, and colors instead of different fonts is usually enough. You'll notice larger, higher-contrast font first.
 
@@ -99,7 +99,7 @@ Finally, we'll need text colors. I usually end up with two. A darker one for lig
 
 ![The same Keynote slide, now in shades of green](https://images.abbeyperini.com/design/color.png)
 
-## Buttons
+### Buttons
 
 Buttons are for actions and can be categorized as primary, secondary, and tertiary.
 
@@ -113,7 +113,7 @@ Check out [A Trio of Buttons for a Bubbly, Colorful Site](/blog.html?blog=trio) 
 
 ![A login form with a primary, secondary, and set of tertiary buttons](https://images.abbeyperini.com/buttons-trio/all-buttons.png)
 
-## Links
+### Links
 
 Where buttons are for actions, links take you to somewhere else on the site. This is another one where you'd be perfectly fine using the default. If you want to mess with the default link styling, make sure whatever you do is [still accessible](https://usability.yale.edu/web-accessibility/articles/links), and apply it to every link on the page.
 
@@ -134,7 +134,7 @@ a:hover {
 }
 ```
 
-## Putting It All Together
+### Putting It All Together
 
 Now that we've thought about how the page looks as a whole, the next step is translating that into bite-sized projects and reusable styling.
 
@@ -146,7 +146,7 @@ This way, I'm able to reuse that work in the rest of the page, and it'll be easi
 
 When my Project component is ready, I can slap a bunch of Projects inside a container and use [CSS grid](https://css-tricks.com/snippets/css/complete-guide-grid/) to arrange the projects within it. Then, my main content section is done.
 
-## Conclusion
+### Conclusion
 
 Look, I've just taken a lot of art classes and some college courses for graphic design. I'm the kind of person that adds shiba inu illustrations to her portfolio.
 

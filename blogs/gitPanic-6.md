@@ -1,4 +1,4 @@
-# #gitPanic - Stash
+## #gitPanic - Stash
 
 Planted: 11/17/2022
 Tags: git, #gitPanic
@@ -15,7 +15,7 @@ This blog assumes you have a basic understanding of git or have read [Git 101](/
 3. [Using Your Stashes](#using-your-stashes)
 4. [Partial Stashes](#partial-stashes)
 
-## Working Directory
+### Working Directory
 
 At its core, git is a data structure for all the changes you make to your code. It makes a record of diffs or differences when you make changes. The working directory is like a [state](https://en.wikipedia.org/wiki/State_(computer_science)) variable for all your work you haven't saved.
 
@@ -27,7 +27,7 @@ Once you commit the changes, they're effectively saved. Git will add them to the
 
 At this point you may be thinking "committing my staged changes is the only way to save stuff in my working directory," and you'd be wrong.
 
-## The Stash
+### The Stash
 
 I like to think of the stash as a bucket at the base of my git tree holding onto snapshots of my working directory for me.
 
@@ -51,7 +51,7 @@ git stash -m "message"
 
 to write your own message - future you will thank you.
 
-## Using Your Stashes
+### Using Your Stashes
 
 If you want to use the working directory you stashed again, you can run
 
@@ -95,7 +95,7 @@ Maybe you started making changes and realized you wanted to save the work, but p
 git stash branch <branch name> stash@{x}
 ```
 
-## Partial Stashes
+### Partial Stashes
 
 Turns out, running `git stash` is like running `git stash push` with training wheels. It doesn't allow you to pass anything to the command but options or a file path. In other words, you can't pass something that won't work or is misspelled, except for the file path.
 
@@ -118,6 +118,6 @@ Commonly used options that you won't see printed using `?` are `/` and `s`. You 
 
 You can stop the process with ctrl + c or hit `q` to quit at anytime. If you use `q`, any hunks you've already chosen to stash will be stashed.
 
-## Conclusion
+### Conclusion
 
 My favorite git command just might be `git stash`. I was excited to learn about partial stashes - I can already think of quite a few scenarios in which they'll be useful.

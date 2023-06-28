@@ -34,6 +34,11 @@
     <script src="../components/header.js" type="text/javascript" defer></script>
     <script src="../components/footer.js" type="text/javascript" defer></script>
     <script src="../components/blog.js" type="text/javascript" defer></script>
+    <script>
+      window.ZeroMdConfig = {
+        cssUrls: ['/styles/markdown.css']
+      }
+    </script>
     <script
       type="module"
       src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
@@ -47,73 +52,74 @@
   <body>
     <header-component></header-component>
     <main>
-      <blog-component page="../blogs/accessibility.md"></blog-component>
-      <blog-component page="../blogs/animated.md"></blog-component>
-      <blog-component page="../blogs/embrace.md"></blog-component>
-      <blog-component page="../blogs/reload.md"></blog-component>
-      <blog-component page="../blogs/OOP.md"></blog-component>
-      <blog-component page="../blogs/100.md"></blog-component>
-      <blog-component page="../blogs/trio.md"></blog-component>
-      <blog-component page="../blogs/knitting.md"></blog-component>
-      <blog-component page="../blogs/toggle.md"></blog-component>
-      <blog-component page="../blogs/breaking.md"></blog-component>
-      <blog-component page="../blogs/confidence.md"></blog-component>
-      <blog-component page="../blogs/panini-bot.md"></blog-component>
-      <blog-component page="../blogs/serverless.md"></blog-component>
-      <blog-component page="../blogs/shibas.md"></blog-component>
-      <blog-component page="../blogs/images.md"></blog-component>
-      <blog-component page="../blogs/legacy.md"></blog-component>
-      <blog-component page="../blogs/audit-1.md"></blog-component>
-      <blog-component page="../blogs/audit-2.md"></blog-component>
-      <blog-component page="../blogs/audit-3.md"></blog-component>
-      <blog-component page="../blogs/audit-4.md"></blog-component>
-      <blog-component page="../blogs/audit-5.md"></blog-component>
-      <blog-component page="../blogs/audit-6.md"></blog-component>
-      <blog-component page="../blogs/coding.md"></blog-component>
-      <blog-component page="../blogs/HTTP-1.md"></blog-component>
-      <blog-component page="../blogs/writing.md"></blog-component>
-      <blog-component page="../blogs/HTTP-2.md"></blog-component>
-      <blog-component page="../blogs/HTTP-3.md"></blog-component>
-      <blog-component page="../blogs/HTTP-4.md"></blog-component>
-      <blog-component page="../blogs/beginning.md"></blog-component>
-      <blog-component page="../blogs/HTML.md"></blog-component>
-      <blog-component page="../blogs/1-year.md"></blog-component>
-      <blog-component page="../blogs/HTTP-5.md"></blog-component>
-      <blog-component page="../blogs/webp.md"></blog-component>
-      <blog-component page="../blogs/avif.md"></blog-component>
-      <blog-component page="../blogs/jpegxl.md"></blog-component>
-      <blog-component page="../blogs/===.md"></blog-component>
-      <blog-component page="../blogs/ico.md"></blog-component>
-      <blog-component page="../blogs/favicons.md"></blog-component>
-      <blog-component page="../blogs/commit.md"></blog-component>
-      <blog-component page="../blogs/ADHD-1.md"></blog-component>
-      <blog-component page="../blogs/ADHD-2.md"></blog-component>
-      <blog-component page="../blogs/ADHD-3.md"></blog-component>
-      <blog-component page="../blogs/ADHD-4.md"></blog-component>
-      <blog-component page="../blogs/ADHD-5.md"></blog-component>
-      <blog-component page="../blogs/ADHD-6.md"></blog-component>
-      <blog-component page="../blogs/tabbing-1.md"></blog-component>
-      <blog-component page="../blogs/tabbing-2.md"></blog-component>
-      <blog-component page="../blogs/tabbing-3.md"></blog-component>
-      <blog-component page="../blogs/gitPanic-1.md"></blog-component>
-      <blog-component page="../blogs/gitPanic-2.md"></blog-component>
-      <blog-component page="../blogs/gitPanic-3.md"></blog-component>
-      <blog-component page="../blogs/gitPanic-4.md"></blog-component>
-      <blog-component page="../blogs/gitPanic-5.md"></blog-component>
-      <blog-component page="../blogs/gitPanic-6.md"></blog-component>
-      <blog-component page="../blogs/gitPanic-7.md"></blog-component>
-      <blog-component page="../blogs/gitPanic-8.md"></blog-component>
-      <blog-component page="../blogs/gitPanic-9.md"></blog-component>
-      <blog-component page="../blogs/gitPanic-10.md"></blog-component>
-      <blog-component page="../blogs/garden.md"></blog-component>
-      <blog-component page="../blogs/security-1.md"></blog-component>
-      <blog-component page="../blogs/security-2.md"></blog-component>
-      <blog-component page="../blogs/writing-2.md"></blog-component>
-      <blog-component page="../blogs/modules.md"></blog-component>
-      <blog-component page="../blogs/research.md"></blog-component>
-      <blog-component page="../blogs/support.md"></blog-component>
-      <blog-component page="../blogs/color-scheme.md"></blog-component>
-      <blog-component page="../blogs/design.md"></blog-component>
+      <h1>All of Abbey's Tech Blogs</h1>
+      <blog-component blog="accessibility"></blog-component>
+      <blog-component blog="animated"></blog-component>
+      <blog-component blog="embrace"></blog-component>
+      <blog-component blog="reload"></blog-component>
+      <blog-component blog="OOP"></blog-component>
+      <blog-component blog="100"></blog-component>
+      <blog-component blog="trio"></blog-component>
+      <blog-component blog="knitting"></blog-component>
+      <blog-component blog="toggle"></blog-component>
+      <blog-component blog="breaking"></blog-component>
+      <blog-component blog="confidence"></blog-component>
+      <blog-component blog="panini-bot"></blog-component>
+      <blog-component blog="serverless"></blog-component>
+      <blog-component blog="shibas"></blog-component>
+      <blog-component blog="images"></blog-component>
+      <blog-component blog="legacy"></blog-component>
+      <blog-component blog="audit-1"></blog-component>
+      <blog-component blog="audit-2"></blog-component>
+      <blog-component blog="audit-3"></blog-component>
+      <blog-component blog="audit-4"></blog-component>
+      <blog-component blog="audit-5"></blog-component>
+      <blog-component blog="audit-6"></blog-component>
+      <blog-component blog="coding"></blog-component>
+      <blog-component blog="HTTP-1"></blog-component>
+      <blog-component blog="writing"></blog-component>
+      <blog-component blog="HTTP-2"></blog-component>
+      <blog-component blog="HTTP-3"></blog-component>
+      <blog-component blog="HTTP-4"></blog-component>
+      <blog-component blog="beginning"></blog-component>
+      <blog-component blog="HTML"></blog-component>
+      <blog-component blog="1-year"></blog-component>
+      <blog-component blog="HTTP-5"></blog-component>
+      <blog-component blog="webp"></blog-component>
+      <blog-component blog="avif"></blog-component>
+      <blog-component blog="jpegxl"></blog-component>
+      <blog-component blog="==="></blog-component>
+      <blog-component blog="ico"></blog-component>
+      <blog-component blog="favicons"></blog-component>
+      <blog-component blog="commit"></blog-component>
+      <blog-component blog="ADHD-1"></blog-component>
+      <blog-component blog="ADHD-2"></blog-component>
+      <blog-component blog="ADHD-3"></blog-component>
+      <blog-component blog="ADHD-4"></blog-component>
+      <blog-component blog="ADHD-5"></blog-component>
+      <blog-component blog="ADHD-6"></blog-component>
+      <blog-component blog="tabbing-1"></blog-component>
+      <blog-component blog="tabbing-2"></blog-component>
+      <blog-component blog="tabbing-3"></blog-component>
+      <blog-component blog="gitPanic-1"></blog-component>
+      <blog-component blog="gitPanic-2"></blog-component>
+      <blog-component blog="gitPanic-3"></blog-component>
+      <blog-component blog="gitPanic-4"></blog-component>
+      <blog-component blog="gitPanic-5"></blog-component>
+      <blog-component blog="gitPanic-6"></blog-component>
+      <blog-component blog="gitPanic-7"></blog-component>
+      <blog-component blog="gitPanic-8"></blog-component>
+      <blog-component blog="gitPanic-9"></blog-component>
+      <blog-component blog="gitPanic-10"></blog-component>
+      <blog-component blog="garden"></blog-component>
+      <blog-component blog="security-1"></blog-component>
+      <blog-component blog="security-2"></blog-component>
+      <blog-component blog="writing-2"></blog-component>
+      <blog-component blog="modules"></blog-component>
+      <blog-component blog="research"></blog-component>
+      <blog-component blog="support"></blog-component>
+      <blog-component blog="color-scheme"></blog-component>
+      <blog-component blog="design"></blog-component>
     </main>
     <footer-component></footer-component>
   </body>

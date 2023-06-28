@@ -39,7 +39,7 @@ pre {
   color: var(--secondary-text);
   padding: 2%;
   text-align: left;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 a:link, a:visited {

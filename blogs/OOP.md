@@ -1,4 +1,4 @@
-# Object Oriented Programming in Memes
+## Object Oriented Programming in Memes
 
 Planted: 01/18/2021
 
@@ -8,7 +8,7 @@ Object Oriented Programming (OOP) languages, like JavaScript and Python, organiz
 
 First, I’ll cover the basics: objects, classes, instance, and methods. Then, I’ll briefly explain the four main pillars of OOP design: Encapsulation, Abstraction, Inheritance, and Polymorphism.
 
-## Objects
+### Objects
 
 An object is data formatted to represent a real world object that has a state and behavior.
 
@@ -16,13 +16,13 @@ An object is data formatted to represent a real world object that has a state an
 
 Picard’s state would be “wants to set a course” and his behaviors would be telling an ensign the desired course and to “Make it so.”
 
-## Classes
+### Classes
 
 Different programming languages go about this different ways, but essentially a class is a blueprint for creating an object.
 
 !["Yo Dawg, I hear you like object oriented programming, so I nested a class inside your class so you can create objects while you create objects"](https://images.abbeyperini.com/OOP-memes/dawg.jpg)
 
-## Instance
+### Instance
 
 Any time an object is created it is [instantiated](https://www.crondose.com/2016/07/what-does-instantiation-mean/).
 
@@ -30,7 +30,7 @@ Any time an object is created it is [instantiated](https://www.crondose.com/2016
 
 Each deskSponge shown here would be an instance of an object and because they’re made with the `Spongebob` class, an instance of `Spongebob`.
 
-## Methods
+### Methods
 
 Functions within an object.
 
@@ -40,7 +40,7 @@ Functions within an object.
 
 In other words, our object’s behaviors. The coffee machine above would have a method for making coffee and the button would call it. The office worker would have a method for pushing the button, drinking the coffee, and caffeinated typing.
 
-## Encapsulation
+### Encapsulation
 
 You don’t need to know how the coffee machine works to press the button and get coffee.
 
@@ -52,7 +52,7 @@ You don’t need to know how the coffee machine works to press the button and ge
 
 In other words, the behavior and state of the object in question should be private and only affected by private methods within the object. (The person who pressed the button doesn’t see the water being heated and pushed through the coffee grounds.) The object should have public methods that other objects can use to interact with it (like the button).
 
-## Abstraction
+### Abstraction
 
 The only information about an object that is available outside the object is information absolutely necessary for other objects to use it.
 
@@ -62,7 +62,7 @@ The only information about an object that is available outside the object is inf
 
 This is also referred to as [information hiding](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)#An_information-hiding_mechanism), and the public methods made available for other objects are “getters” and “setters.”
 
-## Inheritance
+### Inheritance
 
 Just like genetics — if a class was a dog and each object inheriting from the dog class was a puppy.
 
@@ -70,7 +70,7 @@ Just like genetics — if a class was a dog and each object inheriting from the 
 
 Objects made with a class (JavaScript uses the keyword `extends`) inherit the information and methods of the super (or parent) class (calling `super()` in the `constructor` in a JavaScript object).
 
-## Polymorphism
+### Polymorphism
 
 `Fred` and `ghostFred` both have a method called `getDressed()`. When `getDressed()` is called, `Fred` will put on his ascot, and `ghostFred` will put on his ghost costume.
 
@@ -80,7 +80,7 @@ In this case, `Fred` is the class, and `ghostFred` is an object that extends `Fr
 
 ![Caption: "Me: explains polymorphism Friend: So the subclass the same as the superclass? Me:" A claymation pirate saying "Well yes, but actually no"](https://images.abbeyperini.com/OOP-memes/pirate.jpg)
 
-## Conclusion
+### Conclusion
 
 If you’re an experienced developer, hopefully you got a chuckle out of this. If you’re a beginner, I hope it helps you use an OOP language more confidently!
 

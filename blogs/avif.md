@@ -1,4 +1,4 @@
-# What is AVIF?
+## What is AVIF?
 
 Planted: 04/26/2022
 Tags: images
@@ -8,7 +8,7 @@ Series: [Images](/series.html?series=images)
 
 When I was researching WebP, AVIF came up a lot as a newer alternative. What are the benefits in using this file type?
 
-## AVIF
+### AVIF
 
 AVIF or AV1 Image File Format, was only finalized in 2019, so its [middling browser support](https://caniuse.com/avif) is actually pretty impressive.
 
@@ -24,6 +24,6 @@ The Alliance for Open Media's AVIF encoding and decoding library is also in a [G
 
 The main downside is the lack of browser and CDN support. To use AVIF in your website today, you'll have to employ [progressive enhancement](https://www.smashingmagazine.com/2021/09/modern-image-formats-avif-webp/#progressive-enhancement), the type of which depends on how you're hosting your images. Another option is a [polyfill](https://github.com/Kagami/avif.js). The other downside is the slow encoding speed and higher CPU requirements, which make dynamically creating images harder. However, the team has already made massive strides in speed in the short time AVIF has been around.
 
-## Conclusion
+### Conclusion
 
 AVIF is an exciting new image format, and most resources posit it is a direct competitor of WebP. They're comparable in creating high quality images, but text and graphics in images is where AVIF shines. Netflix's use of it has undoubtedly given it a popularity boost, so hopefully it will get easier and easier to incorporate AVIF images in your websites.

@@ -1,4 +1,4 @@
-# Troubleshooting Tabbing
+## Troubleshooting Tabbing
 
 Planted: 08/22/2022
 Tags: accessibility
@@ -16,13 +16,13 @@ I've been tackling tabbing trouble a lot recently, so I thought I'd share some d
 6. [Can't Focus an Element](#cant-focus-an-element)
 7. [The Default Focus Indicator is So Ugly](#the-default-focus-indicator-is-so-ugly)
 
-## Adding tabindex=0
+### Adding tabindex=0
 
 There are some elements that are automatically focusable, like links and buttons. Others, like `<div>`s will not be focusable. You can make elements like a `<div>` focusable using `tabindex="0"`, but that means you also have to program that element to be properly interactive and exposed to the accessibility tree.
 
 For example, an element acting like a button should be activated with space and enter. You'll have to add event listeners for key presses. Its role and states will have to be managed with ARIA so that a screen reader knows how to interact with it. When needing an interactive element, it's easier to use semantic HTML elements with these things already built in for you.
 
-## Keyboard Trap/Loop
+### Keyboard Trap/Loop
 
 ![Admiral Akbar from Star Wars saying "It's a trap!"](https://images.abbeyperini.com/tabbing/trap.png)
 
@@ -36,7 +36,7 @@ Often, the order of the elements in the DOM is what's creating a keyboard trap o
 
 You may also run into this with scrollable elements.
 
-## Scrolling
+### Scrolling
 
 Scrollable elements must be focusable, and applying `tabindex="0"` to a container does not apply it to its children. So if you have a `<div>` full of elements you want a user to be able to interact with, you will have to create a way for a keyboard user to focus the element and the elements inside it to scroll.
 
@@ -52,7 +52,7 @@ Here are some examples of accessible design patterns you can reference:
 - [atlassian](https://atlassian.design/components)
 - [Deque University](https://dequeuniversity.com/library/)
 
-## Roving tabindex
+### Roving tabindex
 
 ![Yoda from Star Wars captioned "Focus you must"](https://images.abbeyperini.com/tabbing/focus-meme.jpg)
 
@@ -64,7 +64,7 @@ You can check out [W3C's example code](https://www.w3.org/WAI/ARIA/apg/example-i
 
 Since this method depends solely on JavaScript, it will not work if JavaScript is turned off. Furthermore, you'll have to thoroughly check the component works with screen readers and in every browser.
 
-## Skip Links
+### Skip Links
 
 Skip links allow a keyboard user to bypass large or repetitive blocks of content instead of having to use the tab key many times. You can have multiple skip links, but the focus should still be reducing the number of times a user has to use the tab key. The typical use is before the main navigation, allowing users to skip all the navigation links that are repeated on every page.
 
@@ -130,13 +130,13 @@ The second uses CSS `clip` to hide everything outside a 1 pixel rectangle. For t
 
 The only caveat for these two solutions is that the sudden appearance and disappearance of the component may confuse users. It is suggested to animate the element so that it moves on and off the screen more slowly.
 
-## Can't Focus an Element
+### Can't Focus an Element
 
 To start, I have an important caveat: tab focus and moving through a page with a screen reader are different things. Tabbing is for focusing interactive elements, so being unable to focus a `<p>` is intended behavior. Screen reader users use the commands associated with the screen reader, usually with a combination like Ctrl + Opt + arrow keys.
 
 If an interactive element can't be focused using tab, here are few things to check.
 
-### Check where the element is positioned
+#### Check where the element is positioned
 
 This is to verify that the element is not positioned offscreen or behind another element. It will also show you if the element is not actually on the page at all.
 
@@ -144,19 +144,19 @@ Open the [DevTools Elements view](https://developer.chrome.com/docs/devtools/dom
 
 ![A button selected in the DOM tree in the DevTools Elements view and a flag showing where the element is on the page and its size](https://images.abbeyperini.com/tabbing/things.png)
 
-### Check that the element is focusable
+#### Check that the element is focusable
 
 Use the accessibility inspector in Chrome or Firefox DevTools. Either will tell you whether the accessibility tree considers them focusable.
 
 ![A button selected in the DOM tree in Chrome DevTools Accessibility tree. The computed properties section shows focusable: true](https://images.abbeyperini.com/tabbing/button.png)
 
-### Is it CSS or JavaScript?
+#### Is it CSS or JavaScript?
 
 In DevTools, [you can apply pseudostates](https://developer.chrome.com/docs/devtools/css/#pseudostates) like `:hover` and `:focus` to elements manually, to see what CSS applies when you do. This can help you catch rules not applying. They'll either not show up or the tool will tell you that you have an invalid value. If it is CSS, you'll find some handy tips in the next blog in this series.
 
 You can also [track focus with Live Expressions](https://developer.chrome.com/docs/devtools/accessibility/focus/) and see the JavaScript values that result from a change in focus.
 
-## The Default Focus Indicator is So Ugly
+### The Default Focus Indicator is So Ugly
 
 I know. I know. People still use ugly headlights on cars, though. Showing when your interactive element is focused or active makes using your page easier for everyone. Plus, it takes very little effort to doll it up like you would an F1 helmet.
 

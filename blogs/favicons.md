@@ -1,4 +1,4 @@
-# What are Favicons?
+## What are Favicons?
 
 Planted: 05/08/2022
 Tags: images
@@ -8,14 +8,14 @@ Series: [Images](/series.html?series=images)
 
 I mentioned `<link rel="icon" type="image/x-icon" href="/images/favicon.ico">` as part of webpage SEO in [Semantic HTML: What, Why, and How](/blog.html?blog=HTML). Someone asked a great question - why does the MIME type in the `<link>` tag `type=""` attribute have to be `image/x-icon`? The answer is it doesn't, but it's still a good idea to include an ICO file. Let's dig into how to leverage favicons to their fullest.
 
-## Table of Contents
+### Table of Contents
 
 1. [Favicons](#favicons)
 2. [MIME Types](#mime-types)
 3. [Image Files](#image-files)
 4. [Code](#code)
 
-## Favicons
+### Favicons
 
 Favicon is short for favorite icon. It is an image, usually a logo, associated with your webpage. The World Wide Web Consortium (W3C) standardized favicons in 2000 as part of HTML, and since then, relatively few things have changed. In Internet Explorer 5, a favicon was a `favicon.ico` file in the root directory of a site (`/favicon.ico`), and browsers still check for that.
 
@@ -27,7 +27,7 @@ To make matters more confusing, W3C never standardized the `rel=` attribute in t
 
 There are also security concerns - attackers can change the favicon of a site to make it look like it's using HTTPS for a phishing scam, query for the favicon to see if a user is logged in, and use favicons for tracking users across browser sessions.  
 
-## MIME Types
+### MIME Types
 
 [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) are a way to communicate file or data format to a browser. For favicons, they're used in the `type=""` attribute in the `<link>` tag.
 
@@ -43,7 +43,7 @@ Mozilla Developer Network (MDN) may [warn against](https://developer.mozilla.org
 2. If your pathing in your `<link>` tag breaks, browsers will check for `/favicon.ico` and show users a 404 if it's not found.
 3. Tools like RSS readers will only query for `/favicon.ico`.
 
-## Image Files
+### Image Files
 
 Favicons are always square, so here are the sizes we're trying to cover (in pixels):
 
@@ -76,7 +76,7 @@ Then, I locate the file in Finder, `right click > duplicate` twice, and use Prev
 
 There are [many many ways to create ICO files](/blog.html?blog=ico#:~:text=There%20are%20so%20many%20ways%20to%20convert%20images%20to%20ICO%20format). I upload the logo512.png image to [Favicon Generator](https://favicon.io/favicon-converter/). Not only do I get a favicon.ico file in seconds, but the folder also includes the sizes I've already made and more.
 
-## Code
+### Code
 
 Like how the `type=""` attribute in the HTML `<link>` tag tells the browser what format my image file is in, the `sizes=""` attribute tells browsers the size of my file so it can choose the best option to display.
 
@@ -129,6 +129,6 @@ Now my favicon has a nice background and looks good in a variety of sizes:
 
 ![Abbey's website favicon in a tab in a mobile Firefox window](https://images.abbeyperini.com/images-series/focus.png)
 
-## Conclusion
+### Conclusion
 
 Favicons are deceptively complicated, and this blog was very focused on finding the simplest code solution. If you're interested in a guide on how I go from app idea to logo, accessible color theme, and image sets, just leave a comment!

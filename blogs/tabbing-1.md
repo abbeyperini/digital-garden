@@ -1,4 +1,4 @@
-# Tabbing Tactfully
+## Tabbing Tactfully
 
 Planted: 08/08/2022
 Tags: accessibility
@@ -15,7 +15,7 @@ Try your hand at [HOCUS :FOCUS](https://focus.hteumeuleu.com/) or spend today ta
 5. [Event Listeners and KeyboardEvent](#event-listeners-and-keyboardevent)
 6. [Special Mention: Labels and Inputs](#special-mention-labels-and-inputs)
 
-## How to Tab
+### How to Tab
 
 A user should be able to [visibly](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#focus-visible) [focus and operate](https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception) every interactive element on your page with their keyboard.
 
@@ -29,7 +29,7 @@ Visibility comes back into play here, because if you can't tell where you are on
 
 ![Homer Simpson with his hand over his eyes, pressing buttons. The van he's in has a nuclear symbol on the side and begins to jump around and turn green. 4 scientists run away in fear.](https://images.abbeyperini.com/tabbing/homer-simpson.gif)
 
-## tabindex
+### tabindex
 
 The HTML `tabindex` attribute (`tabIndex` in React) takes numerical values.
 
@@ -41,7 +41,7 @@ The HTML `tabindex` attribute (`tabIndex` in React) takes numerical values.
 
 If you need to change the tab order, you really need to change the order the elements appear in the DOM.
 
-## DOM Order
+### DOM Order
 
 Your HTML [acts as a document](/blog.html?blog=HTML#:~:text=form%20controls%20later.-,Check%20your%20Outline,-Sectioning%20and%20heading). That document is interpreted by the browser and exposed to screen readers and keyboards as the [accessibility tree](https://web.dev/the-accessibility-tree/). Screen readers and keyboards are going to follow that tree, so your document outline needs to make sense, and tab order will follow.
 
@@ -89,11 +89,11 @@ My close button would appear on the right side of the container after the list a
 
 To inspect the accessibility tree, you can use the [Chrome DevTools full accessibility tree](https://developer.chrome.com/blog/full-accessibility-tree/) or the Firefox DevTools Accessibility Inspector, which has a fancy [tab order view](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/#show-web-page-tabbing-order).
 
-## Keyboard Controls
+### Keyboard Controls
 
 These articles are focused on tabbing, but some other keyboard controls quickly come into play when you start tabbing around. For instance, links should open when you press enter and buttons should activate when you press enter or space. Meanwhile, you can focus a group of radio buttons with tab, but use the arrow keys to move between them. Take a look at [WebAIM's list of keyboard controls](https://webaim.org/techniques/keyboard/#testing) when testing your site to make sure your interactive elements have the behavior a keyboard user would expect.
 
-## Event Listeners and KeyboardEvent
+### Event Listeners and KeyboardEvent
 
 When you interact with an element using a keyboard, screen reader, or mouse, this registers an [HTML DOM Event](https://www.w3schools.com/jsref/dom_obj_event.asp). That event object contains information on the user input. When a keyboard is used, it creates a KeyboardEvent object that contains a string representing the key, whether the alt key or option key was pressed too, and other information for the key used. Checkout the [JavaScript KeyCode Event Tool and List](https://www.toptal.com/developers/keycode) for a demonstration and information associated with a key press.
 
@@ -141,7 +141,7 @@ React JSX:
 <button onClick={(event) => doThings(event)}>Click me to do things!</button>
 ```
 
-## Special Mention: Labels and Inputs
+### Special Mention: Labels and Inputs
 
 Always be associating labels with your inputs.
 

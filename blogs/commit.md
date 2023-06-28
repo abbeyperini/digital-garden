@@ -1,4 +1,4 @@
-# Git Commit Message Template in Terminal and VS Code
+## Git Commit Message Template in Terminal and VS Code
 
 Planted: 05/17/2022
 Tags: git, #gitPanic
@@ -21,10 +21,10 @@ Based on that, I created a `.gitmessage` file in my home directory:
 
 ```Bash
 <type>: <title>
-# No more than 50 chars. #### 50 chars is here: #
+## No more than 50 chars. ##### 50 chars is here: #
  
 <body> 
-# Wrap at 72 chars. ################################## which is here: #
+## Wrap at 72 chars. ################################### which is here: #
  
 Issue #
 ```
@@ -38,7 +38,7 @@ git config --global commit.template ~/.gitmessage
 If you wanted to do that all in one line in the terminal, you would run:
 
 ```sh
-printf "<type>: <title>\n# No more than 50 chars. #### 50 chars is here: #\n\n<body>\n# Wrap at 72 chars. ################################## which is here: #\n\nIssue #" > ~/.gitmessage && git config --global commit.template ~/.gitmessage
+printf "<type>: <title>\n## No more than 50 chars. ##### 50 chars is here: #\n\n<body>\n## Wrap at 72 chars. ################################### which is here: #\n\nIssue #" > ~/.gitmessage && git config --global commit.template ~/.gitmessage
 ```
 
 If you want to, you can remove the `--global` flag from the command and create a different git commit message template for each repository you have. If the path to the `.gitmessage` file is not absolute, it will be treated relative to the repository root.

@@ -1,4 +1,4 @@
-# What is ICO?
+## What is ICO?
 
 Planted: 05/03/2022
 Tags: images
@@ -8,7 +8,7 @@ Series: [Images](/series.html?series=images)
 
 I didn't even know about this image file format until I went to make my first favicon. What's the deal with ICO?
 
-## ICO
+### ICO
 
 Introduced in Microsoft Windows 1.0, the ICO file format was intended for app icons. (MacOS uses the ICNS file format for icons. Windows also allows you to use CUR files, which are meant for non-animated cursors.) Originally 32 x 32 pixels and monochrome, color support wasn't added until Microsoft Windows 3.0. As time went on more color, size, and feature options, like shadows, were added. These days, ICO files can be 256 x 256 pixels and contain 24 bits of colors and 8 bits of transparency.
 
@@ -18,6 +18,6 @@ As a result, ICO is a file format that is used for situations in which machines 
 
 ICO files have native support on both Mac and Windows, and it looks like you should be able to open and create them with most image viewing and editing software. There are so many ways to convert images to ICO format, I can't even list them all here. I cannot overemphasize [how](https://favicon.io/favicon-converter/) [many](https://www.favicon-generator.org/) [free](https://realfavicongenerator.net/) [ICO](https://www.favicon.cc/) [generators](https://favicon.io/) [exist](https://www.favicongenerator.com/). You can also use tools like [GIMP](https://www.gimp.org/) and Photoshop with a plugin. Combining [Inkscape](https://inkscape.org/) with [ImageMagick](https://www.imagemagick.org/script/download.php) allows you to create ICO files in the terminal. You can even [convert JPEGs to ICO in paint](https://www.techwalla.com/articles/how-to-create-an-ico-file-from-a-jpeg-in-paint) in like 4 clicks.
 
-## Conclusion
+### Conclusion
 
 Sure ICO's cool, makes sense for app icons, and has a lot of support, but how does it relate to web development? Check out the sister blog to this article, [What are Favicons?](/blog.html?blog=favicons)

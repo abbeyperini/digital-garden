@@ -1,4 +1,4 @@
-# Coding and ADHD - Can't Stop
+## Coding and ADHD - Can't Stop
 
 Planted: 06/03/2022
 Tags: ADHD, neurodiversity
@@ -6,7 +6,7 @@ Series: [Coding and ADHD](/series.html?series=ADHD)
 
 ![A logo that looks like a brain with a threaded needle attached to it Coding and ADHD](https://images.abbeyperini.com/ADHD-series/coding&adhd.png)
 
-## Hyperfocus
+### Hyperfocus
 
 I find "hyperfocus" and "[flow state](https://en.wikipedia.org/wiki/Flow_(psychology))" to be analogous with one key difference - when hyperfocusing, I struggle mightily to stop. I'll be starving. My arms will be aching from typing for four hours straight. Continuing to code is probably detrimental - I'm tired, I know I need to be doing other things, and I'm starting to make mistakes and miss obvious alternatives.
 
@@ -20,7 +20,7 @@ Many of us also struggle with perfectionism. Once we've finally gotten started o
 
 ![Not hyperfocused pie chart: sliver of doing it, small piece of feeling guilty, and 3/4 putting it off for not good reason Hyperfocused pie chart: sliver of doing it, small piece of losing track of time, 3/4 obsessive tinkering justified as "perfectionism"](https://images.abbeyperini.com/ADHD-series/hyperfocus.jpeg)
 
-## Strategies
+### Strategies
 
 "This sort of intense focus isn't something you can just buck up and talk yourself out of," says Russell Barkley, a clinical psychologist and ADHD expert. ADHD brains in hyperfocus will literally ignore hunger, thirst, and needing to go to the bathroom.
 
@@ -40,13 +40,13 @@ There are a few suggestions I've seen but haven't yet tried:
 
 Most of all, after you've found you've been hyperfocusing for a while, be sure to take that break and give yourself some rest. Berating yourself for losing track of time won't help you start the next task.
 
-## Use the Hyperfocus
+### Use the Hyperfocus
 
 Many people want to be able to focus like this - there's a bunch of material out there on how to achieve a flow state. My ability to complete huge creative projects I'm naturally interested in is something people admire. It's one of the reasons I'm good at coding - once I have convinced my brain to care, it is easy for me to reach a flow state and get a ton of code on the page.
 
 If you can find a pattern in the things your brain will hyperfocus on, use it. Finding what makes you inherently interested in those tasks can help you make a boring task, like chores, interesting enough to get done.
 
-## Conclusion
+### Conclusion
 
 Did I miss a resource or tip you love? Leave a comment!
 

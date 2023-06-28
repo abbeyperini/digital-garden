@@ -1,4 +1,4 @@
-# 12 Things I learned During My First Year as a Professional Developer
+## 12 Things I learned During My First Year as a Professional Developer
 
 Planted: 04/04/2022
 Tags: career
@@ -8,7 +8,7 @@ Series: [Career](/series.html?series=career)
 
 One year ago I started my first job as a professional developer, and I've learned so much in the last year! Everything I've been through made it crystal clear I love building things with code and don't want to be doing anything but that for a long time. Here are the top 12 things I've learned and a bonus Notion database of the resources I've found useful.
 
-## 12 Things I've Learned in the Last Year
+### 12 Things I've Learned in the Last Year
 
 1. There is no perfect code.
 There will always be a backlog, things you'd like to fix, and different ways to implement the same thing. Similar to how a work of art is never finished, just done for now.
@@ -46,6 +46,6 @@ We all know social engineering works because people are the weakest link. Every 
 12. Tech has an inclusivity problem.
 Which is comical because diverse testing is the single best way to ensure you're putting out a good product. I don't just mean the sad hiring statistics - the lone hacker stereotype does us no good. The monolithic founder myth has got to go. A single viewpoint doesn't just make for code with blindspots, it also fails to imagine the best solution. Far too often developers are expected to sink or swim, and carry that on into how they interact with coworkers and the code they push. Developers with experience, tastes, and opinions that differ from yours, QA, DevOps, designers, accessibility experts, product owners, data scientists, IT, InfoSec, researchers, DevRel, and especially users have a part to play in improving and maintaining the app ecosystem. Acting like you alone can and should anticipate every user's situation is folly. You don't know what you don't know.
 
-## Conclusion
+### Conclusion
 
 I hope some of these things I've learned will be helpful to you, but I know [this Notion Coding Resources database](https://brindle-celsius-ac6.notion.site/d0f94b8ef82042959520d47078286f16?v=8597b7f469be4b62bf8633b06f51b9d1) will be. I started by going through the list I had made of things I wanted to come back to after bootcamp. Then I noticed how many coding bookmarks I had! I'm still adding bookmarks, but there are quite a few goodies in there already.

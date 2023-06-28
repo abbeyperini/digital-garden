@@ -1,10 +1,10 @@
-# Coding for Fun on Top of Coding Professionally
+## Coding for Fun on Top of Coding Professionally
 
 Planted: 01/04/2022
 
 ![this is fine meme, but instead of the dog being surrounded by fire, its surrounded by house plants](https://images.abbeyperini.com/coding/plants.jpeg)
 
-## TL;DR
+### TL;DR
 
 1. Listen to your body and mind.
 2. Burnout is hard to come back from.
@@ -16,7 +16,7 @@ Planted: 01/04/2022
 8. Other areas of your life will inspire your code.
 9. Community support makes mountains look more like molehills.
 
-## 2021 in Review
+### 2021 in Review
 
 I will forever look back on 2021 as a year I accomplished so many wonderful and new things. Entering month 10 of my first professional developer role, I've weathered multiple extremely steep learning curves and have been signed up for more. Part of what's kept me going has been learning what other parts of my life I can't ignore and not losing sight of what made coding so fun for me in the first place.
 
@@ -50,7 +50,7 @@ As everything I've learned about ADHD allowed me to unpack my internalized shame
 
 I'd been thinking of healthy habits, rest, and fun as extra. I've been trying to shame myself into regaining an ideal lifestyle I never actually had. What I realized in December was these "extra" things are necessary to keep me going. Beyond the physical aspect of being healthier keeping me alive longer, my brain needs fun and rest to recharge. These things aren't adult necessities I need to force myself to do, but the sugar and spice of life. Without joy and relaxation outside of code and work, it doesn't matter if the extracurricular coding problem is inherently interesting to me because I won't have the energy to focus on it. Not to mention, all the coding we do is trapped inside the computers. If I keep spending the vast majority of my time and energy on the grind and constantly pushing myself to learn more and code more, there won't be much left outside the computers soon.
 
-## Conclusion
+### Conclusion
 
 This is a commitment to balance in 2022. I need to rediscover play and find inherently motivating ways to make it a daily habit so I have the energy to code for fun outside of work.
 

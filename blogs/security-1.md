@@ -1,4 +1,4 @@
-# Web Security 101 - Part 1: Secrets
+## Web Security 101 - Part 1: Secrets
 
 Planted: 11/29/2022
 Tags: security, web development
@@ -17,7 +17,7 @@ Starting my web security series by sharing my secrets - just kidding! Let's talk
 7. [IndexedDB API](#indexeddb-api)
 8. [Session Hijacking](#session-hijacking)
 
-## Environment Variables
+### Environment Variables
 
 Environment variables are like global server variables. They're often used for secrets and sensitive information. There are ways to expose them to front-end code in the browser, but then they're not secrets anymore. Anyone can find them.
 
@@ -39,7 +39,7 @@ Depending on how you deploy, it's also possible to have separate projects for ea
 
 ![two strong men holding hands. One man is labelled biologists. One man is labelled programmers. Their hands are labelled environment variables.](https://images.abbeyperini.com/security-series/variables.jpg)
 
-## Secret Servers
+### Secret Servers
 
 You may be asked to use a secret server to store your secrets. Some are set up similar to a password manager - just  to share credentials. Others are servers that allow you retrieve secrets with an [authenticated](/blog.html?blog=HTTP-5) [HTTP request](/blog.html?blog=HTTP-3).
 
@@ -47,7 +47,7 @@ Products like [Google Cloud](https://cloud.google.com/secret-manager) have the a
 
 If secrets are stored this way, instead of hardcoded in an environment variable, it's much easier to rotate them frequently.
 
-## Tokens
+### Tokens
 
 Tokens are a string representing information that has been encrypted, often using a [cryptographic hash](https://en.wikipedia.org/wiki/Cryptographic_hash_function). The information is for authentication and authorization purposes. When you're a user of an app, they're typically using tokens to authenticate and authorize you. You'll usually get keys, or tokens, from APIs to authenticate and authorize your app as a developer.
 
@@ -57,7 +57,7 @@ Like many cryptographic standards, the JWT algorithms are not secret. You can pa
 
 As secrets, tokens should stay in the server, but we often need to store information about users in the browser. Let's talk about cookies.
 
-## Cookies
+### Cookies
 
 ![Cookie monster being handed many cookies captioned "when you open any website"](https://images.abbeyperini.com/security-series/cookie-monster.jpeg)
 
@@ -71,7 +71,7 @@ The most secure cookie has the `secure`, `SameSite`, and `HttpOnly` attributes s
 
 If you need to store session information about a user in the front-end, you don't have to put anything secret in your cookie. Instead, the front-end will store a token or id that expires, essentially a [public key](https://en.wikipedia.org/wiki/Public-key_cryptography). It doesn't matter if someone knows the public key if the private key is stored on the back end for verification. Only when the two are put together is sensitive information revealed.
 
-## Man in the Middle
+### Man in the Middle
 
 Why should you guard your tokens and cookies so closely? [Man in the Middle](https://owasp.org/www-community/attacks/Manipulator-in-the-middle_attack) attacks. They go by [many names](https://en.wikipedia.org/wiki/Man-in-the-middle_attack), and monster in the middle is my personal favorite.
 
@@ -81,7 +81,7 @@ Check out the [OWASP article](https://owasp.org/www-community/attacks/Manipulato
 
 ![3 game of thrones actors posing for a photo. Two tall conventionally attractive women stand on either side of a chubby short man. Captioned man in the middle attack.](https://images.abbeyperini.com/security-series/man-in-the-middle.jpg)
 
-## Web Storage API
+### Web Storage API
 
 If you're already planning on storing non-secret information in the front-end, you can also use the Web Storage API.
 
@@ -94,13 +94,13 @@ localStorage.setItem(key, value)
 sessionStorage.getItem(key)
 ```
 
-## IndexedDB API
+### IndexedDB API
 
 The [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) is like the Web Storage API, but bigger. It's a whole object-oriented database, right in the browser. This means you can store a lot of not secret information.
 
 It's persistent storage and works online and offline. For more information, check out [Mozilla Developer Network's guide](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB).
 
-## Session Hijacking
+### Session Hijacking
 
 Why am I so adamant you shouldn't store secrets in the browser? Session hijacking.
 
@@ -108,7 +108,7 @@ There are multiple types, including a man in the middle attack. A common one is 
 
 Attackers can use [trojan horses](https://owasp.org/www-community/attacks/Man-in-the-browser_attack), [clickjacking/UI redressing](https://www.geeksforgeeks.org/clickjacking-ui-redressing/), and [XSS](https://owasp.org/www-community/attacks/xss/) to session hijack as well. Always assume anything stored in the browser is compromised.
 
-## Conclusion
+### Conclusion
 
 This advice comes from experience. I've exposed keys to the browser, not realizing how dangerous that was. My husband has been the victim of a session hijack.
 

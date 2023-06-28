@@ -1,4 +1,4 @@
-# A Beginner's Guide to HTTP - Part 3: Requests
+## A Beginner's Guide to HTTP - Part 3: Requests
 
 Planted: 02/22/2022
 Tags: HTTP
@@ -10,7 +10,7 @@ In this part of the series, I'll demonstrate generating HTTP requests from a sim
 
 I covered terms and definitions necessary for understanding HTTP messages in [part 1](/blog.html?blog=HTTP-1). Then, I demonstrated how to generate response messages in [part 2](/blog.html?blog=HTTP-2). So we know before sending the request message with instructions for the server, the client has to encode it and attach the information the server will need to decode it. Then, after the client receives a response back from the server, it will also need to be decoded. Let's dive in to the code required to do all that.
 
-## Introduction and Table of Contents
+### Introduction and Table of Contents
 
 This article assumes familiarity with basic JavaScript, [command line](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line), and the terms defined in [part 1](/blog.html?blog=HTTP-1). It also assumes you followed [part 2](/blog.html?blog=HTTP-2).
 
@@ -20,7 +20,7 @@ This article assumes familiarity with basic JavaScript, [command line](https://d
 4. [Fetch](#fetch)
 5. [Axios](#axios)
 
-## A Simple React App
+### A Simple React App
 
 Now, we need a client! At the same level as your server folder, make a folder called client. Navigate to the folder in a terminal and run `npm install react`.
 
@@ -74,7 +74,7 @@ The other two look almost exactly the same. When I run `npm start` from my termi
 
 ![3 strings displayed on a browser page - "XOXO -HR." "This is how I make Fetch a thing." "I'm isomorphic! (="](https://images.abbeyperini.com/HTTP-series/localhost.png)
 
-## JSON.parse() and JSON.stringify()
+### JSON.parse() and JSON.stringify()
 
 Before we get into the code for the HTTP requests individually, let's talk about JavaScript's built-in methods for converting JSON to JavaScript and vice versa. `JSON.parse()` takes a JSON object or array and turns it into valid JavaScript. `JSON.stringify()` takes valid JavaScript and turns it into valid JSON, sometimes referred to as a JSON string.
 
@@ -100,11 +100,11 @@ console.log(newBody)
 
 It's manually doing what the `express.json()` body parser was doing for us in the Express server.
 
-## XHR
+### XHR
 
 We don't have to import XMLHttpRequest into our React app - it's already available because you're writing JavaScript for the browser. For every request, we will have to instantiate XHR and build the request using a handful of methods.
 
-### GET
+#### GET
 
 To build a GET request to my `/yarn` endpoint, I instantiate an XHR object I've called `gXHR`, open the request while passing the method and URL, and then send the request. Finally, I write a `gXHR.onload()` function to handle what happens when the response is received. In my `gXHR.onload()` function, I parse the JSON I received into a valid JavaScript object with `JSON.parse()` and log the first item in the array that was returned.
 
@@ -133,7 +133,7 @@ function getRequest() {
 
 `.onload()` is a listener, essentially a loop that runs until the `.send()` method finishes. The function I wrote and assigned to `.onload()` is a callback function to run after the HTTP request has concluded.
 
-### POST
+#### POST
 
 The POST request looks similar, but we also have to pass a body. I start by defining my POST body and passing it to `JSON.stringify()` to turn the JavaScript object into JSON. I also have to set the `Content-Type` header so XHR knows to send the body formatted as JSON. Then, when I create my request, I pass my JSON string to the `pHXR.send()` method. Finally, I don't `JSON.parse()` the response in `pXHR.onload()` because the response is a string.
 
@@ -168,7 +168,7 @@ function postRequest() {
   }
 ```
 
-### DELETE
+#### DELETE
 
 Finally, my DELETE request:
 
@@ -198,7 +198,7 @@ If this was a real app, I would pass the id of the yarn I wanted deleted to `del
 
 However, passing an id to an `onClick` handler in React is a tutorial for another time.
 
-### Putting It All Together
+#### Putting It All Together
 
 I use these functions as `onClick` handlers for three buttons:
 
@@ -218,11 +218,11 @@ To test, I run the client in one terminal using `npm start` and the server in a 
 
 We've built our first full HTTP conversation! The buttons trigger JavaScript that builds and encodes an HTTP request and then sends it to our server. Our server receives the HTTP request, decodes it, and based on the instructions, sends back an encoded request message. When the client receives the encoded request message, it decodes it and logs part of it to the console.
 
-## Fetch
+### Fetch
 
 Having worked mainly in newer HTTP packages at this point, XHR feels very manual to me. To write one request, we have to use multiple methods. With Fetch, we can write a GET request in one line. Fetch is also a Web API, so we don't have to import it either. We don't even have to instantiate it - `fetch()` is a function all on its own.
 
-### GET
+#### GET
 
 Here is the one line GET request:
 
@@ -277,7 +277,7 @@ getRequest(parseData)
 
 Notice I didn't write any error handling to replace `.catch()`. `.catch()` is there to handle errors that happen within the Fetch request. It is triggered by a JavaScript error. To handle a response with a 500 status code, or server error, I would have to check the response after I've received it to verify it's an error. We'll go into this more in [part 4](/blog.html?blog=HTTP-4).
 
-### POST
+#### POST
 
 To make the POST request to my `/yarn/create` endpoint work, we'll have to pass configuration options to the `fetch()` method. I start by building my body and converting it to JSON. Then, when I create my Fetch request, I pass a config object after my URL. Finally, because the response is a string, we have to parse it using `.text()` instead of `.json()` before we can log it to the console.
 
@@ -305,7 +305,7 @@ function postRequest() {
   }
 ```
 
-### DELETE
+#### DELETE
 
 The DELETE method also requires a config object and the `.text()` method to parse the body.
 
@@ -320,13 +320,13 @@ function deleteRequest() {
   }
 ```
 
-### Putting It All Together
+#### Putting It All Together
 
 Like with my XHR component, I hooked those three functions up to three buttons. When I run my client in one terminal and my server in another and click them, the responses I expect are logged to the console.
 
 ![Two rows of GET, POST, and DELETE buttons from the XHR and Fetch components are rendered in the browser tab. In the console tab of Chrome developer tools are the 3 string responses we expect from the server.](https://images.abbeyperini.com/HTTP-series/more-buttons.png)
 
-## Axios
+### Axios
 
 Axios is an npm package, so I run `npm install axios` in my terminal to install it. I also have to import it at the top of my file:
 
@@ -334,7 +334,7 @@ Axios is an npm package, so I run `npm install axios` in my terminal to install 
 import axios from 'axios';
 ```
 
-### GET
+#### GET
 
 Now that it's been imported, we can use the `.get()` method to write a request. Since Axios also uses promises, we can still chain with `.then()` and `.catch()`.
 
@@ -348,7 +348,7 @@ function getRequest() {
 
 Right off the bat you can see how this format is closer to the Express server than XHR. Furthermore, you may have noticed I didn't have to parse the body of the response - Axios does that for us. As part of that formatting, the structure of the response object we can reference is changed - instead of `response.body`, I have to reference `response.data`. Because they have it [in the docs](https://github.com/axios/axios#request-config), I knew to expect that. We'll delve into evaluating response format when you don't know what to expect in [part 4](/blog.html?blog=HTTP-4).
 
-### POST
+#### POST
 
 Next up, the POST request. Thanks to Axios, I don't have to `JSON.stringify()` my body and the `.post()` method allows you to pass an object to add to the body after the URL.
 
@@ -368,7 +368,7 @@ function postRequest() {
 
 I didn't even have to pass a header - Axios tries to `JSON.stringify()` all request bodies and `JSON.parse()` all response bodies. You can also use the [config object](https://www.npmjs.com/package/axios#request-config) to set the headers, method, and more.
 
-### DELETE
+#### DELETE
 
 Finally, the DELETE request to my `/yarn/delete/:id` endpoint, looking much like the GET request:
 
@@ -380,13 +380,13 @@ function deleteRequest() {
   }
 ```
 
-### Putting It All Together
+#### Putting It All Together
 
 Once again, I hook these functions up to buttons, and now I have 3 rows of ugly buttons returning the responses I expect.
 
 ![Three rows of GET, POST, and DELETE buttons from the XHR, Fetch, and Axios components are rendered in the browser tab. In the console tab of Chrome developer tools are the 3 string responses we expect from the server.](https://images.abbeyperini.com/HTTP-series/most-buttons.png)
 
-## Conclusion
+### Conclusion
 
 Starting with XHR and ending with Axios, you can really see how HTTP request packages and async methods for JavaScript have evolved and been abstracted over the years. Because there's so much going on under the hood but the methods themselves are easy to use, a lot of these concepts are glazed over when teaching students about how to use HTTP. I hope this series is giving you a better understanding of the inner workings of HTTP messages as a whole.
 
