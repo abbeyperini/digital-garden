@@ -13,8 +13,8 @@ class Header extends HTMLElement {
             <li><a href="https://github.com/abbeyperini/digital-garden">Github repository</a></li>
             <li><a href="https://abbeyperini.dev">About Abbey</a></li>
           </ul>
-          <input type="checkbox" id="theme-toggle" aria-label="Toggle Color Theme" class="theme-switch" />
         </nav>
+        <input onchange="switchTheme(event)" type="checkbox" id="theme-toggle" aria-label="Toggle Color Theme" class="theme-switch" />
       </header>
     `;
     this.setAttribute("class", "header-component");

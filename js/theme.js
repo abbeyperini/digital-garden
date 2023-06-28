@@ -16,7 +16,9 @@ function setCheckBox(toggleSwitch, theme) {
   toggleSwitch.checked = theme === 'dark' ? true : false;
 }
 
-function keepTheme(toggleSwitch) {
+function keepTheme() {
+  const toggleSwitch = document.querySelector('#theme-toggle');
+  toggleSwitch.addEventListener('change', switchTheme, false);
   const theme = localStorage.getItem('theme');
   if (theme) {
     setTheme(theme);
@@ -33,10 +35,4 @@ function keepTheme(toggleSwitch) {
   setTheme('dark');
 };
 
-window.onload = (event) => {
-  const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-  toggleSwitch.addEventListener('change', switchTheme, false);
-  keepTheme(toggleSwitch);
-};
-
-
+document.addEventListener("DOMContentLoaded", keepTheme);

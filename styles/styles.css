@@ -1,4 +1,8 @@
 :root {
+  --background: #CCCCCC;
+}
+
+[data-theme="light"] {
   --main-text: #171717;
   --background: #C7F9CC;
 
