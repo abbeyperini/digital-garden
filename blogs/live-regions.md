@@ -17,7 +17,7 @@ Tags: accessibility, react
 
 ![Scumbag Steve meme captioned uses aria-live on body element](https://images.abbeyperini.com/live-regions/scumbag.jpg)
 
-Adding `aria-live` to an element creates a live region. Other ARIA roles and attributes add a live region implicitly. For example, `role=status`, `role=alert`, or `aria-modal=true` will turn an element into a live region. This makes sense. A status update, alert, or modal is something you'd want announced to a screen reader user as soon as it's put on the page.
+Adding `aria-live` to an element creates a live region. Other ARIA roles and attributes add a live region implicitly. For example, `role=status`, `role=alert`, or `role=dialog` (included automatically in `<dialog>`) will turn an element into a live region. This makes sense. A status update, alert, or modal is something you'd want announced to a screen reader user as soon as it's put on the page.
 
 `aria-live` has 3 possible values. `aria-live=polite` will announce the live region updates the next time the screen reader is idle. `aria-live=assertive` will announce the updates immediately and thus should be used sparingly. `aria-live=off` is the default and a way to turn off the implicit live region set by an element's role.
 

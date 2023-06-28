@@ -133,6 +133,11 @@ footer {
   margin: 5px;
 }
 
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
 /* buttons and links */
 
 .button {
