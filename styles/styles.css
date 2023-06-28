@@ -79,6 +79,15 @@ zero-md {
   margin-bottom: 1%;
 }
 
+.offscreen {
+  position: relative;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  margin-top: -1px;
+}
+
 .construction {
   background-color: var(--content-background);
   color: var(--content-text);
@@ -151,6 +160,12 @@ footer {
   width: 100px;
 }
 
+.logo-grey {
+  height: 100px;
+  width: 100px;
+  display: none;
+}
+
 .copyright {
   width: 130px;
   height: 40px;
@@ -181,6 +196,14 @@ header a:link, footer a:link, header a:visited, footer a:visited {
 
 header a:hover, footer a:hover, header a:active, footer a:active {
   color: var(--active-link-text);
+}
+
+.home-link:hover .logo {
+  display: none;
+}
+
+.home-link:hover .logo-grey {
+  display: inline;
 }
 
 /* garden */
