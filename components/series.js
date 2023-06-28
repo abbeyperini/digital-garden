@@ -56,11 +56,14 @@ class Series extends HTMLElement {
       return `<zero-md src="../blogs/${name}.md"></zero-md>`
     });
     seriesHTML.join();
+    const title = `${allSeries[series].title} Series`
     this.innerHTML = `
-      <h1 class="series-title">${allSeries[series].title} Series</h1>
+      <h1 class="series-title">${title}</h1>
       ${seriesHTML}
     `;
     this.setAttribute("class", "series-component");
+    this.setAttribute("id", "series");
+    this.setAttribute("title", title);
   }
 }
 

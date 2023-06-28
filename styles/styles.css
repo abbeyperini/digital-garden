@@ -55,7 +55,7 @@ html {
 body {
   height: 100%;
   display: grid;
-  grid-template-columns: .2fr 2fr .2fr;
+  grid-template-columns: .1fr 2fr .1fr;
   grid-template-rows: .05fr auto .05fr;
   grid-template-areas:
   "header header header"
@@ -66,17 +66,11 @@ body {
 
 main {
   grid-area: main;
-  display: grid;
-  margin: 2% 0;
-}
-
-zero-md {
-  display: grid;
 }
 
 .title, .series-title {
   color: var(--main-text);
-  margin-bottom: 1%;
+  margin-top: 3%;
 }
 
 .offscreen {
@@ -109,7 +103,7 @@ zero-md {
 header, footer {
   background-color: var(--secondary-background);
   color: var(--secondary-text);
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

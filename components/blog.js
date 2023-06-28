@@ -81,9 +81,11 @@ class Blog extends HTMLElement {
       blogName = params.get("blog");
     }
     const page = `../blogs/${blogName}.md`;
-    const blog = `<zero-md src=${page}></zero-md>`;
+    const blog = `<zero-md id="zero" src=${page}></zero-md>`;
     this.innerHTML = `<h1 class="title">${blogTitles[blogName]} by Abbey Perini</h1>${blog}`;
     this.setAttribute("class", "blog-component");
+    this.setAttribute("id", "blog");
+    this.setAttribute("title", blogTitles[blogName]);
   }
 }
 

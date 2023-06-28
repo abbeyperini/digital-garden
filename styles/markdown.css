@@ -9,7 +9,8 @@
   align-items: center;
   border-radius: 10px;
   margin-bottom: 2%;
-  min-width: 80vw;
+  max-width: 80vw;
+  margin: 3% auto;
 }
 
 p, li, pre, h1, h2, h3 {

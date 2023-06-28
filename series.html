@@ -4,7 +4,7 @@
     <meta charset='UTF-8'/>
     <meta name='viewport' content='width=device-width' initial-scale='1.0' maximum-scale='1.0'/>
     <title>Abbey Perini's Digital Garden</title>
-    <meta name="description" content="All of Abbey's Tech Blogs"/>
+    <meta name="description" content="Article Series by Abbey Perini"/>
     <meta property="og:title" content="Abbey Perini's Digital Garden" />
     <meta property="og:url" content="https://abbeyperini.com/" />
     <meta property="og:type" content="article" />
@@ -17,7 +17,7 @@
       {
         "@context" : "https://abbeyperini.com",
         "@type" : "Article",
-        "headline" : "Abbey Perini's Digital Garden",
+        "headline" : "Article Series by Abbey Perini",
         "author" : {
           "@type" : "Person",
           "name" : "Abbey Perini"
@@ -47,6 +47,14 @@
     <script>
       window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
       cronitor('config', { clientKey: '71d4d4a9cbb3078f61bc7a29ebedfd2d' });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const blog = document.getElementById("series");
+        const title = blog.getAttribute("title");
+        document.title = title;
+        document.querySelector('meta[property="og:title"]').setAttribute("content", title);
+      });
     </script>
   </head>
   <body>
