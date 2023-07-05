@@ -30,7 +30,7 @@ WAVE mostly returned errors I had already vetted. It did actually catch one of t
 
 ARC is down to primarily false positives. There were a couple I had to look up to make sure they were ok, like buttons with transparent backgrounds and using images with alt-text or an `aria-label` instead of text in links.
 
-![ARC dev toolkit after scanning the blog page on abbeyperini.dev](https:/images.abbeyperini.com/audit-series/arc-blog.png)
+![ARC dev toolkit after scanning the blog page on abbeyperini.dev](https://images.abbeyperini.com/audit-series/arc.png)
 
 The IBM Equal Access Accessibility checker just stopped working. It refused to scan even after I restarted Chrome,  uninstalled and reinstalled it in Chrome, and installed it in Firefox. I saw something about the ruleset being undefined, so hopefully they fix that soon. Luckily, I ran it multiple times in [Part 5](/blog.html?blog=audit-5) so I'm comfortable with moving on.
 
