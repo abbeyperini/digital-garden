@@ -58,7 +58,7 @@ class Series extends HTMLElement {
     seriesHTML.join();
     const title = `${allSeries[series].title} Series`
     this.innerHTML = `
-      <h1 class="series-title">${title}</h1>
+      <h1 class="title">${title}</h1>
       ${seriesHTML}
     `;
     this.setAttribute("class", "series-component");

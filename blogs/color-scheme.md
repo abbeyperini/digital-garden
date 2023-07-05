@@ -1,7 +1,11 @@
 ## Dark Mode Toggle and prefers-color-scheme
 
+Knowledge Level: Evergreen
+
 Planted: 04/21/2023
-Tags: toggle, accessibility
+
+Topics: [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [dark mode toggle](/topic.html?topic=darkModeToggle), [CSS](/topic.html?topic=CSS)
+
 Series: [toggle](/series.html?series=toggle)
 
 ![screenshot of abbey's portfolio site menu with dark mode toggle in it](https://images.abbeyperini.com/color-scheme/cover.png)

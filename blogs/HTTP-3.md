@@ -1,7 +1,13 @@
 ## A Beginner's Guide to HTTP - Part 3: Requests
 
+Knowledge Level: Evergreen
+
 Planted: 02/22/2022
-Tags: HTTP
+
+Last Tended: 05/14/2022
+
+Topics: [web development](/topic.html?topic=webDevelopment)
+
 Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
 
 ![a picture of Dwight from the office captioned HTTP request? XMLHTTPREQUEST](https://images.abbeyperini.com/HTTP-series/dwight.png)

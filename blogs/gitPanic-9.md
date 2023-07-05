@@ -1,7 +1,13 @@
 ## #gitPanic - Files
 
+Knowledge Level: Evergreen
+
 Planted: 11/22/2022
-Tags: git, #gitPanic
+
+Last Tended: 06/23/2023
+
+Topics: [git](/topic.html?topic=git), [coding](/topic.html?topic=coding)
+
 Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![black man gesturing at his eyes captioned look at me this is my repo now](https://images.abbeyperini.com/gitPanic/repo.jpg)

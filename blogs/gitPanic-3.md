@@ -1,7 +1,13 @@
 ## #gitPanic - Working in a Repo
 
+Knowledge Level: Evergreen
+
 Planted: 11/08/2022
-tags: git, #gitPanic
+
+Last Tended: 11/16/2022
+
+Topics: [git](/topic.html?topic=git), [github](/topic.html?topic=github), [coding](/topic.html?topic=coding)
+
 Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![Kip from Napoleon Dynamite stirring coffee and saying created repo and made na initial commit os I guess you could say things are getting pretty serious](https://images.abbeyperini.com/gitPanic/commit.png)

@@ -1,7 +1,13 @@
 ## #gitPanic - Removing and Restoring Work
 
+Knowledge Level: Evergreen
+
 Planted: 11/22/2022
-Tags: git, #gitPanic
+
+Last Tended: 11/22/2022
+
+Topics: [git](/topic.html?topic=git), [coding](/topic.html?topic=coding)
+
 Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![The hulk in a lab with his arms outstretched captioned git reset --hard time travel!](https://images.abbeyperini.com/gitPanic/reset.jpg)

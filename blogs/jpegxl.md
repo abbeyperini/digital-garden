@@ -1,7 +1,13 @@
 ## What is JPEG XL?
 
+Knowledge Level: Evergreen
+
 Planted: 04/27/2022
-Tags: images
+
+Last Tended: 04/27/2022
+
+Topics: [images](/topic.html?topic=images)
+
 Series: [Images](/series.html?series=images)
 
 ![a lush green forest](https://images.abbeyperini.com/images-series/forest.JPG)

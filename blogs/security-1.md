@@ -1,7 +1,13 @@
 ## Web Security 101 - Part 1: Secrets
 
+Knowledge Level: Evergreen
+
 Planted: 11/29/2022
-Tags: security, web development
+
+Last Tended: 06/22/2023
+
+Topics: [security](/topic.html?topic=security), [web development](/topic.html?topic=webDevelopment)
+
 Series: [security](/series.html?series=security)
 
 ![black man tapping his finger to the side of his forehead captioned you can't leak passwords if you don't store passwords](https://images.abbeyperini.com/security-series/password.png)

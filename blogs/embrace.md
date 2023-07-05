@@ -1,6 +1,12 @@
 ## Embrace the Struggle While Learning to Code
 
+Knowledge Level: Evergreen
+
 Planted: 09/25/2020
+
+Last Tended: 11/04/2021
+
+Topics: [coding](/topic.html?topic=coding)
 
 ![mountain range in the backgroud, grass and rocks in the foreground](https://images.abbeyperini.com/embrace/cover.webp)
 

@@ -1,7 +1,13 @@
 ## 8 Ways to Support Women Developers
 
+Knowledge Level: Evergreen
+
 Planted: 03/08/2023
-Tags: women in programming
+
+Last Tended: 06/23/2023
+
+Topics: [women in programming](/topic.html?topic=womenInProgramming)
+
 Series: [Women in Programming](/series.html?series=women)
 
 ![Dolly Parton sitting and typing at a typewriter - image from the movie Nine to Five](https://images.abbeyperini.com/women-in-programming/dollypartonninetofive.jpg)

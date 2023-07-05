@@ -1,7 +1,12 @@
 ## 8 Things I've Learned Working in a Legacy Codebase
 
+Knowledge Level: Evergreen
+
 Planted: 09/16/2021
-Tags: career
+
+Last Tended: 06/16/2023
+
+Topics: [coding](/topic.html?topic=coding)
 
 ![The Jurassic Park logo edited to say "Legacy Code". Captioned "It Worked For 65 Million Years. No One Knows How. No One Knows Why."](https://images.abbeyperini.com/legacy/cover.png)
 

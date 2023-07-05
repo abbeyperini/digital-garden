@@ -1,7 +1,13 @@
 ## Sourcing Images and Optimizing Them for the Web
 
+Knowledge Level: Evergreen
+
 Planted: 08/30/2021
-Tags: images
+
+Last Tended: 02/16/2022
+
+topics: [images](/topic.html?topic=images), [web development](/topic.html?topic=webDevelopment)
+
 Series: [Images](/series.html?series=images)
 
 ![mountain range in Mount Rainier National Park](https://images.abbeyperini.com/images-series/cover.webp)

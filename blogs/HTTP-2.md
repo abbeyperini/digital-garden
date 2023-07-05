@@ -1,7 +1,13 @@
 ## A Beginner's Guide to HTTP - Part 2: Responses
 
+Knowledge Level: Evergreen
+
 Planted: 02/16/2022
-Tags: HTTP
+
+Last Tended: 05/14/2022
+
+Topics: [web development](/topic.html?topic=webDevelopment)
+
 Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
 
 ![a young white boy in front of a retro computer with a thumbs up captioned 200 OK](https://images.abbeyperini.com/HTTP-series/200-ok.png)

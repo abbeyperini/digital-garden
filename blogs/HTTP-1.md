@@ -1,7 +1,13 @@
 ## A Beginner's Guide to HTTP - Part 1: Definitions
 
+Knowledge Level: Evergreen
+
 Planted: 02/04/2022
-Tags: HTTP
+
+Last Tended: 06/14/2022
+
+Topics: [web development](/topic.html?topic=webDevelopment)
+
 Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
 
 ![a shiba inu dog sits in a chair at a table behind a laptop captioned on the internet, nobody knows you're a shiba](https://images.abbeyperini.com/HTTP-series/shiba.png)

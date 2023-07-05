@@ -68,7 +68,7 @@ main {
   grid-area: main;
 }
 
-.title, .series-title {
+.title {
   color: var(--main-text);
   margin-top: 3%;
 }

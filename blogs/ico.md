@@ -1,7 +1,13 @@
 ## What is ICO?
 
+Knowledge Level: Evergreen
+
 Planted: 05/03/2022
-Tags: images
+
+Last Tended: 06/09/2022
+
+topics: [images](/topic.html?topic=images)
+
 Series: [Images](/series.html?series=images)
 
 ![a rocky river in a lush green forest](https://images.abbeyperini.com/images-series/river.jpeg)

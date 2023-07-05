@@ -1,7 +1,13 @@
 ## What is AVIF?
 
+Knowledge Level: Evergreen
+
 Planted: 04/26/2022
-Tags: images
+
+Last Tended: 04/27/2022
+
+Topics: [images](/topic.html?topic=images), [web development](/topic.html?topic=webDevelopment)
+
 Series: [Images](/series.html?series=images)
 
 ![a yellow flower in front of a red background with white numbers](https://images.abbeyperini.com/images-series/flower.JPG)

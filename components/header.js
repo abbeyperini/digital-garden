@@ -13,8 +13,8 @@ class Header extends HTMLElement {
         </a>
         <nav>
           <ul class="header-list">
-            <li><a href="/about.html">What is a digital garden?</a></li>
-            <li><a href="https://github.com/abbeyperini/digital-garden">Github repository</a></li>
+            <li><a href="/about.html">About This Digital Garden</a></li>
+            <li><a href="https://github.com/abbeyperini/digital-garden">The Digital Garden on Github</a></li>
             <li><a href="https://abbeyperini.dev">About Abbey</a></li>
           </ul>
         </nav>

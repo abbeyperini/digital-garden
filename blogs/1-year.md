@@ -1,7 +1,13 @@
 ## 12 Things I learned During My First Year as a Professional Developer
 
+Knowledge Level: Evergreen
+
 Planted: 04/04/2022
-Tags: career
+
+Last Tended: 04/04/2022
+
+Topics: [career](/topic.html?topic=career), [coding](/topic.html?topic=coding)
+
 Series: [Career](/series.html?series=career)
 
 ![cat laying on white towels and wearing a robe and hair towel with cucumbers over its eyes captioned one year already?](https://images.abbeyperini.com/1-year/already.jpeg)

@@ -1,7 +1,13 @@
 ## #gitPanic - Documentation and Profiles
 
+Knowledge Level: Evergreen
+
 Planted: 11/18/2022
-Tags: git, #gitPanic
+
+Last Tended: 06/22/2023
+
+Topics: [git](/topic.html?topic=git), [github](/topic.html?topic=github), [coding](/topic.html?topic=coding)
+
 Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![screenshot of Abbey's GitHub profile](https://images.abbeyperini.com/gitPanic/cover.png)

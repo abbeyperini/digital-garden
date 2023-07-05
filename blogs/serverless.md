@@ -1,6 +1,12 @@
 ## A Walkthrough of Updating My Portfolio Site with Netlify Functions and the DEV API
 
+Knowledge Level: Evergreen
+
 Planted: 07/31/2021
+
+Last Tended: 11/28/2021
+
+Topics: [web development](/topic.html?topic=webDevelopment), [react](/topic.html?topic=react), [serverless](/topic.html?topic=serverless), [coding](/topic.html?topic=coding), [CSS](/topic.html?topic=CSS)
 
 ![screenshot of the blog component on Abbey's portfolio site](https://images.abbeyperini.com/serverless/blog.png)
 

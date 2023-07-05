@@ -1,7 +1,11 @@
 ## Breaking into Tech - Tips from a Former Recruiting Admin
 
 Planted: 04/05/2021
-Tags: career
+
+Last Tended: 11/21/2021
+
+Topics: [career](/topic.html?topic=career)
+
 Series: [Career](/series.html?series=career)
 
 ![the ocean and a dock with the sunset and mountains in the background](https://images.abbeyperini.com/career-series/dock.png)

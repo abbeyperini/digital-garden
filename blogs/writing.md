@@ -1,7 +1,13 @@
 ## How I Structure My Writing
 
+Knowledge Level: Evergreen
+
 Planted: 11/21/2021
-Tags: on writing
+
+Last Tended: 02/06/2023
+
+Topics: [writing](/topic.html?topic=writing)
+
 Series: [on writing](/series.html?series=onWriting)
 
 ![the tips of colored pencils on a white background](https://images.abbeyperini.com/pencils.jpeg)

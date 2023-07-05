@@ -1,7 +1,13 @@
 ## A Beginner's Guide to HTTP - Part 4: APIs
 
+Knowledge Level: Evergreen
+
 Planted: 04/22/2022
-Tags: HTTP
+
+Last Tended: 05/14/2022
+
+Topics: [web development](/topic.html?topic=webDevelopment)
+
 Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
 
 ![bored-looking white cat with a small mouth captioned 200 OK](https://images.abbeyperini.com/HTTP-series/200.jpeg)

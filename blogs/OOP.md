@@ -1,6 +1,12 @@
 ## Object Oriented Programming in Memes
 
+Knowledge Level: Evergreen
+
 Planted: 01/18/2021
+
+Last Tended: 03/11/2022
+
+Topics: [web development](/topic.html?topic=webDevelopment), [coding](/topic.html?topic=coding)
 
 !["Yo Dawg, I hear you like object oriented programming, so I nested a class inside your class so you can create objects while you create objects"](https://images.abbeyperini.com/OOP-memes/dawg.jpg)
 

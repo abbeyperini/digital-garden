@@ -1,7 +1,13 @@
 
 ## CSS Animated Button with Offset Border
 
+Knowledge Level: Evergreen
+
 Planted: 12/16/2020
+
+Last Tended: 07/05/2023
+
+Topics: [CSS](/topic.html?topic=CSS), [HTML](/topic.html?topic=HTML), [web development](/topic.html?topic=webDevelopment)
 
 ![on a teal and blue background, a yellow button that says 'add' with an offset yellow border](https://images.abbeyperini.com/animated/cover.webp)
 
@@ -62,10 +68,10 @@ button:focus {
 }
 ```
 
-However, you should add something else (like a new `background-color:`) in its place.
+However, you should add something else in its place. Check out [Transforming Tired Tabbing](/blog.html?blog=tabbing-3) for lots of options.
 
 ### Conclusion
 
 ![on a teal and blue background, a yellow button that says 'add' moves into a yellow border when clicked](https://images.abbeyperini.com/animated/click.gif)
 
-You can check out this button (and a sweet HTML radio button/label icon selector) in detail on my Github and in action at [BujoToGo](http://bujo-to-go.surge.sh/#/index) (an app I wrote in a week). Tag me on Twitter (or Github or somewhere…) if you end up using this button! I would be thrilled to see it out in the world spreading more joy.
+Tag me on Twitter (or Github or somewhere…) if you end up using this button! I would be thrilled to see it out in the world spreading more joy.

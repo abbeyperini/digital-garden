@@ -1,6 +1,12 @@
 ## How To Reload a Page Whenever a User Makes a Change with React/Redux
 
+Knowledge Level: Evergreen
+
 Planted: 01/07/2021
+
+Last Tended: 11/28/2021
+
+Topics: [react](/topic.html?topic=react), [web development](/topic.html?topic=webDevelopment)
 
 ![A screenshot of a simple counter app with a "Counter!" heading, a + button, the number 20, a - button, and 14 of the 20 shiba pictures](https://images.abbeyperini.com/reload/shibas.png)
 

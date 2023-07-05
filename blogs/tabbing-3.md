@@ -1,7 +1,13 @@
 ## Transforming Tired Tabbing
 
+Knowledge Level: Evergreen
+
 Planted: 10/14/2022
-Tags: accessibility
+
+Last Tended: 06/22/2023
+
+Topics: [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [CSS](/topic.html?topic=CSS)
+
 Series: [tabbing](/series.html?series=tabbing)
 
 ![paste orange, pink, purple, and white keys backlit by rainbow rgb lights on a white mistel keyboard](https://images.abbeyperini.com/tabbing/keyboard-3.jpg)

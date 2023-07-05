@@ -1,6 +1,12 @@
 ## A Trio of Buttons for a Bubbly, Colorful Site
 
+Knowledge Level: Evergreen
+
 Planted: 01/28/2021
+
+Last Tended: 11/28/2021
+
+Topics: [CSS](/topic.html?topic=CSS)
 
 ![Gachasphere login page](https://images.abbeyperini.com/buttons-trio/all-buttons.png)
 

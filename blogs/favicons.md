@@ -1,7 +1,13 @@
 ## What are Favicons?
 
+Knowledge Level: Evergreen
+
 Planted: 05/08/2022
-Tags: images
+
+Last Tended: 05/09/2022
+
+Topics: [images](/topic.html?topic=images), [design](/topic.html?topic=design), [web development](/topic.html?topic=webDevelopment)
+
 Series: [Images](/series.html?series=images)
 
 ![Abbey Perini Full-Stack Web Developer with a logo that looks like a brain with a threaded needle coming off of it](https://images.abbeyperini.com/images-series/banner.png)

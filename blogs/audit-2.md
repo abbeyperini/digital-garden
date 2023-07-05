@@ -1,7 +1,13 @@
 ## Accessibility Auditing My Portfolio Site - Part 2
 
+Knowledge Level: Evergreen
+
 Planted: 11/04/2021
-Tags: audit, accessibility
+
+Last Tended: 11/28/2021
+
+Topics: [accessibility audit](/topic.html?topic=audit), [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [CSS](/topic.html?topic=CSS)
+
 Series: [accessibility audit](/series.html?series=audit)
 
 ![a screenshot of the contact section with updated links on abbeyperini.dev](https://images.abbeyperini.com/audit-series/contact.png)

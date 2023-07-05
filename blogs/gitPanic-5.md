@@ -1,7 +1,13 @@
 ## #gitPanic - Interactive Rebase
 
+Knowledge Level: Evergreen
+
 Planted: 11/16/2022
-Tags: git, #gitPanic
+
+Last Tended: 11/17/2022
+
+Topics: [git](/topic.html?topic=git), [github](/topic.html?topic=github), [coding](/topic.html?topic=coding)
+
 Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![Tony Stark standing in front of an explosion, arms outstretched captioned git rebase](https://images.abbeyperini.com/gitPanic/rebase.jpg)

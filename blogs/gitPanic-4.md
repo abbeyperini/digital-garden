@@ -1,7 +1,13 @@
 ## #gitPanic - HEAD
 
+Knowledge Level: Evergreen
+
 Planted: 11/16/2022
-tags: git, #gitPanic
+
+Last Tended: 11/16/2022
+
+Topics: [git](/topic.html?topic=git), [coding](/topic.html?topic=coding)
+
 Series: [#gitPanic](/series.html?series=gitPanic)
 
 ![Squidward labeled "FBI" looking suspiciously at a Google search for "How to reattach a detached head". Next panel shows Squidward relaxing next to a Google search for "How ot reattach a detached head Git"](https://images.abbeyperini.com/gitPanic/detached.png)
