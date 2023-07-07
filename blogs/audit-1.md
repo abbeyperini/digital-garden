@@ -8,7 +8,7 @@ Last Tended: 05/19/2022
 
 Topics: [accessibility audit](/topic.html?topic=audit), [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment)
 
-Series: [accessibility audit](/series.html?series=audit)
+Series: [Accessibility Audit](/series.html?series=audit)
 
 ![screenshot of Abbey's portfolio site with FireFox DevTools open to the accessibility tab](https://images.abbeyperini.com/audit-series/DevTools.png)
 

@@ -8,7 +8,7 @@ Last Tended: 11/28/2021
 
 Topics: [accessibility audit](/topic.html?topic=audit), [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [CSS](/topic.html?topic=CSS)
 
-Series: [accessibility audit](/series.html?series=audit)
+Series: [Accessibility Audit](/series.html?series=audit)
 
 ![a screenshot of the contact section with updated links on abbeyperini.dev](https://images.abbeyperini.com/audit-series/contact.png)
 

@@ -8,7 +8,7 @@ Last Tended: 05/19/2022
 
 Topics: [accessibility audit](/topic.html?topic=audit), [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [CSS](/topic.html?topic=CSS)
 
-Series: [accessibility audit](/series.html?series=audit)
+Series: [Accessibility Audit](/series.html?series=audit)
 
 ![Frodo on Mount Doom with fire in the background captioned it's done it's over now](https://images.abbeyperini.com/audit-series/done.jpg)
 

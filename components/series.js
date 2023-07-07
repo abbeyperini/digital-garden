@@ -7,7 +7,7 @@ const allSeries = {
     title: "On Writing",
     articles: ["writing", "writing-2", "research"]
   },
-  security: {
+  webSecurity: {
     title: "Web Security 101",
     articles: ["security-1", "security-2"]
   },

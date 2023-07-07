@@ -8,7 +8,7 @@ Last Tended: 02/07/2023
 
 Topics: [writing](/topic.html?topic=writing)
 
-Series: [on writing](/series.html?series=onWriting)
+Series: [On Writing](/series.html?series=onWriting)
 
 ![the tips of colored pencils on a white background](https://images.abbeyperini.com/pencils.jpeg)
 

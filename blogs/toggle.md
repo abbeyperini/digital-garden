@@ -8,7 +8,7 @@ Last Tended: 04/20/2022
 
 Topics: [dark mode toggle](/topic.html?topic=darkModeToggle), [CSS](/topic.html?topic=CSS), [react](/topic.html?topic=react), [web development](/topic.html?topic=webDevelopment)
 
-Series: [dark mode toggle](/series.html?series=toggle)
+Series: [Dark Mode Toggle](/series.html?series=toggle)
 
 ![screenshot of Abbey's portfolio site in both light and dark mode](https://images.abbeyperini.com/toggle/cover.png)
 

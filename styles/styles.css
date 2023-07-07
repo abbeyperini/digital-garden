@@ -82,7 +82,7 @@ main {
   margin-top: -1px;
 }
 
-.construction {
+.welcome {
   background-color: var(--content-background);
   color: var(--content-text);
   margin: auto;
