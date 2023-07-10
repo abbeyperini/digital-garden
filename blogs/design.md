@@ -1,13 +1,5 @@
 ## From Idea to Design for Non-Designers
 
-Knowledge Level: Evergreen
-
-Planted: 05/16/2023
-
-Last Tended: 07/05/2023
-
-Topics: [design](/topic.html?topic=design), [accessibility](/topic.html?topic=accessibility), [CSS](/topic.html?topic=CSS)
-
 ![keynote slide with a black and white website design](https://images.abbeyperini.com/design/black-and-white.png)
 
 You learned to code and want to start applying for jobs, but don't want anyone to look at your portfolio. Your app functions well, but you're pretty sure your buttons need some styling. Here are some practical tips on how to get from your idea to minimum styling without knowing anything about design.

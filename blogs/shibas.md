@@ -1,15 +1,5 @@
 ## Adding Shiba Inu Loading and Error SVGs to My React Site
 
-Knowledge Level: Evergreen
-
-Planted: 08/30/2021
-
-Last Tended: 11/22/2023
-
-Topics: [images](/topic.html?topic=images), [react](/topic.html?topic=react), [CSS](/topic.html?topic=CSS), [web development](/topic.html?topic=webDevelopment)
-
-Series: [Images](/series.html?series=images)
-
 ![a chibi shiba inu smiling and sticking its tongue out with a yellow construction hat in a light blue box with "Blogs loading!" on a darker background](https://images.abbeyperini.com/shibas/cover.png)
 
 When I [updated the blog section of my portfolio site](/blog.html?blog=serverless), I realized I had a great opportunity to draw some cute SVGs and take my loading and error messages to the next level.

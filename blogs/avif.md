@@ -1,15 +1,5 @@
 ## What is AVIF?
 
-Knowledge Level: Evergreen
-
-Planted: 04/26/2022
-
-Last Tended: 04/27/2022
-
-Topics: [images](/topic.html?topic=images), [web development](/topic.html?topic=webDevelopment)
-
-Series: [Images](/series.html?series=images)
-
 ![a yellow flower in front of a red background with white numbers](https://images.abbeyperini.com/images-series/flower.JPG)
 
 When I was researching WebP, AVIF came up a lot as a newer alternative. What are the benefits in using this file type?

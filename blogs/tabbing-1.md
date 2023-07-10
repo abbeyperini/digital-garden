@@ -1,15 +1,5 @@
 ## Tabbing Tactfully
 
-Knowledge Level: Evergreen
-
-Planted: 08/08/2022
-
-Last Tended: 08/08/2022
-
-Topics: [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [HTML](/topic.html?topic=HTML)
-
-Series: [Tabbing](/series.html?series=tabbing)
-
 ![blue, pink, navy, and white keys with dessert icons and a clay Luna the cat key on a white mistel keyboard](https://images.abbeyperini.com/tabbing/keyboard.jpg)
 
 Try your hand at [HOCUS :FOCUS](https://focus.hteumeuleu.com/) or spend today tabbing instead of your typical mouse navigation. Frustrating? Let's talk about tabbing on the web.

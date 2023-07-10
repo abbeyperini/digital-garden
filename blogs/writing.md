@@ -1,15 +1,5 @@
 ## How I Structure My Writing
 
-Knowledge Level: Evergreen
-
-Planted: 11/21/2021
-
-Last Tended: 02/06/2023
-
-Topics: [writing](/topic.html?topic=writing)
-
-Series: [On Writing](/series.html?series=onWriting)
-
 ![the tips of colored pencils on a white background](https://images.abbeyperini.com/pencils.jpeg)
 
 @adiatiayu asked how I write more than 1,000 words on a topic, and the short answer is practice. I was lucky to go through schooling that focused on writing from an early age. I lost count of how many research papers I've written a long time ago. When I reached college, I spent most of my semesters involved in psychological research, and with that, writing APA format papers. I am an author on the research paper "How are Perceived Stigma, Self-Stigma, and Self-Reliance Related to Treatment-Seeking? A Three-Path Model" published in the Psychiatric Rehabilitation Journal in June 2014.

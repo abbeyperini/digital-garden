@@ -1,15 +1,5 @@
 ## Sourcing Images and Optimizing Them for the Web
 
-Knowledge Level: Evergreen
-
-Planted: 08/30/2021
-
-Last Tended: 02/16/2022
-
-topics: [images](/topic.html?topic=images), [web development](/topic.html?topic=webDevelopment)
-
-Series: [Images](/series.html?series=images)
-
 ![mountain range in Mount Rainier National Park](https://images.abbeyperini.com/images-series/cover.webp)
 
 When I sat down to write about my [Shiba Inu SVGs](/blog.html?blog=shibas), it became clear that I was writing two blogs. One, a tutorial for SVGs in React, and this one, demystifying sourcing images for your website. Here are the topics this article will cover:

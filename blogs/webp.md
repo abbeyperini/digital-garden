@@ -1,15 +1,5 @@
 ## What is WebP?
 
-Knowledge Level: Evergreen
-
-Planted: 04/26/2022
-
-Last Tended: 04/26/2022
-
-Topics: [images](/topic.html?topic=images), [web development](/topic.html?topic=webDevelopment)
-
-Series: [Images](/series.html?series=images)
-
 ![a green bush with many delicate white flowers](https://images.abbeyperini.com/images-series/flowers.JPG)
 
 I `right click > save` images off the web constantly, and I've started coming across `.webp` file types more and more. What is this Google-made [open source](https://www.webmproject.org/code/#:~:text=webmproject/bitstream%2Dguide/-,WebP%20Repositories,-libwebp%3A%20WebP%20Image) image file format?

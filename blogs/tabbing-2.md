@@ -1,15 +1,5 @@
 ## Troubleshooting Tabbing
 
-Knowledge Level: Evergreen
-
-Planted: 08/22/2022
-
-Last Tended: 06/22/2023
-
-Topics: [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [HTML](/topic.html?topic=HTML)
-
-Series: [Tabbing](/series.html?series=tabbing)
-
 ![sage, light green, pink, and white keys with swords, snakes, leaves, and moons and a clay Luna the cat key on a white mistel keyboard](https://images.abbeyperini.com/tabbing/keyboard-2.jpg)
 
 I've been tackling tabbing trouble a lot recently, so I thought I'd share some debugging tips.

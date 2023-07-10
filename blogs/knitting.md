@@ -2,14 +2,6 @@
 
 ### or how I learned programmers owe it all to fiber
 
-Knowledge Level: Evergreen
-
-Planted: 02/10/2021
-
-Last Tended: 11/22/2021
-
-Topics: [coding](/topic.html?topic=coding)
-
 ![an ocean blue knit sweater with an octopus pattern in off-white](https://images.abbeyperini.com/knitting/octopus.jpeg)
 
 Knit by Abbey Perini, pattern by Maia E. Sirnes, yarn is Malabrigo Yarn Rios

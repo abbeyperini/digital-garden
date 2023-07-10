@@ -1,15 +1,5 @@
 ## #gitPanic - Removing and Restoring Work
 
-Knowledge Level: Evergreen
-
-Planted: 11/22/2022
-
-Last Tended: 11/22/2022
-
-Topics: [git](/topic.html?topic=git), [coding](/topic.html?topic=coding)
-
-Series: [#gitPanic](/series.html?series=gitPanic)
-
 ![The hulk in a lab with his arms outstretched captioned git reset --hard time travel!](https://images.abbeyperini.com/gitPanic/reset.jpg)
 
 When you think you've lost work, don't #gitPanic. As far as your commit history goes, git may as well be Ironborn, repeating "what is dead may never die."

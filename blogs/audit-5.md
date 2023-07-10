@@ -1,15 +1,5 @@
 ## Blog Page Accessibility Deep Dive
 
-Knowledge Level: Evergreen
-
-Planted: 11/20/2021
-
-Last Tended: 11/28/2021
-
-Topics: [accessibility audit](/topic.html?topic=audit), [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [CSS](/topic.html?topic=CSS)
-
-Series: [Accessibility Audit](/series.html?series=audit)
-
 ![abbeyperini.dev with the blog styling looking like a disaster](https://images.abbeyperini.com/audit-series/code-unstyled.png)
 
 Accessibility Auditing My Portfolio Site - Part 5

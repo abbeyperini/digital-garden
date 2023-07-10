@@ -1,15 +1,5 @@
 ## From Research to Writing Reference Material
 
-Knowledge Level: Evergreen
-
-Planted: 02/07/2023
-
-Last Tended: 02/07/2023
-
-Topics: [writing](/topic.html?topic=writing)
-
-Series: [On Writing](/series.html?series=onWriting)
-
 ![the tips of colored pencils on a white background](https://images.abbeyperini.com/pencils.jpeg)
 
 I don't know about you, but I send a lot of links to my coworkers about why I've chosen to build something a certain way. Here's how to take that kind of research and turn it into reference material.

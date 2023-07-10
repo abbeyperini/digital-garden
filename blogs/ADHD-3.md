@@ -1,15 +1,5 @@
 ## Coding and ADHD - Can't Keep Going
 
-Knowledge Level: Evergreen
-
-Planted: 06/02/2022
-
-Last Tended: 06/22/2022
-
-Topics: [ADHD](/topic.html?topic=ADHD), [neurodiversity](/topic.html?topic=neurodiversity), [coding](/topic.html?topic=coding)
-
-Series: [Coding and ADHD](/series.html?series=ADHD)
-
 ![A logo that looks like a brain with a threaded needle attached to it Coding and ADHD](https://images.abbeyperini.com/ADHD-series/coding&adhd.png)
 
 The idea that anyone should be able to sit down and focus for four hours on command is a dangerous myth. Any brain requires glucose to keep your brain going and breaks to keep you engaged. ADHD brains add an extra hurdle when you're trying to focus on a schedule. You'll have to keep pivoting in your strategies. What works today may not work tomorrow and might begin to work again a month from now.

@@ -1,15 +1,5 @@
 ## Accessibility Auditing My Portfolio Site - Part 6
 
-Knowledge Level: Evergreen
-
-Planted: 11/28/2021
-
-Last Tended: 05/19/2022
-
-Topics: [accessibility audit](/topic.html?topic=audit), [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [CSS](/topic.html?topic=CSS)
-
-Series: [Accessibility Audit](/series.html?series=audit)
-
 ![Frodo on Mount Doom with fire in the background captioned it's done it's over now](https://images.abbeyperini.com/audit-series/done.jpg)
 
 Read [Part 1 - The Audit](/blog.html?blog=audit-1), [Part 2 - Quick Fixes](/blog.html?blog=audit-2), [Part 3 - Dark Mode Toggle](/blog.html?blog=audit-3), [Part 4 - Blog Preview Component](/blog.html?blog=audit-4) and [Part 5 - Blog Page Deep Dive](/blog.html?blog=audit-5).

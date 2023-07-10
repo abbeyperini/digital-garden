@@ -2,14 +2,6 @@
 
 ### Or How I Stopped Self-Rejecting and Embraced Self-Promotion
 
-Planted: 05/10/2021
-
-Last Tended: 11/28/2021
-
-Topics: [career](/topic.html?topic=career)
-
-Series: [Career](/series.html?series=career)
-
 ![Moira Rose from Schitt's creek saying "one must champion oneself and say I am ready for this." with emphatic nodding and hand gestures](https://images.abbeyperini.com/career-series/champion.png)
 
 [Watch the recording of the Virtual Coffee Brownbag talk on Youtube](https://youtu.be/NVaZu8--4p0)

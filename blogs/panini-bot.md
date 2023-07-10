@@ -1,13 +1,5 @@
 ## Panini Bot — Making a Discord Bot with Replit, UptimeRobot, Node.js, Express, and Eris
 
-Knowledge Level: Evergreen
-
-Planted: 06/02/2021
-
-Last Tended: 11/28/2021
-
-Topics: [web development](/topic.html?topic=webDevelopment)
-
 ![Tweet by Vax Een @_jovanrb "Replacing the word "pandemic" with incorrect variations is now 90% of how I've been coping with this panasonic"](https://images.abbeyperini.com/panini-bot/twitter.webp)
 
 As soon as I saw [Emi's tweet](https://twitter.com/TheCodePixi/status/1387755394722844672?s=20) about the open source [Pandera package](https://www.npmjs.com/package/pandera), I knew it had to be a Discord bot, so here's how I built a bot that will insert a new word starting with 'p' for every instance of 'pandemic' in a Discord message.

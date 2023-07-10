@@ -1,15 +1,5 @@
 ## Toggle Dark Mode in React
 
-Knowledge Level: Evergreen
-
-Planted: 03/05/2021
-
-Last Tended: 04/20/2022
-
-Topics: [dark mode toggle](/topic.html?topic=darkModeToggle), [CSS](/topic.html?topic=CSS), [react](/topic.html?topic=react), [web development](/topic.html?topic=webDevelopment)
-
-Series: [Dark Mode Toggle](/series.html?series=toggle)
-
 ![screenshot of Abbey's portfolio site in both light and dark mode](https://images.abbeyperini.com/toggle/cover.png)
 
 When I rebuilt my [portfolio site](https://abbeyperini.dev), I knew I wanted to have some fun with the design, and a dark and light mode fit the bill. I enjoyed a lot of the discoveries I made during this project, but my favorite has to be the color changing SVGs. This tutorial assumes familiarity with React, and I am using v17.0.1 and functional components.

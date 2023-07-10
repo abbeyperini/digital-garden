@@ -1,13 +1,5 @@
 ## About My Digital Garden
 
-Knowledge Level: Evergreen
-
-Planted: 11/29/2022
-
-Last Tended: 11/29/2022
-
-Topics: [digital garden](/topic.html?topic=digitalGarden), [web development](/topic.html?topic=webDevelopment)
-
 ![an illustration of a green plant in a yellow planter](https://images.abbeyperini.com/digital-garden/plant-cover.png)
 
 The more I read about digital gardens, the more I wanted to build one, so I started drawing plants.

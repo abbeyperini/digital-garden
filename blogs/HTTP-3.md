@@ -1,15 +1,5 @@
 ## A Beginner's Guide to HTTP - Part 3: Requests
 
-Knowledge Level: Evergreen
-
-Planted: 02/22/2022
-
-Last Tended: 05/14/2022
-
-Topics: [web development](/topic.html?topic=webDevelopment)
-
-Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
-
 ![a picture of Dwight from the office captioned HTTP request? XMLHTTPREQUEST](https://images.abbeyperini.com/HTTP-series/dwight.png)
 
 In this part of the series, I'll demonstrate generating HTTP requests from a simple React app using XHR, Fetch, and Axios. You can view all of the code in the [Github repository](https://github.com/abbeyperini/HTTP101). After this, in A [Beginner's Guide to HTTP - Part 4: APIs](/blog.html?blog=HTTP-4), we'll have some fun with APIs other people have built. Finally, we'll discuss authentication and authorization in [A Beginner's Guide to HTTP - Part 5: Authentication](/blog.html?blog=HTTP-5).

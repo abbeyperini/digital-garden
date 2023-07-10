@@ -1,15 +1,5 @@
 ## Accessibility Auditing My Portfolio Site - Part 4
 
-Knowledge Level: Evergreen
-
-Planted: 11/11/2021
-
-Last Tended: 08/10/2022
-
-Topics: [accessibility audit](/topic.html?topic=audit), [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [CSS](/topic.html?topic=CSS)
-
-Series: [accessibility Audit](/series.html?series=audit)
-
 ![screenshot of the blog component on Abbey's portfolio site](https://images.abbeyperini.com/audit-series/blog.png)
 
 Read [Part 1 - The Audit](/blog.html?blog=audit-1), [Part 2 - Quick Fixes](/blog.html?blog=audit-2), and [Part 3 - Dark Mode Toggle](/blog.html?blog=audit-3).

@@ -1,15 +1,5 @@
 ## We've Been Here Since the Beginning
 
-Knowledge Level: Evergreen
-
-Planted: 03/04/2022
-
-Last Tended: 06/23/2023
-
-Topics: [women in programming](/topic.html?topic=womenInProgramming)
-
-Series: [Women in Programming](/series.html?series=women)
-
 ![portrait of Ada Lovelace in front of her work](https://images.abbeyperini.com/women-in-programming/ada.jpeg)
 
 This is not a blog I anticipated writing. My plan was to let Women's History Month pass me by as much as possible.

@@ -1,15 +1,5 @@
 ## A Beginner's Guide to HTTP - Part 2: Responses
 
-Knowledge Level: Evergreen
-
-Planted: 02/16/2022
-
-Last Tended: 05/14/2022
-
-Topics: [web development](/topic.html?topic=webDevelopment)
-
-Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
-
 ![a young white boy in front of a retro computer with a thumbs up captioned 200 OK](https://images.abbeyperini.com/HTTP-series/200-ok.png)
 
 In this part of the series, I'll demonstrate generating HTTP responses from a simple Node.js Express server. You can view all of the code in the [Github repository](https://github.com/abbeyperini/HTTP101). After this, in [A Beginner's Guide to HTTP - Part 3: Requests](/blog.html?blog=HTTP-3), we'll generate request messages to get the responses we build here.

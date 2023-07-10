@@ -1,13 +1,5 @@
 ## A Walkthrough of Updating My Portfolio Site with Netlify Functions and the DEV API
 
-Knowledge Level: Evergreen
-
-Planted: 07/31/2021
-
-Last Tended: 11/28/2021
-
-Topics: [web development](/topic.html?topic=webDevelopment), [react](/topic.html?topic=react), [serverless](/topic.html?topic=serverless), [coding](/topic.html?topic=coding), [CSS](/topic.html?topic=CSS)
-
 ![screenshot of the blog component on Abbey's portfolio site](https://images.abbeyperini.com/serverless/blog.png)
 
 I realized, in talking to newer devs, that most of my blog posts are in a format that implies I followed a linear path from start to finish when building a project. When you're just starting out, it often feels like senior devs already know what the end result will look like when they start. While you, on the other hand, can't even name a place to begin. With that in mind, I wrote this post bit by bit as I was building. The result is a winding journey starting with how I chose this project and got started and ending with deployment, things I'd like to revisit, and Demo Day. In between lies code samples and the detours and motivations behind them.

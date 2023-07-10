@@ -1,13 +1,5 @@
 ## Semantic HTML: What, Why, and How
 
-Knowledge Level: Evergreen
-
-Planted: 03/15/2022
-
-Last Tended: 06/22/2023
-
-Topics: [HTML](/topic.html?topic=HTML), [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment)
-
 ![screenshot of codepen with a basic HTML page and { Your content here }](https://images.abbeyperini.com/HTML/your-content.png)
 
 TL;DR - Watch the [lightning talk version!](https://youtu.be/qYPq9Fd-SE4)

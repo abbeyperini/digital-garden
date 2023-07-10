@@ -1,15 +1,5 @@
 ## #gitPanic - Stash
 
-Knowledge Level: Evergreen
-
-Planted: 11/17/2022
-
-Last Tended: 11/22/2022
-
-Topics: [git](/topic.html?topic=git), [coding](/topic.html?topic=coding)
-
-Series: [#gitPanic](/series.html?series=gitPanic)
-
 ![Man at a rave looking like his mind had just been blown captioned git stash has multiple stashes](https://images.abbeyperini.com/gitPanic/git-stash-has.jpg)
 
 Just realized you've been working in the wrong branch? Forgot to pull before you started working? Think of git stash as stuffing your working directory in your pocket for later.

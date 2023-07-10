@@ -1,15 +1,5 @@
 ## Coding and ADHD - Where We Excel
 
-Knowledge Level: Evergreen
-
-Planted: 06/22/2022
-
-Last Tended: 06/22/2022
-
-Topics: [ADHD](/topic.html?topic=ADHD), [neurodiversity](/topic.html?topic=neurodiversity), [coding](/topic.html?topic=coding)
-
-Series: [Coding and ADHD](/series.html?series=ADHD)
-
 ![A logo that looks like a brain with a threaded needle attached to it Coding and ADHD](https://images.abbeyperini.com/ADHD-series/coding&adhd.png)
 
 While being aware of our struggles and finding healthy coping mechanisms are necessary, we receive enough negative messaging on a daily basis. This article is all about how ADHD traits can be a benefit when you're coding.

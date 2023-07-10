@@ -1,15 +1,5 @@
 ## #gitPanic - Files
 
-Knowledge Level: Evergreen
-
-Planted: 11/22/2022
-
-Last Tended: 06/23/2023
-
-Topics: [git](/topic.html?topic=git), [coding](/topic.html?topic=coding)
-
-Series: [#gitPanic](/series.html?series=gitPanic)
-
 ![black man gesturing at his eyes captioned look at me this is my repo now](https://images.abbeyperini.com/gitPanic/repo.jpg)
 
 I only learned about these commands because I was complaining about git not reliably tracking changes to files I made in the [GUI](https://www.gartner.com/en/information-technology/glossary/gui-graphical-user-interface#:~:text=A%20graphics%2Dbased%20operating%20system,Apple%20Macintosh%20in%20the%201980s.) (Finder, VS Code). Turns out git will always track file name changes, moving files, and deleting files ...if you tell it about them.

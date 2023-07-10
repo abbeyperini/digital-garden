@@ -1,13 +1,5 @@
 ## Live Regions in React
 
-Knowledge Level: Evergreen
-
-Planted: 06/26/2023
-
-Last Tended: 06/28/2023
-
-Topics: [accessibility](/topic.html?topic=accessibility), [HTML](/topic.html?topic=HTML), [react](/topic.html?topic=react)
-
 ![A lush green forest in the background, a green brown pond in the middle ground, a green lawn in the foreground and a water bird at the edge of the pond](https://images.abbeyperini.com/live-regions/cover.jpg)
 
 1. [What is a Live Region?](#what-is-a-live-region)

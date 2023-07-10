@@ -1,15 +1,5 @@
 ## An Accessible Dark Mode Toggle in React
 
-Knowledge Level: Evergreen
-
-Planted: 11/06/2021
-
-Last Tended: 11/28/2021
-
-Topics: [accessibility audit](/topic.html?topic=audit), [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [dark mode toggle](/topic.html?topic=darkModeToggle), [CSS](/topic.html?topic=CSS)
-
-Series: [Dark Mode Toggle](/series.html?series=toggle), [accessibility audit](/series.html?series=audit)
-
 ![screenshot of the top portion of Abbey's portfolio site with toggle focused](https://images.abbeyperini.com/audit-series/dark-focus.png)
 
 Accessibility Auditing My Portfolio Site - Part 3

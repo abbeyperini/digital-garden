@@ -1,15 +1,5 @@
 ## What are Favicons?
 
-Knowledge Level: Evergreen
-
-Planted: 05/08/2022
-
-Last Tended: 05/09/2022
-
-Topics: [images](/topic.html?topic=images), [design](/topic.html?topic=design), [web development](/topic.html?topic=webDevelopment)
-
-Series: [Images](/series.html?series=images)
-
 ![Abbey Perini Full-Stack Web Developer with a logo that looks like a brain with a threaded needle coming off of it](https://images.abbeyperini.com/images-series/banner.png)
 
 I mentioned `<link rel="icon" type="image/x-icon" href="/images/favicon.ico">` as part of webpage SEO in [Semantic HTML: What, Why, and How](/blog.html?blog=HTML). Someone asked a great question - why does the MIME type in the `<link>` tag `type=""` attribute have to be `image/x-icon`? The answer is it doesn't, but it's still a good idea to include an ICO file. Let's dig into how to leverage favicons to their fullest.

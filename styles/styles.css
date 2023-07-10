@@ -168,6 +168,32 @@ footer {
   text-align: left;
 }
 
+/* blogs */
+
+.blog-container {
+  font-family: "Space Mono", monospace;
+  background-color: var(--content-background);
+  color: var(--content-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  max-width: 80vw;
+  margin: 3% auto;
+  padding: 3%;
+  font-size: 1.25rem;
+}
+
+.topics-list, .series-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.topics-list li, .series-list li {
+  margin: 5px;
+}
+
 /* buttons and links */
 
 .button {

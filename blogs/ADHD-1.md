@@ -1,15 +1,5 @@
 ## Coding and ADHD - ADHD Brains
 
-Knowledge Level: Evergreen
-
-Planted: 05/31/2022
-
-Last Tended: 06/22/2022
-
-Topics: [ADHD](/topic.html?topic=ADHD), [neurodiversity](/topic.html?topic=neurodiversity), [coding](/topic.html?topic=coding)
-
-Series: [Coding and ADHD](/series.html?series=ADHD)
-
 ![A logo that looks like a brain with a threaded needle attached to it Coding and ADHD](https://images.abbeyperini.com/ADHD-series/coding&adhd.png)
 
 To me, my Attention-Deficit / Hyperactivity Disorder (ADHD) and my ability to write code are irrevocably linked. I had suspected I had ADHD for years, but only went through the formal diagnosis process in September 2021. One of the primary reasons I went to get tested was when I was interested in a coding problem, I could lose 6+ hours, often missing meetings and meals.

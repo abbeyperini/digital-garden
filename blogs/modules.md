@@ -1,13 +1,5 @@
 ## TL;DR CommonJS vs ESM
 
-Knowledge Level: Evergreen
-
-Planted: 01/31/2023
-
-Last Tended: 02/06/2023
-
-Topics: [web development](/topic.html?topic=webDevelopment)
-
 ![Boromir from Lord of the Rings saying one does not simply export node.js modules](https://images.abbeyperini.com/modules.png)
 
 In a [Node.js](https://nodejs.org/en/) project, you're likely to run into both CommonJS and ESM modules. Here's how to tell these module types apart at a glance.

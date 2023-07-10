@@ -1,15 +1,5 @@
 ## What is JPEG XL?
 
-Knowledge Level: Evergreen
-
-Planted: 04/27/2022
-
-Last Tended: 04/27/2022
-
-Topics: [images](/topic.html?topic=images)
-
-Series: [Images](/series.html?series=images)
-
 ![a lush green forest](https://images.abbeyperini.com/images-series/forest.JPG)
 
 The JPEG has been an integral image format since 1992, but the Joint Photographic Experts Group didn't stop there.

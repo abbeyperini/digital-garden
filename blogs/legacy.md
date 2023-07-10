@@ -1,13 +1,5 @@
 ## 8 Things I've Learned Working in a Legacy Codebase
 
-Knowledge Level: Evergreen
-
-Planted: 09/16/2021
-
-Last Tended: 06/16/2023
-
-Topics: [coding](/topic.html?topic=coding)
-
 ![The Jurassic Park logo edited to say "Legacy Code". Captioned "It Worked For 65 Million Years. No One Knows How. No One Knows Why."](https://images.abbeyperini.com/legacy/cover.png)
 
 My first dev job threw me into a huge legacy codebase. My last big ticket involved getting a modern library to work within the deprecated UI framework it uses. After that journey, I wanted to share some tips I've learned along the way.

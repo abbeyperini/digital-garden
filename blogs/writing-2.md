@@ -1,15 +1,5 @@
 ## Writing a Technical Blog
 
-Knowledge Level: Evergreen
-
-Planted: 11/30/2022
-
-Last Tended: 02/06/2023
-
-Topics: [writing](/topic.html?topic=writing), [coding](/topic.html?topic=coding)
-
-Series: [On Writing](/series.html?series=onWriting)
-
 ![the tips of colored pencils on a white background](https://images.abbeyperini.com/pencils.jpeg)
 
 I wrote about [how I structure my writing in general](/blog.html?blog=writing) last November, as part of the 14,584 words I wrote for [Virtual Coffee](https://virtualcoffee.io/)'s blogging monthly challenge. This will be my 14th blog this November, and I found myself reflecting on how I get my ideas and turn them into published technical blogs.

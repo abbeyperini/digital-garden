@@ -1,13 +1,5 @@
 ## Coding for Fun on Top of Coding Professionally
 
-Knowledge Level: Evergreen
-
-Planted: 01/04/2022
-
-Last Tended: 01/04/2022
-
-Topics: [career](/topic.html?topic=career), [coding](/topic.html?topic=coding)
-
 ![this is fine meme, but instead of the dog being surrounded by fire, its surrounded by house plants](https://images.abbeyperini.com/coding/plants.jpeg)
 
 ### TL;DR

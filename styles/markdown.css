@@ -1,16 +1,9 @@
 /* blog */
 
 .markdown-body {
-  font-family: "Space Mono", monospace;
-  background-color: var(--content-background);
-  color: var(--content-text);
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
-  margin-bottom: 2%;
-  max-width: 80vw;
-  margin: 3% auto;
 }
 
 p, li, pre, h1, h2, h3 {
@@ -23,7 +16,6 @@ h1 {
 
 p, li {
   text-align: left;
-  font-size: 1.25em;
 }
 
 li {

@@ -1,15 +1,5 @@
 ## Coding and ADHD - Can't Start
 
-Knowledge Level: Evergreen
-
-Planted: 05/31/2022
-
-Last Tended: 06/22/2022
-
-Topics: [ADHD](/topic.html?topic=ADHD), [neurodiversity](/topic.html?topic=neurodiversity), [coding](/topic.html?topic=coding)
-
-Series: [Coding and ADHD](/series.html?series=ADHD)
-
 ![A logo that looks like a brain with a threaded needle attached to it Coding and ADHD](https://images.abbeyperini.com/ADHD-series/coding&adhd.png)
 
 I want to start the task. I know I need to start the task. Why can't I start the task?

@@ -1,15 +1,5 @@
 ## A Beginner's Guide to HTTP - Part 5: Authentication
 
-Knowledge Level: Evergreen
-
-Planted: 05/14/2022
-
-Last Tended: 06/21/2023
-
-Topics: [web development](/topic.html?topic=webDevelopment)
-
-Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
-
 ![Gandalf holding a sword and staff captioned HTTP 403 Forbidden you shall not pass](https://images.abbeyperini.com/HTTP-series/403-Forbidden.png)
 
 It's good for APIs to put limits on who can make requests to their server. Unfortunately for the developer building a side project, this necessary security often provides extra hurdles. Let's talk about the common ways to get your app authenticated for public APIs.

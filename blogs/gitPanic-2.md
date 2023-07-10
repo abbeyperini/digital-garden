@@ -1,15 +1,5 @@
 ## #gitPanic - Merging and Rebasing
 
-Knowledge Level: Evergreen
-
-Planted: 11/07/2022
-
-Last Tended: 11/16/2022
-
-Topics: [git](/topic.html?topic=git), [github](/topic.html?topic=github), [coding](/topic.html?topic=coding)
-
-Series: [#gitPanic](/series.html?series=gitPanic)
-
 ![One astronaut staring at git and saying "There's a conflict with my branch?" andother astronaut behind them with a gun says "Always has been"](https://images.abbeyperini.com/gitPanic/conflict.jpeg)
 
 [The last blog](/blog.html?blog=gitPanic-1) covered adding your changes to a remote branch, but what if other developers are working in the repo at the same time as you? How do you add changes from one branch to another?

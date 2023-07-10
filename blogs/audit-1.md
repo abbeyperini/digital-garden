@@ -1,15 +1,5 @@
 ## Accessibility Auditing My Portfolio Site - Part 1
 
-Knowledge Level: Evergreen
-
-Planted: 11/02/2021
-
-Last Tended: 05/19/2022
-
-Topics: [accessibility audit](/topic.html?topic=audit), [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment)
-
-Series: [Accessibility Audit](/series.html?series=audit)
-
 ![screenshot of Abbey's portfolio site with FireFox DevTools open to the accessibility tab](https://images.abbeyperini.com/audit-series/DevTools.png)
 
 When I made my portfolio site, I put a lot of effort into following the accessibility standards I knew from [MDN's Getting Started with the Web guides](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) and other reading I had done. I felt a 100 Lighthouse score was a good indicator of how I was doing. I wanted to test with a screen reader and do some cross browser testing, but that all fell by the wayside when I got a job.

@@ -1,15 +1,5 @@
 ## Coding and ADHD - Can't Remember
 
-Knowledge Level: Evergreen
-
-Planted: 06/04/2022
-
-Last Tended: 06/22/2022
-
-Topics: [ADHD](/topic.html?topic=ADHD), [neurodiversity](/topic.html?topic=neurodiversity), [coding](/topic.html?topic=coding)
-
-Series: [Coding and ADHD](/series.html?series=ADHD)
-
 ![A logo that looks like a brain with a threaded needle attached to it Coding and ADHD](https://images.abbeyperini.com/ADHD-series/coding&adhd.png)
 
 Gabor Maté has described ADHD as "forgetting to remember the future." If it's not written down, I'm not getting it done.

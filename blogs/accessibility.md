@@ -1,13 +1,5 @@
 ## Accessibility and React
 
-Knowledge Level: Evergreen
-
-Planted: 01/07/2021
-
-Last Tended: 11/14/2021
-
-Topics: [accessibility](/topic.html?topic=accessibility), [web development](/topic.html?topic=webDevelopment), [react](/topic.html?topic=react)
-
 ![a black keyboard with keys backlit with rainbow lights on a desk with a pastel space deskmat and black mouse](https://images.abbeyperini.com/accessibility/keyboard.png)
 
 If you’ve ever read anything about HTML on Mozilla Developer Network, you’ve probably come across the phrase “semantic HTML.”

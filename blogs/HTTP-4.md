@@ -1,15 +1,5 @@
 ## A Beginner's Guide to HTTP - Part 4: APIs
 
-Knowledge Level: Evergreen
-
-Planted: 04/22/2022
-
-Last Tended: 05/14/2022
-
-Topics: [web development](/topic.html?topic=webDevelopment)
-
-Series: [A Beginner's Guide to HTTP](/series.html?series=HTTP)
-
 ![bored-looking white cat with a small mouth captioned 200 OK](https://images.abbeyperini.com/HTTP-series/200.jpeg)
 
 Now that we've covered [how HTTP messages work](/blog.html?blog=HTTP-1) and how to generate [requests](/blog.html?blog=HTTP-3) and [responses](/blog.html?blog=HTTP-2) in JavaScript, let's talk about the real world applications of using HTTP in your web app. This part of the series will cover evaluating APIs other people have built and getting their data on your page. I'll be covering authentication in [part 5](/blog.html?blog=HTTP-5).

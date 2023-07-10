@@ -1,15 +1,5 @@
 ## #gitPanic - Git 101
 
-Knowledge Level: Evergreen
-
-Planted: 11/04/2022
-
-Last Tended: 11/18/2022
-
-Topics: [git](/topic.html?topic=git), [github](/topic.html?topic=github), [coding](/topic.html?topic=coding)
-
-Series: [#gitPanic](/series.html?series=gitPanic)
-
 ![programmers and dark souls players shaking hands labelled git gud](https://images.abbeyperini.com/gitPanic/gud.jpg)
 
 Look, git is hard, and it's almost inescapable in software development today.  

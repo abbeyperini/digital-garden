@@ -1,15 +1,5 @@
 ## Git Commit Message Template in Terminal and VS Code
 
-Knowledge Level: Evergreen
-
-Planted: 05/17/2022
-
-Last Tended: 11/04/2022
-
-Topics: [git](/topic.html?topic=git), [coding](/topic.html?topic=coding)
-
-Series: [#gitPanic](/series.html?series=gitPanic)
-
 ![tweet by amy nguyen me playing video games: save every five minutes me writing code: git commit -am "some changes" (+647, -1049)](https://images.abbeyperini.com/gitPanic/some-changes.webp)
 
 Recently I've been trying to write [better commit messages](https://cbea.ms/git-commit/). With my ADHD, my motto is always be writing it down, so I was delighted when my coworker told me about git commit message templates.

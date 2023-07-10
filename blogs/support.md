@@ -1,15 +1,5 @@
 ## 8 Ways to Support Women Developers
 
-Knowledge Level: Evergreen
-
-Planted: 03/08/2023
-
-Last Tended: 06/23/2023
-
-Topics: [women in programming](/topic.html?topic=womenInProgramming)
-
-Series: [Women in Programming](/series.html?series=women)
-
 ![Dolly Parton sitting and typing at a typewriter - image from the movie Nine to Five](https://images.abbeyperini.com/women-in-programming/dollypartonninetofive.jpg)
 
 Last year, in [We've Been Here Since the Beginning](/blog.html?blog=beginning), I wrote about how it felt to be constantly othered, assumed to be less competent, and assumed to be a diversity hire. This International Women's Day, I have regained a teensy bit of optimism, so it's all about how to support the women developers in your life. Basically, if you see something, say something.

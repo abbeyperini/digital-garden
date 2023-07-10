@@ -1,15 +1,5 @@
 ## What is ICO?
 
-Knowledge Level: Evergreen
-
-Planted: 05/03/2022
-
-Last Tended: 06/09/2022
-
-topics: [images](/topic.html?topic=images)
-
-Series: [Images](/series.html?series=images)
-
 ![a rocky river in a lush green forest](https://images.abbeyperini.com/images-series/river.jpeg)
 
 I didn't even know about this image file format until I went to make my first favicon. What's the deal with ICO?
