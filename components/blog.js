@@ -38,8 +38,6 @@ class Blog extends HTMLElement {
 
     this.innerHTML = (allBlogs[blogName].series.length > 0) ? `${topHTML}${seriesList}</div>${blog}</div>` : `${topHTML}</div>${blog}</div>`;
     this.setAttribute("class", "blog-component");
-    this.setAttribute("id", "blog");
-    this.setAttribute("title", allBlogs[blogName].title);
     const pageTitle = `${allBlogs[blogName].title} by Abbey Perini`;
     document.title = pageTitle;
     document.querySelector('meta[property="og:title"]').setAttribute("content", pageTitle);

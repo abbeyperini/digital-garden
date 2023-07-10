@@ -82,7 +82,9 @@ main {
   margin-top: -1px;
 }
 
-.construction {
+/* homepage */
+
+.welcome, .latest-container, .series-container, .topic-container {
   background-color: var(--content-background);
   color: var(--content-text);
   margin: auto;
@@ -90,6 +92,16 @@ main {
   padding: 2%;
   max-width: 50vw;
   margin: 10% auto;
+}
+
+.latest-container, .series-container, .topic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-component {
+  margin: 1%;
 }
 
 /* header/footer */

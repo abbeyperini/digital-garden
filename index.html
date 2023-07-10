@@ -33,6 +33,7 @@
     <script src="../js/theme.js" type="text/javascript" defer></script>
     <script src="../components/header.js" type="text/javascript" defer></script>
     <script src="../components/footer.js" type="text/javascript" defer></script>
+    <script src="../components/preview.js" type="text/javascript" defer></script>
     <script async src="https://rum.cronitor.io/script.js"></script>
     <script>
       window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
@@ -42,10 +43,25 @@
   <body>
     <header-component></header-component>
     <main>
-      <div class="construction">
-        <h1>Digital Garden Coming Soon!</h1>
-        <img src="https://images.abbeyperini.com/shibas/construction-shiba-inu.png" alt="shiba inu in a construction hat sticking its tongue out" width="100px;"/>
-        <p>For now, you can read <a href="/all-writing.html">all of my writing in chronological order</a>.</p>
+      <div class="welcome">
+        <h1>Welcome to the Garden!</h1>
+        <img src="https://images.abbeyperini.com/dirt-shiba.png" alt="shiba inu in a gardening hat smirking, covered in dirt, and standing over a sad, knocked-over plant" width="100px;"/>
+        <p>Dig through my articles individually, by topic, or by series.</p>
+      </div>
+      <div class="latest-container">
+        <h2>Planted Most Recently</h2>
+        <preview-component blog="live-regions"></preview-component>
+        <preview-component blog="design"></preview-component>
+        <preview-component blog="color-scheme"></preview-component>
+        <preview-component blog="support"></preview-component>
+      </div>
+      <div class="series-container">
+        <h2>Coding and ADHD Series</h2>
+        <preview-component series="ADHD"></preview-component>
+      </div>
+      <div class="topic-container">
+        <h2>Articles About Career</h2>
+        <preview-component topic="career"></preview-component>
       </div>
     </main>
     <footer-component></footer-component>
