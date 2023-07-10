@@ -48,14 +48,6 @@
       window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
       cronitor('config', { clientKey: '71d4d4a9cbb3078f61bc7a29ebedfd2d' });
     </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const blog = document.getElementById("topic");
-        const title = blog.getAttribute("title");
-        document.title = title;
-        document.querySelector('meta[property="og:title"]').setAttribute("content", title);
-      });
-    </script>
   </head>
   <body>
     <header-component></header-component>
