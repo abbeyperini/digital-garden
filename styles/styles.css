@@ -185,13 +185,27 @@ footer {
   font-size: 1.25rem;
 }
 
+.metadata-container {
+  border: 3px solid var(--content-text);
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.metadata-container p, ul {
+  height: 40px;
+}
+
+.topics-container, .series-container {
+  display: flex;
+  align-items: center;
+}
+
 .topics-list, .series-list {
   display: flex;
   list-style-type: none;
-}
-
-.topics-list li, .series-list li {
-  margin: 5px;
 }
 
 /* buttons and links */

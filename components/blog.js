@@ -21,7 +21,7 @@ class Blog extends HTMLElement {
       }
       return `<li><a href="/topic.html?topic=${topic}">${linkText}</a></li>`
     });
-    const topicsList = `<p>Topics:</p><ul class="topics-list">${topicsLinks.join("")}</ul>`
+    const topicsList = `<div class="topics-container"><p>Topics:</p><ul class="topics-list">${topicsLinks.join("")}</ul></div>`
     let seriesList = null;
     if (allBlogs[blogName].series.length > 0) {
       const allSeries = data.series;
@@ -32,16 +32,11 @@ class Blog extends HTMLElement {
         }
         return `<li><a href="/series.html?series=${series}">${linkText}</a></li>`;
       })
-      seriesList = `<p>Series:</p><ul class="series-list">${seriesLinks.join("")}</ul>`;
+      seriesList = `<div class="series-container"><p>Series:</p><ul class="series-list">${seriesLinks.join("")}</ul></div>`;
     }
-    const topHTML = `<h1 class="title">${allBlogs[blogName].title} by Abbey Perini</h1>
-    <div class="blog-container">
-      <p>Knowledge Level: ${allBlogs[blogName]["knowledge-level"]}</p>
-      <p>Planted: ${new Date(allBlogs[blogName].planted).toDateString()}
-      <p>Last Tended: ${new Date(allBlogs[blogName]["last-tended"]).toDateString()}
-      ${topicsList}`;
+    const topHTML = `<h1 class="title">${allBlogs[blogName].title} by Abbey Perini</h1><div class="blog-container"><div class="metadata-container"><p>Knowledge Level: ${allBlogs[blogName]["knowledge-level"]}</p><p>Planted: ${new Date(allBlogs[blogName].planted).toDateString()}<p>Last Tended: ${new Date(allBlogs[blogName]["last-tended"]).toDateString()}${topicsList}`;
 
-    this.innerHTML = (allBlogs[blogName].series.length > 0) ? `${topHTML}${seriesList}${blog}</div>` : `${topHTML}${blog}</div>`;
+    this.innerHTML = (allBlogs[blogName].series.length > 0) ? `${topHTML}${seriesList}</div>${blog}</div>` : `${topHTML}</div>${blog}</div>`;
     this.setAttribute("class", "blog-component");
     this.setAttribute("id", "blog");
     this.setAttribute("title", allBlogs[blogName].title);
