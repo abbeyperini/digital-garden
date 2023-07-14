@@ -6,8 +6,8 @@
   align-items: center;
 }
 
-p, li, pre, h1, h2, h3 {
-  max-width: 75vw;
+p, li, h1, h2, h3 {
+  max-width: 90vw;
 }
 
 h1 {
@@ -30,9 +30,16 @@ img {
 pre {
   background-color: var(--secondary-background);
   color: var(--secondary-text);
-  padding: 2%;
   text-align: left;
   overflow-y: auto;
+  max-width: 85vw;
+  padding: 2%;
+}
+
+code {
+  background-color: var(--secondary-background);
+  color: var(--secondary-text);
+  display: inline-block;
 }
 
 a:link, a:visited {
