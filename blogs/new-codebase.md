@@ -2,6 +2,8 @@
 
 ![Mufasa says to Simba "One day, son... All this legacy code will be yours"](https://images.abbeyperini.com/new-codebase/simba.jpg)
 
+[Watch the talk version on The Monthly Dev](https://www.youtube.com/watch?v=XWW1hQEnERQ)
+
 Whether it's contributing to open source or starting a new job, the first step is familiarizing yourself with the codebase, and it can be daunting. Here are some tips to help you hit the ground running.
 
 ### 1. Don't Panic
@@ -77,6 +79,8 @@ A great way to conceptualize any application is creating some high-level mental 
 I really love drawing flow charts and diagrams for applications. Tools like [miro](https://miro.com/) and [whimsical](https://whimsical.com/) make it easy and shareable. These can be as simple as a tree of components or files and how they relate to each other. Flow charts following the flow of data are super useful, especially if there are any integrations, micro-services, or [pub/sub](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern).
 
 You don't just have to use drawings to create these mental models. It's common to write out what each API endpoint does, including request and response structure.
+
+There are a few reasons I'm recommending manual methods for creating these diagrams and documentation. You may not have or be able to get permission to feed the code into a code visualization tool or AI. You may not have the requisite knowledge to recognize if the tool spit out some incorrect information. Finally, manually reorganizing all of the information you've learned so far is a different type of learning than reading a summary a tool made. Putting it all into context yourself increases the chances that the information will make it into your long-term memory.
 
 Once you're finished, ask a developer who is more familiar with the project if you missed anything.
 
