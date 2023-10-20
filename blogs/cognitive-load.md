@@ -2,6 +2,8 @@
 
 ![Michael Jackson and all the zombies on the Thriller music video set](https://images.abbeyperini.com/cognitive-load/thriller.png)
 
+Watch the talk in the live recording of [MagnoliaJS Day 2](https://www.youtube.com/live/mr6rWFgh_1E?si=1pPw-NKN03LL1UVg).
+
 There's lots of information out there about reducing cognitive load for users, but what about developers? Let's talk about Cognitive Load Theory, how some disabilities affect it, and designing a developer environment around it.
 
 ### What Is Cognitive Load?
