@@ -47,7 +47,7 @@ class Full extends HTMLElement {
       const blog = formatZero(blogName);
       const metaData = formatMetadata(blogName);
       const pageTitle = `${allBlogs[blogName].title} by Abbey Perini`;
-      const content = `<h1 class="title">${pageTitle} by Abbey Perini</h1><div class="blog-container">${metaData}${blog}</div>`;
+      const content = `<h1 class="title">${pageTitle}</h1><div class="blog-container">${metaData}${blog}</div>`;
       return { content, pageTitle };
     }
 
