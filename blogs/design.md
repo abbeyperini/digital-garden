@@ -113,6 +113,8 @@ Check out [A Trio of Buttons for a Bubbly, Colorful Site](/blog.html?blog=trio) 
 
 ![A login form with a primary, secondary, and set of tertiary buttons](https://images.abbeyperini.com/buttons-trio/all-buttons.png)
 
+Do not disable focus outlines. If you want to design your own, check out my [series on tabbing](/series.html/?series=tabbing).
+
 ### Links
 
 Where buttons are for actions, links take you to somewhere else on the site. This is another one where you'd be perfectly fine using the default. If you want to mess with the default link styling, make sure whatever you do is [still accessible](https://usability.yale.edu/web-accessibility/articles/links), and apply it to every link on the page.
