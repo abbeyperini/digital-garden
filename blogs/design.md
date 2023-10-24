@@ -69,7 +69,7 @@ Next, pick three non-grey colors with sufficient contrast. Here are some tools t
 - [accessibile palette](https://accessiblepalette.com/)
 - [reasonable colors](https://reasonable.work/colors/)
 
-If you enjoy picking your own colors, like with [coolors](https://coolors.co/), you can use a [contrast checker](https://webaim.org/resources/contrastchecker/).
+If you enjoy picking your own colors, like with [coolors](https://coolors.co/), you can use a [contrast checker](https://webaim.org/resources/contrastchecker/). You can also use [Realtime Colors](https://www.realtimecolors.com/) to test your color scheme on an existing site, with a built-in contrast checker.
 
 If the idea of picking colors sounds painful to you but you like math, here are a couple of ways to pick colors with math:
 
