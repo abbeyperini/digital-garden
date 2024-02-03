@@ -16,7 +16,7 @@ class Header extends HTMLElement {
             <li><a href="/about.html">About This Digital Garden</a></li>
             <li><a href="https://github.com/abbeyperini/digital-garden">The Digital Garden on Github</a></li>
             <li><a href="https://abbeyperini.dev">About Abbey</a></li>
-            <li><a href="https://abbey-perinis-stickers.printify.me/products">Stickers</a></li>
+            <li><a href="https://abbeyperini.shop/">Shop</a></li>
           </ul>
         </nav>
         <input onchange="switchTheme(event)" type="checkbox" id="theme-toggle" aria-label="Toggle Color Theme" class="theme-switch" />
