@@ -16,8 +16,7 @@ class Header extends HTMLElement {
             <li><a href="/about.html">About This Digital Garden</a></li>
             <li><a href="https://github.com/abbeyperini/digital-garden">The Digital Garden on Github</a></li>
             <li><a href="https://abbeyperini.dev">About Abbey</a></li>
-            <li><a href="https://abbey-perinis-stickers.printify.me/products">Stickers</a></li>
-            <li><a href="/speaking.html">Abbey's Speaking</a></li>
+            <li><a href="https://abbeyperini.shop/">Shop</a></li>
             <li><a href="/conference-wall.html>Conference Wall</a></li>
           </ul>
         </nav>
