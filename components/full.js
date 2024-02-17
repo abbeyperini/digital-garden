@@ -1,10 +1,10 @@
 class Full extends HTMLElement {
   constructor() {
     super();
+    this.setAttribute("class", "full-component");
   }
 
   async connectedCallback() {
-    this.setAttribute("class", "full-component");
     function formatMetadata(blogName) {
       const topicsLinks = allBlogs[blogName].topics.map((topic, index) => {
         let linkText = allTopics[topic].title

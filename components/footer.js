@@ -3,9 +3,6 @@ const year = new Date().getFullYear();
 class Footer extends HTMLElement {
   constructor() {
     super();
-  }
-
-  connectedCallback() {
     this.innerHTML = `
       <footer>
         <ul class="list footer-list">
