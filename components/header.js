@@ -1,9 +1,6 @@
 class Header extends HTMLElement {
   constructor() {
     super();
-  }
-
-  connectedCallback() {
     this.innerHTML = `
       <header>
         <a href="http://www.abbeyperini.com/" class="home-link">
