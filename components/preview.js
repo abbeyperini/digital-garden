@@ -1,6 +1,10 @@
 class Preview extends HTMLElement {
   constructor() {
     super();
+    const template = document.getElementById("preview").content;
+    this.attachShadow({mode: "open"});
+    this.shadowRoot.appendChild(template.cloneNode(true));
+    this.setAttribute("class", "preview-component");
   }
 
   async connectedCallback() {
@@ -30,6 +34,12 @@ class Preview extends HTMLElement {
       return 0;
     }
 
+    function attachListToShadowDom(listItems, shadowRoot) {
+      const unorderedList = document.createElement("ul");
+      unorderedList.innerHTML = `${listItems.join("")}`;
+      return shadowRoot.children[1].appendChild(unorderedList);
+    }
+
     if (attributes.sort) {
       const sortType = attributes.sort.value;
       let blogNames;
@@ -41,12 +51,14 @@ class Preview extends HTMLElement {
         links = mapBlogsToLinks(blogNames);
       }
       links.push(`<a href="/sort.html?sort=${sortType}">Read all</a>`);
-      return this.innerHTML = `<ul>${links.join("")}</ul>`;
+      attachListToShadowDom(links, this.shadowRoot);
     }
 
     if (attributes.blog) {
       const blogName = attributes.blog.value;
-      return this.innerHTML = `<h3><a href="/blog.html?blog=${blogName}">${allBlogs[blogName].title}</a></h3>`;
+      const heading = createElement("h3");
+      heading.innerHTML = `<a href="/blog.html?blog=${blogName}">${allBlogs[blogName].title}</a>`;
+      return this.shadowRoot.children[1].appendChild(heading);
     }
 
     if (attributes.series) {
@@ -58,7 +70,7 @@ class Preview extends HTMLElement {
       if (allSeries[series].articles.length <= 3) {
         seriesLinks.push(`<a href="/series.html?series=${series}">Read all</a>`);
       }
-      return this.innerHTML = `<ul>${seriesLinks.join("")}</ul>`;
+      attachListToShadowDom(seriesLinks, this.shadowRoot);
     }
 
     if (attributes.topic) {
@@ -70,10 +82,8 @@ class Preview extends HTMLElement {
       if (allTopics[topic].articles.length <= 3) {
         topicLinks.push(`<a href="/topic.html?topic=${topic}">Read all</a>`);
       }
-      return this.innerHTML = `<ul>${topicLinks.join("")}</ul>`;
+      attachListToShadowDom(topicLinks, this.shadowRoot);
     }
-
-    this.setAttribute("class", "preview-component");
   }
 }
 
