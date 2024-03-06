@@ -184,9 +184,9 @@ Literally never build your own button. Just use `<button>`.
 
 A screen reader treats buttons and links very differently. They have different built-in properties, behaviors, and states. Buttons made with `<a>` (which again, you should never do) will be grouped with other links.
 
-Buttons are for performing an action (unless that action is navigating to another page). Buttons and inputs are in tab order and can be triggered with space and enter for keyboard users. The `<button>` element automatically provides hover and focus states.
+Buttons are for performing an action (unless that action is navigating to another page). Buttons and inputs can be triggered with space and enter for keyboard users. The `<button>` element automatically provides hover and focus states.
 
-Anchor tags (`<a>`) are for links and [provide useful SEO](https://www.semrush.com/blog/what-is-anchor-text-and-how-can-i-optimize-it/). Anchor tags are not in tab order and are only triggered on enter.
+Anchor tags (`<a>`) are for links and [provide useful SEO](https://www.semrush.com/blog/what-is-anchor-text-and-how-can-i-optimize-it/). Anchor tags are only triggered on enter.
 
 #### Special mention: `<button>` vs `<input type="button">`
 
