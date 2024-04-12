@@ -1,4 +1,4 @@
-## 12 Things I learned During My First Year as a Professional Developer
+## 12 Things I Learned During My First Year as a Professional Developer
 
 ![cat laying on white towels and wearing a robe and hair towel with cucumbers over its eyes captioned one year already?](https://images.abbeyperini.com/1-year/already.jpeg)
 
