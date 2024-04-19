@@ -24,7 +24,7 @@ Take it from someone who's worked in three JavaScript frameworks in 3 years - if
 
 ### 4. Systems Thinking Will Get You Far
 
-Troubleshooting any bug requires system thinking. If you don't think about the plug in the wall, you won't think to check it when the toaster won't turn on. Being able to think about the system as a whole makes it easier to predict edge cases and design new features. Read more on how to create mental models for your codebase in [Getting Started in a New Codebase](/blog.html?blog=new-codebase)
+Troubleshooting any bug requires systems thinking. If you don't think about the plug in the wall, you won't think to check it when the toaster won't turn on. Being able to think about the system as a whole makes it easier to predict edge cases and design new features. Read more on how to create mental models for your codebase in [Getting Started in a New Codebase](/blog.html?blog=new-codebase)
 
 ### 5. Trying Before Asking Ensures It'll Never Be a Stupid Question
 
