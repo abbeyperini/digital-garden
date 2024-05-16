@@ -270,7 +270,7 @@ Here's where it gets fun. You can pass data from the child component to the slot
 
 ```HTML
 // counter component
-<script>
+<script setup>
   const count = ref(0);
   const counterMessage = count < 10 ? "Keep counting!" : "Great job!"
 </script>
@@ -322,7 +322,7 @@ This feature uses a slightly different syntax with named slots. Also, if you're 
   <template #default>
     <span>My Counter</span>
   </template>
-  <template #display="{number, message}"
+  <template #display="{number, message}">
     <p>{{number}}</p>
     <p>{{message}}</p>
   </template>
@@ -355,7 +355,7 @@ If you've ever used [`Array.prototype.map()`](https://developer.mozilla.org/en-U
 </template>
 
 // parent component
-<script>
+<script setup>
   const products = [
     {
       name: "Socks",
