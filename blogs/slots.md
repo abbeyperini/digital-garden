@@ -371,11 +371,11 @@ If you've ever used [`Array.prototype.map()`](https://developer.mozilla.org/en-U
 </script>
 <template>
   <list-component :listItems="products">
-    <template #item="{name, description, count}">
+    <template #item="{ item }">
       <div class="product">
-        <h3>{{ name }}</h3>
-        <p>{{ description }}</p>
-        <span class="count">{{ count }}</span>
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.description }}</p>
+        <span class="count">{{ item.count }}</span>
       </div>
     </template>
   </list-component>
