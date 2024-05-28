@@ -145,7 +145,7 @@ It will remove things like old branches you've deleted in the remote too.
 
 ### Pulling
 
-You could say pulling is the opposite of pushing. Like pushing, `git pull` is the same as `git pull [remote] [all branches]`. However, pushing, like fetching, only looks to update your commit information.
+You could say pulling is the opposite of pushing. Like pushing, `git pull` is the same as `git pull [remote] [current branch]`. However, pushing, like fetching, only looks to update your commit information.
 
 Running `git pull` is the same as running `git fetch` and `git merge` or `git rebase`. This is why you'll often see people merging changes into a branch by checking out branch-A and running `git pull origin branch-B`.
 
