@@ -85,12 +85,12 @@ In addition to the message, a commit contains information about your changes, wh
 git push
 ```
 
-This command is actually `git push [remote] [all the branches]` where remote is the remote repository in GitHub. If you clone a repository from GitHub, the default remote named "origin" is automatically set, so you don't have to specify those options. If I'm pushing from my branch named new-branch to the remote repository automatically set by GitHub, `git push` is the same as `git push origin`. You can [configure your remotes](https://www.atlassian.com/git/tutorials/syncing), so that you have multiple remotes, change your remotes if your remote repository moves, and more.
+This command is actually `git push [remote] [current branch]` where remote is the remote repository in GitHub. If you clone a repository from GitHub, the default remote named "origin" is automatically set, so you don't have to specify those options. If I'm pushing from my branch named new-branch to the remote repository automatically set by GitHub, `git push` is the same as `git push origin new-branch`. You can [configure your remotes](https://www.atlassian.com/git/tutorials/syncing), so that you have multiple remotes, change your remotes if your remote repository moves, and more.
 
-If you only want to update new-branch, you'd run
+If wanted to update all branches, you'd run
 
 ```bash
-git push origin new-branch
+git push --all
 ```
 
 ### Conclusion
