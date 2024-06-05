@@ -14,6 +14,7 @@ Watch the [JSDrops talk](https://www.youtube.com/watch?v=iXxNmjdqRUY&ab_channel=
 6. [Buttons](#buttons)
 7. [Links](#links)
 8. [Putting It All Together](#putting-it-all-together)
+9. [Why I Don't Recommend a CSS Framework](#why-i-dont-recommend-a-css-framework)
 
 ### Goals
 
@@ -148,7 +149,7 @@ This way, I'm able to reuse that work in the rest of the page, and it'll be easi
 
 When my Project component is ready, I can slap a bunch of Projects inside a container and use [CSS grid](https://css-tricks.com/snippets/css/complete-guide-grid/) to arrange the projects within it. (You can even get the code for your grid in seconds using Sarah Drasner's [CSS Grid Generator](https://cssgrid-generator.netlify.app/)!) Then, my main content section is done.
 
-## Why I Don't Recommend a CSS Framework
+### Why I Don't Recommend a CSS Framework
 
 I hear people recommend using CSS Frameworks so you can avoid learning CSS. Now that I've used both Tailwind and Bootstrap, I can tell you that you will need to learn CSS to use them effectively. Otherwise, your project will quickly become bloated with `<div>`s and utility class chaos. You also need to know how to override their inaccessible default styling like focus outlines and hover styles with insufficient color contrast and [the pointer cursor applied to all buttons](https://github.com/tailwindlabs/tailwindcss/issues/8961).
 
