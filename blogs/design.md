@@ -146,7 +146,15 @@ Use variables and naming conventions that will still be clear and easy to use if
 
 This way, I'm able to reuse that work in the rest of the page, and it'll be easier to maintain and modify for features I haven't thought of yet. For example, in my portfolio, I know I'll want a heading, description, screenshot, and link for each of my projects. I'll be able to use the link styles I made for the Header component. If I come back a year later and want to add a button that opens a modal with a walkthrough video, I'll be able to easily find and add my button styles too.
 
-When my Project component is ready, I can slap a bunch of Projects inside a container and use [CSS grid](https://css-tricks.com/snippets/css/complete-guide-grid/) to arrange the projects within it. Then, my main content section is done.
+When my Project component is ready, I can slap a bunch of Projects inside a container and use [CSS grid](https://css-tricks.com/snippets/css/complete-guide-grid/) to arrange the projects within it. (You can even get the code for your grid in seconds using Sarah Drasner's [CSS Grid Generator](https://cssgrid-generator.netlify.app/)!) Then, my main content section is done.
+
+## Why I Don't Recommend a CSS Framework
+
+I hear people recommend using CSS Frameworks so you can avoid learning CSS. Now that I've used both Tailwind and Bootstrap, I can tell you that you will need to learn CSS to use them effectively. Otherwise, your project will quickly become bloated with `<div>`s and utility class chaos. You also need to know how to override their inaccessible default styling like focus outlines and hover styles with insufficient color contrast and [the pointer cursor applied to all buttons](https://github.com/tailwindlabs/tailwindcss/issues/8961).
+
+Furthermore, I am trying to set you up for success and ease of use in the long term. CSS doesn't require you to install a package and manage its dependencies, updates, deprecation, or end-of-life. A semantic CSS class name like `button-primary` is searchable and quickly understood. A utility class string like `flex justify-center bg-blue font-med border border-black` is not as helpful.
+
+I understand that for a long time learning CSS was a painful prospect. However, with flex, grid, and excellent DevTools in Chrome and Firefox, now is the best time to learn CSS.
 
 ### Conclusion
 
