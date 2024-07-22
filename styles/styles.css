@@ -134,6 +134,22 @@ header {
   display: none;
 }
 
+#daisy path {
+  fill: var(--background);
+}
+
+.theme-switch {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  opacity: 0;
+}
+
+.theme-switch:focus + #daisy {
+  outline: 3px solid #E55360;
+  outline-offset: 2px;
+}
+
 /* homepage */
 .welcome {
   background-color: var(--content-background);
