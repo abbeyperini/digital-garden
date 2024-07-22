@@ -4,6 +4,12 @@
 
 - [A Brief History & Ethos of the Digital Garden by Maggie Appleton](https://maggieappleton.com/garden-history)
 
+## Running a Static Site locally
+
+Install [http-server](https://www.npmjs.com/package/http-server).
+
+Run `http-server -c-1` to run the server with caching disabled.
+
 ## Authors
 
 - **Abbey Perini** - [abbeyperini](https://github.com/abbeyperini)
