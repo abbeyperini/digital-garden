@@ -16,7 +16,7 @@ class Header extends HTMLElement {
             <li><a href="https://abbeyperini.shop/">Shop</a></li>
           </ul>
         </nav>
-        <label>
+        <label title="color mode toggle">
           <input onchange="switchTheme(event)" type="checkbox" id="theme-toggle" aria-label="Toggle Color Theme" class="theme-switch" />
           <svg
             width="75"

@@ -135,7 +135,7 @@ header {
 }
 
 #daisy path {
-  fill: var(--background);
+  fill: var(--content-background);
 }
 
 .theme-switch {
@@ -143,11 +143,6 @@ header {
   width: 1em;
   height: 1em;
   opacity: 0;
-}
-
-.theme-switch:focus + #daisy {
-  outline: 3px solid #E55360;
-  outline-offset: 2px;
 }
 
 /* homepage */
@@ -231,12 +226,25 @@ header a:hover, footer a:hover, header a:active, footer a:active {
   color: var(--active-link-text);
 }
 
-.home-link:hover .logo {
+a:focus {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 5px;
+}
+
+.home-link:hover .logo, .home-link:focus .logo {
   display: none;
 }
 
-.home-link:hover .logo-grey {
+.home-link:hover .logo-grey, .home-link:focus .logo-grey {
   display: inline;
+}
+
+.home-link:focus {
+  outline: none;
+}
+
+.theme-switch:focus + #daisy path, .theme-switch:hover + #daisy path {
+  fill: #FFFFFF;
 }
 
 /* about this garden */
