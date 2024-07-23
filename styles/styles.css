@@ -146,7 +146,7 @@ header {
 }
 
 /* homepage */
-.welcome {
+.welcome, .all-topics-series-containers {
   background-color: var(--content-background);
   color: var(--content-text);
   border-radius: 10px;

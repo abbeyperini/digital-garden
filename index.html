@@ -34,6 +34,7 @@
     <script src="../components/header.js" type="text/javascript" defer></script>
     <script src="../components/footer.js" type="text/javascript" defer></script>
     <script src="../components/preview.js" type="text/javascript" defer></script>
+    <script src="../components/linkList.js" type="text/javascript" defer></script>
     <script async src="https://rum.cronitor.io/script.js"></script>
     <script>
       window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
@@ -67,6 +68,12 @@
           <preview-component series="images"><span slot="title">Images Series</span></preview-component>
           <preview-component series="audit"><span slot="title">Accessibility Auditing My Portfolio Site Series</span></preview-component>
           <preview-component topic="womenInProgramming"><span slot="title">Articles About Women in Programming</span></preview-component>
+      </div>
+      <div class="all-topics-series-containers">
+          <h2>See All</h2>
+          <a href="/sort.html?sort=planted">All Blogs</a>
+          <link-list-component type="series"><span slot="title">All Series</span></link-list-component>
+          <link-list-component type="topic"><span slot="title">All Topics</span></link-list-component>
       </div>
     </main>
     <footer-component></footer-component>
@@ -114,6 +121,22 @@
       <div class="blog-list-container">
         <h2><slot name="title">default</slot></h2>
       </div>
+    </template>
+    <template id="link-list">
+      <style>
+        @import "../styles/styles.css";
+
+        li {
+          list-style-type: none;
+        }
+
+        details {
+          display: flex;
+        }
+      </style>
+        <details>
+          <summary><slot name="title">default</slot></summary>
+        </details>
     </template>
   </body>
 </html>
