@@ -4,7 +4,18 @@
 
 - [A Brief History & Ethos of the Digital Garden by Maggie Appleton](https://maggieappleton.com/garden-history)
 
-## Running a Static Site locally
+## Tech Stack
+
+- HTML
+- CSS
+- JS
+- Markdown
+- [zero-md](https://www.npmjs.com/package/zero-md/v/2.0.0-rc.2)
+- [Cronitor RUM](https://cronitor.io/real-user-monitoring)
+
+## Running Locally
+
+Because the site accesses files outside of the HTML file, you need to host a server to run it locally.
 
 Install [http-server](https://www.npmjs.com/package/http-server).
 
@@ -15,6 +26,8 @@ Run `http-server -c-1` to run the server with caching disabled.
 - **Abbey Perini** - [abbeyperini](https://github.com/abbeyperini)
 
 ## Acknowledgements
+
+- Maggie Appleton for teaching me everything I know about Digital Gardens.
 
 ## License
 
