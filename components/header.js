@@ -17,8 +17,8 @@ class Header extends HTMLElement {
             <li><a href="/conference-wall.html>Conference Wall</a></li>
           </ul>
         </nav>
-        <label title="color mode toggle">
-          <input onchange="switchTheme(event)" type="checkbox" id="theme-toggle" aria-label="Toggle Color Theme" class="theme-switch" />
+        <label title="dark mode toggle">
+          <input onchange="switchTheme(event)" type="checkbox" id="theme-toggle" aria-label="dark mode" class="theme-switch" />
           <svg
             width="75"
             height="75"
