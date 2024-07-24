@@ -19,6 +19,8 @@
 
   --accent-text: #FFFFFF;
   --accent-background: #1a759f;
+
+  --toggle-background: #242D54;
 }
 
 [data-theme="dark"] {
@@ -38,6 +40,8 @@
 
   --accent-text: #09090C;
   --accent-background: #d386ac;
+
+  --toggle-background: #a298c7;
 }
 
 * {
@@ -135,7 +139,7 @@ header {
 }
 
 #daisy path {
-  fill: var(--content-background);
+  fill: var(--toggle-background);
 }
 
 .theme-switch {
