@@ -404,9 +404,9 @@ It's possible to take this concept even further and create [Higher-Order Compone
 
 ### Slots in Angular
 
-Angular saw the Web Components spec and ran with it. You can play with the [shadow DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM) within Angular as a [View Encapsulation Mode](https://angular.io/api/core/ViewEncapsulation#ShadowDom).
+Angular saw the Web Components spec and ran with it. You can play with the [shadow DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM) within Angular as a [View Encapsulation Mode](https://angular.dev/api/core/ViewEncapsulation/).
 
-There are also slots, but Angular calls the functionality [content projection](https://angular.io/guide/content-projection). Instead of the `<slot>` element, you use the `<ng-content>` element.
+There are also slots, but Angular calls the functionality [content projection](https://angular.dev/guide/components/content-projection). Instead of the `<slot>` element, you use the `<ng-content>` element.
 
 When creating your component, you can create your template one of two ways.
 
@@ -414,7 +414,9 @@ In an HTML file:
 
 ```HTML
 // blog-list.component.html
-<ng-content select="[text]"></ng-content>
+<h2>Title</h2>
+<ng-content></ng-content>
+<ng-content select="[blog-text]"></ng-content>
 ```
 
 Or in the `@component` decorator:
@@ -424,11 +426,7 @@ Or in the `@component` decorator:
   selector: 'blog-list'
   template: `
     <h2>Title</h2>
-
-    Default:
     <ng-content></ng-content>
-
-    Text:
     <ng-content select="[blog-text]"></ng-content>
   `
 })
@@ -449,7 +447,33 @@ Then, in your parent component, you use the `<ng-content>` selector you just def
 
 Just like in the previous examples, the unnamed slot will take all the content you pass without using a defined selector.
 
-Angular also provides [conditional content projection](https://angular.io/guide/content-projection#conditional-content-projection) using `<ng-template>`.
+You can also use a CSS class as a selector.
+
+```HTML
+// child component
+<ng-content select=".blog-text"></ng-content>
+
+// parent component
+<blog-list>
+  <p class="blog-text" >My text here</p>
+</blog-list>
+```
+
+You can also use a string as a selector and use the `ngProjectAs` attribute.
+
+```HTML
+// child component
+<ng-content select="blog-text"></ng-content>
+
+// parent component
+<blog-list>
+  <p ngProjectAs="blog-text" >My text here</p>
+</blog-list>
+```
+
+You can even configure your ng-module to all for tags as selectors like `<blog-text>`.
+
+Angular also provides [conditional content projection](https://angular.dev/guide/templates/ng-template) using `<ng-template>`.
 
 ### Conclusion
 
