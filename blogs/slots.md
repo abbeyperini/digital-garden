@@ -184,6 +184,8 @@ When this custom element is inspected, DevTools will show the shadow root with `
 
 Both [Chrome DevTools](https://developer.chrome.com/blog/new-in-devtools-104#:~:text=Chromium%20issue%3A%201322808-,Reveal%20assigned%20slot%20of%20an%20element,-Slotted%20elements%20in) and [FireFox DevTools](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/examine_and_edit_html/index.html#shadow-roots) have built in tools that will show you where `<slot>` content is coming from with a click.
 
+If you want to learn more about how slots came to be, check out Jan Miksovsky's [A History of the Slot Element](https://jan.miksovsky.com/posts/2019/04-08-a-history-of-the-slot-element.html).
+
 ### Slots in Vue
 
 Vue slots have a lot more features, but you can see how they're inspired by the Web Components spec.
