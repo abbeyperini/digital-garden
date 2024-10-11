@@ -25,13 +25,14 @@
 
 [data-theme="dark"] {
   --background: #282e53;
-  --main-text: #CCCCCC;
+  --main-text: #121212;
 
-  --secondary-text: #F2F2F2;
-  --secondary-background: #494581;
+  --secondary-text: #121212;
+  --secondary-background: #ae7cb6;
+  /* #494581 */
 
-  --link-text: #F2F2F2;
-  --active-link-text: #CCCCCC;
+  --link-text: #121212;
+  --active-link-text: #400363;
 
   --content-text: #121212;
   --content-background: #a298c7;
@@ -41,7 +42,7 @@
   --accent-text: #09090C;
   --accent-background: #d386ac;
 
-  --toggle-background: #a298c7;
+  --toggle-background: #282e53;
 }
 
 * {
