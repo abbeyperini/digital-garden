@@ -158,6 +158,10 @@ header {
   padding: 2%;
 }
 
+.all-topics-series-containers {
+  margin-top: .5rem;
+}
+
 .welcome {
   margin: 3% auto;
 }
