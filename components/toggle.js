@@ -3,7 +3,7 @@ class Toggle extends HTMLElement {
     super();
     this.innerHTML = `
       <label title="dark mode toggle">
-        <input type="checkbox" id="theme-toggle" aria-label="dark mode" class="theme-switch" />
+        <input type="checkbox" id="theme-toggle" class="theme-switch" />
         <svg
           width="75"
           height="75"
