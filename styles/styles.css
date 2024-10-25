@@ -153,8 +153,18 @@ header {
   opacity: 0;
 }
 
+/* ai page */
+.ai-title {
+  color: var(--main-text);
+  margin-bottom: 3%;
+}
+
+.ai-add-yours {
+  margin-top: 1%;
+}
+
 /* homepage */
-.welcome, .all-topics-series-containers {
+.welcome, .all-topics-series-containers, .ai-container {
   background-color: var(--content-background);
   color: var(--content-text);
   border-radius: 10px;
