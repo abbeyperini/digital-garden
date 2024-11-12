@@ -8,7 +8,7 @@ class LinkList extends HTMLElement {
   }
 
   async connectedCallback() {
-    const data = await fetch('https://images.abbeyperini.com/data/blog-data.json').then((response) => {return response.json()});
+    const data = JSON.parse(localStorage.getItem("data"));
     const allTopics = data.topics;
     const allSeries = data.series;
     const attributes = this.attributes;

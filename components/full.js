@@ -108,7 +108,7 @@ class Full extends HTMLElement {
       return { content, pageTitle };
     }
 
-    const data = await fetch('https://images.abbeyperini.com/data/blog-data.json').then((response) => {return response.json()});
+    const data = JSON.parse(localStorage.getItem("data"));
     const allBlogs = data.blogs;
     const allSeries = data.series;
     const allTopics = data.topics;
