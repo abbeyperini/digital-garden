@@ -5,6 +5,8 @@ class Full extends HTMLElement {
   }
 
   async connectedCallback() {
+    const attributes = this.attributes;
+    
     function formatMetadata(blogName) {
       const topicsLinks = allBlogs[blogName].topics.map((topic, index) => {
         let linkText = allTopics[topic].title
@@ -37,7 +39,7 @@ class Full extends HTMLElement {
     function getName(type) {
       let name = params.get(type);
       if (!name) {
-        name = this.attributes[type].value;
+        name = attributes[type].value;
       }
       return name;
     }
@@ -112,7 +114,6 @@ class Full extends HTMLElement {
     const allBlogs = data.blogs;
     const allSeries = data.series;
     const allTopics = data.topics;
-    const attributes = this.attributes;
     const params = new URLSearchParams(document.location.search);
 
     function setPageTitles(pageTitle) {
@@ -120,34 +121,41 @@ class Full extends HTMLElement {
       document.querySelector('meta[property="og:title"]').setAttribute("content", pageTitle);
     }
 
-      if (!!(attributes.blog || params.get("blog"))) {
-        const { content, pageTitle } = formatSingleBlog();
-        this.innerHTML = content;
-        setPageTitles(pageTitle);
-        return;
+    const interval = setInterval(() => {
+      if (localStorage.getItem("data")) {
+        clearInterval(interval);
+        if (!!(attributes.blog || params.get("blog"))) {
+          const { content, pageTitle } = formatSingleBlog();
+          this.innerHTML = content;
+          setPageTitles(pageTitle);
+          return;
+        }
+  
+        if (!!(attributes.series || params.get("series"))) {
+          const { content, pageTitle } = formatSeries();
+          this.innerHTML = content;
+          setPageTitles(pageTitle);
+          return;
+        }
+  
+        if (!!(attributes.topic || params.get("topic"))) {
+          const { content, pageTitle } = formatTopic();
+          this.innerHTML = content;
+          setPageTitles(pageTitle);
+          return;
+        }
+  
+        if (!!(attributes.sort || params.get("sort"))) {
+          const { content, pageTitle } = formatSort();
+          this.innerHTML = content;
+          setPageTitles(pageTitle);
+          return;
+        }
+      } else {
+        console.log('not yet, retrying');
       }
-
-      if (!!(attributes.series || params.get("series"))) {
-        const { content, pageTitle } = formatSeries();
-        this.innerHTML = content;
-        setPageTitles(pageTitle);
-        return;
-      }
-
-      if (!!(attributes.topic || params.get("topic"))) {
-        const { content, pageTitle } = formatTopic();
-        this.innerHTML = content;
-        setPageTitles(pageTitle);
-        return;
-      }
-
-      if (!!(attributes.sort || params.get("sort"))) {
-        const { content, pageTitle } = formatSort();
-        this.innerHTML = content;
-        setPageTitles(pageTitle);
-        return;
-      }
-    }
+    }, 100);
+  }
 }
 
 customElements.define('full-component', Full);
