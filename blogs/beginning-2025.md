@@ -60,6 +60,7 @@ When NACA became NASA, [Katherine Johnson](https://www.nasa.gov/centers-and-faci
 ### Molly Holzschlag
 
 ![Molly Holzschlag, her short gray hair curly and wild, yelling at the camera](https://images.abbeyperini.com/beginning-2025/molly.jpeg)
+Photo credit: tucsonsentinel.com
 
 In 2023, I watched accessibility advocates mourn Molly Holzschlag, the ["Fairy Godmother of the Web"](https://www.tucsonsentinel.com/local/report/090523_molly_holzschlag/tucsons-molly-holzschlag-known-as-the-fairy-godmother-web-dead-60/). A contemporary of Sir Tim Berners Lee, she wrote one of the first blogs, earning her the handle `mollydotcom`. She was the leader of the Web Standards Group which pushed Microsoft, Opera and Netscape to adopt web standards. After she strong-armed [Bill Gates into including CSS in the next Internet Explorer release](https://knowbility.org/blog/2022/open-web-pioneer-molly-holzschlag-to-keynote-accessu) he called her ["the annoying web standards girl"](https://toddl.dev/posts/dear-molly/).
 
@@ -107,6 +108,7 @@ In 1977, he got wind of new electronic safety requirements. Roy founded ROD-L El
 ### Edith Windsor
 
 ![Edith Windsor, in a suit and pearls, confidently staring down the camera](https://images.abbeyperini.com/beginning-2025/edie.jpg)
+Photo credit: nyhistory.org
 
 You may know Edith "Edie" Windsor as the LGBTQ+ rights activist who sued the U.S. government. Her Supreme Court case, _United States v. Windsor_, [established a precedent for marriage equality](https://www.nyhistory.org/exhibitions/edie-windsor-champion-for-marriage-equality).
 
