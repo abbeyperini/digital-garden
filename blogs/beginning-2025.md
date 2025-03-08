@@ -73,11 +73,13 @@ Molly died at the age of 60. In her last few years, [her husband died](https://w
 ![Alan Emtage, a Black man smiling with short hair and beard, in black and white with water behind him](https://images.abbeyperini.com/beginning-2025/Alan-Emtage.jpeg)
 Photo credit: internethalloffame.org
 
-[Alan Emtage](https://www.internethalloffame.org/inductee/alan-emtage/), a gay Black man from Barbados, wrote the first search engine, [Archie](https://daily.jstor.org/alan-emtage-first-internet-search-engine/). In 1989, working on a mainframe computer meant waiting hours for a dot matrix computer to print out what you needed.
+[Alan Emtage](https://www.internethalloffame.org/inductee/alan-emtage/), [a gay Black man from Barbados](https://www.lgbtqnation.com/2023/02/the-search-engines-daddy-is-a-black-gay-man/), wrote the first search engine, [Archie](https://daily.jstor.org/alan-emtage-first-internet-search-engine/). In 1989, working on a mainframe computer meant waiting hours for a dot matrix computer to print out what you needed.
 
 > "Rather than spending my time logging on to FTP sites and trying to figure out what was on them, I wrote some computer scripts that would do the same thing, and much faster too." - Alan Emtage
 
 Alan co-founded the world's first Internet startup. As a founding member of the Internet Society, he headed up several groups in [the Internet Engineering Task Force alongside Sir Tim Berners Lee](https://www.caribbean-beat.com/issue-122/alan-emtage-codefather). One of those groups standardized Uniform Resource Locators (URLs).
+
+Alan is a partner at Mediapolis, Inc., the award-winning web development company that operates LGBTQ+ sites under ‘The Datalounge Network". These days, Mediapolis also helps new startups.
 
 ### Mary Ann Horton
 
