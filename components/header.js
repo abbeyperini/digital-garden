@@ -14,6 +14,7 @@ class Header extends HTMLElement {
             <li><a href="https://github.com/abbeyperini/digital-garden">The Digital Garden on Github</a></li>
             <li><a href="https://abbeyperini.dev">About Abbey</a></li>
             <li><a href="https://abbeyperini.shop/">Shop</a></li>
+            <li><a href="https://abbeynormal.tech">Newsletter</a></li>
           </ul>
         </nav>
         <toggle-component></toggle-component>
