@@ -1,10 +1,10 @@
-# State Management in Front-end Web Development: State 101
+## State Management in Front-end Web Development: State 101
 
 ![a brain next to "State Management in Front-end Web Development"](https://images.abbeyperini.com/state/state-banner.png)
 
 Learn where to keep your variables to improve your app design, performance, and readability.
 
-## What is State?
+### What is State?
 
 In programming, state refers to all the variables within a program. Variables represent data held in memory.
 
@@ -22,7 +22,7 @@ const displayName = person.lastName + ", " + person.firstName;
 
 When people talk about state in a front-end web app, they are typically referring to reactive state. Reactive state tracks updates and triggers effects when they happen. Reactive state management tools exist in all frameworks. Within them, a state variable is essentially a set of getters and setters. When you access the value, you're getting it. When you reassign the value, you're setting it. Tools that create reactive state will also have methods for instantiating the state variable, updating it, accessing its previous value, and more.
 
-## Local State Management
+### Local State Management
 
 When you are creating a local state variable, as yourself:
 
@@ -69,7 +69,7 @@ In React, you create a state value and an update function using the `useState` h
 const [person, setPerson] = useState({ firstName: "Paul", lastName: "Posey", id: 12 });
 ```
 
-## Derived State Management
+### Derived State Management
 
 - React: `const`
 - Vue: [computed](https://vuejs.org/guide/essentials/computed.html)
@@ -99,7 +99,7 @@ const displayName = computed(() => {
 
 We can think of the function passed to `computed()` as an effect. Vue and Angular keep track of which reactive variables trigger which effects. Because the reactive variable `person` is used in the function passed to `computed()`, the function is registered as an effect to be triggered by an update to `person`. Put simply, whenever `person` is updated, `displayName` will update.
 
-## Dependency Injection
+### Dependency Injection
 
 - React: [Context](https://react.dev/learn/scaling-up-with-reducer-and-context)
 - Vue: [Provide/Inject](https://vuejs.org/guide/components/provide-inject)
@@ -149,7 +149,7 @@ To use a context you've written, you need to wrap your components in a provider 
 
 Consumer child components use the `useContext()` hook to access the state. Before the `useContext()` hook was added, you had to use a consumer tag like `<PersonDispatch.Consumer>`.
 
-## Global State Management
+### Global State Management
 
 - React: [Redux](https://redux.js.org/), [Zustand](https://zustand.docs.pmnd.rs/getting-started/introduction)
 - Vue: [Pinia](https://pinia.vuejs.org/)
