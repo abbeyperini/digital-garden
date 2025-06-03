@@ -97,7 +97,11 @@ const displayName = computed(() => {
 });
 ```
 
-We can think of the function passed to `computed()` as an effect. Vue and Angular keep track of which reactive variables trigger which effects. Because the reactive variable `person` is used in the function passed to `computed()`, the function is registered as an effect to be triggered by an update to `person`. Put simply, whenever `person` is updated, `displayName` will update.
+Put simply, whenever person is updated, displayName will update.
+
+Vue and Angular use the [observer pattern](https://en.wikipedia.org/wiki/Observer_pattern) and keep track of which reactive variables trigger which effects. Instead of re-rendering the entire component, only the things that need to update will update.
+
+In observer pattern terms, the reactive variable person is the subject. When we use person in the [callback](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) function passed to computed(), the function is added to a list of observers. When the subject updates, the observers are notified, and the function will run again. This should sound familiar - [addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) also uses the observer pattern. With addEventListener(), the subject is an event and your listener (the event handler callback function you pass) is the observer/effect.
 
 ### Dependency Injection
 
@@ -161,7 +165,7 @@ Technically, you could make the argument that putting variables and update funct
 
 ![Smart guy meme - a black guy tapping the side of his head and smiling. Captioned "you don't ever have to pass parameters if every variable is a global variable"](https://images.abbeyperini.com/state/global.jpg)
 
-Typically, global state management refers to a library that makes your data available without the parent/child relationship required to prop-drill or use dependency injection. Like with derived state, you should only use a global state management library when it's worth the performance trade-off.
+When we're talking about front-end web development, global state management usually refers to a library that makes your data available without the parent/child relationship required to prop-drill or use dependency injection. You should only use a global state management library when it's worth the performance trade-off.
 
 A global state management library typically creates a store. This pattern is so ubiquitous that sometimes global state management libraries refer to themselves as "a store." You store your state in a store. A store can maintain complex data structures. A store provides a standard way to make changes to your global state, making state changes predictable.
 
