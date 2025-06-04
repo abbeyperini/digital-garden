@@ -151,7 +151,29 @@ To use a context you've written, you need to wrap your components in a provider 
 </TasksContext.Provider>
 ```
 
-Consumer child components use the `useContext()` hook to access the state. Before the `useContext()` hook was added, you had to use a consumer tag like `<PersonDispatch.Consumer>`.
+As of React v19.1, you no longer have to use `.Provider` when using your context provider component.
+
+```JSX
+<PersonContext value={person}>
+  <PersonDispatchContext value={dispatch}>
+    <WelcomeBanner />
+    <MainContent />
+    <Footer />
+  </TasksDispatchContext>
+</TasksContext>
+```
+
+Consumer child components use the `useContext()` hook to access the state. Before the `useContext()` hook was added, you had to use a consumer component to access your context.
+
+```JSX
+return (
+  <PersonDispatch.Consumer>
+    {(person) => (
+     <p>{ person.firstName }</p>
+    )}
+  </PersonDispatch.Consumer>
+)
+```
 
 ### Global State Management
 
