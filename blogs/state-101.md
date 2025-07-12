@@ -191,7 +191,7 @@ When we're talking about front-end web development, global state management usua
 
 A global state management library typically creates a store. This pattern is so ubiquitous that sometimes global state management libraries refer to themselves as "a store." You store your state in a store. A store can maintain complex data structures. A store provides a standard way to make changes to your global state, making state changes predictable.
 
-There are a couple common patterns for writing stores and triggering updates in global state management libraries. I'll cover them in the next two parts of this series (coming June or July 2025).
+There are a couple common patterns for writing stores and triggering updates in global state management libraries. I'll cover them in the next two parts of this series:
 
-- State Management in Front-end Web Development: Actions, Dispatch, and Reducers
-- State Management in Front-end Web Development: Mutators
+- [State Management in Front-end Web Development: Actions, Dispatch, and Reducers](/blog.html?blog=state-2)
+- State Management in Front-end Web Development: Mutators (coming August 2025)

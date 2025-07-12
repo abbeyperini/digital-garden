@@ -2,6 +2,8 @@
 
 ![A screenshot of a simple counter app with a "Counter!" heading, a + button, the number 20, a - button, and 14 of the 20 shiba pictures](https://images.abbeyperini.com/reload/shibas.png)
 
+For a more up to date and complete example, check out [State Management in Front-end Web Development: Actions, Dispatch, and Reducers](/blog.html?blog=state-2).
+
 You’ve got your React components. You figured out how to use Redux to feed them data. You make a component that creates/updates/deletes an item in your API, and put it in a page displaying the items from your API. How do you get the whole page to reload to show the updated data every time a user makes a change? Redux state and the `useEffect()` Dependency Array.
 
 It is possible to use only React to pass the data from our counter to the parent element to get almost the same counter effect in my example, but using Redux state and the React `useEffect()` Dependency Array is easier in some ways, and applicable to many more situations.
