@@ -2,6 +2,8 @@
 
 ![A logo that looks like a brain with a threaded needle attached to it Coding and ADHD](https://images.abbeyperini.com/ADHD-series/coding&adhd.png)
 
+[Watch the talk based on this blog.](https://www.youtube.com/watch?v=mt2v2DX5Tno)
+
 While being aware of our struggles and finding healthy coping mechanisms are necessary, we receive enough negative messaging on a daily basis. This article is all about how ADHD traits can be a benefit when you're coding.
 
 When I started this series, my goal was to normalize the daily struggles of those coding with ADHD. As a result, I barely mentioned positive aspects of ADHD traits. When I did, it was mostly to say the structure of development jobs can mitigate some of our struggles. I've realized that highlighting the struggle wasn't enough - it's time to celebrate being a firework in a world that wants you to be a cube.
