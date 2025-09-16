@@ -410,37 +410,32 @@ Angular saw the Web Components spec and ran with it. You can play with the [shad
 
 There are also slots, but Angular calls the functionality [content projection](https://angular.dev/guide/components/content-projection). Instead of the `<slot>` element, you use the `<ng-content>` element.
 
-When creating your component, you can create your template one of two ways.
-
-In an HTML file:
-
-```HTML
-// blog-list.component.html
-<h2>Title</h2>
-<ng-content></ng-content>
-<ng-content select="[blog-text]"></ng-content>
-```
-
-Or in the `@component` decorator:
+To create a tag for the slot, I need to define a component for it.
 
 ```JavaScript
 @Component({
-  selector: 'blog-list'
+  selector: 'blog-text',
+  template: `<ng-content><p>Blog Text</p></ng-content>`,
+})
+export class BlogText {}
+
+@Component({
+  selector: 'blog-card'
   template: `
     <h2>Title</h2>
     <ng-content></ng-content>
-    <ng-content select="[blog-text]"></ng-content>
+    <ng-content select="blog-text"></ng-content>
   `
 })
 ```
 
-Then, in your parent component, you use the `<ng-content>` selector you just defined on the element you want to pass to it.
+To pass content to the "blog-text" slot in my parent component, I wrap the content in a `<blog-text>` tag.
 
 ```HTML
 // parent component
-<blog-list>
-  <p blog-text>My text here</p>
-</blog-list>
+<blog-card>
+  <blog-text><p>My text here</p></blog-text>
+</blog-card>
 
 // result
 <h2>Title</h2>
@@ -449,31 +444,29 @@ Then, in your parent component, you use the `<ng-content>` selector you just def
 
 Just like in the previous examples, the unnamed slot will take all the content you pass without using a defined selector.
 
-You can also use a CSS class as a selector.
-
-```HTML
-// child component
-<ng-content select=".blog-text"></ng-content>
-
-// parent component
-<blog-list>
-  <p class="blog-text" >My text here</p>
-</blog-list>
-```
-
-You can also use a string as a selector and use the `ngProjectAs` attribute.
+You don't have to define a component for each named slot. You can use a string and the `ngProjectAs` attribute to match it.
 
 ```HTML
 // child component
 <ng-content select="blog-text"></ng-content>
 
 // parent component
-<blog-list>
+<blog-card>
   <p ngProjectAs="blog-text" >My text here</p>
-</blog-list>
+</blog-card>
 ```
 
-You can even configure your ng-module to all for tags as selectors like `<blog-text>`.
+You can use any CSS selector as a value for the select attribute, which includes classes.
+
+```HTML
+// child component
+<ng-content select=".blog-text"></ng-content>
+
+// parent component
+<blog-card>
+  <p class="blog-text" >My text here</p>
+</blog-card>
+```
 
 Angular also provides [conditional content projection](https://angular.dev/guide/templates/ng-template) using `<ng-template>`.
 
