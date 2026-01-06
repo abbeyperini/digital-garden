@@ -1,6 +1,6 @@
 ## Surviving Cancer Doesn't Suck
 
-![All this chemo made me so emo with a man looking like he's about to cry](https://images.abbeyperini.com/cancer/chemo-emo.jpg)
+![All this chemo made me so emo with a man looking like he's about to cry](https://images.abbeyperini.com/cancer/chemo-emo.png)
 
 My post-treatment recovery has been a period of joy, connection, and rest.
 
