@@ -2,7 +2,7 @@
 
 [when programmers turn mid/high level they must choose between one of these personalities: a guy in a suit, a woman with colorful clothes and accessories, and a goth](https://images.abbeyperini.com/3-year/choose.png)
 
-I officially have three years of experience and a mid-level job title. My best advice has changed significantly since I wrote [12 Things I learned During My First Year as a Professional Developer](/blog.html?blog=1-year)  two years ago.
+I officially have three years of experience and a mid-level job title. My best advice has changed significantly since I wrote [12 Things I learned During My First Year as a Professional Developer](/blog.html?blog=1-year) two years ago.
 
 ### 1. Level Doesn't Matter, Results Do
 
