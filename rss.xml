@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+  <title>Abbey Perini's Digital Garden</title>
+  <link>https://abbeyperini.com</link>
+  <description>Welcome to Abbey's Garden! Dig through my articles individually, by topic, or by series.</description>
+  <copyright>© 2022 Abbey Perini. All rights reserved.</copyright>
+  <item>
+    <title>Surviving Cancer Doesn't Suck</title>
+    <link>https://abbeyperini.com/blog.html?blog=surviving-cancer</link>
+    <description>My post-treatment recovery has been a period of joy, connection, and rest.</description>
+    <pubDate>2026-01-06T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Gang of Four Design Patterns in Memes - Creational</title>
+    <link>https://abbeyperini.com/blog.html?blog=GoF-1</link>
+    <description>There are five creational design patterns - they cover the instantiation of objects.</description>
+    <pubDate>2025-08-14T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>State Management in Front-end Web Development: Actions, Dispatch, and Reducers</title>
+    <link>https://abbeyperini.com/blog.html?blog=state-2</link>
+    <description>This part of the series assumes that you need a state tool that uses the actions, dispatch, and reducers pattern.</description>
+        <pubDate>2025-07-12T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>State Management in Front-end Web Development: State 101</title>
+    <link>https://abbeyperini.com/blog.html?blog=state-101</link>
+    <description>Learn where to keep your variables to improve your app design, performance, and readability.</description>
+    <pubDate>2025-07-12T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>What the First Rule of ARIA Really Means</title>
+    <link>https://abbeyperini.com/blog.html?blog=first-rule</link>
+    <description>Multiple times, I have suggested an aria-label, and heard "I thought I was never supposed to use ARIA because the first rule of ARIA is don't use ARIA."</description>
+    <pubDate>2025-04-14T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>If They'll Adopt It, It's Right</title>
+    <link>https://abbeyperini.com/blog.html?blog=adopt</link>
+    <description>The challenge is getting people to use whatever system you come up with.</description>
+    <pubDate>2025-03-28T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Cancer Treatment Sucks</title>
+    <link>https://abbeyperini.com/blog.html?blog=cancer-treatment</link>
+    <description>Patients like me are so rare that healthcare professionals struggled to hide their surprise. They sincerely and reflexively blessed my heart.</description>
+    <pubDate>2025-03-18T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>We've Been Here Since the Beginning: 2025 Edition</title>
+    <link>https://abbeyperini.com/blog.html?blog=beginning-2025</link>
+    <description>Last time, I was tired. This time, I'm angry.</description>
+    <pubDate>2025-03-07T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>10 Tips from 10 Tech Conferences in 2024</title>
+    <link>https://abbeyperini.com/blog.html?blog=10-conferences</link>
+    <description>I attended 10 conferences this year, spoke at 6 of them, and I'm not in DevRel. Here are are my top 10 tips - one for each conference!</description>
+    <pubDate>2024-11-30T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Dark Mode Toggle in HTML Web Components</title>
+    <link>https://abbeyperini.com/blog.html?blog=HTML-toggle</link>
+    <description>When designing my digital garden, I knew I wanted a cute dark mode toggle.</description>
+    <pubDate>2024-10-22T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>So You Need to Give a Talk...</title>
+    <link>https://abbeyperini.com/blog.html?blog=talk</link>
+    <description>Take it from someone who barely passed their college public speaking course - you can definitely give a tech talk.</description>
+    <pubDate>2024-09-30T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Cancer Sucks</title>
+    <link>https://abbeyperini.com/blog.html?blog=cancer</link>
+    <description>Even after I started tweeting about cancer, I debated writing about it.</description>
+    <pubDate>2024-07-29T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Share Your Experience Loudly and Often</title>
+    <link>https://abbeyperini.com/blog.html?blog=sharing</link>
+    <description>When I encourage people to share their experience via writing or talking, their response usually implies I'm more naturally suited to speaking and writing then they are. I'm not.</description>
+    <pubDate>2024-05-31T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>12 Tips from a Mid-level Developer</title>
+    <link>https://abbeyperini.com/blog.html?blog=3-year</link>
+    <description>I officially have three years of experience and a mid-level job title. My best advice has changed significantly since I wrote 12 Things I learned During My First Year as a Professional Developer two years ago.</description>
+    <pubDate>2024-04-17T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>A Love Letter to the Underrepresented in Tech</title>
+    <link>https://abbeyperini.com/blog.html?blog=love-letter</link>
+    <description>Dear "Underrepresented,"</description>
+    <pubDate>2024-03-01T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Slots, Slots, Slots, Everybody!</title>
+    <link>https://abbeyperini.com/blog.html?blog=slots</link>
+    <description>Slots turn components into wrappers that enhance your dynamic content.</description>
+    <pubDate>2024-02-23T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Three Human Problems in a Technical Trench Coat</title>
+    <link>https://abbeyperini.com/blog.html?blog=trenchCoat</link>
+    <description>In technical roles, we want to believe everything has a technical solution. However, software development involves humans, so what can seem like a technical problem is often three human problems in a technical trench coat.</description>
+    <pubDate>2024-01-25T05:00:00.00Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>#DEVImpact2023 Reflections</title>
+    <link>https://abbeyperini.com/blog.html?blog=2023</link>
+    <description>From getting answers for pain I'd struggled with all my life to starting a new job in November - my 2023 has been a bit of a roller coaster.</description>
+    <pubDate>2023-12-29T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>12 Tips for Attending a Tech Conference</title>
+    <link>https://abbeyperini.com/blog.html?blog=conference</link>
+    <description>Conferences are filled with fun and opportunities. Do a little prep beforehand to set yourself up for success.</description>
+    <pubDate>2023-11-15T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Cognitive Load and Your Development Environment</title>
+    <link>https://abbeyperini.com/blog.html?blog=cognitive-load</link>
+    <description>Let's talk about Cognitive Load Theory, how some disabilities affect it, and designing a developer environment around it.</description>
+    <pubDate>2023-10-17T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>How I Got Feedback After Every Tech Interview</title>
+    <link>https://abbeyperini.com/blog.html?blog=interview</link>
+    <description>We put a lot of time and energy into interviewing, so giving feedback is the least an interviewer can do.</description>
+    <pubDate>2023-09-14T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Getting Started in a New Codebase</title>
+    <link>https://abbeyperini.com/blog.html?blog=new-codebase</link>
+    <description>Whether it's contributing to open source or starting a new job, the first step is familiarizing yourself with the codebase, and it can be daunting. Here are some tips to help you hit the ground running.</description>
+    <pubDate>2023-08-16T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>NodeIterator and TreeWalker Web APIs</title>
+    <link>https://abbeyperini.com/blog.html?blog=treeWalker</link>
+    <description>NodeIterator and TreeWalker are usually more powerful than you need. However, if you have to do something complex with a collection of DOM nodes, you will love what you can do with these iterator APIs.</description>
+    <pubDate>2023-07-31T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Live Regions in React</title>
+    <link>https://abbeyperini.com/blog.html?blog=live-regions</link>
+    <description>When using aria-live, there is one simple rule to follow for reliable live region updates.</description>
+    <pubDate>2023-06-26T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>From Idea to Design for Non-Designers</title>
+    <link>https://abbeyperini.com/blog.html?blog=design</link>
+    <description>Here are some practical tips on how to get from your idea to minimum styling without knowing anything about design.</description>
+    <pubDate>2023-05-16T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Dark Mode Toggle and prefers-color-scheme</title>
+    <link>https://abbeyperini.com/blog.html?blog=color-scheme</link>
+    <description>When I wrote An Accessible Dark Mode Toggle in React back in 2021, @grahamthedev suggested I implement a prefers-color-scheme check in my theme setter. I finally got around to it.</description>
+    <pubDate>2023-04-21T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>8 Ways to Support Women Developers</title>
+    <link>https://abbeyperini.com/blog.html?blog=support</link>
+    <description>This International Women's Day, I have regained a teensy bit of optimism, so it's all about how to support the women developers in your life. Basically, if you see something, say something.</description>
+    <pubDate>2023-03-08T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>From Research to Writing Reference Material</title>
+    <link>https://abbeyperini.com/blog.html?blog=research</link>
+    <description>Here's how to take research and turn it into reference material.</description>
+    <pubDate>2023-02-07T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>TL;DR CommonJS vs ESM</title>
+    <link>https://abbeyperini.com/blog.html?blog=modules</link>
+    <description>Here's how to tell these module types apart at a glance.</description>
+    <pubDate>2023-01-31T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Writing a Technical Blog</title>
+    <link>https://abbeyperini.com/blog.html?blog=writing-2</link>
+    <description>I found myself reflecting on how I get my ideas and turn them into published technical blogs.</description>
+    <pubDate>2022-11-30T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Web Security 101 - Part 2: User Input</title>
+    <link>https://abbeyperini.com/blog.html?blog=security-2</link>
+    <description>Never trust anything a user puts into your app.</description>
+    <pubDate>2022-11-30T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Web Security 101 - Part 1: Secrets</title>
+    <link>https://abbeyperini.com/blog.html?blog=security-1</link>
+    <description>Starting my web security series by sharing my secrets - just kidding! Let's talk about keeping our secrets safe.</description>
+    <pubDate>2022-11-29T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>About My Digital Garden</title>
+    <link>https://abbeyperini.com/blog.html?blog=garden</link>
+    <description>The more I read about digital gardens, the more I wanted to build one, so I started drawing plants.</description>
+    <pubDate>2022-11-29T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>#gitPanic - Tools</title>
+    <link>https://abbeyperini.com/blog.html?blog=gitPanic-10</link>
+    <description>A list of tools you can use with git to make your life easier.</description>
+    <pubDate>2022-11-29T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>#gitPanic - Files</title>
+    <link>https://abbeyperini.com/blog.html?blog=gitPanic-9</link>
+    <description>Turns out git will always track file name changes, moving files, and deleting files ...if you tell it about them.</description>
+    <pubDate>2022-11-22T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>#gitPanic - Removing and Restoring Work</title>
+    <link>https://abbeyperini.com/blog.html?blog=gitPanic-8</link>
+    <description>When you think you've lost work, don't #gitPanic. As far as your commit history goes, git may as well be Ironborn, repeating "what is dead may never die."</description>
+    <pubDate>2022-11-22T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>#gitPanic - Documentation and Profiles</title>
+    <link>https://abbeyperini.com/blog.html?blog=gitPanic-7</link>
+    <description>Documentation in GitHub goes far beyond a repo README.</description>
+    <pubDate>2022-11-18T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>#gitPanic - Stash</title>
+    <link>https://abbeyperini.com/blog.html?blog=gitPanic-6</link>
+    <description>Just realized you've been working in the wrong branch? Forgot to pull before you started working? Think of git stash as stuffing your working directory in your pocket for later.</description>
+    <pubDate>2022-11-17T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>#gitPanic - Interactive Rebase</title>
+    <link>https://abbeyperini.com/blog.html?blog=gitPanic-5</link>
+    <description>Once you understand this powerful tool, people will think you're a git wizard.</description>
+    <pubDate>2022-11-16T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>#gitPanic - HEAD</title>
+    <link>https://abbeyperini.com/blog.html?blog=gitPanic-4</link>
+    <description>Understanding HEAD and refs helps with reading git logs and using git commands.</description>
+    <pubDate>2022-11-16T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>#gitPanic - Working in a Repo</title>
+    <link>https://abbeyperini.com/blog.html?blog=gitPanic-3</link>
+    <description>I was surprised to find out how much I had to interact with other developers to get my code deployed. Let's talk about expectations when working with other developers in a repo.</description>
+    <pubDate>2022-11-08T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>#gitPanic - Merging and Rebasing</title>
+    <link>https://abbeyperini.com/blog.html?blog=gitPanic-2</link>
+    <description>what if other developers are working in the repo at the same time as you? How do you add changes from one branch to another?</description>
+    <pubDate>2022-11-07T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>#gitPanic - Git 101</title>
+    <link>https://abbeyperini.com/blog.html?blog=gitPanic-1</link>
+    <description>Look, git is hard, and it's almost inescapable in software development today. #gitPanic will be an open ended series on all the git things I've learned - mainly by making git mistakes.</description>
+    <pubDate>2022-11-04T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Transforming Tired Tabbing</title>
+    <link>https://abbeyperini.com/blog.html?blog=tabbing-3</link>
+    <description>Take typical focus indicator styles and turn them totally tabbular!</description>
+    <pubDate>2022-10-14T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Troubleshooting Tabbing</title>
+    <link>https://abbeyperini.com/blog.html?blog=tabbing-2</link>
+    <description>I've been tackling tabbing trouble a lot recently, so I thought I'd share some debugging tips.</description>
+    <pubDate>2022-08-22T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Tabbing Tactfully</title>
+    <link>https://abbeyperini.com/blog.html?blog=tabbing-1</link>
+    <description>Try your hand at HOCUS :FOCUS or spend today tabbing instead of your typical mouse navigation. Frustrating? Let's talk about tabbing on the web.</description>
+    <pubDate>2022-08-08T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Coding and ADHD - Where We Excel</title>
+    <link>https://abbeyperini.com/blog.html?blog=ADHD-6</link>
+    <description>While being aware of our struggles and finding healthy coping mechanisms are necessary, we receive enough negative messaging on a daily basis. This article is all about how ADHD traits can be a benefit when you're coding.</description>
+    <pubDate>2022-06-22T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Coding and ADHD - Can't Remember</title>
+    <link>https://abbeyperini.com/blog.html?blog=ADHD-5</link>
+    <description>Gabor Maté has described ADHD as "forgetting to remember the future." If it's not written down, I'm not getting it done.</description>
+    <pubDate>2022-06-04T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Coding and ADHD - Can't Stop</title>
+    <link>https://abbeyperini.com/blog.html?blog=ADHD-4</link>
+    <description>I find "hyperfocus" and "flow state" to be analogous with one key difference - when hyperfocusing, I struggle mightily to stop.</description>
+    <pubDate>2022-06-03T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Coding and ADHD - Can't Keep Going</title>
+    <link>https://abbeyperini.com/blog.html?blog=ADHD-3</link>
+    <description>The idea that anyone should be able to sit down and focus for four hours on command is a dangerous myth. ADHD brains add an extra hurdle when you're trying to focus on a schedule.</description>
+    <pubDate>2022-06-02T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Coding and ADHD - Can't Start</title>
+    <link>https://abbeyperini.com/blog.html?blog=ADHD-2</link>
+    <description>I want to start the task. I know I need to start the task. Why can't I start the task?</description>
+    <pubDate>2022-05-31T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Coding and ADHD - ADHD Brains</title>
+    <link>https://abbeyperini.com/blog.html?blog=ADHD-1</link>
+    <description>What is ADHD? How do ADHD brains work differently?</description>
+    <pubDate>2022-05-31T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Web Development === Accessibility</title>
+    <link>https://abbeyperini.com/blog.html?blog====</link>
+    <description>Accessibility is the core philosophy of the web.</description>
+    <pubDate>2022-05-19T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Git Commit Message Template in Terminal and VS Code</title>
+    <link>https://abbeyperini.com/blog.html?blog=commit</link>
+    <description>With my ADHD, my motto is always be writing it down, so I was delighted when my coworker told me about git commit message templates.</description>
+    <pubDate>2022-05-17T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>A Beginner's Guide to HTTP - Part 5: Authentication</title>
+    <link>https://abbeyperini.com/blog.html?blog=HTTP-5</link>
+    <description>Let's talk about the common ways to get your app authenticated for public APIs.</description>
+    <pubDate>2022-05-14T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>What are Favicons?</title>
+    <link>https://abbeyperini.com/blog.html?blog=favicons</link>
+    <description>Let's dig into how to leverage favicons to their fullest.</description>
+    <pubDate>2022-05-08T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>What is ICO?</title>
+    <link>https://abbeyperini.com/blog.html?blog=ico</link>
+    <description>I didn't even know about this image file format until I went to make my first favicon. What's the deal with ICO?</description>
+    <pubDate>2022-05-03T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>What is JPEG XL?</title>
+    <link>https://abbeyperini.com/blog.html?blog=jpegxl</link>
+    <description>The JPEG has been an integral image format since 1992, but the Joint Photographic Experts Group didn't stop there.</description>
+    <pubDate>2022-04-27T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>What is AVIF?</title>
+    <link>https://abbeyperini.com/blog.html?blog=avif</link>
+    <description>What are the benefits in using this file type?</description>
+    <pubDate>2022-04-26T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>What is WebP?</title>
+    <link>https://abbeyperini.com/blog.html?blog=webp</link>
+    <description>What is this Google-made open source mage file format?</description>
+    <pubDate>2022-04-26T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>A Beginner's Guide to HTTP - Part 4: APIs</title>
+    <link>https://abbeyperini.com/blog.html?blog=HTTP-4</link>
+    <description>This part of the series will cover evaluating APIs other people have built and getting their data on your page.</description>
+    <pubDate>2022-04-22T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>12 Things I Learned During My First Year as a Professional Developer</title>
+    <link>https://abbeyperini.com/blog.html?blog=1-year</link>
+    <description>Here are the top 12 things I've learned and a bonus Notion database of the resources I've found useful.</description>
+    <pubDate>2022-04-04T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Semantic HTML: What, Why, and How</title>
+    <link>https://abbeyperini.com/blog.html?blog=HTML</link>
+    <description>What is Semantic HTML? Why use it? How do you use it?</description>
+    <pubDate>2022-03-15T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>We've Been Here Since the Beginning</title>
+    <link>https://abbeyperini.com/blog.html?blog=beginning</link>
+    <description>This is not a blog I anticipated writing. My plan was to let Women's History Month pass me by as much as possible. ...but I'm tired.</description>
+    <pubDate>2022-04-04T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>A Beginner's Guide to HTTP - Part 3: Requests</title>
+    <link>https://abbeyperini.com/blog.html?blog=HTTP-3</link>
+    <description>In this part of the series, I'll demonstrate generating HTTP requests from a simple React app using XHR, Fetch, and Axios.</description>
+    <pubDate>2022-02-22T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>A Beginner's Guide to HTTP - Part 2: Responses</title>
+    <link>https://abbeyperini.com/blog.html?blog=HTTP-2</link>
+    <description>In this part of the series, I'll demonstrate generating HTTP responses from a simple Node.js Express server.</description>
+    <pubDate>2022-02-16T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>A Beginner's Guide to HTTP - Part 1: Definitions</title>
+    <link>https://abbeyperini.com/blog.html?blog=HTTP-1</link>
+    <description>I'll cover HTTP terms, tools, and the structure of HTTP messages.</description>
+    <pubDate>2022-02-04T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Coding for Fun on Top of Coding Professionally</title>
+    <link>https://abbeyperini.com/blog.html?blog=coding</link>
+    <description>Part of what's kept me going has been learning what other parts of my life I can't ignore and not losing sight of what made coding so fun for me in the first place.</description>
+    <pubDate>2022-01-04T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Accessibility Auditing My Portfolio Site - Part 6</title>
+    <link>https://abbeyperini.com/blog.html?blog=audit-6</link>
+    <description>Finishing up with a final round of testing, a final fix, a brief mention of things I'd like to revisit, some main takeaways, and my final thoughts on this series.</description>
+    <pubDate>2021-11-28T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>How I Structure My Writing</title>
+    <link>https://abbeyperini.com/blog.html?blog=writing</link>
+    <description>How to write a 3-3-11 paragraph, an essay based off that structure, and how to apply it to technical blogs.</description>
+    <pubDate>2021-11-21T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Blog Page Accessibility Deep Dive</title>
+    <link>https://abbeyperini.com/blog.html?blog=audit-5</link>
+    <description>Making the full blog page on the main page of my portfolio site more accessible</description>
+    <pubDate>2021-11-20T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>
+  </item>
+  <item>
+    <title>Accessibility Auditing My Portfolio Site - Part 4</title>
+    <link>https://abbeyperini.com/blog.html?blog=audit-4</link>
+    <description>Making the blog preview component code on the main page of my portfolio site more accessible</description>
+    <pubDate>2021-11-11T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>   
+  <item>
+    <title>An Accessible Dark Mode Toggle in React</title>
+    <link>https://abbeyperini.com/blog.html?blog=audit-3</link>
+    <description>Fixing my portfolio's dark mode toggle during my accessibility audit.</description>
+    <pubDate>2021-11-06T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>  
+  <item>
+    <title>Accessibility Auditing My Portfolio Site - Part 2</title>
+    <link>https://abbeyperini.com/blog.html?blog=audit-2</link>
+    <description>This article is comprised of several accessibility vignettes. It's a collection of short stories about quick fixes - some amuse-bouches, if you will.</description>
+    <pubDate>2021-11-04T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Accessibility Auditing My Portfolio Site - Part 1</title>
+    <link>https://abbeyperini.com/blog.html?blog=audit-1</link>
+    <description>Todd said "No site is 100% accessible, especially as you update it, but we can aim to get close," so let's aim for close.</description>
+    <pubDate>2021-11-02T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>8 Things I've Learned Working in a Legacy Codebase</title>
+    <link>https://abbeyperini.com/blog.html?blog=legacy</link>
+    <description>My first dev job threw me into a huge legacy codebase. My last big ticket involved getting a modern library to work within the deprecated UI framework it uses. After that journey, I wanted to share some tips I've learned along the way.</description>
+    <pubDate>2021-09-16T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Sourcing Images and Optimizing Them for the Web</title>
+    <link>https://abbeyperini.com/blog.html?blog=images</link>
+    <description>Demystifying sourcing images for your website</description>
+    <pubDate>2021-08-30T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Adding Shiba Inu Loading and Error SVGs to My React Site</title>
+    <link>https://abbeyperini.com/blog.html?blog=shibas</link>
+    <description>When I updated the blog section of my portfolio site, I realized I had a great opportunity to draw some cute SVGs and take my loading and error messages to the next level.</description>
+    <pubDate>2021-08-30T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>A Walkthrough of Updating My Portfolio Site with Netlify Functions and the DEV API</title>
+    <link>https://abbeyperini.com/blog.html?blog=serverless</link>
+    <description>When you're just starting out, it often feels like senior devs already know what the end result will look like when they start. While you, on the other hand, can't even name a place to begin. With that in mind, I wrote this post bit by bit as I was building.</description>
+    <pubDate>2021-07-31T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Panini Bot — Making a Discord Bot with Replit, UptimeRobot, Node.js, Express, and Eris</title>
+    <link>https://abbeyperini.com/blog.html?blog=panini-bot</link>
+    <description>Here's how I built a bot that will insert a new word starting with 'p' for every instance of 'pandemic' in a Discord message.</description>
+    <pubDate>2021-06-02T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Practicing Confidence for the Job Search</title>
+    <link>https://abbeyperini.com/blog.html?blog=confidence</link>
+    <description>Or How I Stopped Self-Rejecting and Embraced Self-Promotion</description>
+    <pubDate>2021-05-10T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Breaking into Tech - Tips from a Former Recruiting Admin</title>
+    <link>https://abbeyperini.com/blog.html?blog=breaking</link>
+    <description>In March 2021, I accepted my first developer role.</description>
+    <pubDate>2021-04-05T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Toggle Dark Mode in React</title>
+    <link>https://abbeyperini.com/blog.html?blog=toggle</link>
+    <description>When I rebuilt my portfolio site, I knew I wanted to have some fun with the design, and a dark and light mode fit the bill.</description>
+    <pubDate>2021-03-05T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Knitting as Programming</title>
+    <link>https://abbeyperini.com/blog.html?blog=knitting</link>
+    <description>Or How I Learned Programmers Owe It All to Fiber</description>
+    <pubDate>2021-02-10T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>A Trio of Buttons for a Bubbly, Colorful Site</title>
+    <link>https://abbeyperini.com/blog.html?blog=trio</link>
+    <description>We'll use a shifting background gradient, a simple transform: translate animation, and a button styled like text.</description>
+    <pubDate>2021-01-28T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>#100DaysOfCode</title>
+    <link>https://abbeyperini.com/blog.html?blog=100</link>
+    <description>Today I finished the #100DaysOfCode challenge — a public commitment to code an hour on personal projects every day for 100 days.</description>
+    <pubDate>2021-01-19T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Object Oriented Programming in Memes</title>
+    <link>https://abbeyperini.com/blog.html?blog=OOP</link>
+    <description>Object Oriented Programming (OOP) languages, like JavaScript and Python, organize software design around data, formatted in objects, rather than function or logic.</description>
+    <pubDate>2021-01-18T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>How To Reload a Page Whenever a User Makes a Change with React/Redux</title>
+    <link>https://abbeyperini.com/blog.html?blog=reload</link>
+    <description>How do you get the whole page to reload to show the updated data every time a user makes a change?</description>
+    <pubDate>2025-07-12T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>CSS Animated Button with Offset Border</title>
+    <link>https://abbeyperini.com/blog.html?blog=animated</link>
+    <description>I'm a believer in finding joy in the little things, and during my last project, that little thing was this button.</description>
+    <pubDate>2020-12-16T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Accessibility and React</title>
+    <link>https://abbeyperini.com/blog.html?blog=accessibility</link>
+    <description>Accessibility considerations in React</description>
+    <pubDate>2021-01-07T05:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+  <item>
+    <title>Embrace the Struggle While Learning to Code</title>
+    <link>https://abbeyperini.com/blog.html?blog=embrace</link>
+    <description>Wrapping up my 3rd week of a 16 week coding bootcamp, I can tell you that there is no substitute for staring at a coding problem while your brain struggles.</description>
+    <pubDate>2020-09-25T04:00:00.000Z</pubDate>
+    <author>Abbey Perini</author>  
+  </item>
+</channel>
+</rss>
