@@ -171,7 +171,7 @@ header {
 }
 
 .all-topics-series-containers {
-  margin-top: .5rem;
+  margin: .5rem auto;
 }
 
 .welcome {
@@ -221,6 +221,13 @@ header {
   list-style-type: none;
 }
 
+.font-lg {
+  font-size: 1.75rem;
+}
+
+.font-med {
+  font-size: 1.5rem;
+}
 /* buttons and links */
 
 .button {
@@ -289,6 +296,10 @@ a:focus, .theme-switch:focus + #daisy, .home-link:focus {
   display: flex;
   flex-direction: column;
   justify-content: start;
+}
+
+.garden-list-left-aligned {
+  margin-left: 5ch;
 }
 
 /* rss */
