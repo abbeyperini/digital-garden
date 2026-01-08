@@ -114,7 +114,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 .footer-list li {
@@ -290,6 +289,15 @@ a:focus, .theme-switch:focus + #daisy, .home-link:focus {
   display: flex;
   flex-direction: column;
   justify-content: start;
+}
+
+/* rss */
+.rss-list-container {
+  margin: 1rem 0;
+}
+
+.rss-list-title {
+  margin: 0.5rem 0;
 }
 
 @media screen and (min-width: 350px) {
