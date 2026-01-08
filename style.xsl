@@ -78,7 +78,7 @@ This file is in BETA. Please test and contribute to the discussion:
                         </p>
                         <p class="text-gray">
                             Visit <a href="https://aboutfeeds.com">About Feeds</a> to get started with newsreaders and
-                            subscribing. It’s free.
+                            subscribing. It's free.
                         </p>
                         <h1 class="border-0">
                             <!-- https://commons.wikimedia.org/wiki/File:Feed-icon.svg -->
@@ -109,6 +109,7 @@ This file is in BETA. Please test and contribute to the discussion:
                         <h2>
                             <xsl:value-of select="/rss/channel/title"/>
                         </h2>
+                        <img src="https://images.abbeyperini.com/plant-shiba.png" alt="shiba inu in a gardening hat smirking, covered in dirt, and standing over a sad, knocked-over plant" width="200px;"/>
                         <p>
                             <xsl:value-of select="/rss/channel/description"/>
                         </p>
