@@ -110,20 +110,24 @@ class Full extends HTMLElement {
       return { content, pageTitle };
     }
 
-    const data = JSON.parse(localStorage.getItem("data"));
-    const allBlogs = data.blogs;
-    const allSeries = data.series;
-    const allTopics = data.topics;
-    const params = new URLSearchParams(document.location.search);
-
     function setPageTitles(pageTitle) {
       document.title = pageTitle;
       document.querySelector('meta[property="og:title"]').setAttribute("content", pageTitle);
     }
 
+    let data;
+    let allBlogs;
+    let allSeries;
+    let allTopics;
+    let params = new URLSearchParams(document.location.search);
+
     const interval = setInterval(() => {
       if (localStorage.getItem("data")) {
+        data = JSON.parse(localStorage.getItem("data"));
         clearInterval(interval);
+          allBlogs = data.blogs;
+          allSeries = data.series;
+          allTopics = data.topics;
         if (!!(attributes.blog || params.get("blog"))) {
           const { content, pageTitle } = formatSingleBlog();
           this.innerHTML = content;
