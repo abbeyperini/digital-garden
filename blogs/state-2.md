@@ -36,7 +36,7 @@ person.firstName = "Pauline";
 To treat a JavaScript object as immutable, I replace the entire object with an updated copy.
 
 ```JavaScript
-const person = { firstName: "Paul", lastName: "Posey", id: 12 };
+let person = { firstName: "Paul", lastName: "Posey", id: 12 };
 // not a mutation
 function updatePerson(key, value, person) {
   // make a copy
@@ -1006,4 +1006,4 @@ export class ShibaCounter {
 
 The actions, dispatch, and reducers pattern is difficult to wrap your head around at first. There are a lot of moving parts. My hope is that starting with the smallest possible example and slowly adding in concepts made the pattern easier to understand.
 
-The next part of the series will cover the mutator pattern used by global state management libraries like [Zustand](https://zustand.docs.pmnd.rs/getting-started/introduction) for React and [Pinia](https://pinia.vuejs.org/) for Vue (coming August 2025).
+The next part of the series will cover the mutator pattern used by global state management libraries like [Valtio](https://valtio.dev/) for React and [Pinia](https://pinia.vuejs.org/) for Vue (coming August 2025).

@@ -135,7 +135,7 @@ You can inject update functions into consumer components. To avoid unintended si
 
 Angular also has an inject method for dependency injection. It provides multiple ways to create a provider. A common pattern is creating a class [service](https://angular.dev/tutorials/first-app/09-services), but you can also use [values like a string, boolean, or Date](https://angular.dev/guide/di/dependency-injection-providers). If you need to trigger updates from a consumer, your service class can define getters and setters.
 
-Dependency injection in React involves three hooks - `useReducer`, `createContext`, and `useContext`. Writing a context requires understanding concepts that are used in global state management libraries. I'll explain how to write one in the next part of this series.
+Dependency injection in React involves three hooks - `createContext`, `createContextDispatch`, and `useContext`. Writing a context requires understanding concepts that are used in global state management libraries. I'll explain how to write one in the next part of this series.
 
 Basically, `createContext` creates a component to hold your state and `createContextDispatch` creates a component with methods for updating your state.
 
@@ -177,7 +177,7 @@ return (
 
 ### Global State Management
 
-- React: [Redux](https://redux.js.org/), [Zustand](https://zustand.docs.pmnd.rs/getting-started/introduction)
+- React: [Redux](https://redux.js.org/), [Zustand](https://zustand.docs.pmnd.rs/getting-started/introduction), [Valtio](https://valtio.dev/)
 - Vue: [Pinia](https://pinia.vuejs.org/)
 - Angular: [ngRx](https://ngrx.io/)
 
@@ -194,4 +194,4 @@ A global state management library typically creates a store. This pattern is so 
 There are a couple common patterns for writing stores and triggering updates in global state management libraries. I'll cover them in the next two parts of this series:
 
 - [State Management in Front-end Web Development: Actions, Dispatch, and Reducers](/blog.html?blog=state-2)
-- State Management in Front-end Web Development: Mutators (coming August 2025)
+- [State Management in Front-end Web Development: Mutators](/blog.html?blog=state-3)
