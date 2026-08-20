@@ -4,7 +4,7 @@
 
 Libraries like [Valtio](https://valtio.dev/) and [Pinia](https://pinia.vuejs.org/) for Vue use a mutator pattern instead of the [actions, dispatch, and reducers pattern](https://dev.to/abbeyperini/state-management-in-front-end-web-development-actions-dispatch-and-reducers-gfo).
 
-You can find the Valtio example in the [react-state GitHub repo](https://github.com/abbeyperini/state-react) and the Pinia example in the [vue-state GitHub repo](https://github.com/abbeyperini/state-vue). I'm using [React](https://react.dev/learn/installation) 19.1.0, [Valtio](https://valtio.dev/) x.x.x, [Vue](https://vuejs.org/guide/quick-start.html) 13.5.40 and [Pinia](https://pinia.vuejs.org/) 4.0.3.
+You can find the Valtio example in the [react-state GitHub repo](https://github.com/abbeyperini/state-react) and the Pinia example in the [vue-state GitHub repo](https://github.com/abbeyperini/state-vue). I'm using [React](https://react.dev/learn/installation) 19.1.0, [Valtio](https://valtio.dev/) 2.3.2, [Vue](https://vuejs.org/guide/quick-start.html) 13.5.40 and [Pinia](https://pinia.vuejs.org/) 4.0.3.
 
 1. [Mutability](#mutability)
 2. [Mutators](#mutators)
