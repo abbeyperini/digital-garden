@@ -24,7 +24,7 @@ When people talk about state in a front-end web app, they are typically referrin
 
 ### Local State Management
 
-When you are creating a local state variable, as yourself:
+When you are creating a local state variable, ask yourself:
 
 - Does this variable need to be updated repeatedly?
 - Do updates to this variable need to trigger updates somewhere else?
