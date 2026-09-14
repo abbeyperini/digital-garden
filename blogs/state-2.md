@@ -25,7 +25,7 @@ You can find the React examples in the [react-state GitHub repo](https://github.
 
 ### Immutability
 
-The actions, dispatch, and reducers pattern treats state as immutable. A JavaScript object is mutable. If I change part of the object, I have mutated it.
+The actions, dispatch, and reducers pattern treats state as immutable. A JavaScript object is mutable. Even if I use `const`, I can still change object properties. If I change part of the object, I have mutated it.
 
 ```JavaScript
 const person = { firstName: "Paul", lastName: "Posey", id: 12 };
