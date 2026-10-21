@@ -9,8 +9,9 @@ This blog assumes you have an intermediate understanding of git or have read [Gi
 1. [Discard Changes](#discard-changes)
 2. [Reflog](#reflog)
 3. [Refs Again](#refs-again)
-4. [Reset](#reset)
-5. [Revert](#revert)
+4. [Restore](#restore)
+5. [Reset](#reset)
+6. [Revert](#revert)
 
 ### Discard Changes
 
@@ -42,29 +43,7 @@ git clean -f
 
 Without configuring anything, you can't use `git clean` without passing an option because it can be just as dangerous as [`sudo rm -rf`](https://itsfoss.com/sudo-rm-rf/). The `-n` option will show you what running `git clean -f` will do. The `-f` stands for force and will do it. There are [more options](https://www.atlassian.com/git/tutorials/undoing-changes/git-clean) for things like deleting directories, deleting ignored files, and use the interactive mode.
 
-Next, there's
-
-```bash
-git restore .
-```
-
-This command restores all tracked files in your working directory. You can restore by one or more file names, like `git restore index.html app.js`. Like stashing, you can restore parts of files using the `--patch` option.
-
-What git restore is really doing is checking out a previous version. In other words, `git restore .` is the same as saying `git checkout HEAD` or "restore the HEAD." The only time git restore doesn't act like a checkout is when you run
-
-```bash
-git restore --staged
-```
-
-You won't lose your changes. Any staged changes in the index will move to unstaged in the working directory.
-
-Say you realized you don't even want the changes from the last commit you have in `index.html` in your local branch. You can pass a ref, and restore an earlier commit like
-
-```bash
-git restore --source 12a3b4f index.html
-```
-
-I've talked about HEAD and passed a SHA here, but that's just the tip of the ref iceberg. Before I talk about discarding changes with [reset](#reset), let's dig into the reflog and refs.
+Before I start explaining commands that move HEAD, let's dig into the reflog and refs.
 
 ### Reflog
 
@@ -96,17 +75,73 @@ Both `HEAD~` and `HEAD^` are the same when dealing with commits that only have o
 
 You can even combine the carets and tildes. Let's say I merged two branches together and committed twice after that. If I wanted to access the first parent (or most recently committed parent) of the merge commit, I'd use `HEAD~3^`.
 
-But wait! There's more! You can pass refs to [commit ranges](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection#commit-ranges), [refspecs](https://www.atlassian.com/git/tutorials/refs-and-the-reflog#refspecs) connect your local to your remote, and sometimes git will run the [garbage collector](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) and create [packed refs](https://www.atlassian.com/git/tutorials/refs-and-the-reflog#packed-refs) to save space for you.
+Many commands will take [commit ranges](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection#commit-ranges) as refs. To reference all commits reachable from `new-branch` that aren’t reachable from `main`, use the double dot syntax like `main..new-branch`. This is useful for grabbing all of the commits in a branch that aren't in another one.
+
+The double dot syntax is the same as `^main new-branch` and `new-branch --not main`. These other "not" syntaxes allow you to reference multiple refs like `new-branch main --not even-newer-branch`.
+
+Triple dot syntax (`main...new-branch`) allows you to reference multiple refs that are reachable by one ref or the other. This is useful for grabbing all the unique commits in two branches.
+
+But wait! There's more! [Refspecs](https://www.atlassian.com/git/tutorials/refs-and-the-reflog#refspecs) connect your local to your remote, and sometimes git will run the [garbage collector](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) and create [packed refs](https://www.atlassian.com/git/tutorials/refs-and-the-reflog#packed-refs) to save space for you.
 
 Now that we know how to refer to just about anything in git, how do we use that to remove and restore work?
 
+### Restore
+
+Restore will update your working directory to match a file within a commit. It's useful when you realize you want a file to match a previous commit, not what it looks like now. Running
+
+```bash
+git restore --source <ref> <file name>
+```
+
+will put the changes required to update the file to match the source in your working directory.
+
+For example, I realized I shouldn't have updated a test file 6 commits ago. The failing test was actually catching a bug. Using restore, I can give myself a working directory full of the changes required to restore the previous state of the test file.
+
+You can list out as many file names as you want. If I wanted to update all the files to match that source, I'd use
+
+```bash
+git restore --source <ref> .
+```
+
+Like stashing, you can also restore parts of files using the `--patch` option.
+
+What git restore is really doing is checking out a previous version. In other words, `git restore .` is the same as saying `git checkout HEAD` or "restore the HEAD." The only time git restore doesn't act like a checkout is when you run
+
+```bash
+git restore --staged
+```
+
+You won't lose your changes. Any staged changes in the index will be moved back into the working directory.
+
+### Revert
+
+Revert is designed to safely remove changes in the remote. It doesn't rewrite the commit history. Instead, it creates a new commit, similar to a merge commit. Just like a merge commit, git will open an edit window and prompt you to enter a new commit message explaining your revert.
+
+When you pass a ref to `git reset`, you're telling it the last commit you want to keep. In contrast, you pass the ref of the commit you want to get rid of to revert. Revert will not run without a ref.
+
+![When reverting to your last commit is your only option. Will Smith holding a cell phone captioned it's rewind time.](https://images.abbeyperini.com/gitPanic/rewind.jpeg)
+
+When you run
+
+```bash
+git revert 12a3b4c
+```
+
+git looks at the changes in commit 12a3b4c and inverts them.
+
+You can create your own new commit manually by passing `--no-commit`. Your index and working directory will be populated with the inverse changes required to revert that commit, similar to restore.
+
+This way, your work and the record of it in the commit history is definitely never lost. You could endlessly revert and re-revert and you'd have a full record of doing so. Preserving git history can be important! Recently, we've seen multiple hackers discovered in part due to git history.
+
 ### Reset
 
-Like interactive rebase, reset rewrites the commit history. For this reason, only use it locally, or in your own branch.
+[Like interactive rebase, reset rewrites the commit history.](https://dev.to/abbeyperini/gitpanic-interactive-rebase-48fe#warnings) For this reason, only use it locally, or in your own branch before someone has started reviewing your PR.
 
 Where `git checkout` changes what the HEAD ref is pointing to, reset changes the branch head ref and points HEAD at it. Checking out a branch will not rewrite the commit history, just move HEAD. Reset will rewrite the commit history, move HEAD, and make a new reset commit.
 
-There are three reset tiers, `--soft`, `--mixed`, and `--hard`. Running
+#### Discarding Changes with Reset
+
+When you're trying to discard changes with reset, use `--soft`, `--mixed`, or `--hard` mode. Running
 
 ```bash
 git reset --soft HEAD~
@@ -156,6 +191,8 @@ Like using `git restore --staged`, you can unstage changes with `git reset`. You
 
 Like stash, there's an interactive option, `--patch`, which will take you through the changes hunk by hunk.
 
+#### Restoring Changes with Reset
+
 No matter what option you use, the commits that you remove with reset still exist in the reflog. They're just no longer in the commit history in your repository. In other words, they're orphaned.
 
 This means we can also use reset to put commits back in our commit history. If I run,
@@ -184,27 +221,25 @@ You could even start a new branch instead, like when you've detached the HEAD. J
 git branch <branch name> <orphaned commit ref>
 ```
 
-### Revert
+But what I need to restore more than one commit? Reset has some [lesser-known modes](https://stackoverflow.com/questions/24728543/git-reset-merge-vs-git-reset-keep), `--merge` and `--keep`, that allow you to pass the ref to the latest missing commit and get them all back.
 
-Revert is designed to safely remove changes in the remote. It doesn't rewrite the commit history.
+While soft, mixed, and hard modes are for discarding or redoing changes, merge and keep modes essentially fast forward the branch to get changes back. It’s like copy and pasting commits back into the history rather than deleting changes with the option of keeping a copy of them to work on.
 
-When you pass a ref to `git reset`, you're telling it the last commit you want to keep. In contrast, you pass the ref of the commit you want to get rid of to revert. Revert will not run without a ref.
+Both modes will fail if you have changes in your working directory. Merge mode will discard staged changes. Keep mode will unstage changes in the index.
 
-![When reverting to your last commit is your only option. Will Smith holding a cell phone captioned it's rewind time.](https://images.abbeyperini.com/gitPanic/rewind.jpeg)
-
-When you run
+So if I ran an interactive rebase and accidentally deleted 3 commits I needed, running
 
 ```bash
-git revert 12a3b4c
+git reset --merge <latest ref>
 ```
 
-git looks at the changes in commit 12a3b4c and inverts them.
+or
 
-Running `git revert HEAD` is effectively the same as `git reset HEAD~`. Instead of orphaning a commit, revert creates a new commit, similar to a merge commit, but negating changes instead of combining them. In fact, git will open an edit window and prompt you to enter a new commit message explaining your revert. Reset just automatically commits a message saying it rewrote the commit history.
+```bash
+git reset --keep <latest ref>
+```
 
-You can create your own new commit manually by passing `--no-commit`. Your index and working directory will be populated with the inverse changes required to revert that commit.
-
-This way, your work and the record of it in the commit history is definitely never lost. You could endlessly revert and re-revert and you'd have a full record of doing so.
+will restore all 3 commits.
 
 ### Conclusion
 
