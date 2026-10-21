@@ -135,7 +135,7 @@ This way, your work and the record of it in the commit history is definitely nev
 
 ### Reset
 
-[Like interactive rebase, reset rewrites the commit history.](https://dev.to/abbeyperini/gitpanic-interactive-rebase-48fe#warnings) For this reason, only use it locally, or in your own branch before someone has started reviewing your PR.
+[Like interactive rebase, reset rewrites the commit history.](/blog.html?blog=gitPanic-5#warnings) For this reason, only use it locally, or in your own branch before someone has started reviewing your PR.
 
 Where `git checkout` changes what the HEAD ref is pointing to, reset changes the branch head ref and points HEAD at it. Checking out a branch will not rewrite the commit history, just move HEAD. Reset will rewrite the commit history, move HEAD, and make a new reset commit.
 
